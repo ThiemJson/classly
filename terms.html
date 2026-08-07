@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - AttendMate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --text-color: #e2e8f0;
+            --muted-color: #94a3b8;
+            --primary-color: #3b82f6;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--muted-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            transition: color 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: var(--primary-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin: 0 0 8px 0;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 12px;
+        }
+
+        p {
+            color: var(--text-color);
+            margin-bottom: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .update-date {
+            color: var(--muted-color);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .contact-info {
+            background-color: rgba(59, 130, 246, 0.1);
+            border: 1px solid var(--primary-color);
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 24px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--muted-color);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+        
+        <header>
+            <h1>Terms of Service</h1>
+            <p class="update-date">Last updated: July 22, 2026</p>
+        </header>
+
+        <section class="card">
+            <p>Welcome to <strong>AttendMate</strong>. These Terms of Service ("Terms") govern your use of the AttendMate mobile application ("App"). By installing or using the App, you agree to comply with and be bound by these Terms.</p>
+        </section>
+
+        <h2>1. Description of Service</h2>
+        <p>AttendMate is a local-first helper application designed to track class attendance, calculate bunk allowances, monitor classroom geofences for attendance verification, and synchronize timetables with Google Calendar and Device Calendars.</p>
+
+        <h2>2. Location Services & Geofencing</h2>
+        <p>The App offers optional location-based features (such as geofence attendance verification and proximity reminders):</p>
+        <ul>
+            <li><strong>User Authorization:</strong> Location features function only when you grant appropriate device location permissions.</li>
+            <li><strong>Accuracy Disclaimer:</strong> Geofencing accuracy depends on your device hardware, GPS signal, network conditions, and operating system energy optimizations. We do not guarantee uninterrupted or error-free location tracking.</li>
+            <li><strong>Local Processing:</strong> All location data is processed locally on your device and is not transmitted to external servers.</li>
+        </ul>
+
+        <h2>3. Use of Third-Party Services (Google Calendar & Device Calendar)</h2>
+        <p>By using calendar synchronization features, you authorize the App to interact with your selected calendar account on your behalf. You acknowledge that:</p>
+        <ul>
+            <li>Your use of Google Calendar is subject to Google's Terms of Service and Privacy Policy.</li>
+            <li>You are responsible for maintaining the security of your Google Account and device.</li>
+            <li>The App only creates or modifies calendar events based on your configured timetable and settings. We are not responsible for any accidental changes, schedule conflicts, or data losses on your external calendars.</li>
+        </ul>
+
+        <h2>4. Local Data Storage & User Responsibility</h2>
+        <p>Because AttendMate operates on a local-first architecture:</p>
+        <ul>
+            <li>All attendance records, timetable schedules, semester settings, and location coordinates are stored directly in your device's local database.</li>
+            <li>Clearing app data or uninstalling the App will permanently erase your local attendance history and configurations. We do not maintain cloud backups of your data.</li>
+        </ul>
+
+        <h2>5. Disclaimer of Warranty & Limitation of Liability</h2>
+        <p>The App is provided "as is" and "as available," without warranties of any kind, express or implied. In no event shall the developers be liable for any claims, attendance discrepancies, academic consequences, lost data, or damages arising from your use or inability to use the App.</p>
+
+        <h2>6. Changes to These Terms</h2>
+        <p>We reserve the right to modify these Terms at any time. Updated Terms will be published within the App. Your continued use of the App following any updates indicates your acceptance of the revised Terms.</p>
+
+        <div class="contact-info">
+            <p><strong>Contact Us</strong></p>
+            <p>If you have any questions, feedback, or concerns regarding these Terms, please contact us at:</p>
+            <p>Email: <a href="mailto:thiemnc.work@gmail.com">thiemnc.work@gmail.com</a></p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 AttendMate. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
