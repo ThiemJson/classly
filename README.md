@@ -1,12 +1,19 @@
-# AttendMate Website
+# Classly website
 
-Standalone promotional website for AttendMate Attendance Tracker.
+Static marketing site for **Classly: Attendance Tracker**, published with
+GitHub Pages from the root of the default branch.
 
-## GitHub Pages
+- `index.html` — landing page (copy follows the store metadata in the app
+  repository, `store/metadata/`).
+- `privacy.html` — privacy policy, generated from the app's `PRIVACY_POLICY.md`
+  with `python3 tools/build_privacy.py` (never edit it by hand).
+- `terms.html` — terms of service.
+- `assets/site.css` — shared styles; colours mirror the app theme.
+- `screenshots/` — rendered from the app with demo data
+  (`tool/screenshots/capture_screens.dart` in the app repository).
 
-Publish this repository from the root of the default branch in **Settings → Pages**.
-
-To use a custom domain, add the domain in GitHub Pages settings. GitHub will create or update the `CNAME` file after DNS verification.
+The privacy policy URL used by the stores and the app is
+`https://thiemjson.github.io/attendmate-website/privacy.html`.
 
 ## Local preview
 
@@ -15,11 +22,3 @@ python3 -m http.server 4173
 ```
 
 Then open `http://localhost:4173`.
-
-## Links
-
-- [App Store](https://apps.apple.com/us/app/attendmate-attendance-tracker/id6760553317)
-- [Google Play](https://play.google.com/store/apps/details?id=com.thiemjason.classattendance)
-- [Privacy Policy](https://sweltering-wombat-fb2.notion.site/Privacy-Policy-for-AttendMate-Attendance-Tracker-3b2458630f5480989c75fd835ed9c866?source=copy_link)
-- Support: thiemnc.work@gmail.com
-# attendmate-website
