@@ -13,7 +13,7 @@ GitHub Pages from the root of the default branch.
   (`tool/screenshots/capture_screens.dart` in the app repository).
 
 The privacy policy URL used by the stores and the app is
-`https://thiemjson.github.io/attendmate-website/privacy.html`.
+`https://thiemjson.github.io/classly/privacy.html`.
 
 ## Local preview
 
