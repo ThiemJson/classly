@@ -1,0 +1,104 @@
+{
+  "updated": "2026-10-05",
+  "categories": [
+    {
+      "id": "getting-started",
+      "title": "Getting started",
+      "items": [
+        {
+          "id": "starting-attendance",
+          "q": "I started using Classly mid-semester. Can I enter my current attendance?",
+          "a": "<p>Yes. Classly can start from the attendance you already have instead of from zero.</p><ol><li>Open the <b>Insights</b> tab and choose <b>Can I miss?</b></li><li>Find the subject and tap <b>Update Counts Manually</b>.</li><li>Enter <b>Classes Held</b> and <b>Classes Attended</b> so far, for example 40 and 26.</li><li>Say whether those totals include today's classes, then tap <b>Save</b>.</li></ol><p>From then on, every class you mark is added on top of these numbers. The counts replace anything already marked for that subject up to that day, and those days are locked in the Calendar.</p><p>Do this for each subject. To undo it, open the same screen and tap <b>Remove manual counts</b>.</p>"
+        },
+        {
+          "id": "why-counts-not-percentage",
+          "q": "Why do I enter class counts instead of a percentage?",
+          "a": "<p>The same percentage can mean very different things. 65% could be 13 of 20 classes or 65 of 100. To reach 75%, the first student needs 8 classes in a row and the second needs 40.</p><p>With the real counts, Classly can tell you exactly how many classes you can miss or need to attend.</p>"
+        },
+        {
+          "id": "add-timetable",
+          "q": "How do I add my timetable?",
+          "a": "<p>Add each subject from the <b>Subjects</b> tab with its days, times and room. If you already have your timetable as a file, tap the <b>Import Timetable</b> button at the top of the Subjects tab to paste or upload JSON or CSV, preview it, and import.</p><p>You can replay the walkthrough any time from <b>More → Setup Guide</b>.</p>"
+        },
+        {
+          "id": "subject-target",
+          "q": "Can each subject have a different attendance target?",
+          "a": "<p>Yes. Every subject has its own target, set when you add or edit the subject. Insights compares each subject with its own target.</p>"
+        }
+      ]
+    },
+    {
+      "id": "attendance",
+      "title": "Attendance",
+      "items": [
+        {
+          "id": "how-percentage-works",
+          "q": "How is my attendance percentage calculated?",
+          "a": "<p>It is the classes you attended divided by the classes you marked as present or absent. Classes you haven't marked yet, cancelled classes and holidays are not counted.</p><p>If you entered manual counts, they are included in both numbers.</p>"
+        },
+        {
+          "id": "can-i-miss",
+          "q": "What does \"Can I miss?\" tell me?",
+          "a": "<p>For each subject it shows how many more classes you can skip and still stay at or above your target. If you are already below the target, it shows how many classes in a row you need to attend to get back.</p><p>Tap <b>Simulate</b> to try out future classes before you decide.</p>"
+        },
+        {
+          "id": "fix-past-class",
+          "q": "I forgot to mark a class, or marked it wrong. How do I fix it?",
+          "a": "<p>Tap the <b>calendar icon</b> at the top of the main screen to open the Attendance Calendar, pick the day, and change the class. Attendance updates instantly.</p><p>Days covered by manual counts are locked. To change them, update or remove the manual counts for that subject.</p>"
+        },
+        {
+          "id": "cancelled-holiday",
+          "q": "A class was cancelled, or the college had a holiday. What should I do?",
+          "a": "<p>Mark the class as <b>Cancelled</b>, or mark the whole day as a <b>Holiday</b> from Today or the Attendance Calendar. Neither counts against your attendance.</p>"
+        },
+        {
+          "id": "extra-class",
+          "q": "How do I add an extra class or change one day's timetable?",
+          "a": "<p>Open the Attendance Calendar and pick the day. You can add an extra class, change the time for that day only, or use another day's timetable. Your regular weekly timetable stays the same.</p>"
+        }
+      ]
+    },
+    {
+      "id": "reminders",
+      "title": "Reminders",
+      "items": [
+        {
+          "id": "no-reminders",
+          "q": "I'm not getting class reminders.",
+          "a": "<p>Check <b>More → Notifications</b> first: you can turn the reminder before each class and the prompt to mark attendance on or off, and choose how early they arrive.</p><p>Also make sure notifications are allowed for Classly in your phone's settings. On some Android phones, battery saving can delay reminders, so allow Classly to run without battery restrictions.</p>"
+        }
+      ]
+    },
+    {
+      "id": "data-privacy",
+      "title": "Your data",
+      "items": [
+        {
+          "id": "free",
+          "q": "Is Classly free?",
+          "a": "<p>Yes. Every feature, including Google Calendar Sync and the Home Screen widget, is free. There are no ads.</p>"
+        },
+        {
+          "id": "account-internet",
+          "q": "Do I need an account or internet?",
+          "a": "<p>No. Classly works fully offline and has no accounts. Internet is only used if you connect Google Calendar Sync, and for anonymous crash and usage diagnostics.</p>"
+        },
+        {
+          "id": "location",
+          "q": "Does Classly use my location?",
+          "a": "<p>No. Classly does not request location access. Rooms and buildings are saved as text.</p>"
+        },
+        {
+          "id": "new-phone",
+          "q": "Can I move my data to a new phone?",
+          "a": "<p>Yes. Create a backup in <b>More → Semester Backup</b>, save the file somewhere safe, and import it on the new device.</p><p>Classly keeps your data only on your phone, so uninstalling the app without a backup removes it permanently.</p>"
+        },
+        {
+          "id": "calendar-sync",
+          "q": "What does Google Calendar Sync change in my Google account?",
+          "a": "<p>It creates one dedicated Classly calendar and publishes your classes to it. It does not read or change your other calendars. Turn it on from <b>More → Google Calendar Sync</b>.</p>"
+        }
+      ]
+    }
+  ]
+}

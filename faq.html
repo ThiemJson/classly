@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FAQ · Classly</title>
+  <meta name="description" content="Answers to common questions about Classly: Attendance Tracker.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <!-- The app opens faq.html?embed=1 in a webview; drop the site chrome there. -->
+  <script>if(new URLSearchParams(location.search).has('embed'))document.documentElement.classList.add('embed')</script>
+</head>
+<body>
+<header>
+  <nav class="wrap" aria-label="Main">
+    <a class="brand" href="index.html"><img src="assets/classly-icon.png" alt="" width="34" height="34">Classly</a>
+    <div class="links"><a href="index.html#features">Features</a><a href="privacy.html">Privacy</a></div>
+  </nav>
+</header>
+<main class="wrap">
+  <div class="doc help">
+    <span class="kicker">Help</span>
+    <h1>Frequently asked questions</h1>
+    <p class="updated">Quick answers about using Classly.</p>
+
+    <label class="search">
+      <span class="visually-hidden">Search questions</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="faq-search" type="search" placeholder="Search questions" autocomplete="off">
+    </label>
+
+    <div class="chips" id="faq-chips" role="group" aria-label="Question topics"></div>
+
+    <div id="faq-list" aria-live="polite"><p class="faq-status">Loading…</p></div>
+
+    <div class="note help-contact">
+      <b>Still need help?</b>
+      <span>Email <a href="mailto:thiemnc.work@gmail.com">thiemnc.work@gmail.com</a> or use <b>More → Request feature / Report bug</b> in the app.</span>
+    </div>
+  </div>
+</main>
+<footer><div class="wrap"><div class="footer-row"><span>© 2026 Nguyen Cao Thiem · Classly</span><nav class="footer-links" aria-label="Footer"><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></div></footer>
+<script>
+(function () {
+  var list = document.getElementById('faq-list');
+  var search = document.getElementById('faq-search');
+  var chips = document.getElementById('faq-chips');
+  var activeCategory = '';
+
+  function renderChips(data) {
+    var options = [{ id: '', title: 'All' }].concat(data.categories);
+    options.forEach(function (option) {
+      var chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'chip';
+      chip.textContent = option.title;
+      chip.dataset.category = option.id;
+      chip.setAttribute('aria-pressed', String(option.id === activeCategory));
+      chip.addEventListener('click', function () {
+        activeCategory = option.id;
+        chips.querySelectorAll('.chip').forEach(function (other) {
+          other.setAttribute('aria-pressed', String(other === chip));
+        });
+        filter();
+      });
+      chips.appendChild(chip);
+    });
+  }
+
+  function render(data) {
+    list.innerHTML = '';
+    renderChips(data);
+    data.categories.forEach(function (category) {
+      var group = document.createElement('section');
+      group.className = 'faq-group';
+      group.dataset.category = category.id;
+      group.innerHTML = '<h2></h2><div class="faq"></div>';
+      group.querySelector('h2').textContent = category.title;
+      var items = group.querySelector('.faq');
+      category.items.forEach(function (item) {
+        var details = document.createElement('details');
+        details.id = item.id;
+        details.innerHTML = '<summary></summary><div class="answer">' + item.a + '</div>';
+        details.querySelector('summary').textContent = item.q;
+        details.addEventListener('toggle', function () {
+          // Keep a shareable link to the open question, e.g. faq.html#starting-attendance.
+          if (details.open) history.replaceState(null, '', '#' + item.id);
+        });
+        items.appendChild(details);
+      });
+      list.appendChild(group);
+    });
+    var empty = document.createElement('p');
+    empty.className = 'faq-status';
+    empty.id = 'faq-empty';
+    empty.hidden = true;
+    empty.textContent = 'No questions match your search.';
+    list.appendChild(empty);
+
+    addStructuredData(data);
+    openFromHash();
+  }
+
+  function openFromHash() {
+    var id = decodeURIComponent(location.hash.slice(1));
+    var target = id && document.getElementById(id);
+    if (target && target.tagName === 'DETAILS') {
+      if (target.hidden || target.closest('.faq-group').hidden) {
+        search.value = '';
+        activeCategory = '';
+        chips.querySelectorAll('.chip').forEach(function (chip) {
+          chip.setAttribute('aria-pressed', String(chip.dataset.category === ''));
+        });
+        filter();
+      }
+      target.open = true;
+      target.scrollIntoView({ block: 'start' });
+    }
+  }
+
+  function filter() {
+    var query = search.value.trim().toLowerCase();
+    var anyVisible = false;
+    list.querySelectorAll('.faq-group').forEach(function (group) {
+      var groupVisible = false;
+      var inCategory = !activeCategory || group.dataset.category === activeCategory;
+      group.querySelectorAll('details').forEach(function (details) {
+        var match = inCategory && (!query || details.textContent.toLowerCase().indexOf(query) !== -1);
+        details.hidden = !match;
+        groupVisible = groupVisible || match;
+      });
+      group.hidden = !groupVisible;
+      anyVisible = anyVisible || groupVisible;
+    });
+    var empty = document.getElementById('faq-empty');
+    if (empty) empty.hidden = anyVisible;
+  }
+
+  function addStructuredData(data) {
+    var entities = [];
+    data.categories.forEach(function (category) {
+      category.items.forEach(function (item) {
+        entities.push({ '@type': 'Question', name: item.q, acceptedAnswer: { '@type': 'Answer', text: item.a } });
+      });
+    });
+    var script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: entities });
+    document.head.appendChild(script);
+  }
+
+  search.addEventListener('input', filter);
+  window.addEventListener('hashchange', openFromHash);
+
+  fetch('assets/faq.json', { cache: 'no-cache' })
+    .then(function (response) {
+      if (!response.ok) throw new Error(response.status);
+      return response.json();
+    })
+    .then(render)
+    .catch(function () {
+      list.innerHTML = '<p class="faq-status">Couldn’t load the questions. Check your connection and try again.</p>';
+    });
+})();
+</script>
+</body>
+</html>

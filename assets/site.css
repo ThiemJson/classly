@@ -121,3 +121,30 @@ footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 .doc code{font-size:.92em;background:var(--variant);padding:1px 6px;border-radius:6px}
+
+/* FAQ page */
+.help .search{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:0 18px;margin:0 0 16px}
+.help .search:focus-within{border-color:var(--sage)}
+.help .search svg{width:20px;height:20px;flex:none;fill:none;stroke:var(--muted);stroke-width:2;stroke-linecap:round}
+.help .search input{flex:1;min-width:0;border:0;background:none;color:var(--ink);font:inherit;font-size:16px;padding:14px 0;outline:none}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin:0 0 8px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;font:inherit;font-size:14px;font-weight:600;color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--sage-soft);border-color:var(--sage);color:var(--sage)}
+.faq-group[hidden],.help details[hidden]{display:none}
+.help .faq-group h2{font-size:20px;margin:28px 0 12px}
+.help .faq-group{padding:0}
+.help details{scroll-margin-top:88px}
+.help .answer{color:var(--muted);padding-bottom:4px}
+.help .answer p,.help .answer ol,.help .answer ul{margin:0 0 14px;color:var(--muted)}
+.help .answer ol,.help .answer ul{padding-left:22px}
+.help .answer li{margin:4px 0;color:var(--muted)}
+.help .answer b{color:var(--ink)}
+.faq-status{color:var(--muted)}
+.help-contact{display:grid;gap:4px;margin-top:40px}
+.help-contact span{color:var(--muted)}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* Opened inside the app: no site header or footer, tighter top spacing. */
+.embed header,.embed footer{display:none}
+.embed .doc{padding-top:20px}
+.embed .help details{scroll-margin-top:16px}

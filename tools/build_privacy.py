@@ -74,7 +74,7 @@ page = f'''<!doctype html>
 {content}
   </article>
 </main>
-<footer><div class="wrap"><div class="footer-row"><span>© 2026 Nguyen Cao Thiem · Classly</span><nav class="footer-links" aria-label="Footer"><a href="index.html">Home</a><a href="terms.html">Terms</a><a href="index.html#support">Support</a></nav></div></div></footer>
+<footer><div class="wrap"><div class="footer-row"><span>© 2026 Nguyen Cao Thiem · Classly</span><nav class="footer-links" aria-label="Footer"><a href="index.html">Home</a><a href="terms.html">Terms</a><a href="faq.html">FAQ</a></nav></div></div></footer>
 </body>
 </html>
 '''
