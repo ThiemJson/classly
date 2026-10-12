@@ -44,17 +44,17 @@
         {
           "id": "fix-past-class",
           "q": "I forgot to mark a class, or marked it wrong. How do I fix it?",
-          "a": "<p>Tap the <b>calendar icon</b> at the top of the main screen to open the Attendance Calendar, pick the day, and change the class. Attendance updates instantly.</p><p>Days covered by manual counts are locked. To change them, update or remove the manual counts for that subject.</p>"
+          "a": "<p>Tap the <b>calendar icon</b> at the top of the main screen to open Calendar, pick the day, and change the class. Attendance updates instantly.</p><p>Days covered by manual counts are locked. To change them, update or remove the manual counts for that subject.</p>"
         },
         {
           "id": "cancelled-holiday",
           "q": "A class was cancelled, or the college had a holiday. What should I do?",
-          "a": "<p>Mark the class as <b>Cancelled</b>, or mark the whole day as a <b>Holiday</b> from Today or the Attendance Calendar. Neither counts against your attendance.</p>"
+          "a": "<p>Mark the class as <b>Cancelled</b>, or mark the whole day as a <b>Holiday</b> from Today or Calendar. Neither counts against your attendance.</p>"
         },
         {
           "id": "extra-class",
           "q": "How do I add an extra class or change one day's timetable?",
-          "a": "<p>Open the Attendance Calendar and pick the day. You can add an extra class, change the time for that day only, or use another day's timetable. Your regular weekly timetable stays the same.</p>"
+          "a": "<p>Open Calendar and pick the day. You can add an extra class, change the time for that day only, or use another day's timetable. Your regular weekly timetable stays the same.</p>"
         },
         {
           "id": "timetable-changed",

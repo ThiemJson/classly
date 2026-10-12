@@ -26,7 +26,7 @@ SCREENS = {
     'can-i-miss': 'Can I miss?',
     'planner': 'Academic Planner',
     'more': 'More',
-    'calendar': 'Attendance Calendar',
+    'calendar': 'Calendar',
     'reports': 'Attendance Reports',
     'add-subject': 'Add a subject',
     'import-timetable': 'Import your timetable',
@@ -36,6 +36,8 @@ SCREENS = {
     'setup-guide': 'Setup Guide',
     'announcements': 'News from the developer',
     'days-off': 'Days Off',
+    'todo': 'To-do',
+    'week': 'Week timetable',
 }
 
 
