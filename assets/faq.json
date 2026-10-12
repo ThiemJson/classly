@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-12",
   "categories": [
     {
       "id": "getting-started",
@@ -55,6 +55,11 @@
           "id": "extra-class",
           "q": "How do I add an extra class or change one day's timetable?",
           "a": "<p>Open the Attendance Calendar and pick the day. You can add an extra class, change the time for that day only, or use another day's timetable. Your regular weekly timetable stays the same.</p>"
+        },
+        {
+          "id": "timetable-changed",
+          "q": "My timetable changed from a certain date, even a past one. How do I update it without changing earlier weeks?",
+          "a": "<p>Open the subject in the <b>Subjects</b> tab, change its weekly days or times, and tap <b>Save Changes</b>. Classly then asks <b>Apply updated timetable from</b>: pick the date your new timetable started. It can be a date in the past.</p><p>Weeks before that date keep the old timetable and the attendance you marked; from that date on, the new timetable is used. Do this for each subject whose timetable changed.</p><p>If your whole timetable changed, you can also re-import it with <b>Import Timetable</b> and choose the date it applies from.</p><p>To change a single day only, see <a href=\"#extra-class\">How do I add an extra class or change one day's timetable?</a></p>"
         }
       ]
     },
