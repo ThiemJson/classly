@@ -96,7 +96,7 @@
         {
           "id": "new-phone",
           "q": "Can I move my data to a new phone?",
-          "a": "<p>Yes. Create a backup in <b>More → Semester Backup</b>, save the file somewhere safe, and import it on the new device.</p><p>Classly keeps your data only on your phone, so uninstalling the app without a backup removes it permanently.</p>"
+          "a": "<p>Yes. The easiest way is <b>Google Drive backup</b>: open <b>More → Semester Backup</b> and tap <b>Connect Google Drive</b>. Classly then copies every backup to a hidden folder in your Google account that only Classly can see.</p><p>On the new phone (Android or iPhone), install Classly, tap <b>Used Classly before? Restore a backup</b> on the welcome screen, then <b>Restore from Drive</b> and sign in with the same Google account.</p><p>You can also create a backup in <b>More → Semester Backup</b>, save the file somewhere safe and import it on the new device. Without either, uninstalling Classly removes your data, because it is kept only on your phone.</p>"
         },
         {
           "id": "calendar-sync",
