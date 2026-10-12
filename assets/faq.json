@@ -24,6 +24,11 @@
           "id": "subject-target",
           "q": "Can each subject have a different attendance target?",
           "a": "<p>Yes. Every subject has its own target, set when you add or edit the subject. Insights compares each subject with its own target.</p>"
+        },
+        {
+          "id": "semester-dates",
+          "q": "How do I change my semester's start or end date?",
+          "a": "<p>You can change the dates at any time. Nothing you have marked is deleted.</p><ol><li>Open <b>Insights → Overview</b>.</li><li>Scroll down and tap <b>Semester Parameters</b>.</li><li>Tap <b>End Date</b> and choose the new date. To change both, tap <b>Start Date</b>: after you choose it, Classly asks for the end date too.</li></ol><p>The change is saved straight away, and your percentages and \"Can I miss?\" follow the new dates.</p><p><b>Semester already over?</b> Overview shows a <b>Change End Date</b> button at the top. Choose a later date to keep tracking.</p><p>A semester can be up to one year long. Starting a different semester? Use <b>Start New Semester</b> instead. That clears the current subjects and attendance, after saving a copy in <b>More → Semester Backup → Previous Semesters</b>.</p>"
         }
       ]
     },
