@@ -148,3 +148,27 @@ footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
 .embed header,.embed footer{display:none}
 .embed .doc{padding-top:20px}
 .embed .help details{scroll-margin-top:16px}
+
+/* Attendance calculator */
+.calc{display:grid;gap:16px;margin:28px 0 8px}
+.calc-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.calc-card h2{font-size:19px;margin:0 0 4px}
+.calc-card > p{color:var(--muted);margin:0 0 16px;font-size:15px}
+.fields{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.fields.two{grid-template-columns:repeat(2,1fr)}
+.field{display:grid;gap:6px;font-size:14px;font-weight:600}
+.field input{font:inherit;font-size:18px;font-weight:600;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px;width:100%;min-width:0}
+.field input:focus{outline:none;border-color:var(--sage)}
+.result{margin-top:16px;border-radius:14px;padding:14px 16px;background:var(--variant)}
+.result[data-tone="good"]{background:var(--sage-soft)}
+.result-headline{font-weight:700;font-size:18px;margin:0}
+.result-detail{color:var(--muted);margin:4px 0 0;font-size:15px}
+.result-detail:empty{display:none}
+.doc .lang-switch{font-size:14px;color:var(--muted);margin:0 0 20px}
+.doc .formula{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:15px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;overflow-x:auto}
+.app-cta{display:flex;flex-wrap:wrap;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin:32px 0}
+.app-cta img{width:56px;height:56px;border-radius:14px}
+.app-cta div{flex:1;min-width:200px}
+.app-cta b{display:block}
+.app-cta span{color:var(--muted);font-size:15px}
+@media (max-width:560px){.fields{grid-template-columns:1fr 1fr}.fields .field:last-child:nth-child(3){grid-column:1/-1}}

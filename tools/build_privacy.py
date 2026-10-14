@@ -56,6 +56,7 @@ page = f'''<!doctype html>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Privacy Policy · Classly</title>
   <meta name="description" content="How Classly: Attendance Tracker handles your information.">
+  <link rel="canonical" href="https://thiemjason-work.site/classly/privacy.html">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="stylesheet" href="assets/site.css">
 </head>

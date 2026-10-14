@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://thiemjason-work.site/classly/</loc></url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/attendance-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/attendance-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/tinh-chuyen-can/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/attendance-calculator/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/vi/tinh-chuyen-can/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/attendance-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/tinh-chuyen-can/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/attendance-calculator/"/>
+  </url>
+  <url><loc>https://thiemjason-work.site/classly/faq.html</loc></url>
+  <url><loc>https://thiemjason-work.site/classly/privacy.html</loc></url>
+  <url><loc>https://thiemjason-work.site/classly/terms.html</loc></url>
+</urlset>
