@@ -29,7 +29,8 @@ Mỗi task có: mục tiêu, file cần sửa, đặc tả, số liệu kiểm t
 | 4 công cụ: attendance calculator, bunk, bảng mức tối thiểu, recovery | ✅ en, vi, hi, id |
 | Tiếng Tây Ban Nha (es) | ✅ 4 công cụ + hub đã sinh và kiểm tra |
 | Tiếng Bồ Đào Nha–Brazil (pt) | ✅ 4 công cụ + hub đã sinh và kiểm tra |
-| tr, fr | ❌ Chưa làm |
+| Tiếng Thổ Nhĩ Kỳ (tr) | ✅ 4 công cụ + hub đã sinh và kiểm tra |
+| fr | ❌ Chưa làm |
 | FAQ tĩnh trong faq.html | ✅ Xong |
 | Link Google Play có `utm_campaign` | ✅ Xong |
 | Link App Store có campaign | ❌ Chờ chủ app đưa provider token `pt` |
@@ -133,7 +134,7 @@ Widget hiện có (`assets/calculator.js` → `KINDS`): `standing`, `plan`, `wha
   60 h × 25 % = 15 h), "Atestado médico abona falta?" (tuỳ trường, không khẳng định).
 - **og_locale:** `pt_BR`. `language_name`: "Português".
 
-### Task 3.3 — Tiếng Thổ Nhĩ Kỳ (tr)
+### Task 3.3 — Tiếng Thổ Nhĩ Kỳ (tr) ✅
 - **Thuật ngữ:** "devamsızlık", "devam zorunluluğu", "ders", "dönem". Từ khoá chính: "devamsızlık hesaplama",
   "kaç saat devamsızlık hakkım var".
 - **Mức mặc định:** 70 % (nhiều trường: lý thuyết 70 %, thực hành 80 %). Ghi "birçok üniversitede"

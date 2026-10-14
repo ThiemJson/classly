@@ -1,0 +1,40 @@
+{
+  "language_name": "Türkçe",
+  "og_locale": "tr_TR",
+  "tool_kicker": "Ücretsiz araç",
+  "faq_heading": "Sık sorulan sorular",
+  "related_heading": "Diğer devam araçları",
+  "nav": {"label": "Ana menü", "features": "Özellikler", "tools": "Araçlar", "download": "İndir", "footer_label": "Alt menü", "footer": [["Ana sayfa", "/classly/"], ["Tüm araçlar", "/classly/tr/araclar/"], ["SSS", "/classly/faq.html"], ["Gizlilik", "/classly/privacy.html"], ["Koşullar", "/classly/terms.html"]]},
+  "download": {"title": "Hesabı Classly tutsun", "text": "Her dersi tek dokunuşla işaretle, dönem boyunca her ders için devam durumunu gör. Ücretsiz, çevrimdışı ve hesapsız."},
+  "hub": {"slug": "tr/araclar/", "title": "Ücretsiz Devamsızlık Hesaplama Araçları · Classly", "description": "Devamsızlık hesaplama araçları: devam yüzdeniz, kaç saat devamsızlık hakkınız olduğu, %70 tablosu ve telafi hesabı.", "h1": "Ücretsiz devamsızlık hesaplama araçları", "intro": "Öğrencilerin devam durumu hakkında en çok sorduğu sorulara hızlı yanıtlar. Kayıt gerekmez; hesaplamalar tarayıcınızda yapılır."},
+  "fields": {"held": "İşlenen ders saati", "attended": "Katıldığınız ders saati", "target": "Hedef %", "total": "Dönemdeki toplam ders", "skip": "Kaçırılacak ders", "remaining": "Kalan ders"},
+  "widgets": {
+    "standing": {"title": "Devam durumum nasıl?", "hint": "Kaçırdıklarınız dahil şimdiye kadar işlenen tüm dersleri sayın. İsterseniz ders saati kullanabilirsiniz."},
+    "plan": {"title": "Tüm dönemi mi planlıyorsunuz?", "hint": "Dersin dönem boyunca toplam kaç kez veya kaç saat işleneceğini biliyorsanız kullanın."},
+    "whatif": {"title": "Birkaç ders daha kaçırırsam ne olur?", "hint": "Sonraki derslere katılmazsanız devam yüzdenizin nasıl değişeceğini görün."},
+    "recover": {"title": "Dönem sonunda hedefe ulaşabilir miyim?", "hint": "Bu ders için dönemde kaç ders veya ders saati kaldığını ekleyin."}
+  },
+  "table": {"held": "İşlenen ders", "min": "En az katılmanız gereken", "missed": "Devamsızlık hakkı"},
+  "calc": {
+    "current": "Şu an devam oranınız %{pct}.",
+    "canMiss": {"one": "%{target} seviyesinde kalmak için 1 ders daha kaçırabilirsiniz.", "other": "%{target} seviyesinde kalmak için {n} ders daha kaçırabilirsiniz."},
+    "canMissDetail": "{current} Bu dersleri kaçırdıktan sonra oranınız %{pct} olur.",
+    "atEdge": "Sonraki dersi kaçırmayın.", "atEdgeDetail": "{current} Bir devamsızlık daha sizi %{target} altına düşürür.",
+    "mustAttend": {"one": "%{target} seviyesine dönmek için sonraki derse katılın.", "other": "%{target} seviyesine dönmek için sonraki {n} derse aralıksız katılın."},
+    "mustAttendDetail": "{current} Böylece oranınız %{pct} olur.",
+    "unreachable": "Bir ders kaçırıldıktan sonra %100 hedefi artık mümkün değildir.",
+    "planMiss": {"one": "Toplam {total} dersten en fazla 1 tanesini kaçırabilirsiniz.", "other": "Toplam {total} dersten en fazla {n} tanesini kaçırabilirsiniz."},
+    "planDetail": "Hedef için {total} dersin en az {attend} tanesine katılın.",
+    "whatif": {"one": "1 ders daha kaçırırsanız devam oranınız %{pct} olur.", "other": "{n} ders daha kaçırırsanız devam oranınız %{pct} olur."},
+    "whatifAbove": "Bu oran hâlâ %{target} veya üzerindedir. Hedefin altına düşmeden toplam en fazla {m} ders kaçırabilirsiniz.",
+    "whatifBelow": "Bu oran %{target} altındadır. Hedefin altına düşmeden toplam en fazla {m} ders kaçırabilirsiniz.",
+    "recover": {"one": "Kalan {rem} dersin en az 1'ine katılın.", "other": "Kalan {rem} dersin en az {n} tanesine katılın."},
+    "recoverDetail": "Bunların {m} tanesini kaçırıp dönemi yine %{target} veya üzerinde bitirebilirsiniz.",
+    "recoverSafe": "Kalan {rem} dersin tamamını kaçırsanız bile dönemi %{target} veya üzerinde bitirirsiniz.",
+    "recoverImpossible": "Kalan {rem} dersin tamamına katılsanız bile oranınız %{pct} olur.",
+    "recoverImpossibleDetail": "Bu dönem %{target} hedefine ulaşmak artık mümkün değil. Mazeret ve telafi seçeneklerini okulunuza sorun.",
+    "wholeNumbers": "Tam sayı kullanın ve işlenen ders sayısını en az 1 girin.",
+    "attendedTooMany": "Katıldığınız ders sayısı işlenen ders sayısından fazla olamaz.",
+    "targetRange": "1 ile 100 arasında bir hedef girin."
+  }
+}
