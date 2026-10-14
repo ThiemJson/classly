@@ -1,0 +1,36 @@
+{
+  "id": "recovery",
+  "order": 4,
+  "slug": "pt/recuperar-frequencia/",
+  "title": "Como Recuperar a Frequência até 75%? Calculadora · Classly",
+  "description": "Abaixo de 75%? Calcule quantas aulas seguidas precisa frequentar e se ainda consegue atingir a meta com as aulas restantes do semestre.",
+  "og_title": "Quantas aulas preciso frequentar para chegar a 75%?",
+  "h1": "Calculadora para recuperar a frequência",
+  "card_title": "Recuperar a frequência",
+  "card_text": "Quantas aulas frequentar e se ainda é possível atingir sua meta.",
+  "intro": "<p><b>Para voltar a 75%, frequente (0,75 × aulas dadas − frequentadas) ÷ 0,25 aulas seguidas, arredondando para cima.</b> Se o semestre terminar antes, calcule quantas das aulas restantes você precisa frequentar.</p>",
+  "widgets": [
+    {"kind": "recover", "defaults": {"held": 30, "attended": 20, "remaining": 30, "target": 75}},
+    {"kind": "standing", "title": "Quantas aulas seguidas preciso frequentar?", "defaults": {"held": 30, "attended": 20, "target": 75}}
+  ],
+  "related": ["attendance-calculator", "bunk-calculator", "minimum-table"],
+  "faq": [
+    {"q": "Quantas aulas preciso frequentar para chegar a 75%?", "a": "Calcule (0,75 × aulas dadas − frequentadas) ÷ 0,25 e arredonde para cima. Com 20 presenças em 30 aulas, são 10 aulas seguidas, chegando a 30 de 40."},
+    {"q": "Ainda consigo chegar a 75% até o fim do semestre?", "a": "Somente se (aulas frequentadas + aulas restantes) ÷ (aulas dadas + aulas restantes) atingir 75%. Se nem frequentando todas for possível, procure cedo o professor ou a coordenação."},
+    {"q": "Por que demora tanto para aumentar a frequência?", "a": "Cada presença também aumenta o número de aulas dadas. Perto da meta, uma nova presença eleva pouco a porcentagem, por isso recuperar é mais lento do que perder frequência."}
+  ]
+}
+---
+<h2>Duas formas de calcular a recuperação</h2>
+<h3>Voltar à meta o mais rápido possível</h3>
+<p class="formula">aulas seguidas = ⌈ (meta × dadas − frequentadas) ÷ (1 − meta) ⌉</p>
+<p>Com 20 de 30 aulas frequentadas (66,66%) e meta de 75%: (0,75 × 30 − 20) ÷ 0,25 = <b>10 aulas</b>, chegando a 30 de 40 = 75%.</p>
+
+<h3>Atingir a meta até o fim do semestre</h3>
+<p>Quando a frequência é conferida no fim do período, leve em conta as aulas que ainda faltam:</p>
+<p class="formula">frequentar pelo menos = ⌈ meta × (dadas + restantes) − frequentadas ⌉</p>
+<p>Com 20 presenças em 30 aulas e mais 30 aulas restantes: 0,75 × 60 − 20 = <b>25 das 30</b>. Você ainda pode faltar a 5.</p>
+
+<h3>Quando a meta não é mais possível</h3>
+<p>Com 20 presenças em 40 aulas e apenas 20 restantes, mesmo frequentando todas você terminaria com 40 de 60 = 66,66%. Nesse caso, converse cedo com o professor ou a coordenação sobre atestados, reposições e os prazos da instituição.</p>
+<p>Para evitar essa situação, acompanhe sua margem na <a href="/classly/pt/quantas-faltas-posso-ter/">calculadora de faltas</a> ou deixe o Classly avisar antes de uma matéria cair abaixo da meta.</p>

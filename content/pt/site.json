@@ -1,0 +1,64 @@
+{
+  "language_name": "Português",
+  "og_locale": "pt_BR",
+  "tool_kicker": "Ferramenta gratuita",
+  "faq_heading": "Perguntas frequentes",
+  "related_heading": "Mais ferramentas de frequência",
+  "nav": {
+    "label": "Principal",
+    "features": "Recursos",
+    "tools": "Ferramentas",
+    "download": "Baixar",
+    "footer_label": "Rodapé",
+    "footer": [["Início", "/classly/"], ["Todas as ferramentas", "/classly/pt/ferramentas/"], ["FAQ", "/classly/faq.html"], ["Privacidade", "/classly/privacy.html"], ["Termos", "/classly/terms.html"]]
+  },
+  "download": {
+    "title": "Deixe o Classly fazer as contas",
+    "text": "Registre cada aula com um toque e acompanhe esses números em cada matéria durante todo o semestre. Grátis, offline e sem conta."
+  },
+  "hub": {
+    "slug": "pt/ferramentas/",
+    "title": "Calculadoras de Frequência Grátis para Estudantes · Classly",
+    "description": "Calculadoras de frequência grátis: sua porcentagem, quantas faltas você pode ter, frequência mínima de 75% e como recuperar a frequência.",
+    "h1": "Ferramentas gratuitas de frequência",
+    "intro": "Respostas rápidas para as dúvidas mais comuns sobre frequência. Sem cadastro e sem salvar dados: todos os cálculos são feitos no seu navegador."
+  },
+  "fields": {
+    "held": "Aulas dadas",
+    "attended": "Aulas frequentadas",
+    "target": "Meta %",
+    "total": "Aulas no semestre",
+    "skip": "Próximas faltas",
+    "remaining": "Aulas restantes"
+  },
+  "widgets": {
+    "standing": {"title": "Como está minha frequência?", "hint": "Conte todas as aulas dadas até agora, inclusive aquelas em que você faltou."},
+    "plan": {"title": "Planejando o semestre inteiro?", "hint": "Use esta opção se souber quantas aulas a matéria terá no total."},
+    "whatif": {"title": "E se eu faltar a mais aulas?", "hint": "Veja sua porcentagem depois de faltar às próximas aulas."},
+    "recover": {"title": "Ainda dá para atingir a meta?", "hint": "Informe quantas aulas desta matéria ainda restam no semestre."}
+  },
+  "table": {"held": "Aulas dadas", "min": "Frequentar pelo menos", "missed": "Faltas permitidas"},
+  "calc": {
+    "current": "Sua frequência atual é {pct}%.",
+    "canMiss": {"one": "Você pode faltar a mais 1 aula e manter {target}%.", "other": "Você pode faltar a mais {n} aulas e manter {target}%."},
+    "canMissDetail": "{current} Depois dessas faltas, sua frequência seria {pct}%.",
+    "atEdge": "Não falte à próxima aula.",
+    "atEdgeDetail": "{current} Mais uma falta deixaria você abaixo de {target}%.",
+    "mustAttend": {"one": "Frequente a próxima aula para voltar a {target}%.", "other": "Frequente as próximas {n} aulas seguidas para voltar a {target}%."},
+    "mustAttendDetail": "{current} Assim você chegaria a {pct}%.",
+    "unreachable": "Depois de faltar a uma aula, não é mais possível atingir uma meta de 100%.",
+    "planMiss": {"one": "Você pode faltar a no máximo 1 de {total} aulas.", "other": "Você pode faltar a no máximo {n} de {total} aulas."},
+    "planDetail": "Frequente pelo menos {attend} de {total} aulas para atingir a meta.",
+    "whatif": {"one": "Se faltar a mais 1 aula, sua frequência será {pct}%.", "other": "Se faltar a mais {n} aulas, sua frequência será {pct}%."},
+    "whatifAbove": "Você ainda estará em {target}% ou mais. O máximo de faltas sem cair abaixo da meta é {m}.",
+    "whatifBelow": "Isso fica abaixo de {target}%. O máximo de faltas sem cair abaixo da meta é {m}.",
+    "recover": {"one": "Frequente pelo menos 1 das {rem} aulas restantes.", "other": "Frequente pelo menos {n} das {rem} aulas restantes."},
+    "recoverDetail": "Você pode faltar a {m} delas e ainda terminar com {target}% ou mais.",
+    "recoverSafe": "Você terminará com {target}% ou mais mesmo se faltar a todas as {rem} aulas restantes.",
+    "recoverImpossible": "Mesmo frequentando todas as {rem} aulas restantes, você terminaria com {pct}%.",
+    "recoverImpossibleDetail": "Não é mais possível atingir {target}% neste semestre. Converse com o professor ou a instituição sobre atestados e reposições.",
+    "wholeNumbers": "Use números inteiros e informe pelo menos 1 aula dada.",
+    "attendedTooMany": "As aulas frequentadas não podem superar as aulas dadas.",
+    "targetRange": "Informe uma meta entre 1 e 100."
+  }
+}

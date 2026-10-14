@@ -28,7 +28,8 @@ Mỗi task có: mục tiêu, file cần sửa, đặc tả, số liệu kiểm t
 | Trình sinh trang `tools/build_seo_pages.py` | ✅ Xong (chỉ hỗ trợ trang **tool** và **hub**) |
 | 4 công cụ: attendance calculator, bunk, bảng mức tối thiểu, recovery | ✅ en, vi, hi, id |
 | Tiếng Tây Ban Nha (es) | ✅ 4 công cụ + hub đã sinh và kiểm tra |
-| pt, tr, fr | ❌ Chưa làm |
+| Tiếng Bồ Đào Nha–Brazil (pt) | ✅ 4 công cụ + hub đã sinh và kiểm tra |
+| tr, fr | ❌ Chưa làm |
 | FAQ tĩnh trong faq.html | ✅ Xong |
 | Link Google Play có `utm_campaign` | ✅ Xong |
 | Link App Store có campaign | ❌ Chờ chủ app đưa provider token `pt` |
@@ -119,7 +120,7 @@ Widget hiện có (`assets/calculator.js` → `KINDS`): `standing`, `plan`, `wha
   | `es/recuperar-asistencia/` | recover: 22 trên 25, nghỉ được 3; standing: 10 buổi liên tiếp, đang 70 % |
 - **DoD:** 4 trang + `es/herramientas/` hoạt động, sitemap 29 URL, mọi trang en/vi/hi/id có hreflang `es`.
 
-### Task 3.2 — Tiếng Bồ Đào Nha – Brazil (pt)
+### Task 3.2 — Tiếng Bồ Đào Nha – Brazil (pt) ✅
 - **Thị trường:** Brazil. Thuật ngữ app: "frequência", "faltas", "aula", "matéria".
 - **Mức mặc định:** 75 % ("frequência mínima de 75%" phổ biến ở đại học Brazil). Nếu nêu căn cứ
   pháp lý (LDB – Lei 9.394/1996) phải trích đúng điều khoản và link tới planalto.gov.br;

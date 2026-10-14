@@ -15,3 +15,4 @@ later, add the numbers again under the entry.
 | 2026-10-15 | Four tools and tools hub in Hindi and Indonesian; hreflang now en/hi/id/vi | hi/…, id/… | new | | |
 | 2026-10-15 | Four Spanish tools and tools hub; hreflang now includes es | es/… and all translated tool pages | new | | |
 | 2026-10-15 | Added automated SEO validation and shortened metadata that exceeded limits | 11 tool pages across en/es/hi/id/vi | no data yet | | |
+| 2026-10-15 | Four Brazilian Portuguese tools and tools hub; hreflang now includes pt | pt/… and all translated tool pages | new | | |

@@ -1,0 +1,38 @@
+{
+  "id": "attendance-calculator",
+  "order": 1,
+  "slug": "pt/calculadora-de-frequencia/",
+  "title": "Calculadora de Frequência: Quantas Faltas Posso Ter? · Classly",
+  "description": "Informe as aulas dadas e frequentadas para calcular sua frequência, quantas faltas ainda pode ter ou quantas aulas precisa frequentar para chegar a 75%.",
+  "og_title": "Calculadora de frequência: quantas faltas posso ter?",
+  "h1": "Calculadora de frequência",
+  "card_title": "Calculadora de frequência",
+  "card_text": "Sua porcentagem e quantas aulas você pode faltar ou precisa frequentar.",
+  "intro": "<p><b>Sua frequência é o número de aulas frequentadas ÷ aulas dadas × 100.</b> Informe seus números para descobrir quantas faltas ainda pode ter ou quantas aulas seguidas precisa frequentar para voltar à meta.</p>",
+  "widgets": [
+    {"kind": "standing", "defaults": {"held": 40, "attended": 32, "target": 75}},
+    {"kind": "plan", "defaults": {"total": 45, "target": 75}}
+  ],
+  "related": ["bunk-calculator", "minimum-table", "recovery"],
+  "faq": [
+    {"q": "Qual porcentagem de frequência eu preciso ter?", "a": "Depende da sua instituição. A maioria das faculdades exige uma frequência mínima, muitas vezes de 75%, mas a regra pode variar. Consulte o regulamento do seu curso e informe esse número como meta."},
+    {"q": "Aulas canceladas entram no cálculo?", "a": "Normalmente não. Uma aula que não aconteceu não foi dada, então deixe-a fora dos dois números. No Classly, você pode marcar uma aula como cancelada para ela não contar."},
+    {"q": "Devo calcular a frequência por matéria ou no total?", "a": "Muitas instituições aplicam a frequência mínima a cada matéria. Uma média geral alta pode esconder uma matéria abaixo da meta, por isso calcule cada uma separadamente."},
+    {"q": "Por que a calculadora diz que não posso faltar mais?", "a": "Você está exatamente na meta ou pouco acima dela, e mais uma falta deixaria sua frequência abaixo do mínimo. Frequente a próxima aula para criar uma margem."}
+  ]
+}
+---
+<h2>Como a calculadora funciona</h2>
+<h3>Porcentagem de frequência</h3>
+<p class="formula">frequência % = aulas frequentadas ÷ aulas dadas × 100</p>
+<p>Frequentar 32 de 40 aulas dá 32 ÷ 40 × 100 = <b>80%</b>.</p>
+
+<h3>Quantas aulas posso faltar?</h3>
+<p>Cada aula em que você falta continua contando como aula dada, então sua porcentagem diminui. O máximo de faltas sem cair abaixo da meta é:</p>
+<p class="formula">faltas restantes = ⌊ frequentadas × 100 ÷ meta − dadas ⌋</p>
+<p>Com 32 de 40 aulas e meta de 75%: 32 × 100 ÷ 75 − 40 = 2,67; arredondando para baixo, são <b>2 aulas</b>. Depois das duas faltas, você teria 32 ÷ 42 = 76,19%; uma terceira deixaria sua frequência em 74,41%.</p>
+
+<h3>Quantas aulas preciso frequentar para chegar a 75%?</h3>
+<p>Quando você está abaixo da meta, cada presença aumenta sua porcentagem. O número de aulas seguidas necessário é:</p>
+<p class="formula">necessárias = ⌈ (meta × dadas − frequentadas) ÷ (1 − meta) ⌉</p>
+<p>Aqui a meta é escrita como fração (75% = 0,75). Com 28 de 40 aulas (70%): (0,75 × 40 − 28) ÷ 0,25 = <b>8 aulas</b>, chegando a 36 de 48 = 75%. Se o semestre terminar antes, use a <a href="/classly/pt/recuperar-frequencia/">calculadora para recuperar a frequência</a>.</p>
