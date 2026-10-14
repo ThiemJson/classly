@@ -1,0 +1,18 @@
+{
+  "id": "semester-planner", "order": 6, "slug": "tr/donem-devamsizlik-plani/",
+  "title": "Dönemlik Devam ve Devamsızlık Planlayıcı · Classly",
+  "description": "Eğitim haftası, haftalık ders ve tatillerle dönem devamını planlayın. Toplam dersi, gereken katılımı ve devamsızlık hakkını görün.",
+  "og_title": "Dönem Devamsızlık Planlayıcı", "h1": "Dönemlik devam planlayıcı", "card_title": "Dönem devam planlayıcı", "card_text": "Eğitim haftalarını ve tatilleri güvenli bir devam planına dönüştürün.",
+  "intro": "<p><b>Dönem toplamını tahmin etmek için eğitim haftalarını haftalık ders sayısıyla çarpın, tatil ve iptalleri çıkarın.</b> Planlayıcı en az kaç derse katılmanız ve en fazla kaç ders kaçırmanız gerektiğini gösterir.</p>",
+  "widgets": [{"kind": "semester", "defaults": {"weeks": 15, "per_week": 3, "cancelled": 3, "target": 75}}],
+  "related": ["attendance-calculator", "subject-wise", "bunk-calculator"],
+  "calc": {"semesterMiss": "Toplam {total} dersin en fazla {miss} tanesini kaçırabilir, en az {attend} tanesine katılmalısınız.", "semesterSummary": "{weeks} hafta × haftada {perWeek} ders − {cancelled} iptal = {total} ders.", "semesterWeeks": "Bu, haftada {perWeek} dersle yaklaşık {weeks} eğitim haftasıdır.", "semesterCancelled": "Tatil veya iptal sayısı planlanan toplam dersten az olmalıdır."},
+  "faq": [{"q": "Bir dönemde kaç ders vardır?", "a": "Eğitim haftalarını o dersin haftalık sayısıyla çarpın, bilinen tatil ve iptalleri çıkarın."}, {"q": "Sınav haftalarını saymalı mıyım?", "a": "Yalnızca o haftalarda yoklama alınan ders varsa sayın. Güncel akademik takvimi ve ders programını kontrol edin."}, {"q": "Bu resmi ders toplamı mı?", "a": "Hayır. Bu bir planlama tahminidir; kurumunuzun ders programı ve devam kaydı esastır."}]
+}
+---
+<h2>Dönem devam planı örneği</h2>
+<p>15 eğitim haftası boyunca haftada 3 kez yapılan bir ders için 45 ders planlanır. Tatil veya iptal nedeniyle 3 ders yapılmazsa tahmini toplam <b>42 ders</b> olur.</p>
+<p>%75 hedefinde en fazla floor(42 × %25) = <b>10 ders</b> kaçırabilir ve en az <b>32 derse</b> katılmalısınız. On ders, haftada üç dersle yaklaşık 3,33 haftadır; ancak telafi dersi eklenmesi ihtimaline karşı pay bırakın.</p>
+<h2>Daha güvenilir bir plan</h2>
+<ol><li>Dönem tarihleri arasındaki tüm haftaları değil, gerçek eğitim haftalarını kullanın.</li><li>Bir dersin haftalık sayısını girin; programları farklı olan dersleri ayrı hesaplayın.</li><li>Yalnızca kesinleşmiş tatil ve iptalleri çıkarın.</li><li>Kurumunuzun güncel hedefini kullanın ve toplamı resmi sistemden doğrulayın.</li><li>Tüm devamsızlık hakkını kullanmayı planlamak yerine güvenlik payı bırakın.</li></ol>
+<p>Bu araç tüm dönemi tahmin eder. Dersler başladıktan sonra mevcut durum için devam hesaplayıcısını kullanın.</p>

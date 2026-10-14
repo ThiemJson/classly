@@ -1,0 +1,18 @@
+{
+  "id": "semester-planner", "order": 6, "slug": "vi/ke-hoach-chuyen-can-hoc-ky/",
+  "title": "Lập Kế Hoạch Chuyên Cần Cả Học Kỳ · Classly",
+  "description": "Lập kế hoạch chuyên cần theo số tuần, số buổi mỗi tuần và ngày nghỉ. Xem tổng số buổi, mức phải đi học và số buổi được nghỉ.",
+  "og_title": "Công Cụ Lập Kế Hoạch Chuyên Cần Học Kỳ", "h1": "Lập kế hoạch chuyên cần cả học kỳ", "card_title": "Kế hoạch chuyên cần học kỳ", "card_text": "Đổi số tuần học và ngày nghỉ thành kế hoạch chuyên cần an toàn.",
+  "intro": "<p><b>Lấy số tuần học nhân số buổi mỗi tuần, rồi trừ ngày nghỉ lễ hoặc buổi bị hủy để ước tính tổng số buổi.</b> Công cụ cho biết phải đi học ít nhất và được nghỉ tối đa bao nhiêu.</p>",
+  "widgets": [{"kind": "semester", "defaults": {"weeks": 15, "per_week": 3, "cancelled": 3, "target": 75}}],
+  "related": ["attendance-calculator", "subject-wise", "bunk-calculator"],
+  "calc": {"semesterMiss": "Bạn được nghỉ tối đa {miss} trên {total} buổi và phải có mặt ít nhất {attend} buổi.", "semesterSummary": "{weeks} tuần × {perWeek} buổi − {cancelled} buổi nghỉ/hủy = {total} buổi.", "semesterWeeks": "Tương đương khoảng {weeks} tuần học với {perWeek} buổi mỗi tuần.", "semesterCancelled": "Số buổi nghỉ hoặc bị hủy phải ít hơn tổng số buổi dự kiến."},
+  "faq": [{"q": "Một học kỳ có bao nhiêu buổi học?", "a": "Lấy số tuần học nhân số buổi mỗi tuần của môn đó, rồi trừ các ngày nghỉ và buổi hủy đã biết."}, {"q": "Có tính tuần thi hoặc tuần tự học không?", "a": "Chỉ tính khi môn đó vẫn có buổi học được điểm danh. Hãy kiểm tra lịch năm học và thời khóa biểu hiện hành."}, {"q": "Đây có phải tổng số buổi chính thức không?", "a": "Không. Đây là con số ước tính để lập kế hoạch; thời khóa biểu và hệ thống điểm danh của trường mới là nguồn chính thức."}]
+}
+---
+<h2>Ví dụ tính chuyên cần cả học kỳ</h2>
+<p>Một môn học 3 buổi mỗi tuần trong 15 tuần có 45 buổi dự kiến. Nếu nghỉ lễ hoặc hủy 3 buổi, tổng ước tính còn <b>42 buổi</b>.</p>
+<p>Với mức 75%, bạn được nghỉ tối đa floor(42 × 25%) = <b>10 buổi</b> và phải có mặt ít nhất <b>32 buổi</b>. Mười buổi tương đương khoảng 3,33 tuần học nếu mỗi tuần có ba buổi, nhưng đừng dùng hết hạn mức vì trường có thể xếp buổi học bù.</p>
+<h2>Lập kế hoạch đáng tin cậy hơn</h2>
+<ol><li>Dùng số tuần học thực tế, không dùng toàn bộ khoảng thời gian từ ngày khai giảng đến kết thúc kỳ.</li><li>Nhập tần suất của một môn; tính riêng nếu các môn có lịch khác nhau.</li><li>Chỉ trừ ngày nghỉ và buổi hủy đã được xác nhận.</li><li>Dùng mức yêu cầu hiện hành và kiểm tra tổng chính thức trên hệ thống của trường.</li><li>Giữ một khoảng an toàn thay vì dự định nghỉ hết số buổi cho phép.</li></ol>
+<p>Công cụ này ước tính cả học kỳ. Khi học kỳ đã bắt đầu, hãy dùng công cụ tính chuyên cần hiện tại để biết vị trí thực tế.</p>

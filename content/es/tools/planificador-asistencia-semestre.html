@@ -1,0 +1,18 @@
+{
+  "id": "semester-planner", "order": 6, "slug": "es/planificador-asistencia-semestre/",
+  "title": "Planificador de Asistencia del Semestre · Classly",
+  "description": "Planifica tu asistencia con semanas lectivas, clases por semana y festivos. Consulta el total, la asistencia mínima y las faltas permitidas.",
+  "og_title": "Planificador de Asistencia Semestral", "h1": "Planificador de asistencia del semestre", "card_title": "Planificador del semestre", "card_text": "Convierte semanas lectivas y festivos en un plan de asistencia seguro.",
+  "intro": "<p><b>Multiplica las semanas lectivas por las clases semanales y resta festivos o cancelaciones para estimar el total.</b> El planificador muestra cuántas clases debes asistir y cuántas puedes faltar.</p>",
+  "widgets": [{"kind": "semester", "defaults": {"weeks": 15, "per_week": 3, "cancelled": 3, "target": 75}}],
+  "related": ["attendance-calculator", "subject-wise", "bunk-calculator"],
+  "calc": {"semesterMiss": "Puedes faltar como máximo a {miss} de {total} clases y asistir al menos a {attend}.", "semesterSummary": "{weeks} semanas × {perWeek} clases − {cancelled} canceladas = {total} clases.", "semesterWeeks": "Equivale a unas {weeks} semanas lectivas con {perWeek} clases semanales.", "semesterCancelled": "Los festivos o cancelaciones deben ser menos que las clases programadas."},
+  "faq": [{"q": "¿Cuántas clases hay en un semestre?", "a": "Multiplica las semanas lectivas por las clases semanales de esa asignatura y resta los festivos y cancelaciones conocidos."}, {"q": "¿Cuentan las semanas de exámenes?", "a": "Solo si la asignatura tiene clases con control de asistencia durante esas semanas. Revisa el calendario y el horario vigentes."}, {"q": "¿Es un total oficial?", "a": "No. Es una estimación para planificar; el horario y el registro de asistencia de tu institución son la referencia oficial."}]
+}
+---
+<h2>Ejemplo de asistencia semestral</h2>
+<p>Una asignatura con 3 clases semanales durante 15 semanas tiene 45 clases programadas. Si se pierden 3 por festivos o cancelaciones, el total estimado es de <b>42 clases</b>.</p>
+<p>Con un objetivo del 75%, puedes faltar como máximo floor(42 × 25%) = <b>10 clases</b> y debes asistir al menos a <b>32</b>. Diez clases equivalen a unas 3,33 semanas a tres clases por semana, pero conviene guardar margen por posibles recuperaciones.</p>
+<h2>Cómo crear un plan más fiable</h2>
+<ol><li>Usa semanas lectivas, no todo el intervalo entre las fechas del semestre.</li><li>Introduce la frecuencia semanal de una asignatura y calcula por separado los horarios distintos.</li><li>Resta solo los festivos y cancelaciones confirmados.</li><li>Usa el objetivo vigente de tu institución y verifica el total en su sistema.</li><li>Mantén un margen en vez de planear todas las faltas permitidas.</li></ol>
+<p>Este planificador estima el semestre completo. Cuando las clases ya hayan comenzado, usa la calculadora de asistencia actual.</p>

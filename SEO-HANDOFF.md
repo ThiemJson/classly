@@ -199,7 +199,7 @@ Khi thêm công cụ mới: thêm `id` của nó vào `related` của 1–2 tran
   - Tổng 69/84 = 82,14 % (đạt) nhưng Lý dưới mức → phải hiện cảnh báo.
 - **DoD:** thêm/xoá dòng hoạt động trên mobile, không cần JS bên ngoài.
 
-### Task 2.2 — Lập kế hoạch cả học kỳ
+### Task 2.2 ✅ — Lập kế hoạch cả học kỳ (hoàn tất 8 ngôn ngữ)
 - **Câu:** "semester attendance planner", "how many classes in a semester".
 - **Slug:** `semester-attendance-planner/`; vi `vi/ke-hoach-chuyen-can-hoc-ky/`.
 - **Widget `semester`:** số tuần, số buổi/tuần, số buổi nghỉ lễ/huỷ, mục tiêu.

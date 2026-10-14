@@ -1,0 +1,18 @@
+{
+  "id": "semester-planner", "order": 6, "slug": "fr/planificateur-assiduite-semestre/",
+  "title": "Planificateur d'Assiduité du Semestre · Classly",
+  "description": "Planifie ton assiduité avec les semaines de cours, la fréquence hebdomadaire et les jours fériés. Vois le minimum et les absences possibles.",
+  "og_title": "Planificateur d'Assiduité Semestrielle", "h1": "Planificateur d'assiduité du semestre", "card_title": "Planificateur du semestre", "card_text": "Transforme semaines de cours et jours fériés en plan d'assiduité.",
+  "intro": "<p><b>Multiplie les semaines de cours par les cours hebdomadaires, puis déduis les jours fériés ou annulations pour estimer le total.</b> Le planificateur indique le minimum à suivre et les absences possibles.</p>",
+  "widgets": [{"kind": "semester", "defaults": {"weeks": 15, "per_week": 3, "cancelled": 3, "target": 75}}],
+  "related": ["attendance-calculator", "subject-wise", "bunk-calculator"],
+  "calc": {"semesterMiss": "Tu peux manquer au maximum {miss} cours sur {total} et en suivre au moins {attend}.", "semesterSummary": "{weeks} semaines × {perWeek} cours − {cancelled} annulés = {total} cours.", "semesterWeeks": "Cela représente environ {weeks} semaines de cours à raison de {perWeek} cours par semaine.", "semesterCancelled": "Les jours fériés ou annulations doivent être moins nombreux que les cours prévus."},
+  "faq": [{"q": "Combien de cours y a-t-il dans un semestre ?", "a": "Multiplie les semaines de cours par la fréquence hebdomadaire de la matière, puis déduis les jours fériés et annulations connus."}, {"q": "Faut-il compter les semaines d'examens ?", "a": "Seulement si la matière prévoit des cours soumis à l'assiduité pendant ces semaines. Vérifie le calendrier et l'emploi du temps actuels."}, {"q": "Ce total est-il officiel ?", "a": "Non. C'est une estimation ; l'emploi du temps et le relevé d'assiduité de ton établissement restent la référence."}]
+}
+---
+<h2>Exemple d'assiduité sur un semestre</h2>
+<p>Une matière enseignée 3 fois par semaine pendant 15 semaines compte 45 cours prévus. Si 3 sont perdus à cause de jours fériés ou d'annulations, le total estimé est de <b>42 cours</b>.</p>
+<p>Avec un objectif de 75 %, tu peux manquer au maximum floor(42 × 25 %) = <b>10 cours</b> et dois en suivre au moins <b>32</b>. Dix cours représentent environ 3,33 semaines à trois cours par semaine, mais garde une marge en cas de rattrapage.</p>
+<h2>Construire un plan plus fiable</h2>
+<ol><li>Utilise les semaines de cours, pas toute la période entre le début et la fin du semestre.</li><li>Entre la fréquence d'une matière et calcule séparément les emplois du temps différents.</li><li>Déduis uniquement les jours fériés et annulations confirmés.</li><li>Utilise l'objectif actuel de ton établissement et vérifie le total dans son système.</li><li>Garde une marge au lieu de prévoir toutes les absences permises.</li></ol>
+<p>Ce planificateur estime le semestre complet. Une fois les cours commencés, utilise le calculateur d'assiduité actuelle.</p>

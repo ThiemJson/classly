@@ -80,6 +80,7 @@ WIDGET_FIELDS = {
     'plan': ['total', 'target'],
     'whatif': ['held', 'attended', 'skip', 'target'],
     'recover': ['held', 'attended', 'remaining', 'target'],
+    'semester': ['weeks', 'per_week', 'cancelled', 'target'],
 }
 
 

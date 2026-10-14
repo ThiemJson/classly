@@ -1,0 +1,18 @@
+{
+  "id": "semester-planner", "order": 6, "slug": "pt/planejador-frequencia-semestre/",
+  "title": "Planejador de Frequência do Semestre · Classly",
+  "description": "Planeje a frequência com semanas letivas, aulas semanais e feriados. Veja o total, a presença mínima e as faltas permitidas.",
+  "og_title": "Planejador de Frequência Semestral", "h1": "Planejador de frequência do semestre", "card_title": "Planejador do semestre", "card_text": "Transforme semanas letivas e feriados em um plano de frequência seguro.",
+  "intro": "<p><b>Multiplique as semanas letivas pelas aulas semanais e desconte feriados ou cancelamentos para estimar o total.</b> O planejador mostra a presença mínima e o máximo de faltas.</p>",
+  "widgets": [{"kind": "semester", "defaults": {"weeks": 15, "per_week": 3, "cancelled": 3, "target": 75}}],
+  "related": ["attendance-calculator", "subject-wise", "bunk-calculator"],
+  "calc": {"semesterMiss": "Você pode faltar no máximo {miss} de {total} aulas e deve assistir a pelo menos {attend}.", "semesterSummary": "{weeks} semanas × {perWeek} aulas − {cancelled} canceladas = {total} aulas.", "semesterWeeks": "Isso equivale a cerca de {weeks} semanas letivas com {perWeek} aulas por semana.", "semesterCancelled": "Feriados ou cancelamentos devem ser menos que as aulas programadas."},
+  "faq": [{"q": "Quantas aulas há em um semestre?", "a": "Multiplique as semanas letivas pelas aulas semanais da disciplina e desconte feriados e cancelamentos conhecidos."}, {"q": "Devo contar semanas de provas?", "a": "Somente se houver aulas com controle de presença nessas semanas. Confira o calendário e o horário atuais."}, {"q": "Esse total é oficial?", "a": "Não. É uma estimativa de planejamento; o horário e o registro de frequência da instituição são a referência oficial."}]
+}
+---
+<h2>Exemplo de frequência no semestre</h2>
+<p>Uma disciplina com 3 aulas por semana durante 15 semanas tem 45 aulas previstas. Se 3 forem perdidas por feriados ou cancelamentos, o total estimado é de <b>42 aulas</b>.</p>
+<p>Com meta de 75%, você pode faltar no máximo floor(42 × 25%) = <b>10 aulas</b> e precisa assistir a pelo menos <b>32</b>. Dez aulas equivalem a cerca de 3,33 semanas com três aulas semanais, mas mantenha uma margem para possíveis reposições.</p>
+<h2>Como criar um plano mais confiável</h2>
+<ol><li>Use semanas letivas, não todo o intervalo entre o início e o fim do semestre.</li><li>Informe a frequência semanal de uma disciplina e calcule separadamente horários diferentes.</li><li>Desconte apenas feriados e cancelamentos confirmados.</li><li>Use a meta atual da instituição e confirme o total no sistema oficial.</li><li>Mantenha uma margem em vez de planejar usar todas as faltas permitidas.</li></ol>
+<p>O planejador estima o semestre completo. Depois que as aulas começarem, use a calculadora de frequência atual.</p>

@@ -32,14 +32,18 @@
     "remaining": "Classes left",
     "subject": "Subject",
     "add_subject": "Add subject",
-    "remove_subject": "Remove subject"
+    "remove_subject": "Remove subject",
+    "weeks": "Teaching weeks",
+    "per_week": "Classes per week",
+    "cancelled": "Holidays or cancellations"
   },
   "widgets": {
     "standing": {"title": "Where do I stand?", "hint": "Count every class held so far, including the ones you missed."},
     "plan": {"title": "Planning a whole semester?", "hint": "If you know how many classes a subject will have in total."},
     "whatif": {"title": "What if I miss more classes?", "hint": "See your percentage after missing the next few classes."},
     "recover": {"title": "Can I still make it by the end of term?", "hint": "Add how many classes of this subject are left this semester."},
-    "subjects": {"title": "Calculate every subject", "hint": "Add each subject with its classes held and attended. The overall result never hides a subject below target."}
+    "subjects": {"title": "Calculate every subject", "hint": "Add each subject with its classes held and attended. The overall result never hides a subject below target."},
+    "semester": {"title": "Plan the whole semester", "hint": "Subtract holidays and cancelled classes from the scheduled teaching weeks."}
   },
   "table": {"held": "Classes held", "min": "Attend at least", "missed": "Can have missed"},
   "calc": {
@@ -72,6 +76,10 @@
     "subjectMustAttend": "{name}: {pct}% — must attend {n} in a row.",
     "subjectAtEdge": "{name}: {pct}% — do not miss the next class.",
     "subjectUnreachable": "{name}: {pct}% — the target is not reachable.",
-    "subjectFallback": "Subject {n}"
+    "subjectFallback": "Subject {n}",
+    "semesterMiss": "You can miss up to {miss} of {total} classes and attend at least {attend}.",
+    "semesterSummary": "{weeks} weeks × {perWeek} classes − {cancelled} cancelled = {total} classes.",
+    "semesterWeeks": "That is about {weeks} teaching weeks at {perWeek} classes per week.",
+    "semesterCancelled": "Holidays or cancellations must be fewer than the scheduled classes."
   }
 }

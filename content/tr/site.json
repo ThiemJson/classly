@@ -8,13 +8,14 @@
   "nav": {"label": "Ana menü", "features": "Özellikler", "tools": "Araçlar", "download": "İndir", "footer_label": "Alt menü", "footer": [["Ana sayfa", "/classly/"], ["Tüm araçlar", "/classly/tr/araclar/"], ["SSS", "/classly/faq.html"], ["Gizlilik", "/classly/privacy.html"], ["Koşullar", "/classly/terms.html"]]},
   "download": {"title": "Hesabı Classly tutsun", "text": "Her dersi tek dokunuşla işaretle, dönem boyunca her ders için devam durumunu gör. Ücretsiz, çevrimdışı ve hesapsız."},
   "hub": {"slug": "tr/araclar/", "title": "Ücretsiz Devamsızlık Hesaplama Araçları · Classly", "description": "Devamsızlık hesaplama araçları: devam yüzdeniz, kaç saat devamsızlık hakkınız olduğu, %70 tablosu ve telafi hesabı.", "h1": "Ücretsiz devamsızlık hesaplama araçları", "intro": "Öğrencilerin devam durumu hakkında en çok sorduğu sorulara hızlı yanıtlar. Kayıt gerekmez; hesaplamalar tarayıcınızda yapılır."},
-  "fields": {"held": "İşlenen ders saati", "attended": "Katıldığınız ders saati", "target": "Hedef %", "total": "Dönemdeki toplam ders", "skip": "Kaçırılacak ders", "remaining": "Kalan ders", "subject": "Ders", "add_subject": "Ders ekle", "remove_subject": "Dersi kaldır"},
+  "fields": {"held": "İşlenen ders saati", "attended": "Katıldığınız ders saati", "target": "Hedef %", "total": "Dönemdeki toplam ders", "skip": "Kaçırılacak ders", "remaining": "Kalan ders", "subject": "Ders", "add_subject": "Ders ekle", "remove_subject": "Dersi kaldır", "weeks": "Eğitim haftası", "per_week": "Haftalık ders", "cancelled": "Tatil veya iptal edilen ders"},
   "widgets": {
     "standing": {"title": "Devam durumum nasıl?", "hint": "Kaçırdıklarınız dahil şimdiye kadar işlenen tüm dersleri sayın. İsterseniz ders saati kullanabilirsiniz."},
     "plan": {"title": "Tüm dönemi mi planlıyorsunuz?", "hint": "Dersin dönem boyunca toplam kaç kez veya kaç saat işleneceğini biliyorsanız kullanın."},
     "whatif": {"title": "Birkaç ders daha kaçırırsam ne olur?", "hint": "Sonraki derslere katılmazsanız devam yüzdenizin nasıl değişeceğini görün."},
     "recover": {"title": "Dönem sonunda hedefe ulaşabilir miyim?", "hint": "Bu ders için dönemde kaç ders veya ders saati kaldığını ekleyin."},
-    "subjects": {"title": "Ders bazında devam durumu", "hint": "Her dersi ekleyerek genel devam oranınızla karşılaştırın."}
+    "subjects": {"title": "Ders bazında devam durumu", "hint": "Her dersi ekleyerek genel devam oranınızla karşılaştırın."},
+    "semester": {"title": "Tüm dönemi planlayın", "hint": "Tatil ve iptal edilen dersleri planlanan derslerden çıkarın."}
   },
   "table": {"held": "İşlenen ders", "min": "En az katılmanız gereken", "missed": "Devamsızlık hakkı"},
   "calc": {

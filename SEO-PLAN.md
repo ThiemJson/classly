@@ -26,7 +26,7 @@ Rules for every page:
 ## Phase 2 — Tools (weeks 1–3)
 - [x] Attendance calculator · bunk calculator · 75% (vi: 80%) table · recovery
 - [x] Subject-wise and overall attendance calculator across all 8 languages
-- [ ] Semester planner by weeks × classes per week − holidays
+- [x] Semester planner by weeks × classes per week − holidays across all 8 languages
 - [ ] Periods/hours (tiết) calculator for schools that count periods
 - [ ] Exam countdown; credit hours → study hours per week
 - [ ] Trial: CGPA → percentage, GPA calculator (only after phase 2 tools get impressions)

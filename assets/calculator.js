@@ -84,6 +84,18 @@
       if (need === 0) return [fill(text('recoverSafe'), { rem: v.remaining, target: fmt(v.target) }), '', 'good'];
       return [fill(text('recover', need), { n: need, rem: v.remaining }),
         fill(text('recoverDetail'), { m: v.remaining - need, target: fmt(v.target) }), 'good'];
+    },
+
+    semester: function (v) {
+      if (v.weeks < 1 || v.per_week < 1) return text('wholeNumbers');
+      var scheduled = v.weeks * v.per_week;
+      if (v.cancelled >= scheduled) return text('semesterCancelled');
+      var total = scheduled - v.cancelled;
+      var miss = Math.max(0, Math.floor(total * (1 - v.target / 100) + EPS));
+      var attend = total - miss;
+      return [fill(text('semesterMiss'), {miss: miss, attend: attend, total: total}),
+        fill(text('semesterSummary'), {weeks: v.weeks, perWeek: v.per_week, cancelled: v.cancelled, total: total}) + ' ' +
+        fill(text('semesterWeeks'), {weeks: fmt(miss / v.per_week), perWeek: v.per_week}), 'good'];
     }
   };
 

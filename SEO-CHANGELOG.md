@@ -29,3 +29,4 @@ later, add the numbers again under the entry.
 | 2026-10-15 | Completed the first 10 English articles with subject-wise, responsible absence planning, timetable and phone tracking guides | blog/subject-wise-vs-overall-attendance/ and 3 related articles | new | | |
 | 2026-10-15 | Added multi-row subject-wise and overall attendance calculator in English | subject-wise-attendance-calculator/ | new | | |
 | 2026-10-15 | Translated the subject-wise and overall attendance calculator into all seven localized markets | vi/tinh-chuyen-can-tung-mon/, es/calculadora-asistencia-por-materia/, pt/frequencia-por-materia/, fr/assiduite-par-matiere/, tr/ders-bazli-devamsizlik-hesaplama/, id/kalkulator-kehadiran-per-mata-kuliah/, hi/subject-wise-attendance-calculator/ | new | | |
+| 2026-10-15 | Added the semester attendance planner with teaching weeks, weekly frequency and cancellations in all eight languages | semester-attendance-planner/ and seven translations | new | | |

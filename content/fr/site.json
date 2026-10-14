@@ -8,13 +8,14 @@
   "nav": {"label": "Principal", "features": "Fonctions", "tools": "Outils", "download": "Télécharger", "footer_label": "Pied de page", "footer": [["Accueil", "/classly/"], ["Tous les outils", "/classly/fr/outils/"], ["FAQ", "/classly/faq.html"], ["Confidentialité", "/classly/privacy.html"], ["Conditions", "/classly/terms.html"]]},
   "download": {"title": "Laisse Classly compter pour toi", "text": "Note chaque cours en un geste et suis ces chiffres pour chaque matière pendant tout le semestre. Gratuit, hors ligne et sans compte."},
   "hub": {"slug": "fr/outils/", "title": "Calculateurs d'Assiduité Gratuits · Classly", "description": "Calcule ton taux de présence, le nombre d'absences possibles, le seuil de 75 % et les cours nécessaires pour rattraper ton assiduité.", "h1": "Outils gratuits pour calculer ton assiduité", "intro": "Des réponses rapides aux questions fréquentes sur la présence en cours. Sans inscription ni données enregistrées : tout est calculé dans ton navigateur."},
-  "fields": {"held": "Cours effectués", "attended": "Cours suivis", "target": "Objectif %", "total": "Cours du semestre", "skip": "Prochaines absences", "remaining": "Cours restants", "subject": "Matière", "add_subject": "Ajouter une matière", "remove_subject": "Supprimer la matière"},
+  "fields": {"held": "Cours effectués", "attended": "Cours suivis", "target": "Objectif %", "total": "Cours du semestre", "skip": "Prochaines absences", "remaining": "Cours restants", "subject": "Matière", "add_subject": "Ajouter une matière", "remove_subject": "Supprimer la matière", "weeks": "Semaines de cours", "per_week": "Cours par semaine", "cancelled": "Jours fériés ou annulations"},
   "widgets": {
     "standing": {"title": "Où en est mon assiduité ?", "hint": "Compte tous les cours effectués jusqu'ici, y compris ceux où tu étais absent."},
     "plan": {"title": "Tu planifies tout le semestre ?", "hint": "Utilise ce calcul si tu connais le nombre total de cours de la matière."},
     "whatif": {"title": "Et si je manque d'autres cours ?", "hint": "Vois ton pourcentage après tes prochaines absences."},
     "recover": {"title": "Puis-je encore atteindre mon objectif ?", "hint": "Indique combien de cours de cette matière restent ce semestre."},
-    "subjects": {"title": "Assiduité par matière", "hint": "Ajoute chaque matière pour la comparer à ton assiduité globale."}
+    "subjects": {"title": "Assiduité par matière", "hint": "Ajoute chaque matière pour la comparer à ton assiduité globale."},
+    "semester": {"title": "Planifie tout le semestre", "hint": "Déduis les jours fériés et les cours annulés du calendrier prévu."}
   },
   "table": {"held": "Cours effectués", "min": "Présence minimale", "missed": "Absences possibles"},
   "calc": {
