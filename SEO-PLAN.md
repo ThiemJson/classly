@@ -44,7 +44,7 @@ Terms come from `lib/l10n/app_<lang>.arb` in the app repo; slugs use the local s
 
 ## Phase 4 — Answer-first articles (weeks 3–8, ~10 a week)
 - [x] Generator support for articles, localized blog hubs and structured data
-- [ ] First 10 English articles (6/10 complete)
+- [x] First 10 English articles
 Topics: attendance rules (sourced), calculating and recovering attendance,
 timetables and study planning, how-to for the app (from the FAQ). After the first
 10, pick topics from Search Console → Performance → Queries. Translate an article

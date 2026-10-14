@@ -26,3 +26,4 @@ later, add the numbers again under the entry.
 | 2026-10-15 | reviewed by native speaker: no | fr/… | pending review | | |
 | 2026-10-15 | Added article generator, localized blog hubs and first answer-first article | blog/, */blog/, blog/how-to-calculate-attendance-percentage/ | new | | |
 | 2026-10-15 | First six English answer-first articles, including source-backed 75% rule and condonation guides | blog/how-to-…/, blog/75-percent-attendance-rule/, blog/attendance-condonation/ and related | new | | |
+| 2026-10-15 | Completed the first 10 English articles with subject-wise, responsible absence planning, timetable and phone tracking guides | blog/subject-wise-vs-overall-attendance/ and 3 related articles | new | | |

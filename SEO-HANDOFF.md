@@ -261,7 +261,7 @@ Khi thêm công cụ mới: thêm `id` của nó vào `related` của 1–2 tran
 - **CSS:** `.answer-box` (nền `--sage-soft`, bo góc, chữ đậm), `.sources`.
 - **DoD:** 1 bài mẫu sinh ra đúng, qua checklist 2.4, Rich Results Test của Google không báo lỗi.
 
-### Task 4.2 — 10 bài tiếng Anh đầu tiên (6/10)
+### Task 4.2 — 10 bài tiếng Anh đầu tiên ✅
 Mỗi bài 600–1200 từ, câu đầu là đáp án, có ít nhất 1 ví dụ tính, link tới ≥ 1 công cụ.
 
 | # | Slug (`blog/…/`) | Câu hỏi mục tiêu | Ghi chú |
