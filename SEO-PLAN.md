@@ -30,7 +30,7 @@ Rules for every page:
 Check search volume (Keyword Planner / Ahrefs free tools) before building each one.
 
 ## Phase 3 — Languages (weeks 2–4)
-en, vi done. Next: hi, id, es, pt, tr, fr. Terms come from lib/l10n/app_<lang>.arb
+en, vi, hi, id done. Next: es, pt, tr, fr. Terms come from lib/l10n/app_<lang>.arb
 in the app repo; slugs use the local search phrase. Native review for en, vi, hi.
 
 ## Phase 4 — Answer-first articles (weeks 3–8, ~10 a week)

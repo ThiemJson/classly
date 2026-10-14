@@ -1,0 +1,36 @@
+{
+  "id": "recovery",
+  "order": 4,
+  "slug": "id/kalkulator-mengejar-kehadiran/",
+  "title": "Berapa Pertemuan Harus Hadir agar Kehadiran 75%? · Classly",
+  "description": "Kehadiran di bawah 75%? Hitung berapa pertemuan berturut-turut yang harus dihadiri untuk kembali, dan apakah 75% masih bisa dicapai dengan sisa pertemuan semester ini.",
+  "og_title": "Berapa pertemuan harus hadir agar kehadiran 75%?",
+  "h1": "Kalkulator mengejar kehadiran",
+  "card_title": "Kalkulator mengejar kehadiran",
+  "card_text": "Di bawah target? Berapa pertemuan harus dihadiri, dan apakah masih mungkin.",
+  "intro": "<p><b>Untuk kembali ke 75%, hadiri (0,75 × berlangsung − dihadiri) ÷ 0,25 pertemuan berturut-turut, dibulatkan ke atas.</b> Jika semester keburu berakhir, yang penting adalah berapa dari sisa pertemuan yang kamu hadiri. Kalkulator di bawah menjawab keduanya.</p>",
+  "widgets": [
+    {"kind": "recover", "defaults": {"held": 30, "attended": 20, "remaining": 30, "target": 75}},
+    {"kind": "standing", "title": "Berapa pertemuan berturut-turut sekarang?", "defaults": {"held": 30, "attended": 20, "target": 75}}
+  ],
+  "related": ["attendance-calculator", "bunk-calculator", "minimum-table"],
+  "faq": [
+    {"q": "Berapa pertemuan harus hadir agar kehadiran 75%?", "a": "Hadiri (0,75 × berlangsung − dihadiri) ÷ 0,25 pertemuan berturut-turut, dibulatkan ke atas. Hadir 20 dari 30 berarti 10 pertemuan, sehingga menjadi 30 dari 40."},
+    {"q": "Apakah 75% masih bisa dicapai sampai akhir semester?", "a": "Hanya jika (dihadiri + sisa pertemuan) ÷ (berlangsung + sisa pertemuan) minimal 75%. Jika menghadiri semua sisa pertemuan pun belum cukup, tanyakan soal izin sakit atau kelas pengganti."},
+    {"q": "Kenapa mengejar kehadiran butuh banyak pertemuan?", "a": "Setiap pertemuan yang dihadiri juga menambah jumlah pertemuan berlangsung. Di dekat 75%, setiap pertemuan hanya menaikkan persentase sedikit, jadi naik jauh lebih lambat daripada turun."}
+  ]
+}
+---
+<h2>Dua cara melihatnya</h2>
+<h3>Kembali ke target secepatnya</h3>
+<p class="formula">hadir berturut-turut = ⌈ (target × berlangsung − dihadiri) ÷ (1 − target) ⌉</p>
+<p>Hadir 20 dari 30 (66,66%) dengan target 75%: (0,75 × 30 − 20) ÷ 0,25 = <b>10 pertemuan</b>, sehingga kamu menjadi 30 dari 40 = 75%.</p>
+
+<h3>Memenuhi target di akhir semester</h3>
+<p>Sering kali kamu hanya perlu di atas batas saat kehadiran direkap, biasanya menjelang ujian akhir. Maka hitung sisa pertemuan:</p>
+<p class="formula">hadir minimal = ⌈ target × (berlangsung + sisa) − dihadiri ⌉</p>
+<p>Hadir 20 dari 30 dan tersisa 30 pertemuan: 0,75 × 60 − 20 = <b>25 dari 30</b>, jadi kamu masih boleh absen 5 kali.</p>
+
+<h3>Kalau sudah terlambat</h3>
+<p>Hadir 20 dari 40 dan tersisa 20 pertemuan: hadir semua pun hanya menjadi 40 dari 60 = 66,66%. Dalam kasus ini segera bicara dengan dosen atau bagian akademik: surat sakit atau kelas pengganti biasanya hanya bisa diurus sebelum tenggat.</p>
+<p>Supaya tidak sampai di sini, pantau dengan <a href="/classly/id/berapa-kali-boleh-bolos/">kalkulator bolos</a>, atau biarkan aplikasi Classly mengingatkanmu sebelum satu mata kuliah turun di bawah target.</p>

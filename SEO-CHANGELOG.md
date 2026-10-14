@@ -12,3 +12,4 @@ later, add the numbers again under the entry.
 | 2026-10-15 | Page generator; bunk, 75% (vi: 80%) and recovery calculators (en, vi); tools hubs | bunk-calculator/, 75-percent-attendance-calculator/, attendance-recovery-calculator/, tools/, vi/… | new | | |
 | 2026-10-15 | FAQ answers written into faq.html (no JavaScript needed) with FAQPage JSON-LD | faq.html | | | |
 | 2026-10-15 | Google Play links carry utm_campaign per page (Play Console → Acquisition) | all tool pages, home | | | |
+| 2026-10-15 | Four tools and tools hub in Hindi and Indonesian; hreflang now en/hi/id/vi | hi/…, id/… | new | | |

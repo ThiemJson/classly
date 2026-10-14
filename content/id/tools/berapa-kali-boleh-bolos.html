@@ -1,0 +1,38 @@
+{
+  "id": "bunk-calculator",
+  "order": 2,
+  "slug": "id/berapa-kali-boleh-bolos/",
+  "title": "Berapa Kali Boleh Bolos Kuliah? Kalkulator Absen 75% · Classly",
+  "description": "Hitung berapa kali kamu masih boleh bolos kuliah dan tetap memenuhi kehadiran 75%, serta persentasemu jika melewatkan beberapa pertemuan berikutnya. Gratis.",
+  "og_title": "Berapa Kali Boleh Bolos Kuliah?",
+  "h1": "Berapa kali boleh bolos?",
+  "card_title": "Berapa kali boleh bolos?",
+  "card_text": "Sisa jatah absen, dan persentasemu setelah bolos.",
+  "intro": "<p><b>Kamu boleh bolos sampai dihadiri ÷ berlangsung menyentuh batas minimal.</b> Untuk aturan 75%, itu satu kali untuk setiap tiga pertemuan yang kamu hadiri. Masukkan angkamu untuk melihat batas pastinya dan efek bolos beberapa pertemuan berikutnya.</p>",
+  "widgets": [
+    {"kind": "whatif", "defaults": {"held": 40, "attended": 34, "skip": 3, "target": 75}},
+    {"kind": "standing", "title": "Total berapa kali boleh bolos?", "defaults": {"held": 40, "attended": 34, "target": 75}}
+  ],
+  "related": ["attendance-calculator", "minimum-table", "recovery"],
+  "faq": [
+    {"q": "Kehadiran 75% boleh bolos berapa kali?", "a": "Paling banyak satu kali untuk setiap tiga pertemuan yang dihadiri. Tepatnya: jatah bolos = dihadiri × 100 ÷ 75 − berlangsung, dibulatkan ke bawah. Hadir 34 dari 40 berarti masih 5 kali lagi."},
+    {"q": "Kuliah 16 pertemuan boleh absen berapa kali?", "a": "Dengan aturan 75%, kamu harus hadir minimal 12 dari 16 pertemuan, jadi boleh absen paling banyak 4 kali. Dengan aturan 80%, minimal 13, jadi paling banyak 3 kali."},
+    {"q": "Lebih baik bolos di awal atau akhir semester?", "a": "Kalau memang harus, lebih baik belakangan. Di awal semester setiap pertemuan porsinya besar, jadi satu kali absen menurunkan persentase cukup banyak, dan kamu belum tahu berapa pertemuan yang akan dibatalkan."},
+    {"q": "Apakah izin sakit dihitung sebagai absen?", "a": "Tergantung kampus. Ada yang tidak menghitung absen dengan surat keterangan sakit, ada yang tetap menghitungnya. Tanyakan ke dosen atau bagian akademik."}
+  ]
+}
+---
+<h2>Bagaimana bolos mengubah kehadiranmu</h2>
+<p>Pertemuan yang dibolos tetap dihitung sebagai berlangsung, jadi persentasemu turun setiap kali. Batas untuk sebuah target:</p>
+<p class="formula">sisa jatah bolos = ⌊ dihadiri × 100 ÷ target − berlangsung ⌋</p>
+<p>Hadir 34 dari 40 (85%) dengan aturan 75%: 34 × 100 ÷ 75 − 40 = 5,33, jadi kamu boleh bolos <b>5 pertemuan</b>. Setelah itu kamu di 34 ÷ 45 = 75,55%. Bolos keenam membuatmu turun ke 34 ÷ 46 = 73,91%.</p>
+
+<h2>Rumus cepat</h2>
+<p>Untuk minimal 75%, setidaknya tiga dari setiap empat pertemuan harus dihadiri. Jadi total absen paling banyak sepertiga dari jumlah pertemuan yang dihadiri: hadir 12 kali berarti boleh absen 4, hadir 30 kali berarti boleh absen 10. Tabel di halaman <a href="/classly/id/kehadiran-75-persen/">kehadiran 75%</a> sudah menghitungnya untuk jumlah pertemuan yang umum.</p>
+
+<h2>Sebelum bolos</h2>
+<ul>
+  <li>Hitung per mata kuliah. Persentase keseluruhan yang aman bisa menyembunyikan satu mata kuliah yang hampir di bawah batas.</li>
+  <li>Sisakan satu atau dua jatah untuk hari sakit. Izin sakit tidak selalu diterima.</li>
+  <li>Cek apakah kampusmu membulatkan 74,5% menjadi 75%. Banyak yang tidak.</li>
+</ul>
