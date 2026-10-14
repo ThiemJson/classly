@@ -1,0 +1,12 @@
+{
+  "id": "hours-calculator", "order": 7, "slug": "fr/calculateur-assiduite-heures/",
+  "title": "Calculateur d'Assiduité par Heures ou Périodes · Classly", "description": "Calcule l'assiduité en heures ou périodes : plafond d'absence, temps restant et équivalent en séances complètes.",
+  "og_title": "Calculateur d'Assiduité par Heures", "h1": "Calculateur d'assiduité par heures", "card_title": "Assiduité par heures", "card_text": "Convertis le plafond d'heures ou périodes en séances complètes.",
+  "intro": "<p><b>Calcule les absences dans l'unité enregistrée par ton établissement : heures ou périodes.</b> Entre le total, la durée de chaque séance et le temps déjà manqué.</p>",
+  "widgets": [{"kind": "hours", "defaults": {"hours_total": 45, "hours_per_class": 3, "hours_missed": 3, "target": 80}}], "related": ["attendance-calculator", "semester-planner", "bunk-calculator"],
+  "calc": {"hoursRemaining": "Tu peux encore manquer {remaining} heures ou périodes, soit {meetings} séances complètes.", "hoursDetail": "Le plafond est de {allowed} sur {total} ; tu as déjà manqué {missed}, avec {perClass} par séance.", "hoursOver": "Tu dépasses de {over} heures ou périodes le plafond de {allowed}.", "hoursOverDetail": "Tu as manqué {missed} ; l'objectif de {target} % n'est plus atteint.", "hoursMissedTooMany": "Le temps manqué ne peut pas dépasser le total du cours."},
+  "faq": [{"q": "Comment calculer l'assiduité par heures ?", "a": "Multiplie le total par le pourcentage d'absence permis, arrondis à l'entier inférieur puis retire le temps déjà manqué."}, {"q": "Pourquoi arrondir à l'entier inférieur ?", "a": "Une fraction de période ne permet généralement pas une absence entière sans passer sous l'objectif."}, {"q": "Puis-je mélanger heures et périodes ?", "a": "Non. Utilise une unité cohérente dans les trois champs selon le registre de ton établissement."}]
+}
+---
+<h2>Exemple avec 45 périodes</h2><p>Pour 45 périodes et un objectif de 80 %, le plafond est floor(45 × 20 %) = <b>9 périodes</b>. Après 3 périodes manquées, il en reste <b>6</b>.</p><p>À 3 périodes par séance, cela représente <b>2 séances complètes</b>. Modifie la durée si les séances diffèrent.</p>
+<h2>Utilise la bonne unité</h2><ol><li>Vérifie si le registre compte les séances, périodes ou heures.</li><li>Entre le total dans cette unité.</li><li>Garde la même unité partout.</li><li>Confirme l'objectif actuel du cours.</li></ol><p>Le relevé officiel de ton établissement détermine l'unité valable.</p>

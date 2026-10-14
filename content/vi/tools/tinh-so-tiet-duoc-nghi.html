@@ -1,0 +1,17 @@
+{
+  "id": "hours-calculator", "order": 7, "slug": "vi/tinh-so-tiet-duoc-nghi/",
+  "title": "Tính Số Tiết hoặc Giờ Được Nghỉ · Classly", "description": "Tính chuyên cần theo tiết hoặc giờ: xem tổng số tiết được vắng, số còn lại và quy đổi thành số buổi học trọn vẹn.",
+  "og_title": "Công Cụ Tính Số Tiết Được Nghỉ", "h1": "Tính số tiết được nghỉ", "card_title": "Tính số tiết được nghỉ", "card_text": "Quy đổi hạn mức vắng theo tiết hoặc giờ thành số buổi học trọn vẹn.",
+  "intro": "<p><b>Hãy tính số tiết được nghỉ bằng đúng đơn vị trường dùng để điểm danh: tiết hoặc giờ.</b> Nhập tổng học phần, số tiết mỗi buổi và số tiết đã vắng.</p>",
+  "widgets": [{"kind": "hours", "defaults": {"hours_total": 45, "hours_per_class": 3, "hours_missed": 3, "target": 80}}],
+  "related": ["attendance-calculator", "semester-planner", "bunk-calculator"],
+  "calc": {"hoursRemaining": "Bạn còn được nghỉ {remaining} tiết hoặc giờ, tương đương {meetings} buổi học trọn vẹn.", "hoursDetail": "Hạn mức là {allowed}/{total}; bạn đã vắng {missed}, mỗi buổi có {perClass} tiết.", "hoursOver": "Bạn đã vượt {over} tiết hoặc giờ so với hạn mức {allowed}.", "hoursOverDetail": "Bạn đã vắng {missed}; không còn đạt mức {target}%.", "hoursMissedTooMany": "Số tiết đã vắng không thể lớn hơn tổng học phần."},
+  "faq": [{"q": "Cách tính số tiết được nghỉ?", "a": "Lấy tổng số tiết nhân tỷ lệ được phép vắng, làm tròn xuống số nguyên rồi trừ số tiết đã vắng."}, {"q": "Vì sao phải làm tròn xuống?", "a": "Một phần của tiết thường không thể tính thành cả tiết nghỉ mà vẫn giữ đúng mức yêu cầu."}, {"q": "Có thể trộn giờ và tiết không?", "a": "Không. Hãy dùng một đơn vị thống nhất cho cả ba ô theo cách trường ghi nhận chuyên cần."}]
+}
+---
+<h2>Ví dụ học phần 45 tiết</h2>
+<p>Học phần 45 tiết với yêu cầu 80% cho phép vắng floor(45 × 20%) = <b>9 tiết</b>. Nếu đã vắng 3 tiết, bạn còn <b>6 tiết</b>.</p>
+<p>Khi mỗi buổi có 3 tiết, 6 tiết còn lại tương đương <b>2 buổi trọn vẹn</b>. Nếu các buổi dài ngắn khác nhau, hãy cập nhật số tiết mỗi buổi thay vì coi tất cả như nhau.</p>
+<h2>Dùng đúng đơn vị chuyên cần</h2>
+<ol><li>Kiểm tra trường ghi nhận theo buổi, tiết hay giờ.</li><li>Nhập tổng học phần bằng đơn vị đó.</li><li>Dùng cùng đơn vị cho mỗi buổi và thời lượng đã vắng.</li><li>Xác nhận mức yêu cầu từ quy định hiện hành của môn.</li></ol>
+<p>Phép quy đổi hữu ích khi một buổi trên thời khóa biểu gồm nhiều tiết. Sổ điểm danh chính thức quyết định đơn vị cần dùng.</p>

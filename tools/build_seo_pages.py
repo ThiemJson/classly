@@ -81,6 +81,7 @@ WIDGET_FIELDS = {
     'whatif': ['held', 'attended', 'skip', 'target'],
     'recover': ['held', 'attended', 'remaining', 'target'],
     'semester': ['weeks', 'per_week', 'cancelled', 'target'],
+    'hours': ['hours_total', 'hours_per_class', 'hours_missed', 'target'],
 }
 
 

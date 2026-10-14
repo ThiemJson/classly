@@ -1,0 +1,12 @@
+{
+  "id": "hours-calculator", "order": 7, "slug": "es/calculadora-asistencia-por-horas/",
+  "title": "Calculadora de Asistencia por Horas o Periodos · Classly", "description": "Calcula la asistencia por horas o periodos: límite total, tiempo restante y equivalencia en clases completas.",
+  "og_title": "Calculadora de Asistencia por Horas", "h1": "Calculadora de asistencia por horas", "card_title": "Asistencia por horas", "card_text": "Convierte el límite de horas o periodos en clases completas.",
+  "intro": "<p><b>Calcula las faltas en la misma unidad que registra tu institución: horas o periodos.</b> Introduce el total, la duración de cada clase y el tiempo que ya faltaste.</p>",
+  "widgets": [{"kind": "hours", "defaults": {"hours_total": 45, "hours_per_class": 3, "hours_missed": 3, "target": 80}}], "related": ["attendance-calculator", "semester-planner", "bunk-calculator"],
+  "calc": {"hoursRemaining": "Puedes faltar {remaining} horas o periodos más, equivalentes a {meetings} clases completas.", "hoursDetail": "El límite es {allowed} de {total}; ya faltaste {missed}, con {perClass} por clase.", "hoursOver": "Superas en {over} horas o periodos el límite de {allowed}.", "hoursOverDetail": "Has faltado {missed}; ya no alcanzas el {target}%.", "hoursMissedTooMany": "El tiempo ausente no puede superar el total del curso."},
+  "faq": [{"q": "¿Cómo calculo la asistencia por horas?", "a": "Multiplica el total por el porcentaje permitido, redondea hacia abajo y resta las horas o periodos ya ausentes."}, {"q": "¿Por qué se redondea hacia abajo?", "a": "Una fracción de periodo normalmente no permite una ausencia completa sin bajar del objetivo."}, {"q": "¿Puedo mezclar horas y periodos?", "a": "No. Usa una sola unidad en las tres entradas según el registro de tu institución."}]
+}
+---
+<h2>Ejemplo con 45 periodos</h2><p>En un curso de 45 periodos con objetivo del 80%, el límite es floor(45 × 20%) = <b>9 periodos</b>. Si ya faltaste 3, quedan <b>6</b>.</p><p>Con 3 periodos por clase, equivalen a <b>2 clases completas</b>. Ajusta la duración si las clases no son iguales.</p>
+<h2>Usa la unidad correcta</h2><ol><li>Comprueba si el registro usa clases, periodos u horas.</li><li>Introduce el total en esa unidad.</li><li>Mantén la misma unidad en todos los campos.</li><li>Confirma el objetivo vigente del curso.</li></ol><p>El registro oficial de tu institución determina la unidad válida.</p>

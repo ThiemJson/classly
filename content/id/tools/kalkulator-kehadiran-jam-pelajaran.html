@@ -1,0 +1,12 @@
+{
+  "id": "hours-calculator", "order": 7, "slug": "id/kalkulator-kehadiran-jam-pelajaran/",
+  "title": "Kalkulator Kehadiran per Jam Pelajaran · Classly", "description": "Hitung kehadiran berdasarkan jam pelajaran: batas absen, sisa jam, dan jumlah pertemuan penuh yang setara.",
+  "og_title": "Kalkulator Kehadiran per Jam", "h1": "Kalkulator kehadiran per jam pelajaran", "card_title": "Kehadiran per jam", "card_text": "Ubah batas jam pelajaran menjadi jumlah pertemuan penuh.",
+  "intro": "<p><b>Hitung absen dengan unit yang dicatat kampus: jam pelajaran atau periode.</b> Masukkan total mata kuliah, durasi setiap pertemuan, dan waktu yang sudah dilewatkan.</p>",
+  "widgets": [{"kind": "hours", "defaults": {"hours_total": 45, "hours_per_class": 3, "hours_missed": 3, "target": 80}}], "related": ["attendance-calculator", "semester-planner", "bunk-calculator"],
+  "calc": {"hoursRemaining": "Anda masih boleh melewatkan {remaining} jam pelajaran, setara {meetings} pertemuan penuh.", "hoursDetail": "Batasnya {allowed} dari {total}; Anda sudah melewatkan {missed}, dengan {perClass} per pertemuan.", "hoursOver": "Anda melebihi batas {allowed} sebanyak {over} jam pelajaran.", "hoursOverDetail": "Anda melewatkan {missed}; target {target}% tidak lagi terpenuhi.", "hoursMissedTooMany": "Waktu yang dilewatkan tidak boleh melebihi total mata kuliah."},
+  "faq": [{"q": "Bagaimana menghitung kehadiran per jam?", "a": "Kalikan total jam dengan persentase absen yang diizinkan, bulatkan ke bawah, lalu kurangi jam yang sudah dilewatkan."}, {"q": "Mengapa dibulatkan ke bawah?", "a": "Pecahan jam biasanya tidak dapat dipakai sebagai satu absen penuh tanpa turun di bawah target."}, {"q": "Bolehkah mencampur jam dan periode?", "a": "Tidak. Gunakan satu unit yang konsisten pada ketiga isian sesuai catatan kampus."}]
+}
+---
+<h2>Contoh 45 jam pelajaran</h2><p>Untuk 45 jam pelajaran dengan target 80%, batas absen adalah floor(45 × 20%) = <b>9 jam</b>. Jika sudah melewatkan 3, tersisa <b>6 jam</b>.</p><p>Dengan 3 jam per pertemuan, ini setara <b>2 pertemuan penuh</b>. Ubah durasi jika tiap pertemuan berbeda.</p>
+<h2>Gunakan unit yang tepat</h2><ol><li>Periksa apakah catatan memakai pertemuan, periode, atau jam.</li><li>Masukkan total dalam unit itu.</li><li>Gunakan unit yang sama di semua isian.</li><li>Pastikan target mata kuliah terbaru.</li></ol><p>Catatan resmi kampus menentukan unit yang berlaku.</p>

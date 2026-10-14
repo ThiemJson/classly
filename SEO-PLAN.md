@@ -27,7 +27,7 @@ Rules for every page:
 - [x] Attendance calculator · bunk calculator · 75% (vi: 80%) table · recovery
 - [x] Subject-wise and overall attendance calculator across all 8 languages
 - [x] Semester planner by weeks × classes per week − holidays across all 8 languages
-- [ ] Periods/hours (tiết) calculator for schools that count periods
+- [x] Periods/hours (tiết) calculator across all 8 languages
 - [ ] Exam countdown; credit hours → study hours per week
 - [ ] Trial: CGPA → percentage, GPA calculator (only after phase 2 tools get impressions)
 Check search volume (Keyword Planner / Ahrefs free tools) before building each one.

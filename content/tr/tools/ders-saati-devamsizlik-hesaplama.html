@@ -1,0 +1,12 @@
+{
+  "id": "hours-calculator", "order": 7, "slug": "tr/ders-saati-devamsizlik-hesaplama/",
+  "title": "Ders Saati Devamsızlık Hakkı Hesaplama · Classly", "description": "Ders saati üzerinden devamsızlık hesaplayın; toplam hakkı, kalan saati ve tam ders oturumu karşılığını görün.",
+  "og_title": "Ders Saati Devamsızlık Hesaplama", "h1": "Ders saati devamsızlık hesaplama", "card_title": "Ders saati hesaplayıcı", "card_text": "Saat veya dönem hakkını tam ders oturumuna dönüştürün.",
+  "intro": "<p><b>Devamsızlığı kurumunuzun kaydettiği aynı birimle hesaplayın: ders saati veya dönem.</b> Toplamı, her oturumun süresini ve kaçırdığınız süreyi girin.</p>",
+  "widgets": [{"kind": "hours", "defaults": {"hours_total": 45, "hours_per_class": 3, "hours_missed": 3, "target": 80}}], "related": ["attendance-calculator", "semester-planner", "bunk-calculator"],
+  "calc": {"hoursRemaining": "{remaining} ders saati daha kaçırabilirsiniz; bu {meetings} tam oturuma eşittir.", "hoursDetail": "Hak {total} saatin {allowed} tanesidir; {missed} saat kaçırdınız ve her oturum {perClass} saattir.", "hoursOver": "{allowed} saatlik hakkı {over} saat aştınız.", "hoursOverDetail": "{missed} saat kaçırdınız; artık %{target} hedefi karşılanmıyor.", "hoursMissedTooMany": "Kaçırılan süre toplam ders saatini aşamaz."},
+  "faq": [{"q": "Ders saatine göre devamsızlık nasıl hesaplanır?", "a": "Toplam saati izin verilen devamsızlık oranıyla çarpın, aşağı yuvarlayın ve kaçırılan saati çıkarın."}, {"q": "Neden aşağı yuvarlanır?", "a": "Bir saat kesri genellikle hedefin altına düşmeden tam devamsızlık olarak kullanılamaz."}, {"q": "Saat ve dönemi karıştırabilir miyim?", "a": "Hayır. Kurum kaydına göre üç alanda da aynı birimi kullanın."}]
+}
+---
+<h2>45 ders saati örneği</h2><p>45 saatlik derste %80 hedef için hak floor(45 × %20) = <b>9 saattir</b>. Üç saat kaçırdıysanız <b>6 saat</b> kalır.</p><p>Her oturum 3 saatse bu <b>2 tam oturuma</b> eşittir. Oturumlar farklıysa süreyi güncelleyin.</p>
+<h2>Doğru birimi kullanın</h2><ol><li>Kaydın oturum, dönem veya saat kullandığını kontrol edin.</li><li>Toplamı bu birimle girin.</li><li>Tüm alanlarda aynı birimi koruyun.</li><li>Güncel devam hedefini doğrulayın.</li></ol><p>Geçerli birimi kurumunuzun resmi devam kaydı belirler.</p>

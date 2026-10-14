@@ -206,7 +206,7 @@ Khi thêm công cụ mới: thêm `id` của nó vào `related` của 1–2 tran
   Tổng = tuần × buổi/tuần − nghỉ lễ; được vắng tối đa = ⌊tổng × (1 − mục tiêu)⌋; quy ra "≈ X tuần".
   Ví dụ: 15 tuần × 3 − 3 = 42 buổi, 75 % → vắng tối đa 10, đi ít nhất 32.
 
-### Task 2.3 — Tính theo tiết / giờ
+### Task 2.3 ✅ — Tính theo tiết / giờ (hoàn tất 8 ngôn ngữ)
 - **Câu:** vi "tính số tiết được nghỉ", tr "kaç saat devamsızlık hakkım var", pt "quantas faltas em 60 horas".
 - **Slug:** `class-hours-attendance-calculator/`; vi `vi/tinh-so-tiet-duoc-nghi/`.
 - **Widget `hours`:** tổng số tiết (giờ) của học phần, số tiết mỗi buổi, số tiết đã vắng, mục tiêu.

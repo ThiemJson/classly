@@ -36,7 +36,10 @@
     "remove_subject": "Remover disciplina",
     "weeks": "Semanas letivas",
     "per_week": "Aulas por semana",
-    "cancelled": "Feriados ou cancelamentos"
+    "cancelled": "Feriados ou cancelamentos",
+    "hours_total": "Total de horas-aula",
+    "hours_per_class": "Horas-aula por encontro",
+    "hours_missed": "Horas-aula já perdidas"
   },
   "widgets": {
     "standing": {"title": "Como está minha frequência?", "hint": "Conte todas as aulas dadas até agora, inclusive aquelas em que você faltou."},
@@ -44,7 +47,8 @@
     "whatif": {"title": "E se eu faltar a mais aulas?", "hint": "Veja sua porcentagem depois de faltar às próximas aulas."},
     "recover": {"title": "Ainda dá para atingir a meta?", "hint": "Informe quantas aulas desta matéria ainda restam no semestre."},
     "subjects": {"title": "Frequência por disciplina", "hint": "Adicione cada disciplina para comparar com a frequência geral."},
-    "semester": {"title": "Planeje o semestre inteiro", "hint": "Desconte feriados e aulas canceladas do calendário previsto."}
+    "semester": {"title": "Planeje o semestre inteiro", "hint": "Desconte feriados e aulas canceladas do calendário previsto."},
+    "hours": {"title": "Calcule por horas-aula", "hint": "Use a mesma unidade para a carga total, cada encontro e as faltas."}
   },
   "table": {"held": "Aulas dadas", "min": "Frequentar pelo menos", "missed": "Faltas permitidas"},
   "calc": {

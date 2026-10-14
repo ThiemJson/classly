@@ -1,0 +1,12 @@
+{
+  "id": "hours-calculator", "order": 7, "slug": "pt/calculadora-frequencia-por-horas/",
+  "title": "Calculadora de Frequência por Horas-Aula · Classly", "description": "Calcule frequência por horas-aula: limite total de faltas, horas restantes e equivalência em encontros completos.",
+  "og_title": "Calculadora de Frequência por Horas", "h1": "Calculadora de frequência por horas-aula", "card_title": "Frequência por horas-aula", "card_text": "Converta o limite de horas-aula em encontros completos.",
+  "intro": "<p><b>Calcule as faltas na mesma unidade registrada pela instituição: horas-aula ou períodos.</b> Informe a carga total, a duração de cada encontro e o que já perdeu.</p>",
+  "widgets": [{"kind": "hours", "defaults": {"hours_total": 45, "hours_per_class": 3, "hours_missed": 3, "target": 80}}], "related": ["attendance-calculator", "semester-planner", "bunk-calculator"],
+  "calc": {"hoursRemaining": "Você ainda pode faltar {remaining} horas-aula, equivalentes a {meetings} encontros completos.", "hoursDetail": "O limite é {allowed} de {total}; você já perdeu {missed}, com {perClass} por encontro.", "hoursOver": "Você excedeu em {over} horas-aula o limite de {allowed}.", "hoursOverDetail": "Você perdeu {missed}; a meta de {target}% não é mais atingida.", "hoursMissedTooMany": "As horas perdidas não podem superar a carga total."},
+  "faq": [{"q": "Como calcular frequência por horas-aula?", "a": "Multiplique a carga pelo percentual permitido, arredonde para baixo e subtraia as horas-aula já perdidas."}, {"q": "Por que arredondar para baixo?", "a": "Uma fração de hora-aula normalmente não permite uma falta inteira sem cair abaixo da meta."}, {"q": "Posso misturar horas e períodos?", "a": "Não. Use uma unidade consistente nos três campos conforme o registro da instituição."}]
+}
+---
+<h2>Exemplo com 45 horas-aula</h2><p>Em uma disciplina de 45 horas-aula com meta de 80%, o limite é floor(45 × 20%) = <b>9 horas-aula</b>. Se você já perdeu 3, restam <b>6</b>.</p><p>Com 3 horas-aula por encontro, isso equivale a <b>2 encontros completos</b>. Ajuste a duração se os encontros forem diferentes.</p>
+<h2>Use a unidade correta</h2><ol><li>Confira se o registro usa encontros, períodos ou horas-aula.</li><li>Informe a carga total nessa unidade.</li><li>Mantenha a mesma unidade em todos os campos.</li><li>Confirme a meta atual da disciplina.</li></ol><p>O registro oficial da instituição determina a unidade válida.</p>

@@ -96,6 +96,18 @@
       return [fill(text('semesterMiss'), {miss: miss, attend: attend, total: total}),
         fill(text('semesterSummary'), {weeks: v.weeks, perWeek: v.per_week, cancelled: v.cancelled, total: total}) + ' ' +
         fill(text('semesterWeeks'), {weeks: fmt(miss / v.per_week), perWeek: v.per_week}), 'good'];
+    },
+
+    hours: function (v) {
+      if (v.hours_total < 1 || v.hours_per_class < 1) return text('wholeNumbers');
+      if (v.hours_missed > v.hours_total) return text('hoursMissedTooMany');
+      var allowed = Math.max(0, Math.floor(v.hours_total * (1 - v.target / 100) + EPS));
+      var remaining = allowed - v.hours_missed;
+      if (remaining < 0) return [fill(text('hoursOver'), {over: -remaining, allowed: allowed}),
+        fill(text('hoursOverDetail'), {missed: v.hours_missed, target: fmt(v.target)}), 'bad'];
+      var meetings = Math.floor(remaining / v.hours_per_class + EPS);
+      return [fill(text('hoursRemaining'), {remaining: remaining, meetings: meetings}),
+        fill(text('hoursDetail'), {allowed: allowed, total: v.hours_total, missed: v.hours_missed, perClass: v.hours_per_class}), 'good'];
     }
   };
 

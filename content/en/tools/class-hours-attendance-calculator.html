@@ -1,0 +1,16 @@
+{
+  "id": "hours-calculator", "order": 7, "slug": "class-hours-attendance-calculator/",
+  "title": "Class Hours and Period Attendance Calculator · Classly", "description": "Calculate attendance by periods or hours. See your total absence allowance, remaining hours and the equivalent full class meetings.",
+  "og_title": "Class Hours Attendance Calculator", "h1": "Class hours attendance calculator", "card_title": "Class hours calculator", "card_text": "Convert an attendance allowance in periods or hours into full class meetings.",
+  "intro": "<p><b>Calculate the allowed absence in the same unit your institution records: periods or hours.</b> Enter the course total, length of each meeting and time already missed.</p>",
+  "widgets": [{"kind": "hours", "defaults": {"hours_total": 45, "hours_per_class": 3, "hours_missed": 3, "target": 80}}],
+  "related": ["attendance-calculator", "semester-planner", "bunk-calculator"],
+  "faq": [{"q": "How do I calculate attendance by class hours?", "a": "Multiply the course hours by the allowed absence percentage, round down to whole periods, then subtract periods already missed."}, {"q": "Why round down the absence allowance?", "a": "A partial period usually cannot be used as a full absence without dropping below the target."}, {"q": "Can I mix hours and periods?", "a": "No. Use one consistent unit for all three inputs, based on the way your institution records attendance."}]
+}
+---
+<h2>Worked example with 45 periods</h2>
+<p>For a 45-period course with an 80% target, the absence allowance is floor(45 × 20%) = <b>9 periods</b>. If you have already missed 3, you have <b>6 periods left</b>.</p>
+<p>When each class meeting contains 3 periods, 6 remaining periods equal <b>2 full meetings</b>. If a meeting has a different length, update that field rather than treating every meeting as equal.</p>
+<h2>Use the correct attendance unit</h2>
+<ol><li>Check whether your institution records meetings, periods or clock hours.</li><li>Enter the full course total in that unit.</li><li>Enter the same unit for each meeting and for time already missed.</li><li>Confirm your target from the current course rules.</li></ol>
+<p>This conversion is useful when one timetable entry contains multiple periods. Your official attendance record should decide which unit to use.</p>

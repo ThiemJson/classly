@@ -36,7 +36,10 @@
     "remove_subject": "Hapus mata kuliah",
     "weeks": "Minggu perkuliahan",
     "per_week": "Pertemuan per minggu",
-    "cancelled": "Libur atau pertemuan batal"
+    "cancelled": "Libur atau pertemuan batal",
+    "hours_total": "Total jam pelajaran",
+    "hours_per_class": "Jam per pertemuan",
+    "hours_missed": "Jam yang sudah dilewatkan"
   },
   "widgets": {
     "standing": {"title": "Posisi kehadiranku sekarang?", "hint": "Hitung semua pertemuan yang sudah berlangsung, termasuk yang kamu lewatkan."},
@@ -44,7 +47,8 @@
     "whatif": {"title": "Kalau aku bolos lagi?", "hint": "Lihat persentasemu setelah melewatkan beberapa pertemuan berikutnya."},
     "recover": {"title": "Masih bisa terkejar sampai akhir semester?", "hint": "Tambahkan berapa pertemuan mata kuliah ini yang tersisa semester ini."},
     "subjects": {"title": "Kehadiran per mata kuliah", "hint": "Tambahkan setiap mata kuliah untuk membandingkannya dengan kehadiran keseluruhan."},
-    "semester": {"title": "Rencanakan satu semester", "hint": "Kurangi hari libur dan pertemuan batal dari jadwal kuliah."}
+    "semester": {"title": "Rencanakan satu semester", "hint": "Kurangi hari libur dan pertemuan batal dari jadwal kuliah."},
+    "hours": {"title": "Hitung berdasarkan jam pelajaran", "hint": "Gunakan unit yang sama untuk total, tiap pertemuan, dan waktu yang dilewatkan."}
   },
   "table": {"held": "Pertemuan berlangsung", "min": "Hadir minimal", "missed": "Boleh absen maksimal"},
   "calc": {

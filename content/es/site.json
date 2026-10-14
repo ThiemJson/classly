@@ -36,7 +36,10 @@
     "remove_subject": "Eliminar asignatura",
     "weeks": "Semanas lectivas",
     "per_week": "Clases por semana",
-    "cancelled": "Festivos o cancelaciones"
+    "cancelled": "Festivos o cancelaciones",
+    "hours_total": "Total de horas o periodos",
+    "hours_per_class": "Periodos por clase",
+    "hours_missed": "Periodos ya ausentes"
   },
   "widgets": {
     "standing": {"title": "¿Cómo voy?", "hint": "Cuenta todas las clases impartidas hasta ahora, incluidas las que faltaste."},
@@ -44,7 +47,8 @@
     "whatif": {"title": "¿Y si falto a más clases?", "hint": "Mira tu porcentaje después de faltar a las próximas clases."},
     "recover": {"title": "¿Llego a tiempo para final de semestre?", "hint": "Añade cuántas clases de esta materia quedan este semestre."},
     "subjects": {"title": "Asistencia por asignatura", "hint": "Añade cada asignatura para compararla con tu asistencia general."},
-    "semester": {"title": "Planifica todo el semestre", "hint": "Resta los festivos y las clases canceladas del calendario previsto."}
+    "semester": {"title": "Planifica todo el semestre", "hint": "Resta los festivos y las clases canceladas del calendario previsto."},
+    "hours": {"title": "Calcula por horas o periodos", "hint": "Usa la misma unidad para el total, cada clase y el tiempo ausente."}
   },
   "table": {"held": "Clases impartidas", "min": "Asistir al menos a", "missed": "Faltas permitidas"},
   "calc": {

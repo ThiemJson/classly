@@ -36,7 +36,10 @@
     "remove_subject": "Xóa môn",
     "weeks": "Số tuần học",
     "per_week": "Số buổi mỗi tuần",
-    "cancelled": "Buổi nghỉ lễ hoặc bị hủy"
+    "cancelled": "Buổi nghỉ lễ hoặc bị hủy",
+    "hours_total": "Tổng số tiết hoặc giờ",
+    "hours_per_class": "Số tiết mỗi buổi",
+    "hours_missed": "Số tiết đã vắng"
   },
   "widgets": {
     "standing": {"title": "Mình đang ở đâu?", "hint": "Đếm mọi buổi đã diễn ra, kể cả những buổi bạn vắng."},
@@ -44,7 +47,8 @@
     "whatif": {"title": "Nếu nghỉ thêm vài buổi thì sao?", "hint": "Xem tỷ lệ của bạn sau khi nghỉ thêm vài buổi tới."},
     "recover": {"title": "Cuối kỳ còn kịp không?", "hint": "Nhập thêm số buổi còn lại của môn này trong học kỳ."},
     "subjects": {"title": "Chuyên cần theo từng môn", "hint": "Thêm từng môn để so sánh với tỷ lệ chuyên cần tổng thể."},
-    "semester": {"title": "Lập kế hoạch cả học kỳ", "hint": "Trừ các buổi nghỉ lễ và bị hủy khỏi lịch học dự kiến."}
+    "semester": {"title": "Lập kế hoạch cả học kỳ", "hint": "Trừ các buổi nghỉ lễ và bị hủy khỏi lịch học dự kiến."},
+    "hours": {"title": "Tính theo tiết hoặc giờ", "hint": "Dùng cùng một đơn vị cho tổng học phần, mỗi buổi và thời lượng đã vắng."}
   },
   "table": {"held": "Số buổi đã học", "min": "Phải có mặt ít nhất", "missed": "Được vắng tối đa"},
   "calc": {
