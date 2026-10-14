@@ -1,0 +1,38 @@
+{
+  "id": "bunk-calculator",
+  "order": 2,
+  "slug": "vi/tinh-so-buoi-duoc-nghi/",
+  "title": "Còn được nghỉ bao nhiêu buổi? Tính số buổi được nghỉ học · Classly",
+  "description": "Tính số buổi còn được nghỉ học mà vẫn đủ 80% chuyên cần, và tỷ lệ của bạn nếu nghỉ thêm vài buổi tới. Miễn phí, không cần đăng ký.",
+  "og_title": "Còn được nghỉ bao nhiêu buổi?",
+  "h1": "Tính số buổi được nghỉ",
+  "card_title": "Tính số buổi được nghỉ",
+  "card_text": "Còn được nghỉ bao nhiêu buổi, và nghỉ thêm thì còn bao nhiêu %.",
+  "intro": "<p><b>Bạn được nghỉ cho đến khi số buổi có mặt ÷ số buổi đã học chạm mức tối thiểu.</b> Với mức 80%, cứ có mặt 4 buổi thì được vắng 1 buổi. Nhập số liệu để biết chính xác giới hạn của bạn và tỷ lệ sau khi nghỉ thêm vài buổi.</p>",
+  "widgets": [
+    {"kind": "whatif", "defaults": {"held": 30, "attended": 27, "skip": 2, "target": 80}},
+    {"kind": "standing", "title": "Tổng cộng còn được nghỉ bao nhiêu?", "defaults": {"held": 30, "attended": 27, "target": 80}}
+  ],
+  "related": ["attendance-calculator", "minimum-table", "recovery"],
+  "faq": [
+    {"q": "Đi học 80% thì được nghỉ bao nhiêu buổi?", "a": "Tối đa 1 buổi cho mỗi 4 buổi có mặt. Chính xác: số buổi còn được nghỉ = có mặt × 100 ÷ 80 − đã học, làm tròn xuống. Có mặt 27 trên 30 buổi thì còn được nghỉ 3 buổi."},
+    {"q": "Nên nghỉ đầu kỳ hay cuối kỳ?", "a": "Nếu buộc phải nghỉ, nên để về sau. Đầu kỳ mỗi buổi chiếm tỷ trọng lớn nên một buổi vắng làm tỷ lệ tụt nhiều, và bạn cũng chưa biết sẽ có bao nhiêu buổi bị huỷ."},
+    {"q": "Trường tính theo tiết thì sao?", "a": "Cách tính giống hệt. Chỉ cần nhập số tiết thay cho số buổi, ví dụ một buổi 3 tiết vắng thì tính là vắng 3 tiết."},
+    {"q": "Nghỉ có phép có được tính không?", "a": "Tuỳ trường. Có trường không tính buổi nghỉ có phép vào số buổi vắng, có trường vẫn tính. Hãy hỏi phòng đào tạo hoặc giảng viên."}
+  ]
+}
+---
+<h2>Nghỉ học làm tỷ lệ thay đổi thế nào</h2>
+<p>Buổi nghỉ vẫn được tính là buổi đã học, nên mỗi lần nghỉ tỷ lệ lại giảm. Giới hạn cho một mức yêu cầu là:</p>
+<p class="formula">còn được nghỉ = ⌊ có mặt × 100 ÷ mức yêu cầu − đã học ⌋</p>
+<p>Có mặt 27 trên 30 buổi (90%) với mức 80%: 27 × 100 ÷ 80 − 30 = 3,75, nên bạn còn được nghỉ <b>3 buổi</b>. Nghỉ hết 3 buổi, bạn còn 27 ÷ 33 = 81,81%. Nghỉ buổi thứ 4 sẽ xuống 27 ÷ 34 = 79,41%.</p>
+
+<h2>Mẹo nhẩm nhanh</h2>
+<p>Với mức 80%, cứ 5 buổi thì phải có mặt ít nhất 4. Vì vậy tổng số buổi vắng tối đa bằng một phần tư số buổi có mặt: có mặt 20 buổi thì được vắng 5, có mặt 36 buổi thì được vắng 9. Bảng ở trang <a href="/classly/vi/chuyen-can-80-phan-tram/">chuyên cần 80%</a> liệt kê sẵn cho các số buổi thường gặp.</p>
+
+<h2>Trước khi nghỉ</h2>
+<ul>
+  <li>Tính riêng từng môn. Tỷ lệ chung an toàn vẫn có thể che đi một môn đang sát mức.</li>
+  <li>Chừa lại 1–2 buổi cho lúc ốm. Không phải lúc nào nghỉ ốm cũng được chấp nhận.</li>
+  <li>Hỏi xem trường có làm tròn 79,5% thành 80% không. Nhiều trường không làm tròn.</li>
+</ul>

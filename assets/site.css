@@ -172,3 +172,17 @@ footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
 .app-cta b{display:block}
 .app-cta span{color:var(--muted);font-size:15px}
 @media (max-width:560px){.fields{grid-template-columns:1fr 1fr}.fields .field:last-child:nth-child(3){grid-column:1/-1}}
+.fields.four{grid-template-columns:repeat(4,1fr)}
+@media (max-width:760px){.fields.four{grid-template-columns:1fr 1fr}}
+.app-cta .actions{gap:8px}
+.app-cta .btn{padding:10px 16px}
+.tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:16px 0 8px}
+.doc .tool-link{display:grid;gap:4px;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.doc .tool-link:hover{border-color:var(--sage)}
+.tool-link span{color:var(--muted);font-size:14px}
+.table-wrap{overflow-x:auto;margin:12px 0 8px}
+.calc-table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:15px}
+.calc-table th,.calc-table td{padding:8px 12px;text-align:right;border-bottom:1px solid var(--line)}
+.calc-table th:first-child,.calc-table td:first-child{text-align:left}
+.calc-table th{font-size:13px;color:var(--muted);font-weight:600}
+.calc-table tr:last-child td{border-bottom:0}

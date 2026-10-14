@@ -1,0 +1,63 @@
+{
+  "language_name": "English",
+  "tool_kicker": "Free tool",
+  "faq_heading": "Common questions",
+  "related_heading": "More attendance tools",
+  "nav": {
+    "label": "Main",
+    "features": "Features",
+    "tools": "Tools",
+    "download": "Download",
+    "footer_label": "Footer",
+    "footer": [["Home", "/classly/"], ["All tools", "/classly/tools/"], ["FAQ", "/classly/faq.html"], ["Privacy", "/classly/privacy.html"], ["Terms", "/classly/terms.html"]]
+  },
+  "download": {
+    "title": "Let Classly keep count for you",
+    "text": "Mark each class in one tap and see these numbers for every subject, all semester. Free, offline, no account."
+  },
+  "hub": {
+    "slug": "tools/",
+    "title": "Free Attendance Calculators for Students · Classly",
+    "description": "Free attendance calculators: your attendance percentage, how many classes you can bunk, the 75% rule and how many classes you need to recover.",
+    "h1": "Free attendance tools",
+    "intro": "Quick answers to the questions students ask most about attendance. No sign-up, nothing stored: every calculation runs in your browser."
+  },
+  "fields": {
+    "held": "Classes held",
+    "attended": "Classes attended",
+    "target": "Target %",
+    "total": "Classes this semester",
+    "skip": "Classes to miss",
+    "remaining": "Classes left"
+  },
+  "widgets": {
+    "standing": {"title": "Where do I stand?", "hint": "Count every class held so far, including the ones you missed."},
+    "plan": {"title": "Planning a whole semester?", "hint": "If you know how many classes a subject will have in total."},
+    "whatif": {"title": "What if I miss more classes?", "hint": "See your percentage after missing the next few classes."},
+    "recover": {"title": "Can I still make it by the end of term?", "hint": "Add how many classes of this subject are left this semester."}
+  },
+  "table": {"held": "Classes held", "min": "Attend at least", "missed": "Can have missed"},
+  "calc": {
+    "current": "You are at {pct}% now.",
+    "canMiss": {"one": "You can miss 1 more class and stay at {target}%.", "other": "You can miss {n} more classes and stay at {target}%."},
+    "canMissDetail": "{current} After missing them you would be at {pct}%.",
+    "atEdge": "Don't miss the next class.",
+    "atEdgeDetail": "{current} Missing one more would take you below {target}%.",
+    "mustAttend": {"one": "Attend the next class to get back to {target}%.", "other": "Attend the next {n} classes in a row to get back to {target}%."},
+    "mustAttendDetail": "{current} That would bring you to {pct}%.",
+    "unreachable": "A 100% target can no longer be reached once a class is missed.",
+    "planMiss": {"one": "You can miss up to 1 of {total} classes.", "other": "You can miss up to {n} of {total} classes."},
+    "planDetail": "Attend at least {attend} of {total} to stay on target.",
+    "whatif": {"one": "If you miss 1 more class, you will be at {pct}%.", "other": "If you miss {n} more classes, you will be at {pct}%."},
+    "whatifAbove": "That is still at or above {target}%. The most you can miss and stay there is {m}.",
+    "whatifBelow": "That is below {target}%. The most you can miss and stay there is {m}.",
+    "recover": {"one": "Attend at least 1 of the {rem} classes left.", "other": "Attend at least {n} of the {rem} classes left."},
+    "recoverDetail": "You can miss {m} of them and still finish at {target}% or above.",
+    "recoverSafe": "You will finish at {target}% or above even if you miss all {rem} classes left.",
+    "recoverImpossible": "Even attending all {rem} classes left, you would finish at {pct}%.",
+    "recoverImpossibleDetail": "{target}% is out of reach this semester. Talk to your teacher or department about medical leave or make-up classes.",
+    "wholeNumbers": "Use whole numbers, with at least 1 class held.",
+    "attendedTooMany": "Classes attended cannot be more than classes held.",
+    "targetRange": "Enter a target between 1 and 100."
+  }
+}

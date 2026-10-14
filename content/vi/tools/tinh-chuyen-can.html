@@ -1,0 +1,38 @@
+{
+  "id": "attendance-calculator",
+  "order": 1,
+  "slug": "vi/tinh-chuyen-can/",
+  "title": "Tính chuyên cần: Còn được nghỉ bao nhiêu buổi? · Classly",
+  "description": "Nhập số buổi đã học và số buổi có mặt để biết tỷ lệ chuyên cần, còn được nghỉ bao nhiêu buổi, hoặc phải đi học thêm bao nhiêu buổi để đạt 80%.",
+  "og_title": "Tính chuyên cần: Còn được nghỉ bao nhiêu buổi?",
+  "h1": "Tính chuyên cần",
+  "card_title": "Tính chuyên cần",
+  "card_text": "Tỷ lệ chuyên cần, số buổi còn được nghỉ hoặc cần đi học thêm.",
+  "intro": "<p><b>Tỷ lệ chuyên cần = số buổi có mặt ÷ số buổi đã học × 100.</b> Nhập số liệu của bạn bên dưới để biết còn được nghỉ bao nhiêu buổi, hoặc phải đi học liên tiếp bao nhiêu buổi để quay lại mức yêu cầu.</p>",
+  "widgets": [
+    {"kind": "standing", "defaults": {"held": 40, "attended": 34, "target": 80}},
+    {"kind": "plan", "defaults": {"total": 15, "target": 80}}
+  ],
+  "related": ["bunk-calculator", "minimum-table", "recovery"],
+  "faq": [
+    {"q": "Nghỉ học bao nhiêu buổi thì bị cấm thi?", "a": "Mỗi trường có quy định riêng. Nhiều trường không cho dự thi nếu sinh viên nghỉ quá 20% số tiết của học phần, tức phải có mặt ít nhất 80%. Hãy xem quy chế đào tạo của trường bạn hoặc hỏi giảng viên, rồi nhập con số đó vào ô mức yêu cầu."},
+    {"q": "Buổi bị huỷ có tính không?", "a": "Thường là không. Buổi không diễn ra thì không tính là buổi đã học, nên hãy bỏ ra khỏi cả hai con số. Trong Classly bạn có thể đánh dấu buổi bị huỷ để app tự bỏ qua."},
+    {"q": "Tính theo từng môn hay tính chung?", "a": "Phần lớn các trường áp dụng quy định cho từng học phần, nên tỷ lệ chung cao vẫn có thể che đi một môn đang dưới mức. Hãy tính riêng từng môn."},
+    {"q": "Vì sao công cụ báo còn được nghỉ 0 buổi?", "a": "Bạn đang ở đúng hoặc nhỉnh hơn mức yêu cầu một chút, nghỉ thêm một buổi nữa sẽ xuống dưới mức. Hãy đi học buổi tới để có thêm khoảng an toàn."}
+  ]
+}
+---
+<h2>Cách tính</h2>
+<h3>Tỷ lệ chuyên cần</h3>
+<p class="formula">tỷ lệ % = số buổi có mặt ÷ số buổi đã học × 100</p>
+<p>Có mặt 34 trên 40 buổi là 34 ÷ 40 × 100 = <b>85%</b>.</p>
+
+<h3>Còn được nghỉ bao nhiêu buổi?</h3>
+<p>Buổi bạn nghỉ vẫn được tính là buổi đã học, nên tỷ lệ sẽ giảm. Số buổi tối đa còn được nghỉ mà vẫn giữ mức yêu cầu là:</p>
+<p class="formula">được nghỉ = ⌊ có mặt × 100 ÷ mức yêu cầu − đã học ⌋</p>
+<p>Với 34 trên 40 buổi và mức 80%: 34 × 100 ÷ 80 − 40 = 2,5, làm tròn xuống còn <b>2 buổi</b>. Nghỉ cả 2 buổi, bạn còn 34 ÷ 42 = 80,95%; nghỉ buổi thứ 3 sẽ xuống 79,06%.</p>
+
+<h3>Phải đi học thêm bao nhiêu buổi để đạt 80%?</h3>
+<p>Nếu đang dưới mức yêu cầu, mỗi buổi có mặt từ giờ sẽ kéo tỷ lệ lên. Số buổi cần đi liên tiếp là:</p>
+<p class="formula">cần đi = ⌈ (mức yêu cầu × đã học − có mặt) ÷ (1 − mức yêu cầu) ⌉</p>
+<p>Ở đây mức yêu cầu viết dưới dạng thập phân (80% = 0,8). Với 30 trên 40 buổi (75%): (0,8 × 40 − 30) ÷ 0,2 = <b>10 buổi</b>, đưa bạn lên 40 trên 50 = 80%. Nếu học kỳ sắp hết, hãy dùng <a href="/classly/vi/can-di-hoc-bao-nhieu-buoi/">công cụ tính số buổi cần đi học</a>.</p>

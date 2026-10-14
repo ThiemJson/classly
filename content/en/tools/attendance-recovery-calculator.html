@@ -1,0 +1,36 @@
+{
+  "id": "recovery",
+  "order": 4,
+  "slug": "attendance-recovery-calculator/",
+  "title": "How Many Classes Do I Need to Attend to Get 75%? Recovery Calculator · Classly",
+  "description": "Below 75%? See how many classes you must attend in a row to get back, and whether you can still reach 75% with the classes left this semester.",
+  "og_title": "How Many Classes Do I Need to Attend to Get 75%?",
+  "h1": "Attendance recovery calculator",
+  "card_title": "Attendance recovery calculator",
+  "card_text": "Below target? How many classes to attend, and whether it is still possible.",
+  "intro": "<p><b>To get back to 75%, attend (0.75 × held − attended) ÷ 0.25 classes in a row, rounded up.</b> If the semester ends first, what matters is how many of the remaining classes you attend. The calculators below answer both.</p>",
+  "widgets": [
+    {"kind": "recover", "defaults": {"held": 30, "attended": 20, "remaining": 30, "target": 75}},
+    {"kind": "standing", "title": "How many in a row to get back now?", "defaults": {"held": 30, "attended": 20, "target": 75}}
+  ],
+  "related": ["attendance-calculator", "bunk-calculator", "minimum-table"],
+  "faq": [
+    {"q": "How many classes do I need to attend to get 75% attendance?", "a": "Attend (0.75 × held − attended) ÷ 0.25 classes in a row, rounded up. With 20 of 30 attended, that is 10 classes, which brings you to 30 of 40."},
+    {"q": "Can I still reach 75% by the end of the semester?", "a": "Only if (attended + classes left) ÷ (held + classes left) is at least 75%. If even attending every remaining class falls short, ask about medical leave, condonation or make-up classes."},
+    {"q": "Why does getting back up take so many classes?", "a": "Every class you attend also adds to the classes held. Near 75%, each attended class only raises your percentage a little, so recovering is much slower than falling."}
+  ]
+}
+---
+<h2>Two ways to look at recovery</h2>
+<h3>Back on target as soon as possible</h3>
+<p class="formula">attend in a row = ⌈ (target × held − attended) ÷ (1 − target) ⌉</p>
+<p>With 20 of 30 attended (66.66%) and a 75% target: (0.75 × 30 − 20) ÷ 0.25 = <b>10 classes</b>, bringing you to 30 of 40 = 75%.</p>
+
+<h3>On target by the end of the semester</h3>
+<p>Often you only need to be above the line when attendance is checked, usually at the end of term. Then count the classes left:</p>
+<p class="formula">attend at least = ⌈ target × (held + left) − attended ⌉</p>
+<p>With 20 of 30 attended and 30 classes left: 0.75 × 60 − 20 = <b>25 of the 30</b>, so you can still miss 5.</p>
+
+<h3>When it is too late</h3>
+<p>With 20 of 40 attended and 20 classes left, even perfect attendance ends at 40 of 60 = 66.66%. In that case speak to your teacher or department early: medical certificates, condonation or make-up classes are only possible before the deadline.</p>
+<p>To avoid ending up here, keep a running count with the <a href="/classly/bunk-calculator/">bunk calculator</a>, or let the Classly app warn you before a subject drops below target.</p>

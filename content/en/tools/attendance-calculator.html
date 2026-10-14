@@ -1,0 +1,38 @@
+{
+  "id": "attendance-calculator",
+  "order": 1,
+  "slug": "attendance-calculator/",
+  "title": "Attendance Calculator: How Many Classes Can I Miss? · Classly",
+  "description": "Enter classes held and attended to see your attendance percentage, how many classes you can still miss, or how many you must attend to reach 75% (or any target).",
+  "og_title": "Attendance Calculator: How Many Classes Can I Miss?",
+  "h1": "Attendance calculator",
+  "card_title": "Attendance calculator",
+  "card_text": "Your percentage, and how many classes you can miss or need to attend.",
+  "intro": "<p><b>Your attendance percentage is classes attended ÷ classes held × 100.</b> Enter your numbers below to see how many classes you can still miss, or how many you need to attend in a row to get back to your target.</p>",
+  "widgets": [
+    {"kind": "standing", "defaults": {"held": 40, "attended": 32, "target": 75}},
+    {"kind": "plan", "defaults": {"total": 45, "target": 75}}
+  ],
+  "related": ["bunk-calculator", "minimum-table", "recovery"],
+  "faq": [
+    {"q": "What attendance percentage do I need?", "a": "It depends on your school. 75% is a common minimum at many colleges, and some ask for 80% or more. Check your institution's attendance rules or ask your department, then enter that number as your target."},
+    {"q": "Do cancelled classes count?", "a": "Usually not. A class that never took place was not held, so leave it out of both numbers. Classly lets you mark a class as cancelled so it is left out automatically."},
+    {"q": "Should I work it out per subject or overall?", "a": "Most schools apply the rule to each subject separately, so a high overall percentage can still hide one subject below the limit. Calculate each subject on its own."},
+    {"q": "Why does the calculator say I can miss 0 classes?", "a": "You are at or just above your target, and missing even one more class would drop you below it. Attend the next class to build a margin."}
+  ]
+}
+---
+<h2>How the calculator works</h2>
+<h3>Attendance percentage</h3>
+<p class="formula">attendance % = attended ÷ held × 100</p>
+<p>Attending 32 of 40 classes is 32 ÷ 40 × 100 = <b>80%</b>.</p>
+
+<h3>How many classes can I miss?</h3>
+<p>Each class you miss still counts as held, so your percentage drops. The most you can miss while staying at your target is:</p>
+<p class="formula">can miss = ⌊ attended × 100 ÷ target − held ⌋</p>
+<p>With 32 of 40 and a 75% target: 32 × 100 ÷ 75 − 40 = 2.67, rounded down to <b>2 classes</b>. After missing both you would be at 32 ÷ 42 = 76.19%; a third would take you to 74.41%.</p>
+
+<h3>How many classes do I need to attend to reach 75%?</h3>
+<p>If you are below target, every class you attend from now on raises your percentage. The number you need in a row is:</p>
+<p class="formula">need = ⌈ (target × held − attended) ÷ (1 − target) ⌉</p>
+<p>Here the target is written as a fraction (75% = 0.75). With 28 of 40 (70%): (0.75 × 40 − 28) ÷ 0.25 = <b>8 classes</b>, which brings you to 36 of 48 = 75%. If the term ends before that, use the <a href="/classly/attendance-recovery-calculator/">attendance recovery calculator</a>.</p>

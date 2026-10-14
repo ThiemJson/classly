@@ -1,0 +1,34 @@
+{
+  "id": "minimum-table",
+  "order": 3,
+  "slug": "vi/chuyen-can-80-phan-tram/",
+  "title": "Chuyên cần 80%: Bảng số buổi được nghỉ để không bị cấm thi · Classly",
+  "description": "Bảng tính sẵn chuyên cần 80%: với 10 đến 60 buổi, phải có mặt ít nhất bao nhiêu buổi và được vắng tối đa bao nhiêu buổi. Kèm công cụ tính miễn phí.",
+  "og_title": "Chuyên cần 80%: bảng số buổi được nghỉ",
+  "h1": "Chuyên cần 80%",
+  "card_title": "Bảng chuyên cần 80%",
+  "card_text": "Số buổi tối thiểu phải có mặt để đạt 80%, từ 10 đến 60 buổi.",
+  "intro": "<p><b>Để đạt 80% chuyên cần, bạn phải có mặt ít nhất 4 trên mỗi 5 buổi, tức không được vắng quá 20% số buổi.</b> Dùng công cụ để tính cho đúng số liệu của bạn, hoặc tra hàng tương ứng trong bảng bên dưới.</p>",
+  "widgets": [
+    {"kind": "standing", "defaults": {"held": 30, "attended": 25, "target": 80}}
+  ],
+  "related": ["attendance-calculator", "bunk-calculator", "recovery"],
+  "faq": [
+    {"q": "Vắng quá 20% là bao nhiêu buổi?", "a": "Lấy số buổi nhân 0,2 rồi làm tròn xuống: đó là số buổi được vắng tối đa. Học phần 15 buổi được vắng 3 buổi, 45 tiết được vắng 9 tiết."},
+    {"q": "Tính 80% số buổi như thế nào?", "a": "Nhân số buổi đã học với 0,8 rồi làm tròn lên. Với 48 buổi: 48 × 0,8 = 38,4, nên phải có mặt ít nhất 39 buổi."},
+    {"q": "Trường tôi tính theo tiết, có dùng bảng này được không?", "a": "Được. Thay chữ buổi bằng tiết: nếu học phần có 45 tiết thì xem hàng 45, phải có mặt ít nhất 36 tiết."},
+    {"q": "Dưới 80% thì có bị cấm thi không?", "a": "Tuỳ quy chế từng trường. Nhiều trường không cho dự thi kết thúc học phần khi sinh viên vắng quá 20% số tiết. Hãy xem quy chế đào tạo của trường bạn."}
+  ]
+}
+---
+<h2>Bảng chuyên cần 80%</h2>
+<p>Với mỗi số buổi đã học: số buổi ít nhất phải có mặt để đạt 80%, và số buổi được vắng tối đa.</p>
+{{table:80}}
+
+<h2>Tự tính thế nào</h2>
+<p class="formula">phải có mặt ít nhất = ⌈ số buổi × 0,8 ⌉</p>
+<p class="formula">được vắng tối đa = ⌊ số buổi × 0,2 ⌋</p>
+<p>Với 30 buổi đã học: 30 × 0,8 = 24, nên phải có mặt <b>ít nhất 24 buổi</b> và được vắng tối đa 6. Nếu bạn đã có mặt 25 buổi (83,33%), bạn còn được nghỉ <b>1 buổi</b> nữa: 25 trên 31 là 80,64%.</p>
+
+<h2>Mức 80% từ đâu ra</h2>
+<p>Nhiều trường đại học, cao đẳng ở Việt Nam quy định sinh viên vắng quá 20% số tiết của một học phần thì không được dự thi, tức phải đi học ít nhất 80%. Con số cụ thể do từng trường quy định trong quy chế đào tạo, có trường dùng mức khác. Nếu trường bạn dùng mức khác, hãy đổi mức yêu cầu trong <a href="/classly/vi/tinh-chuyen-can/">công cụ tính chuyên cần</a>.</p>

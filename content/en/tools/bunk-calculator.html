@@ -1,0 +1,38 @@
+{
+  "id": "bunk-calculator",
+  "order": 2,
+  "slug": "bunk-calculator/",
+  "title": "Bunk Calculator: How Many Classes Can I Bunk and Stay at 75%? · Classly",
+  "description": "Free bunk calculator. Enter classes held and attended to see how many classes you can bunk and stay at 75%, and your attendance after bunking the next few.",
+  "og_title": "Bunk Calculator: How Many Classes Can I Bunk?",
+  "h1": "Bunk calculator",
+  "card_title": "Bunk calculator",
+  "card_text": "How many classes you can bunk, and your percentage after bunking.",
+  "intro": "<p><b>You can bunk classes until attended ÷ held drops to your minimum.</b> For a 75% rule, that is one class for every three you have attended. Enter your numbers to see your exact limit and what bunking the next few classes does to your percentage.</p>",
+  "widgets": [
+    {"kind": "whatif", "defaults": {"held": 40, "attended": 34, "skip": 3, "target": 75}},
+    {"kind": "standing", "title": "How many can I bunk in total?", "defaults": {"held": 40, "attended": 34, "target": 75}}
+  ],
+  "related": ["attendance-calculator", "minimum-table", "recovery"],
+  "faq": [
+    {"q": "How many classes can I bunk with 75% attendance?", "a": "At most one class for every three you attend. Exactly: bunks allowed = attended × 100 ÷ 75 − held, rounded down. With 34 of 40 attended, that is 5 more classes."},
+    {"q": "Is it better to bunk early or late in the semester?", "a": "Late, if at all. Early in the term each class is a big share of the total, so a single absence moves your percentage a lot, and you do not yet know how many classes will be cancelled or how strict the subject is."},
+    {"q": "Do labs and tutorials count separately?", "a": "At many colleges, yes: a lab or tutorial is often its own subject with its own attendance. Check how your timetable lists it and calculate each one separately."},
+    {"q": "Does a bunk on a day with two classes count twice?", "a": "If the subject meets twice that day, both classes are held and both are missed, so it counts as two. Enter classes, not days."}
+  ]
+}
+---
+<h2>How bunking changes your attendance</h2>
+<p>A bunked class still counts as held, so your percentage falls every time. The limit for a target is:</p>
+<p class="formula">bunks left = ⌊ attended × 100 ÷ target − held ⌋</p>
+<p>With 34 of 40 classes attended (85%) and a 75% rule: 34 × 100 ÷ 75 − 40 = 5.33, so you can bunk <b>5 classes</b>. After those you would be at 34 ÷ 45 = 75.55%. A sixth bunk would take you to 34 ÷ 46 = 73.91%.</p>
+
+<h2>The one-in-four rule of thumb</h2>
+<p>For a 75% minimum, at least three of every four classes must be attended. So the most you can ever have missed is a third of the classes you attended: 30 attended allows 10 missed, 45 attended allows 15. The table on the <a href="/classly/75-percent-attendance-calculator/">75% attendance calculator</a> lists it for common class counts.</p>
+
+<h2>Before you bunk</h2>
+<ul>
+  <li>Calculate per subject. A safe overall percentage can hide one subject below the line.</li>
+  <li>Keep one or two classes in reserve for days you are ill. Medical leave is not always approved.</li>
+  <li>Check whether your college rounds 74.5% up. Many do not.</li>
+</ul>

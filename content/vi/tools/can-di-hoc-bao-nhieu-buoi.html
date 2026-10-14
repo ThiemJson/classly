@@ -1,0 +1,36 @@
+{
+  "id": "recovery",
+  "order": 4,
+  "slug": "vi/can-di-hoc-bao-nhieu-buoi/",
+  "title": "Cần đi học bao nhiêu buổi để đủ 80% chuyên cần? · Classly",
+  "description": "Đang dưới 80%? Tính số buổi cần đi học liên tiếp để quay lại mức yêu cầu, và xem cuối kỳ còn kịp đủ chuyên cần với số buổi còn lại không.",
+  "og_title": "Cần đi học bao nhiêu buổi để đủ 80% chuyên cần?",
+  "h1": "Cần đi học bao nhiêu buổi?",
+  "card_title": "Cần đi học bao nhiêu buổi?",
+  "card_text": "Đang dưới mức? Số buổi cần đi học, và cuối kỳ còn kịp không.",
+  "intro": "<p><b>Để quay lại 80%, bạn cần đi liên tiếp (0,8 × đã học − có mặt) ÷ 0,2 buổi, làm tròn lên.</b> Nếu học kỳ sắp hết, điều quan trọng là bạn có mặt bao nhiêu trong số buổi còn lại. Hai công cụ bên dưới trả lời cả hai câu.</p>",
+  "widgets": [
+    {"kind": "recover", "defaults": {"held": 20, "attended": 14, "remaining": 25, "target": 80}},
+    {"kind": "standing", "title": "Cần đi liên tiếp bao nhiêu buổi?", "defaults": {"held": 20, "attended": 14, "target": 80}}
+  ],
+  "related": ["attendance-calculator", "bunk-calculator", "minimum-table"],
+  "faq": [
+    {"q": "Cần đi học bao nhiêu buổi để đủ 80%?", "a": "Đi liên tiếp (0,8 × đã học − có mặt) ÷ 0,2 buổi, làm tròn lên. Có mặt 14 trên 20 buổi thì cần đi thêm 10 buổi, lên 24 trên 30."},
+    {"q": "Cuối kỳ còn kịp đủ chuyên cần không?", "a": "Chỉ khi (có mặt + số buổi còn lại) ÷ (đã học + số buổi còn lại) đạt mức yêu cầu. Nếu đi đủ hết mà vẫn thiếu, hãy hỏi giảng viên hoặc phòng đào tạo sớm về nghỉ ốm có giấy tờ hoặc học bù."},
+    {"q": "Sao kéo tỷ lệ lên lại lâu vậy?", "a": "Mỗi buổi có mặt cũng làm tăng số buổi đã học. Khi đang gần mức yêu cầu, mỗi buổi chỉ kéo tỷ lệ lên một chút, nên lấy lại chậm hơn nhiều so với lúc tụt."}
+  ]
+}
+---
+<h2>Hai cách nhìn</h2>
+<h3>Quay lại mức yêu cầu sớm nhất</h3>
+<p class="formula">cần đi liên tiếp = ⌈ (mức yêu cầu × đã học − có mặt) ÷ (1 − mức yêu cầu) ⌉</p>
+<p>Có mặt 14 trên 20 buổi (70%) với mức 80%: (0,8 × 20 − 14) ÷ 0,2 = <b>10 buổi</b>, đưa bạn lên 24 trên 30 = 80%.</p>
+
+<h3>Đủ mức vào cuối học kỳ</h3>
+<p>Thường bạn chỉ cần đạt mức khi trường chốt chuyên cần, thường là cuối kỳ. Khi đó hãy đếm số buổi còn lại:</p>
+<p class="formula">phải có mặt ít nhất = ⌈ mức yêu cầu × (đã học + còn lại) − có mặt ⌉</p>
+<p>Có mặt 14 trên 20 buổi và còn 25 buổi: 0,8 × 45 − 14 = <b>22 trên 25 buổi</b>, nên bạn vẫn được nghỉ 3 buổi.</p>
+
+<h3>Khi đã quá muộn</h3>
+<p>Có mặt 12 trên 20 buổi và chỉ còn 10 buổi: dù đi đủ cũng chỉ được 22 trên 30 = 73,33%. Khi đó hãy gặp giảng viên hoặc phòng đào tạo càng sớm càng tốt, vì giấy nghỉ ốm hay học bù thường phải nộp trước hạn.</p>
+<p>Để không rơi vào tình huống này, hãy theo dõi bằng <a href="/classly/vi/tinh-so-buoi-duoc-nghi/">công cụ tính số buổi được nghỉ</a>, hoặc để app Classly nhắc bạn trước khi một môn tụt dưới mức.</p>

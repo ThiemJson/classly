@@ -1,0 +1,64 @@
+{
+  "language_name": "Tiếng Việt",
+  "og_locale": "vi_VN",
+  "tool_kicker": "Công cụ miễn phí",
+  "faq_heading": "Câu hỏi thường gặp",
+  "related_heading": "Công cụ chuyên cần khác",
+  "nav": {
+    "label": "Điều hướng",
+    "features": "Tính năng",
+    "tools": "Công cụ",
+    "download": "Tải app",
+    "footer_label": "Chân trang",
+    "footer": [["Trang chủ", "/classly/"], ["Tất cả công cụ", "/classly/vi/cong-cu/"], ["FAQ", "/classly/faq.html"], ["Quyền riêng tư", "/classly/privacy.html"], ["Điều khoản", "/classly/terms.html"]]
+  },
+  "download": {
+    "title": "Để Classly đếm giúp bạn",
+    "text": "Điểm danh mỗi buổi chỉ với một chạm, xem các con số này cho từng môn suốt học kỳ. Miễn phí, không cần mạng, không cần tài khoản."
+  },
+  "hub": {
+    "slug": "vi/cong-cu/",
+    "title": "Công cụ tính chuyên cần miễn phí cho sinh viên · Classly",
+    "description": "Công cụ tính chuyên cần miễn phí: tỷ lệ chuyên cần, còn được nghỉ bao nhiêu buổi, mức 80% và cần đi học bao nhiêu buổi để không bị cấm thi.",
+    "h1": "Công cụ chuyên cần miễn phí",
+    "intro": "Trả lời nhanh những câu sinh viên hay hỏi nhất về chuyên cần. Không cần đăng ký, không lưu gì cả: mọi phép tính chạy ngay trên trình duyệt của bạn."
+  },
+  "fields": {
+    "held": "Số buổi đã học",
+    "attended": "Số buổi có mặt",
+    "target": "Mức yêu cầu %",
+    "total": "Tổng số buổi",
+    "skip": "Số buổi định nghỉ",
+    "remaining": "Số buổi còn lại"
+  },
+  "widgets": {
+    "standing": {"title": "Mình đang ở đâu?", "hint": "Đếm mọi buổi đã diễn ra, kể cả những buổi bạn vắng."},
+    "plan": {"title": "Tính trước cho cả học kỳ", "hint": "Khi bạn biết tổng số buổi của học phần."},
+    "whatif": {"title": "Nếu nghỉ thêm vài buổi thì sao?", "hint": "Xem tỷ lệ của bạn sau khi nghỉ thêm vài buổi tới."},
+    "recover": {"title": "Cuối kỳ còn kịp không?", "hint": "Nhập thêm số buổi còn lại của môn này trong học kỳ."}
+  },
+  "table": {"held": "Số buổi đã học", "min": "Phải có mặt ít nhất", "missed": "Được vắng tối đa"},
+  "calc": {
+    "current": "Hiện bạn đang ở mức {pct}%.",
+    "canMiss": "Bạn còn được nghỉ {n} buổi mà vẫn giữ {target}%.",
+    "canMissDetail": "{current} Nghỉ hết số buổi đó, bạn còn {pct}%.",
+    "atEdge": "Đừng nghỉ buổi tới.",
+    "atEdgeDetail": "{current} Nghỉ thêm một buổi sẽ xuống dưới {target}%.",
+    "mustAttend": {"one": "Đi học buổi tới là bạn quay lại {target}%.", "other": "Đi học liên tiếp {n} buổi tới để quay lại {target}%."},
+    "mustAttendDetail": "{current} Khi đó bạn sẽ đạt {pct}%.",
+    "unreachable": "Đã vắng một buổi thì không thể đạt lại 100%.",
+    "planMiss": "Bạn được nghỉ tối đa {n} trên {total} buổi.",
+    "planDetail": "Cần có mặt ít nhất {attend} trên {total} buổi để đạt mức yêu cầu.",
+    "whatif": "Nếu nghỉ thêm {n} buổi, bạn sẽ còn {pct}%.",
+    "whatifAbove": "Vẫn đạt mức {target}%. Bạn được nghỉ tối đa {m} buổi mà vẫn giữ mức này.",
+    "whatifBelow": "Đã dưới mức {target}%. Bạn chỉ được nghỉ tối đa {m} buổi để giữ mức này.",
+    "recover": "Cần có mặt ít nhất {n} trên {rem} buổi còn lại.",
+    "recoverDetail": "Bạn được nghỉ {m} buổi trong số đó mà cuối kỳ vẫn đạt {target}% trở lên.",
+    "recoverSafe": "Dù nghỉ hết {rem} buổi còn lại, cuối kỳ bạn vẫn đạt {target}% trở lên.",
+    "recoverImpossible": "Dù đi đủ {rem} buổi còn lại, cuối kỳ bạn chỉ đạt {pct}%.",
+    "recoverImpossibleDetail": "Học kỳ này không thể đạt {target}% nữa. Hãy hỏi giảng viên hoặc phòng đào tạo về nghỉ ốm có giấy tờ hoặc học bù.",
+    "wholeNumbers": "Hãy nhập số nguyên, với ít nhất 1 buổi đã học.",
+    "attendedTooMany": "Số buổi có mặt không thể lớn hơn số buổi đã học.",
+    "targetRange": "Hãy nhập mức yêu cầu từ 1 đến 100."
+  }
+}

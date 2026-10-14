@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url><loc>https://thiemjason-work.site/classly/</loc></url>
+  <url><loc>https://thiemjason-work.site/classly/faq.html</loc></url>
+  <url><loc>https://thiemjason-work.site/classly/privacy.html</loc></url>
+  <url><loc>https://thiemjason-work.site/classly/terms.html</loc></url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/tools/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/tools/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/cong-cu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/tools/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/vi/cong-cu/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/tools/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/cong-cu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/tools/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/75-percent-attendance-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/75-percent-attendance-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/chuyen-can-80-phan-tram/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/75-percent-attendance-calculator/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/vi/chuyen-can-80-phan-tram/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/75-percent-attendance-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/chuyen-can-80-phan-tram/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/75-percent-attendance-calculator/"/>
+  </url>
   <url>
     <loc>https://thiemjason-work.site/classly/attendance-calculator/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/attendance-calculator/"/>
@@ -13,7 +40,28 @@
     <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/tinh-chuyen-can/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/attendance-calculator/"/>
   </url>
-  <url><loc>https://thiemjason-work.site/classly/faq.html</loc></url>
-  <url><loc>https://thiemjason-work.site/classly/privacy.html</loc></url>
-  <url><loc>https://thiemjason-work.site/classly/terms.html</loc></url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/attendance-recovery-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/attendance-recovery-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/can-di-hoc-bao-nhieu-buoi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/attendance-recovery-calculator/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/vi/can-di-hoc-bao-nhieu-buoi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/attendance-recovery-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/can-di-hoc-bao-nhieu-buoi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/attendance-recovery-calculator/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/bunk-calculator/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/bunk-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/tinh-so-buoi-duoc-nghi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/bunk-calculator/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/vi/tinh-so-buoi-duoc-nghi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/bunk-calculator/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/tinh-so-buoi-duoc-nghi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/bunk-calculator/"/>
+  </url>
 </urlset>
