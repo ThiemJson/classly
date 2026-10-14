@@ -25,6 +25,19 @@ GitHub Pages from the root of the default branch.
 The privacy policy URL used by the stores and the app is
 `https://thiemjson.github.io/classly/privacy.html`.
 
+## SEO checks
+
+After changing content or the generator, rebuild and run the automated checks:
+
+```sh
+python3 tools/build_seo_pages.py
+python3 tools/check_seo_pages.py
+```
+
+The checker validates internal `/classly/` links, reciprocal hreflang links,
+sitemap coverage and XML, JSON-LD, one H1 per indexable page, and title and
+description length limits.
+
 ## Local preview
 
 ```sh

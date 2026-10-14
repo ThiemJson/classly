@@ -27,7 +27,7 @@ Mỗi task có: mục tiêu, file cần sửa, đặc tả, số liệu kiểm t
 | robots.txt, sitemap.xml, canonical, JSON-LD | ✅ Xong |
 | Trình sinh trang `tools/build_seo_pages.py` | ✅ Xong (chỉ hỗ trợ trang **tool** và **hub**) |
 | 4 công cụ: attendance calculator, bunk, bảng mức tối thiểu, recovery | ✅ en, vi, hi, id |
-| Tiếng Tây Ban Nha (es) | ⚠️ Đã viết `content/es/` (site.json + 4 trang), **chưa sinh trang, chưa kiểm tra** |
+| Tiếng Tây Ban Nha (es) | ✅ 4 công cụ + hub đã sinh và kiểm tra |
 | pt, tr, fr | ❌ Chưa làm |
 | FAQ tĩnh trong faq.html | ✅ Xong |
 | Link Google Play có `utm_campaign` | ✅ Xong |
@@ -80,13 +80,14 @@ Widget hiện có (`assets/calculator.js` → `KINDS`): `standing`, `plan`, `wha
 ### 2.4 Quy trình mỗi task
 1. Sửa/thêm file trong `content/` (hoặc code generator / JS / CSS).
 2. `python3 tools/build_seo_pages.py`
-3. Xem thử cục bộ (trang dùng đường dẫn gốc `/classly/...`):
+3. `python3 tools/check_seo_pages.py`
+4. Xem thử cục bộ (trang dùng đường dẫn gốc `/classly/...`):
    ```sh
    mkdir -p /tmp/serve && ln -sfn "$PWD" /tmp/serve/classly
    python3 -m http.server 4173 --directory /tmp/serve
    # mở http://localhost:4173/classly/<slug>
    ```
-4. **Checklist kiểm tra** (bắt buộc, ghi kết quả vào mô tả commit nếu có lỗi còn lại):
+5. **Checklist kiểm tra** (bắt buộc, ghi kết quả vào mô tả commit nếu có lỗi còn lại):
    - [ ] Mỗi widget ở giá trị mặc định cho đúng số đã viết trong thân bài.
    - [ ] Thử thêm: ô trống (ẩn kết quả), số thập phân/âm (báo lỗi), attended > held (báo lỗi),
          target 100, trường hợp "không thể đạt" của `recover`.
@@ -96,9 +97,9 @@ Widget hiện có (`assets/calculator.js` → `KINDS`): `standing`, `plan`, `wha
    - [ ] Mọi `<script type="application/ld+json">` parse được.
    - [ ] `hreflang` trên mỗi trang liệt kê đủ các ngôn ngữ của cùng `id`, có `x-default`.
    - [ ] Ở bề rộng 375px không có cuộn ngang (`document.documentElement.scrollWidth === 375`).
-5. Thêm 1 dòng vào `SEO-CHANGELOG.md` (ngày, thay đổi, trang, "new" hoặc số liệu trước đó).
-6. Tick ô tương ứng trong `SEO-PLAN.md`.
-7. Commit trên `master`, mỗi task một commit, message dạng `feat(seo): ...`.
+6. Thêm 1 dòng vào `SEO-CHANGELOG.md` (ngày, thay đổi, trang, "new" hoặc số liệu trước đó).
+7. Tick ô tương ứng trong `SEO-PLAN.md`.
+8. Commit trên `master`, mỗi task một commit, message dạng `feat(seo): ...`.
    **Không tự push** nếu môi trường không có quyền SSH; báo chủ repo chạy:
    `git -C <đường dẫn repo> push origin master`.
 
@@ -106,7 +107,7 @@ Widget hiện có (`assets/calculator.js` → `KINDS`): `standing`, `plan`, `wha
 
 ## 3. GIAI ĐOẠN 3 (còn lại) — Đa ngôn ngữ
 
-### Task 3.1 — Hoàn tất tiếng Tây Ban Nha (es)
+### Task 3.1 — Hoàn tất tiếng Tây Ban Nha (es) ✅
 - **Đã có:** `content/es/site.json`, 4 file trong `content/es/tools/` (mức 80%, dùng "materia", "faltas").
 - **Việc:** chạy generator, chạy đủ checklist 2.4.
 - **Số kiểm tra ở giá trị mặc định:**
@@ -316,7 +317,7 @@ Ví dụ: "cách tính % chuyên cần", "nghỉ quá 20% có bị cấm thi kh�
 
 ## 7. Hạ tầng còn thiếu (Giai đoạn 1)
 
-### Task 1.8 — Script kiểm tra tự động `tools/check_seo_pages.py`
+### Task 1.8 — Script kiểm tra tự động `tools/check_seo_pages.py` ✅
 Tự động hoá phần không cần trình duyệt của checklist 2.4: mọi link `/classly/...` trong HTML trỏ tới
 file có thật; hreflang hai chiều; sitemap hợp lệ và khớp số trang; JSON-LD parse được; mỗi trang có
 đúng 1 `<h1>`, title ≤ 65 ký tự, description ≤ 160 ký tự. Thoát với mã ≠ 0 nếu có lỗi.

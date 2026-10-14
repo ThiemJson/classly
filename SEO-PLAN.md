@@ -18,6 +18,7 @@ Rules for every page:
 - [x] Tools hub with links between tools
 - [x] FAQ written into the HTML
 - [x] Campaign links to Google Play (utm_campaign = page id + language)
+- [x] Automated SEO checks: links, hreflang, sitemap, JSON-LD and metadata
 - [ ] App Store campaign links: set APP_STORE_PROVIDER_TOKEN in the generator
 - [x] SEO-CHANGELOG.md
 - [ ] Bing Webmaster Tools (import from Search Console)
@@ -32,8 +33,12 @@ Rules for every page:
 Check search volume (Keyword Planner / Ahrefs free tools) before building each one.
 
 ## Phase 3 — Languages (weeks 2–4)
-en, vi, hi, id done. es written in content/es/ but not generated or checked yet. Next: pt, tr, fr. Terms come from lib/l10n/app_<lang>.arb
-in the app repo; slugs use the local search phrase. Native review for en, vi, hi.
+- [x] en, vi, hi, id
+- [x] es: four tools and hub generated and checked
+- [ ] pt, tr, fr
+- [ ] Native review for hi, id, es, pt, tr, fr
+
+Terms come from `lib/l10n/app_<lang>.arb` in the app repo; slugs use the local search phrase.
 
 ## Phase 4 — Answer-first articles (weeks 3–8, ~10 a week)
 Topics: attendance rules (sourced), calculating and recovering attendance,
