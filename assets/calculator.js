@@ -87,6 +87,80 @@
     }
   };
 
+  function attachSubjects(root) {
+    var box = root.querySelector('.result');
+    var rows = root.querySelector('.subject-rows');
+    var targetInput = root.querySelector('input[name="target"]');
+    function addResult(value) {
+      var line = document.createElement('p');
+      line.textContent = value;
+      root.querySelector('.subject-results').appendChild(line);
+    }
+    function run() {
+      var target = Number(targetInput.value.trim());
+      var blank = targetInput.value.trim() === '';
+      var invalidTarget = isNaN(target) || target <= 0 || target > 100;
+      var invalidCount = false, attendedTooMany = false;
+      var subjects = [];
+      rows.querySelectorAll('.subject-row').forEach(function (row, index) {
+        var heldInput = row.querySelector('input[name="held"]');
+        var attendedInput = row.querySelector('input[name="attended"]');
+        var heldRaw = heldInput.value.trim();
+        var attendedRaw = attendedInput.value.trim();
+        if (heldRaw === '' || attendedRaw === '') blank = true;
+        var held = Number(heldRaw), attended = Number(attendedRaw);
+        if (!isCount(held) || held < 1 || !isCount(attended)) invalidCount = true;
+        if (attended > held) attendedTooMany = true;
+        subjects.push({name: row.querySelector('input[name="subject"]').value.trim() || fill(text('subjectFallback'), {n: index + 1}), held: held, attended: attended});
+      });
+      if (blank) { box.hidden = true; return; }
+      if (invalidTarget || invalidCount || attendedTooMany) {
+        box.hidden = false; box.dataset.tone = 'warn';
+        box.querySelector('.result-headline').textContent = invalidTarget ? text('targetRange') : invalidCount ? text('wholeNumbers') : text('attendedTooMany');
+        box.querySelector('.result-detail').textContent = '';
+        root.querySelector('.subject-results').textContent = '';
+        return;
+      }
+      var totalHeld = 0, totalAttended = 0, below = [];
+      var resultList = root.querySelector('.subject-results');
+      resultList.textContent = '';
+      subjects.forEach(function (subject) {
+        totalHeld += subject.held; totalAttended += subject.attended;
+        var pct = subject.attended * 100 / subject.held;
+        if (pct + EPS >= target) {
+          var miss = canMiss(subject.held, subject.attended, target);
+          addResult(fill(text(miss ? 'subjectCanMiss' : 'subjectAtEdge'), {name: subject.name, pct: fmt(pct), n: miss}));
+        } else {
+          below.push(subject.name);
+          var need = target >= 100 ? null : mustAttend(subject.held, subject.attended, target);
+          addResult(fill(text(need === null ? 'subjectUnreachable' : 'subjectMustAttend'), {name: subject.name, pct: fmt(pct), n: need}));
+        }
+      });
+      var overall = totalAttended * 100 / totalHeld;
+      box.hidden = false;
+      box.dataset.tone = below.length ? 'bad' : 'good';
+      box.querySelector('.result-headline').textContent = fill(text('subjectsOverall'), {pct: fmt(overall), attended: totalAttended, held: totalHeld});
+      var detail = '';
+      if (overall + EPS >= target && below.length) detail = fill(text(below.length === 1 ? 'subjectsWarning' : 'subjectsWarnings'), {names: below.join(', '), target: fmt(target)});
+      else if (overall + EPS < target) detail = fill(text('subjectsBelow'), {target: fmt(target)});
+      box.querySelector('.result-detail').textContent = detail;
+    }
+    root.querySelector('.add-subject').addEventListener('click', function () {
+      var row = rows.querySelector('.subject-row').cloneNode(true);
+      row.querySelector('input[name="subject"]').value = '';
+      row.querySelector('input[name="held"]').value = '0';
+      row.querySelector('input[name="attended"]').value = '0';
+      rows.appendChild(row); run();
+    });
+    rows.addEventListener('click', function (event) {
+      if (!event.target.classList.contains('remove-subject')) return;
+      if (rows.children.length > 1) event.target.closest('.subject-row').remove();
+      run();
+    });
+    root.addEventListener('input', run);
+    run();
+  }
+
   function attach(root) {
     var calculate = KINDS[root.dataset.widget];
     var box = root.querySelector('.result');
@@ -114,5 +188,8 @@
     run();
   }
 
-  document.querySelectorAll('[data-widget]').forEach(attach);
+  document.querySelectorAll('[data-widget]').forEach(function (root) {
+    if (root.dataset.widget === 'subjects') attachSubjects(root);
+    else attach(root);
+  });
 })();

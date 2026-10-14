@@ -1,0 +1,22 @@
+{
+  "id": "subject-wise", "order": 5, "slug": "subject-wise-attendance-calculator/",
+  "title": "Subject-Wise and Overall Attendance Calculator · Classly",
+  "description": "Calculate attendance for multiple subjects, see overall attendance and find how many classes you can miss or must attend in each subject.",
+  "og_title": "Subject-Wise Attendance Calculator", "h1": "Subject-wise attendance calculator", "card_title": "Subject-wise attendance calculator", "card_text": "Compare every subject with your overall attendance in one table.",
+  "intro": "<p><b>Subject-wise attendance checks each subject separately, while overall attendance combines every class.</b> Add your subjects below to find hidden shortages that a strong overall percentage can mask.</p>",
+  "widgets": [{"kind": "subjects", "defaults": {"target": 75, "subjects": [{"name": "Mathematics", "held": 30, "attended": 26}, {"name": "Physics", "held": 30, "attended": 21}, {"name": "Chemistry", "held": 24, "attended": 22}]}}],
+  "related": ["attendance-calculator", "bunk-calculator", "recovery"],
+  "faq": [
+    {"q": "What is subject-wise attendance?", "a": "It is the attendance percentage calculated separately for each subject using that subject's attended and held classes."},
+    {"q": "Why is my overall attendance safe while one subject is low?", "a": "Overall attendance combines all classes. High attendance in other subjects can outweigh a shortage, but it does not raise the low subject's own percentage."},
+    {"q": "Should laboratories be separate subjects?", "a": "Track them separately if your institution gives them an independent attendance requirement or separate record."}
+  ]
+}
+---
+<h2>Subject-wise versus overall attendance</h2>
+<p>For each row, attendance is attended ÷ held × 100. Overall attendance adds all attended classes, adds all held classes, then divides the two totals. Do not simply average the percentages when subjects have different numbers of classes.</p>
+<p>In the example, Mathematics is 26 of 30 = <b>86.66%</b> and can miss 4 more classes. Physics is 21 of 30 = <b>70%</b> and needs 6 consecutive classes to reach 27 of 36 = 75%. Chemistry is 22 of 24 = <b>91.66%</b> and can miss 5 more classes.</p>
+<p>The overall result is 69 of 84 = <b>82.14%</b>. It meets a 75% target, but Physics remains below target, so the calculator displays a warning.</p>
+<h2>How to use the table</h2>
+<ol><li>Add one row per subject or independently assessed component.</li><li>Enter every class held, including classes you missed.</li><li>Enter only classes you attended.</li><li>Use the target from your institution's current rules.</li><li>Update the rows after cancellations, extra classes or corrections.</li></ol>
+<p>You can use periods or hours instead of class meetings when your institution counts attendance that way, as long as every row uses consistent units.</p>

@@ -189,3 +189,13 @@ footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
 .answer-box{background:var(--sage-soft);border-radius:16px;padding:18px 20px;margin:20px 0 28px;font-weight:700}
 .sources{padding-left:22px}
 .article .updated{margin-bottom:0}
+.subject-head,.subject-row{display:grid;grid-template-columns:minmax(130px,1.6fr) minmax(72px,.7fr) minmax(72px,.7fr) 36px;gap:8px;align-items:center}
+.subject-head{color:var(--muted);font-size:12px;font-weight:600;padding:0 4px 6px}
+.subject-rows{display:grid;gap:8px}
+.subject-row input{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:9px 10px;width:100%;min-width:0}
+.remove-subject{border:0;background:var(--variant);color:var(--muted);border-radius:10px;width:36px;height:36px;font-size:22px;cursor:pointer}
+.subject-actions{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-top:14px}
+.subject-actions .field{width:130px}
+.subject-results{display:grid;gap:4px;margin-top:10px}
+.subject-results p{margin:0;font-size:14px}
+@media (max-width:560px){.subject-head{display:none}.subject-row{grid-template-columns:1fr 1fr 36px}.subject-row label:first-child{grid-column:1/-1}.subject-actions{align-items:stretch}.subject-actions .field{width:110px}}

@@ -29,13 +29,17 @@
     "target": "Target %",
     "total": "Classes this semester",
     "skip": "Classes to miss",
-    "remaining": "Classes left"
+    "remaining": "Classes left",
+    "subject": "Subject",
+    "add_subject": "Add subject",
+    "remove_subject": "Remove subject"
   },
   "widgets": {
     "standing": {"title": "Where do I stand?", "hint": "Count every class held so far, including the ones you missed."},
     "plan": {"title": "Planning a whole semester?", "hint": "If you know how many classes a subject will have in total."},
     "whatif": {"title": "What if I miss more classes?", "hint": "See your percentage after missing the next few classes."},
-    "recover": {"title": "Can I still make it by the end of term?", "hint": "Add how many classes of this subject are left this semester."}
+    "recover": {"title": "Can I still make it by the end of term?", "hint": "Add how many classes of this subject are left this semester."},
+    "subjects": {"title": "Calculate every subject", "hint": "Add each subject with its classes held and attended. The overall result never hides a subject below target."}
   },
   "table": {"held": "Classes held", "min": "Attend at least", "missed": "Can have missed"},
   "calc": {
@@ -59,6 +63,15 @@
     "recoverImpossibleDetail": "{target}% is out of reach this semester. Talk to your teacher or department about medical leave or make-up classes.",
     "wholeNumbers": "Use whole numbers, with at least 1 class held.",
     "attendedTooMany": "Classes attended cannot be more than classes held.",
-    "targetRange": "Enter a target between 1 and 100."
+    "targetRange": "Enter a target between 1 and 100.",
+    "subjectsOverall": "Overall attendance: {pct}% ({attended} of {held}).",
+    "subjectsWarning": "Overall is on target, but {names} is below {target}%.",
+    "subjectsWarnings": "Overall is on target, but {names} are below {target}%.",
+    "subjectsBelow": "Overall attendance is below {target}%.",
+    "subjectCanMiss": "{name}: {pct}% — can miss {n} more.",
+    "subjectMustAttend": "{name}: {pct}% — must attend {n} in a row.",
+    "subjectAtEdge": "{name}: {pct}% — do not miss the next class.",
+    "subjectUnreachable": "{name}: {pct}% — the target is not reachable.",
+    "subjectFallback": "Subject {n}"
   }
 }

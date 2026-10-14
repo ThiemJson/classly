@@ -87,6 +87,20 @@ def widget(spec, site, index):
     kind = spec['kind']
     words = dict(site['widgets'][kind])
     words.update({k: spec[k] for k in ('title', 'hint') if k in spec})
+    if kind == 'subjects':
+        rows = []
+        for subject in spec['defaults']['subjects']:
+            rows.append(subject_row(subject, site))
+        title_id = f'calc-{index}'
+        return (f'<section class="calc-card subjects-widget" data-widget="subjects" aria-labelledby="{title_id}" '
+                f'data-add-label="{esc(site["fields"]["add_subject"])}" data-remove-label="{esc(site["fields"]["remove_subject"])}">\n'
+                f'  <h2 id="{title_id}">{esc(words["title"])}</h2><p>{esc(words["hint"])}</p>\n'
+                f'  <div class="subject-head"><span>{esc(site["fields"]["subject"])}</span><span>{esc(site["fields"]["held"])}</span><span>{esc(site["fields"]["attended"])}</span><span></span></div>\n'
+                f'  <div class="subject-rows">{"".join(rows)}</div>\n'
+                f'  <div class="subject-actions"><button type="button" class="btn btn-line add-subject">+ {esc(site["fields"]["add_subject"])}</button>'
+                f'<label class="field">{esc(site["fields"]["target"])}<input name="target" type="number" inputmode="decimal" min="1" max="100" step="any" value="{esc(spec["defaults"]["target"])}"></label></div>\n'
+                '  <div class="result" aria-live="polite" hidden><p class="result-headline"></p><p class="result-detail"></p><div class="subject-results"></div></div>\n'
+                '</section>')
     fields = []
     for name in WIDGET_FIELDS[kind]:
         mode = 'decimal' if name == 'target' else 'numeric'
@@ -101,6 +115,14 @@ def widget(spec, site, index):
             f'  <div class="fields{count}">{"".join(fields)}</div>\n'
             '  <div class="result" aria-live="polite" hidden><p class="result-headline"></p><p class="result-detail"></p></div>\n'
             '</section>')
+
+
+def subject_row(subject, site):
+    return (f'<div class="subject-row"><label><span class="visually-hidden">{esc(site["fields"]["subject"])}</span>'
+            f'<input name="subject" type="text" value="{esc(subject.get("name", ""))}" placeholder="{esc(site["fields"]["subject"])}"></label>'
+            f'<label><span class="visually-hidden">{esc(site["fields"]["held"])}</span><input name="held" type="number" inputmode="numeric" min="0" step="1" value="{esc(subject.get("held", 0))}"></label>'
+            f'<label><span class="visually-hidden">{esc(site["fields"]["attended"])}</span><input name="attended" type="number" inputmode="numeric" min="0" step="1" value="{esc(subject.get("attended", 0))}"></label>'
+            f'<button type="button" class="remove-subject" aria-label="{esc(site["fields"]["remove_subject"])}">×</button></div>')
 
 
 def alternates(group):

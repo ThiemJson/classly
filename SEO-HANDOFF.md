@@ -187,7 +187,7 @@ Khi thêm công cụ mới: thêm `id` của nó vào `related` của 1–2 tran
 3. `content/<lang>/site.json`: thêm nhãn ô (`fields`), tiêu đề/gợi ý (`widgets.<kind>`), câu kết quả (`calc`).
 4. Viết `content/en/tools/<name>.html` theo mục 2.2.
 
-### Task 2.1 — Chuyên cần theo từng môn (subject-wise)
+### Task 2.1 — Chuyên cần theo từng môn (subject-wise; en xong, đang dịch)
 - **Câu tìm kiếm:** "subject wise attendance calculator", "overall attendance calculator".
 - **Slug:** `subject-wise-attendance-calculator/`; vi `vi/tinh-chuyen-can-tung-mon/`.
 - **Widget `subjects`:** bảng nhiều dòng (tên môn, đã học, có mặt), nút "+ Thêm môn", 1 ô mục tiêu.
