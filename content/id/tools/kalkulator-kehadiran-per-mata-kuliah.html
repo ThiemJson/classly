@@ -1,0 +1,19 @@
+{
+  "id": "subject-wise", "order": 5, "slug": "id/kalkulator-kehadiran-per-mata-kuliah/",
+  "title": "Kalkulator Kehadiran per Mata Kuliah dan Total · Classly",
+  "description": "Hitung kehadiran beberapa mata kuliah, persentase total, dan jumlah pertemuan yang boleh dilewatkan atau harus dihadiri.",
+  "og_title": "Kalkulator Kehadiran per Mata Kuliah", "h1": "Kalkulator kehadiran per mata kuliah", "card_title": "Kehadiran per mata kuliah", "card_text": "Bandingkan setiap mata kuliah dengan kehadiran keseluruhan dalam satu tabel.",
+  "intro": "<p><b>Kehadiran per mata kuliah dihitung terpisah, sedangkan kehadiran keseluruhan menggabungkan semua pertemuan.</b> Tambahkan mata kuliah untuk menemukan kekurangan yang tertutup oleh total yang tinggi.</p>",
+  "widgets": [{"kind": "subjects", "defaults": {"target": 75, "subjects": [{"name": "Matematika", "held": 30, "attended": 26}, {"name": "Fisika", "held": 30, "attended": 21}, {"name": "Kimia", "held": 24, "attended": 22}]}}],
+  "related": ["attendance-calculator", "bunk-calculator", "recovery"],
+  "calc": {"subjectsOverall": "Keseluruhan: {pct}% ({attended}/{held} pertemuan).", "subjectsWarning": "Peringatan: total mencapai {target}%, tetapi {names} belum.", "subjectsWarnings": "Peringatan: total mencapai {target}%, tetapi mata kuliah berikut belum: {names}.", "subjectsBelow": "Kehadiran keseluruhan berada di bawah {target}%.", "subjectCanMiss": "{name}: {pct}% — Anda masih boleh melewatkan {n} pertemuan.", "subjectMustAttend": "{name}: {pct}% — Anda harus hadir {n} pertemuan berturut-turut.", "subjectAtEdge": "{name}: {pct}% — jangan lewatkan pertemuan berikutnya.", "subjectUnreachable": "{name}: {pct}% — tidak dapat kembali ke 100% setelah absen.", "subjectFallback": "Mata kuliah {n}"},
+  "faq": [{"q": "Apa itu kehadiran per mata kuliah?", "a": "Persentase yang dihitung terpisah untuk setiap mata kuliah dengan membagi pertemuan yang dihadiri dengan pertemuan yang berlangsung."}, {"q": "Mengapa total aman tetapi satu mata kuliah rendah?", "a": "Total menggabungkan semua pertemuan. Kehadiran tinggi di mata kuliah lain dapat menaikkan total, tetapi tidak menaikkan persentase mata kuliah yang rendah."}, {"q": "Apakah praktikum perlu dipisah?", "a": "Pisahkan jika kampus menerapkan syarat atau catatan kehadiran tersendiri untuk praktikum."}]
+}
+---
+<h2>Kehadiran per mata kuliah dan keseluruhan</h2>
+<p>Setiap baris menghitung pertemuan dihadiri ÷ pertemuan berlangsung × 100. Kehadiran keseluruhan menjumlahkan semua kehadiran dan semua pertemuan terlebih dahulu. Jangan sekadar merata-ratakan persentase jika jumlah pertemuan berbeda.</p>
+<p>Dalam contoh, Matematika 26/30 = <b>86,66%</b> dan masih boleh melewatkan 4 pertemuan. Fisika 21/30 = <b>70%</b> dan perlu hadir 6 kali berturut-turut untuk mencapai 27/36 = 75%. Kimia 22/24 = <b>91,66%</b> dan masih boleh melewatkan 5 pertemuan.</p>
+<p>Hasil keseluruhan adalah 69/84 = <b>82,14%</b>. Total memenuhi target 75%, tetapi Fisika masih di bawah target sehingga kalkulator menampilkan peringatan.</p>
+<h2>Cara menggunakan tabel</h2>
+<ol><li>Tambahkan satu baris untuk setiap mata kuliah atau komponen yang dinilai terpisah.</li><li>Masukkan semua pertemuan yang berlangsung, termasuk yang Anda lewatkan.</li><li>Masukkan hanya pertemuan yang Anda hadiri.</li><li>Gunakan target terbaru dari kampus Anda.</li><li>Perbarui data setelah pembatalan, kelas tambahan, atau koreksi.</li></ol>
+<p>Anda dapat memakai jam atau sesi jika kampus menghitung kehadiran dengan cara itu, asalkan unit di setiap baris konsisten.</p>

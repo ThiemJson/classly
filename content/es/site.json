@@ -30,13 +30,17 @@
     "target": "Objetivo %",
     "total": "Clases del semestre",
     "skip": "Clases a faltar",
-    "remaining": "Clases restantes"
+    "remaining": "Clases restantes",
+    "subject": "Asignatura",
+    "add_subject": "Añadir asignatura",
+    "remove_subject": "Eliminar asignatura"
   },
   "widgets": {
     "standing": {"title": "¿Cómo voy?", "hint": "Cuenta todas las clases impartidas hasta ahora, incluidas las que faltaste."},
     "plan": {"title": "¿Planificas todo el semestre?", "hint": "Si sabes cuántas clases tendrá la materia en total."},
     "whatif": {"title": "¿Y si falto a más clases?", "hint": "Mira tu porcentaje después de faltar a las próximas clases."},
-    "recover": {"title": "¿Llego a tiempo para final de semestre?", "hint": "Añade cuántas clases de esta materia quedan este semestre."}
+    "recover": {"title": "¿Llego a tiempo para final de semestre?", "hint": "Añade cuántas clases de esta materia quedan este semestre."},
+    "subjects": {"title": "Asistencia por asignatura", "hint": "Añade cada asignatura para compararla con tu asistencia general."}
   },
   "table": {"held": "Clases impartidas", "min": "Asistir al menos a", "missed": "Faltas permitidas"},
   "calc": {

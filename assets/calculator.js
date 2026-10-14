@@ -148,8 +148,8 @@
     root.querySelector('.add-subject').addEventListener('click', function () {
       var row = rows.querySelector('.subject-row').cloneNode(true);
       row.querySelector('input[name="subject"]').value = '';
-      row.querySelector('input[name="held"]').value = '0';
-      row.querySelector('input[name="attended"]').value = '0';
+      row.querySelector('input[name="held"]').value = '';
+      row.querySelector('input[name="attended"]').value = '';
       rows.appendChild(row); run();
     });
     rows.addEventListener('click', function (event) {

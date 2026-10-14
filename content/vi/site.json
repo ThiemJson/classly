@@ -30,13 +30,17 @@
     "target": "Mức yêu cầu %",
     "total": "Tổng số buổi",
     "skip": "Số buổi định nghỉ",
-    "remaining": "Số buổi còn lại"
+    "remaining": "Số buổi còn lại",
+    "subject": "Môn học",
+    "add_subject": "Thêm môn",
+    "remove_subject": "Xóa môn"
   },
   "widgets": {
     "standing": {"title": "Mình đang ở đâu?", "hint": "Đếm mọi buổi đã diễn ra, kể cả những buổi bạn vắng."},
     "plan": {"title": "Tính trước cho cả học kỳ", "hint": "Khi bạn biết tổng số buổi của học phần."},
     "whatif": {"title": "Nếu nghỉ thêm vài buổi thì sao?", "hint": "Xem tỷ lệ của bạn sau khi nghỉ thêm vài buổi tới."},
-    "recover": {"title": "Cuối kỳ còn kịp không?", "hint": "Nhập thêm số buổi còn lại của môn này trong học kỳ."}
+    "recover": {"title": "Cuối kỳ còn kịp không?", "hint": "Nhập thêm số buổi còn lại của môn này trong học kỳ."},
+    "subjects": {"title": "Chuyên cần theo từng môn", "hint": "Thêm từng môn để so sánh với tỷ lệ chuyên cần tổng thể."}
   },
   "table": {"held": "Số buổi đã học", "min": "Phải có mặt ít nhất", "missed": "Được vắng tối đa"},
   "calc": {

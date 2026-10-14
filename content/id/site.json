@@ -30,13 +30,17 @@
     "target": "Target %",
     "total": "Pertemuan per semester",
     "skip": "Pertemuan dilewatkan",
-    "remaining": "Pertemuan tersisa"
+    "remaining": "Pertemuan tersisa",
+    "subject": "Mata kuliah",
+    "add_subject": "Tambah mata kuliah",
+    "remove_subject": "Hapus mata kuliah"
   },
   "widgets": {
     "standing": {"title": "Posisi kehadiranku sekarang?", "hint": "Hitung semua pertemuan yang sudah berlangsung, termasuk yang kamu lewatkan."},
     "plan": {"title": "Merencanakan satu semester?", "hint": "Jika kamu tahu jumlah pertemuan mata kuliah ini dalam satu semester."},
     "whatif": {"title": "Kalau aku bolos lagi?", "hint": "Lihat persentasemu setelah melewatkan beberapa pertemuan berikutnya."},
-    "recover": {"title": "Masih bisa terkejar sampai akhir semester?", "hint": "Tambahkan berapa pertemuan mata kuliah ini yang tersisa semester ini."}
+    "recover": {"title": "Masih bisa terkejar sampai akhir semester?", "hint": "Tambahkan berapa pertemuan mata kuliah ini yang tersisa semester ini."},
+    "subjects": {"title": "Kehadiran per mata kuliah", "hint": "Tambahkan setiap mata kuliah untuk membandingkannya dengan kehadiran keseluruhan."}
   },
   "table": {"held": "Pertemuan berlangsung", "min": "Hadir minimal", "missed": "Boleh absen maksimal"},
   "calc": {

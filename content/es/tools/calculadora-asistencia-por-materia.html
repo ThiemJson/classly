@@ -1,0 +1,19 @@
+{
+  "id": "subject-wise", "order": 5, "slug": "es/calculadora-asistencia-por-materia/",
+  "title": "Calculadora de Asistencia por Materia y General · Classly",
+  "description": "Calcula la asistencia de varias materias, el porcentaje general y cuántas clases puedes faltar o debes asistir en cada una.",
+  "og_title": "Calculadora de Asistencia por Materia", "h1": "Calculadora de asistencia por materia", "card_title": "Asistencia por materia", "card_text": "Compara cada asignatura con tu asistencia general en una tabla.",
+  "intro": "<p><b>La asistencia por materia se calcula por separado, mientras que la general combina todas las clases.</b> Añade tus asignaturas para detectar una falta que un buen porcentaje general puede ocultar.</p>",
+  "widgets": [{"kind": "subjects", "defaults": {"target": 75, "subjects": [{"name": "Matemáticas", "held": 30, "attended": 26}, {"name": "Física", "held": 30, "attended": 21}, {"name": "Química", "held": 24, "attended": 22}]}}],
+  "related": ["attendance-calculator", "bunk-calculator", "recovery"],
+  "calc": {"subjectsOverall": "General: {pct}% ({attended}/{held} clases).", "subjectsWarning": "Aviso: el total alcanza el {target}%, pero {names} no.", "subjectsWarnings": "Aviso: el total alcanza el {target}%, pero estas materias no: {names}.", "subjectsBelow": "La asistencia general está por debajo del {target}%.", "subjectCanMiss": "{name}: {pct}% — puedes faltar {n} clases más.", "subjectMustAttend": "{name}: {pct}% — debes asistir a {n} clases seguidas.", "subjectAtEdge": "{name}: {pct}% — no faltes a la próxima clase.", "subjectUnreachable": "{name}: {pct}% — no puedes volver al 100% tras una ausencia.", "subjectFallback": "Asignatura {n}"},
+  "faq": [{"q": "¿Qué es la asistencia por materia?", "a": "Es el porcentaje calculado por separado para cada asignatura: clases asistidas divididas entre clases impartidas."}, {"q": "¿Por qué mi total está bien si una materia está baja?", "a": "El total combina todas las clases. Una asistencia alta en otras materias puede compensar el total, pero no eleva el porcentaje de la materia baja."}, {"q": "¿Debo separar las prácticas?", "a": "Sí, si tu institución aplica un requisito o registro de asistencia independiente para las prácticas."}]
+}
+---
+<h2>Asistencia por materia frente a asistencia general</h2>
+<p>Cada fila calcula clases asistidas ÷ clases impartidas × 100. El porcentaje general suma primero todas las asistencias y todas las clases. No promedies los porcentajes si las materias tienen cantidades de clases distintas.</p>
+<p>En el ejemplo, Matemáticas es 26/30 = <b>86,66%</b> y permite 4 faltas más. Física es 21/30 = <b>70%</b> y necesita 6 clases seguidas para llegar a 27/36 = 75%. Química es 22/24 = <b>91,66%</b> y permite 5 faltas más.</p>
+<p>El resultado general es 69/84 = <b>82,14%</b>. Supera el objetivo del 75%, pero Física sigue por debajo y la calculadora muestra un aviso.</p>
+<h2>Cómo usar la tabla</h2>
+<ol><li>Añade una fila por asignatura o componente evaluado por separado.</li><li>Incluye todas las clases impartidas, también las que faltaste.</li><li>Introduce solo las clases a las que asististe.</li><li>Usa el requisito vigente de tu institución.</li><li>Actualiza los datos tras cancelaciones, clases extra o correcciones.</li></ol>
+<p>Puedes usar horas o periodos si tu institución cuenta así la asistencia, siempre que mantengas la misma unidad en cada fila.</p>

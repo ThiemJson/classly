@@ -1,0 +1,19 @@
+{
+  "id": "subject-wise", "order": 5, "slug": "vi/tinh-chuyen-can-tung-mon/",
+  "title": "Tính Chuyên Cần Từng Môn và Tổng Thể · Classly",
+  "description": "Tính chuyên cần cho nhiều môn, xem tỷ lệ tổng thể và biết từng môn còn được nghỉ hoặc cần đi học bao nhiêu buổi.",
+  "og_title": "Công Cụ Tính Chuyên Cần Từng Môn", "h1": "Tính chuyên cần theo từng môn", "card_title": "Chuyên cần từng môn", "card_text": "So sánh từng môn với tỷ lệ chuyên cần tổng thể trong một bảng.",
+  "intro": "<p><b>Chuyên cần từng môn được tính riêng, còn chuyên cần tổng thể gộp tất cả buổi học.</b> Thêm các môn bên dưới để phát hiện môn đang thiếu buổi dù tỷ lệ chung vẫn đạt.</p>",
+  "widgets": [{"kind": "subjects", "defaults": {"target": 75, "subjects": [{"name": "Toán", "held": 30, "attended": 26}, {"name": "Vật lý", "held": 30, "attended": 21}, {"name": "Hóa học", "held": 24, "attended": 22}]}}],
+  "related": ["attendance-calculator", "bunk-calculator", "recovery"],
+  "calc": {"subjectsOverall": "Tổng thể: {pct}% ({attended}/{held} buổi).", "subjectsWarning": "Cảnh báo: tổng thể đạt {target}% nhưng môn {names} chưa đạt.", "subjectsWarnings": "Cảnh báo: tổng thể đạt {target}% nhưng các môn {names} chưa đạt.", "subjectsBelow": "Tỷ lệ tổng thể đang dưới mức {target}%.", "subjectCanMiss": "{name}: {pct}% — còn được nghỉ {n} buổi.", "subjectMustAttend": "{name}: {pct}% — cần đi học liên tiếp {n} buổi.", "subjectAtEdge": "{name}: {pct}% — không nên nghỉ buổi tiếp theo.", "subjectUnreachable": "{name}: {pct}% — không thể trở lại mức 100% sau khi đã vắng.", "subjectFallback": "Môn {n}"},
+  "faq": [{"q": "Chuyên cần từng môn là gì?", "a": "Đó là tỷ lệ được tính riêng cho từng môn bằng số buổi có mặt chia cho số buổi đã học."}, {"q": "Vì sao tổng thể đạt nhưng một môn vẫn thiếu?", "a": "Tỷ lệ tổng thể gộp mọi buổi học. Môn có tỷ lệ cao có thể bù vào con số chung nhưng không làm tăng tỷ lệ riêng của môn thấp."}, {"q": "Có nên tách tiết thực hành không?", "a": "Hãy tách riêng nếu trường áp dụng yêu cầu chuyên cần hoặc sổ điểm danh riêng cho phần thực hành."}]
+}
+---
+<h2>Chuyên cần từng môn và tổng thể khác nhau thế nào?</h2>
+<p>Mỗi dòng lấy số buổi có mặt chia cho số buổi đã học rồi nhân 100. Tỷ lệ tổng thể cộng toàn bộ số buổi có mặt, cộng toàn bộ số buổi đã học rồi mới chia. Không nên lấy trung bình các phần trăm khi số buổi của các môn khác nhau.</p>
+<p>Trong ví dụ, Toán là 26/30 = <b>86,66%</b> và còn được nghỉ 4 buổi. Vật lý là 21/30 = <b>70%</b> và cần đi học liên tiếp 6 buổi để đạt 27/36 = 75%. Hóa học là 22/24 = <b>91,66%</b> và còn được nghỉ 5 buổi.</p>
+<p>Kết quả tổng thể là 69/84 = <b>82,14%</b>. Con số này đạt mức 75%, nhưng Vật lý vẫn chưa đạt nên công cụ sẽ hiện cảnh báo.</p>
+<h2>Cách dùng bảng</h2>
+<ol><li>Thêm một dòng cho mỗi môn hoặc phần được chấm chuyên cần riêng.</li><li>Nhập tất cả buổi đã diễn ra, kể cả buổi bạn vắng.</li><li>Chỉ nhập số buổi bạn có mặt.</li><li>Dùng mức yêu cầu hiện hành của trường.</li><li>Cập nhật khi có buổi hủy, học bù hoặc điều chỉnh điểm danh.</li></ol>
+<p>Bạn có thể dùng tiết hoặc giờ thay cho buổi học nếu trường tính theo đơn vị đó, miễn là mỗi dòng dùng cùng một loại đơn vị.</p>

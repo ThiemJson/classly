@@ -1,0 +1,19 @@
+{
+  "id": "subject-wise", "order": 5, "slug": "tr/ders-bazli-devamsizlik-hesaplama/",
+  "title": "Ders Bazlı ve Genel Devamsızlık Hesaplama · Classly",
+  "description": "Birden fazla dersin devam oranını, genel oranı ve her derste kaç ders kaçırabileceğinizi veya katılmanız gerektiğini hesaplayın.",
+  "og_title": "Ders Bazlı Devam Hesaplama", "h1": "Ders bazlı devam hesaplama", "card_title": "Ders bazlı devam", "card_text": "Her dersi genel devam oranınızla tek tabloda karşılaştırın.",
+  "intro": "<p><b>Ders bazlı devam her ders için ayrı, genel devam ise tüm dersler birleştirilerek hesaplanır.</b> İyi görünen genel oranın gizleyebileceği eksikleri bulmak için derslerinizi ekleyin.</p>",
+  "widgets": [{"kind": "subjects", "defaults": {"target": 75, "subjects": [{"name": "Matematik", "held": 30, "attended": 26}, {"name": "Fizik", "held": 30, "attended": 21}, {"name": "Kimya", "held": 24, "attended": 22}]}}],
+  "related": ["attendance-calculator", "bunk-calculator", "recovery"],
+  "calc": {"subjectsOverall": "Genel: %{pct} ({attended}/{held} ders).", "subjectsWarning": "Uyarı: genel oran %{target} hedefini karşılıyor ancak {names} karşılamıyor.", "subjectsWarnings": "Uyarı: genel oran %{target} hedefini karşılıyor ancak şu dersler karşılamıyor: {names}.", "subjectsBelow": "Genel devam oranı %{target} hedefinin altında.", "subjectCanMiss": "{name}: %{pct} — {n} ders daha kaçırabilirsiniz.", "subjectMustAttend": "{name}: %{pct} — art arda {n} derse katılmalısınız.", "subjectAtEdge": "{name}: %{pct} — sıradaki dersi kaçırmayın.", "subjectUnreachable": "{name}: %{pct} — bir devamsızlıktan sonra %100'e dönülemez.", "subjectFallback": "Ders {n}"},
+  "faq": [{"q": "Ders bazlı devam oranı nedir?", "a": "Her ders için katıldığınız ders sayısının işlenen ders sayısına bölünmesiyle ayrı ayrı hesaplanan orandır."}, {"q": "Genel oranım yeterliyken bir ders neden düşük?", "a": "Genel oran tüm dersleri birleştirir. Diğer derslerdeki yüksek katılım toplamı yükseltebilir ancak düşük dersin kendi oranını değiştirmez."}, {"q": "Laboratuvarı ayrı girmeli miyim?", "a": "Kurumunuz laboratuvar için ayrı devam zorunluluğu veya kayıt tutuyorsa ayrı bir satırda izleyin."}]
+}
+---
+<h2>Ders bazlı ve genel devam oranı</h2>
+<p>Her satırda katıldığınız ders ÷ işlenen ders × 100 hesaplanır. Genel oran için önce tüm katılımlar ve tüm işlenen dersler toplanır. Ders saatleri farklıysa yüzdelerin basit ortalamasını almayın.</p>
+<p>Örnekte Matematik 26/30 = <b>%86,66</b> ve 4 ders daha kaçırılabilir. Fizik 21/30 = <b>%70</b> ve 27/36 = %75'e çıkmak için art arda 6 derse katılmayı gerektirir. Kimya 22/24 = <b>%91,66</b> ve 5 ders daha kaçırılabilir.</p>
+<p>Genel sonuç 69/84 = <b>%82,14</b>. Bu, %75 hedefini karşılar ancak Fizik hâlâ hedefin altındadır; hesaplayıcı bu yüzden uyarı gösterir.</p>
+<h2>Tablo nasıl kullanılır?</h2>
+<ol><li>Ayrı değerlendirilen her ders veya bileşen için bir satır ekleyin.</li><li>Kaçırdıklarınız dahil işlenen tüm dersleri girin.</li><li>Yalnızca katıldığınız dersleri yazın.</li><li>Kurumunuzun güncel hedef oranını kullanın.</li><li>İptal, ek ders veya kayıt düzeltmelerinden sonra satırları güncelleyin.</li></ol>
+<p>Kurumunuz devamı saat veya ders dönemiyle sayıyorsa bu birimleri de kullanabilirsiniz; her satırda tutarlı birim kullanın.</p>

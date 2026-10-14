@@ -1,0 +1,19 @@
+{
+  "id": "subject-wise", "order": 5, "slug": "fr/assiduite-par-matiere/",
+  "title": "Calculateur d'Assiduité par Matière et Globale · Classly",
+  "description": "Calcule l'assiduité de plusieurs matières, le taux global et le nombre de cours à manquer ou à suivre pour chacune.",
+  "og_title": "Calculateur d'Assiduité par Matière", "h1": "Calculateur d'assiduité par matière", "card_title": "Assiduité par matière", "card_text": "Compare chaque matière à ton assiduité globale dans un seul tableau.",
+  "intro": "<p><b>L'assiduité par matière est calculée séparément, tandis que le taux global regroupe tous les cours.</b> Ajoute tes matières pour repérer un manque qu'un bon total peut masquer.</p>",
+  "widgets": [{"kind": "subjects", "defaults": {"target": 75, "subjects": [{"name": "Mathématiques", "held": 30, "attended": 26}, {"name": "Physique", "held": 30, "attended": 21}, {"name": "Chimie", "held": 24, "attended": 22}]}}],
+  "related": ["attendance-calculator", "bunk-calculator", "recovery"],
+  "calc": {"subjectsOverall": "Global : {pct} % ({attended}/{held} cours).", "subjectsWarning": "Attention : le total atteint {target} %, mais pas {names}.", "subjectsWarnings": "Attention : le total atteint {target} %, mais pas ces matières : {names}.", "subjectsBelow": "L'assiduité globale est inférieure à {target} %.", "subjectCanMiss": "{name} : {pct} % — tu peux manquer encore {n} cours.", "subjectMustAttend": "{name} : {pct} % — tu dois suivre {n} cours consécutifs.", "subjectAtEdge": "{name} : {pct} % — ne manque pas le prochain cours.", "subjectUnreachable": "{name} : {pct} % — impossible de revenir à 100 % après une absence.", "subjectFallback": "Matière {n}"},
+  "faq": [{"q": "Qu'est-ce que l'assiduité par matière ?", "a": "C'est le pourcentage calculé séparément pour chaque matière en divisant les cours suivis par les cours effectués."}, {"q": "Pourquoi mon total est-il suffisant alors qu'une matière est faible ?", "a": "Le total regroupe tous les cours. Une forte assiduité ailleurs peut compenser le total sans relever le taux propre à la matière faible."}, {"q": "Faut-il séparer les travaux pratiques ?", "a": "Oui, si ton établissement leur applique une obligation ou un registre d'assiduité indépendant."}]
+}
+---
+<h2>Assiduité par matière et assiduité globale</h2>
+<p>Chaque ligne calcule cours suivis ÷ cours effectués × 100. Le taux global additionne d'abord toutes les présences et tous les cours. Ne fais pas la moyenne simple des pourcentages lorsque les matières n'ont pas le même nombre de cours.</p>
+<p>Dans l'exemple, Mathématiques vaut 26/30 = <b>86,66 %</b> et permet encore 4 absences. Physique vaut 21/30 = <b>70 %</b> et exige 6 cours consécutifs pour atteindre 27/36 = 75 %. Chimie vaut 22/24 = <b>91,66 %</b> et permet encore 5 absences.</p>
+<p>Le résultat global est de 69/84 = <b>82,14 %</b>. Il atteint l'objectif de 75 %, mais Physique reste en dessous : le calculateur affiche donc un avertissement.</p>
+<h2>Comment utiliser le tableau</h2>
+<ol><li>Ajoute une ligne par matière ou composante évaluée séparément.</li><li>Entre tous les cours effectués, y compris ceux manqués.</li><li>Entre uniquement les cours que tu as suivis.</li><li>Utilise l'objectif actuellement fixé par ton établissement.</li><li>Mets à jour les lignes après une annulation, un cours ajouté ou une correction.</li></ol>
+<p>Tu peux utiliser des heures ou des séances si ton établissement compte ainsi, à condition de garder la même unité dans chaque ligne.</p>

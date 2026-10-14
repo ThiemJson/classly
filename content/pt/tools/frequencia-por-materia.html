@@ -1,0 +1,19 @@
+{
+  "id": "subject-wise", "order": 5, "slug": "pt/frequencia-por-materia/",
+  "title": "Calculadora de Frequência por Disciplina e Geral · Classly",
+  "description": "Calcule a frequência de várias disciplinas, veja o total geral e quantas aulas pode faltar ou precisa assistir em cada uma.",
+  "og_title": "Calculadora de Frequência por Disciplina", "h1": "Calculadora de frequência por disciplina", "card_title": "Frequência por disciplina", "card_text": "Compare cada disciplina com a frequência geral em uma tabela.",
+  "intro": "<p><b>A frequência por disciplina é calculada separadamente, enquanto a geral reúne todas as aulas.</b> Adicione suas disciplinas para encontrar faltas que um bom total pode esconder.</p>",
+  "widgets": [{"kind": "subjects", "defaults": {"target": 75, "subjects": [{"name": "Matemática", "held": 30, "attended": 26}, {"name": "Física", "held": 30, "attended": 21}, {"name": "Química", "held": 24, "attended": 22}]}}],
+  "related": ["attendance-calculator", "bunk-calculator", "recovery"],
+  "calc": {"subjectsOverall": "Geral: {pct}% ({attended}/{held} aulas).", "subjectsWarning": "Atenção: o total alcança {target}%, mas {names} não.", "subjectsWarnings": "Atenção: o total alcança {target}%, mas estas disciplinas não: {names}.", "subjectsBelow": "A frequência geral está abaixo de {target}%.", "subjectCanMiss": "{name}: {pct}% — você pode faltar mais {n} aulas.", "subjectMustAttend": "{name}: {pct}% — você precisa assistir a {n} aulas seguidas.", "subjectAtEdge": "{name}: {pct}% — não falte à próxima aula.", "subjectUnreachable": "{name}: {pct}% — não é possível voltar a 100% após uma falta.", "subjectFallback": "Disciplina {n}"},
+  "faq": [{"q": "O que é frequência por disciplina?", "a": "É a porcentagem calculada separadamente para cada disciplina, dividindo aulas assistidas por aulas realizadas."}, {"q": "Por que o total está bom e uma disciplina está baixa?", "a": "O total reúne todas as aulas. Uma frequência alta nas demais pode compensar o total, mas não aumenta a porcentagem da disciplina baixa."}, {"q": "Devo separar aulas práticas?", "a": "Separe se a instituição aplicar um requisito ou registro de frequência independente às práticas."}]
+}
+---
+<h2>Frequência por disciplina e frequência geral</h2>
+<p>Cada linha calcula aulas assistidas ÷ aulas realizadas × 100. A frequência geral soma primeiro todas as presenças e todas as aulas. Não faça a média simples das porcentagens quando as disciplinas tiverem quantidades de aulas diferentes.</p>
+<p>No exemplo, Matemática tem 26/30 = <b>86,66%</b> e permite mais 4 faltas. Física tem 21/30 = <b>70%</b> e exige 6 aulas seguidas para chegar a 27/36 = 75%. Química tem 22/24 = <b>91,66%</b> e permite mais 5 faltas.</p>
+<p>O resultado geral é 69/84 = <b>82,14%</b>. Ele alcança a meta de 75%, mas Física continua abaixo, então a calculadora exibe um aviso.</p>
+<h2>Como usar a tabela</h2>
+<ol><li>Adicione uma linha para cada disciplina ou componente avaliado separadamente.</li><li>Informe todas as aulas realizadas, inclusive as que você perdeu.</li><li>Informe apenas as aulas a que compareceu.</li><li>Use a meta atual da sua instituição.</li><li>Atualize os dados após cancelamentos, aulas extras ou correções.</li></ol>
+<p>Você pode usar períodos ou horas se a instituição contar a frequência dessa forma, desde que use unidades consistentes em cada linha.</p>
