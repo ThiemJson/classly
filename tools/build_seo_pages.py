@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerates the search pages: free tools, tool hubs, the FAQ and the sitemap.
+"""Regenerates free tools, article/blog pages, the FAQ and the sitemap.
 
     python3 tools/build_seo_pages.py
 
@@ -10,6 +10,8 @@ Content lives in content/<lang>/:
 - tools/<name>.html — one page per tool: a JSON header, a line with only
   ---, then the page body as HTML. Pages in different languages that share an
   "id" are translations of each other and get hreflang links to each other.
+- articles/<name>.html — an answer-first article with dates, sources, related
+  tools and optional FAQ entries, using the same header/body file format.
 
 The body may contain {{table:<target>}}, which becomes a table of the fewest
 classes to attend for that target. faq.html is filled from assets/faq.json so
@@ -136,7 +138,11 @@ def download_box(site, campaign):
 
 def shell(site, lang, *, title, description, slug, head_extra, body, scripts='', og_title=None, og_description=None):
     nav = site['nav']
-    footer_links = ''.join(f'<a href="{esc(href)}">{esc(label)}</a>' for label, href in nav['footer'])
+    blog_slug = 'blog/' if lang == DEFAULT_LANG else f'{lang}/blog/'
+    footer = list(nav['footer'])
+    if not any(href == f'/classly/{blog_slug}' for _, href in footer):
+        footer.insert(2, (site['blog_label'], f'/classly/{blog_slug}'))
+    footer_links = ''.join(f'<a href="{esc(href)}">{esc(label)}</a>' for label, href in footer)
     locale = f'\n  <meta property="og:locale" content="{site["og_locale"]}">' if site.get('og_locale') else ''
     return f'''<!doctype html>
 <html lang="{lang}">
@@ -163,7 +169,7 @@ def shell(site, lang, *, title, description, slug, head_extra, body, scripts='',
 <header>
   <nav class="wrap" aria-label="{esc(nav['label'])}">
     <a class="brand" href="/classly/"><img src="/classly/assets/classly-icon.png" alt="" width="34" height="34">Classly</a>
-    <div class="links"><a href="/classly/#features">{esc(nav['features'])}</a><a href="/classly/{site['hub']['slug']}">{esc(nav['tools'])}</a><a href="/classly/faq.html">FAQ</a><a class="btn btn-ink" href="/classly/#download">{esc(nav['download'])}</a></div>
+    <div class="links"><a href="/classly/#features">{esc(nav['features'])}</a><a href="/classly/{site['hub']['slug']}">{esc(nav['tools'])}</a><a href="/classly/{blog_slug}">{esc(site['blog_label'])}</a><a href="/classly/faq.html">FAQ</a><a class="btn btn-ink" href="/classly/#download">{esc(nav['download'])}</a></div>
   </nav>
 </header>
 <main class="wrap">
@@ -241,6 +247,73 @@ def hub_page(lang, site, sites, pages):
                  head_extra='\n  '.join(alternates(group)), body=body), group
 
 
+def blog_slug(lang):
+    return 'blog/' if lang == DEFAULT_LANG else f'{lang}/blog/'
+
+
+def article_page(page, group, site, sites, tools_by_id):
+    lang = page['lang']
+    faq = ''.join(f'<details><summary>{esc(item["q"])}</summary><p>{esc(item["a"])}</p></details>'
+                  for item in page.get('faq', []))
+    sources = ''.join(f'<li><a href="{esc(item["url"])}" rel="noopener">{esc(item["title"])}</a></li>'
+                      for item in page.get('sources', []))
+    related = []
+    for tool_id in page.get('related_tools', []):
+        tool = tools_by_id.get((tool_id, lang))
+        if tool:
+            related.append(f'<a class="tool-link" href="/classly/{tool["slug"]}"><b>{esc(tool["card_title"])}</b>'
+                           f'<span>{esc(tool["card_text"])}</span></a>')
+    schemas = [{
+        '@context': 'https://schema.org', '@type': 'Article', 'headline': page['h1'],
+        'datePublished': page['published'], 'dateModified': page['updated'],
+        'author': {'@type': 'Person', 'name': 'Nguyen Cao Thiem'},
+        'publisher': {'@type': 'Organization', 'name': 'Classly'},
+        'inLanguage': lang, 'mainEntityOfPage': BASE + page['slug'],
+    }, {
+        '@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+            {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': BASE},
+            {'@type': 'ListItem', 'position': 2, 'name': site['blog_label'], 'item': BASE + blog_slug(lang)},
+            {'@type': 'ListItem', 'position': 3, 'name': page['h1'], 'item': BASE + page['slug']},
+        ]}]
+    if page.get('faq'):
+        schemas.append({'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [
+            {'@type': 'Question', 'name': item['q'], 'acceptedAnswer': {'@type': 'Answer', 'text': item['a']}}
+            for item in page['faq']]})
+    head = '\n  '.join(alternates(group) + [
+        '<script type="application/ld+json">' + json.dumps(schemas, ensure_ascii=False) + '</script>'])
+    source_block = f'<h2>Sources</h2><ul class="sources">{sources}</ul>' if sources else ''
+    faq_block = f'<h2>{esc(site["faq_heading"])}</h2><div class="faq">{faq}</div>' if faq else ''
+    body = f'''  <article class="doc article">
+    <span class="kicker">{esc(site['blog_label'])}</span>
+    <h1>{esc(page['h1'])}</h1>
+    {language_switch(page, group, sites)}
+    <p class="updated">Updated: {esc(page['updated'])}</p>
+    <div class="answer-box">{esc(page['answer'])}</div>
+{page['body']}
+    {source_block}
+{download_box(site, f"article-{page['id']}-{lang}")}
+    <h2>{esc(site['related_heading'])}</h2><div class="tool-grid">{''.join(related)}</div>
+    {faq_block}
+  </article>'''
+    return shell(site, lang, title=page['title'], description=page['description'], slug=page['slug'],
+                 head_extra=head, body=body, og_title=page.get('og_title'))
+
+
+def blog_page(lang, site, sites, articles):
+    slug = blog_slug(lang)
+    group = [{'lang': code, 'slug': blog_slug(code)} for code in sorted(sites)]
+    page = next(item for item in group if item['lang'] == lang)
+    cards = ''.join(f'<a class="tool-link" href="/classly/{article["slug"]}"><b>{esc(article["h1"])}</b>'
+                    f'<span>{esc(article["description"])}</span></a>' for article in articles)
+    empty = '' if cards else '<p>No articles yet.</p>'
+    body = f'''  <article class="doc"><span class="kicker">Classly</span><h1>{esc(site['blog_label'])}</h1>
+    {language_switch(page, group, sites)}<p>Practical answers for attendance and study planning.</p>
+    <div class="tool-grid">{cards}</div>{empty}</article>'''
+    return shell(site, lang, title=f'{site["blog_label"]} · Classly',
+                 description='Practical answers for attendance, classes and study planning.', slug=slug,
+                 head_extra='\n  '.join(alternates(group)), body=body), group
+
+
 def build_faq():
     """Writes every FAQ answer into faq.html so it is readable without JavaScript."""
     data = json.loads((ROOT / 'assets/faq.json').read_text(encoding='utf-8'))
@@ -274,7 +347,8 @@ def build_sitemap(groups):
         if default and len(group) > 1:
             links += f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{BASE}{default["slug"]}"/>'
         for page in group:
-            entries.append(f'  <url>\n    <loc>{BASE}{page["slug"]}</loc>{links if len(group) > 1 else ""}\n  </url>')
+            lastmod = f'\n    <lastmod>{page["updated"]}</lastmod>' if page.get('updated') else ''
+            entries.append(f'  <url>\n    <loc>{BASE}{page["slug"]}</loc>{lastmod}{links if len(group) > 1 else ""}\n  </url>')
     (ROOT / 'sitemap.xml').write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
@@ -291,6 +365,7 @@ def main():
     sites = {d.name: json.loads((d / 'site.json').read_text(encoding='utf-8'))
              for d in sorted(CONTENT.iterdir()) if (d / 'site.json').exists()}
     pages = [read_page(p) for p in sorted(CONTENT.glob('*/tools/*.html'))]
+    articles = [read_page(p) for p in sorted(CONTENT.glob('*/articles/*.html'))]
     tools_by_id = {(p['id'], p['lang']): p for p in pages}
     groups = {}
     for page in pages:
@@ -304,10 +379,21 @@ def main():
         write(site['hub']['slug'], text)
         if lang == DEFAULT_LANG:
             sitemap_groups.append(group)
+        lang_articles = sorted((p for p in articles if p['lang'] == lang), key=lambda p: p['published'], reverse=True)
+        blog_text, blog_group = blog_page(lang, site, sites, lang_articles)
+        write(blog_slug(lang), blog_text)
+        if lang == DEFAULT_LANG:
+            sitemap_groups.append(blog_group)
     sitemap_groups += list(groups.values())
+    article_groups = {}
+    for article in articles:
+        article_groups.setdefault(article['id'], []).append(article)
+    for article in articles:
+        write(article['slug'], article_page(article, article_groups[article['id']], sites[article['lang']], sites, tools_by_id))
+    sitemap_groups += list(article_groups.values())
     build_faq()
     build_sitemap(sitemap_groups)
-    print(f'{len(pages)} tool pages, {len(sites)} hubs, faq.html, sitemap.xml')
+    print(f'{len(pages)} tool pages, {len(sites)} tool hubs, {len(articles)} articles, {len(sites)} blog hubs, faq.html, sitemap.xml')
 
 
 if __name__ == '__main__':

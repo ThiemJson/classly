@@ -186,3 +186,6 @@ footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
 .calc-table th:first-child,.calc-table td:first-child{text-align:left}
 .calc-table th{font-size:13px;color:var(--muted);font-weight:600}
 .calc-table tr:last-child td{border-bottom:0}
+.answer-box{background:var(--sage-soft);border-radius:16px;padding:18px 20px;margin:20px 0 28px;font-weight:700}
+.sources{padding-left:22px}
+.article .updated{margin-bottom:0}

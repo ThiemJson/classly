@@ -101,6 +101,102 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/tools/"/>
   </url>
   <url>
+    <loc>https://thiemjason-work.site/classly/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://thiemjason-work.site/classly/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://thiemjason-work.site/classly/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://thiemjason-work.site/classly/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://thiemjason-work.site/classly/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://thiemjason-work.site/classly/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://thiemjason-work.site/classly/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/blog/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/es/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://thiemjason-work.site/classly/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://thiemjason-work.site/classly/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://thiemjason-work.site/classly/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://thiemjason-work.site/classly/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://thiemjason-work.site/classly/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://thiemjason-work.site/classly/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/blog/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/fr/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://thiemjason-work.site/classly/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://thiemjason-work.site/classly/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://thiemjason-work.site/classly/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://thiemjason-work.site/classly/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://thiemjason-work.site/classly/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://thiemjason-work.site/classly/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/blog/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/hi/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://thiemjason-work.site/classly/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://thiemjason-work.site/classly/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://thiemjason-work.site/classly/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://thiemjason-work.site/classly/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://thiemjason-work.site/classly/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://thiemjason-work.site/classly/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/blog/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/id/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://thiemjason-work.site/classly/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://thiemjason-work.site/classly/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://thiemjason-work.site/classly/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://thiemjason-work.site/classly/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://thiemjason-work.site/classly/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://thiemjason-work.site/classly/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/blog/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/pt/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://thiemjason-work.site/classly/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://thiemjason-work.site/classly/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://thiemjason-work.site/classly/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://thiemjason-work.site/classly/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://thiemjason-work.site/classly/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://thiemjason-work.site/classly/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/blog/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/tr/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://thiemjason-work.site/classly/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://thiemjason-work.site/classly/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://thiemjason-work.site/classly/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://thiemjason-work.site/classly/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://thiemjason-work.site/classly/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://thiemjason-work.site/classly/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/blog/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/vi/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/blog/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://thiemjason-work.site/classly/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://thiemjason-work.site/classly/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://thiemjason-work.site/classly/hi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://thiemjason-work.site/classly/id/blog/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://thiemjason-work.site/classly/pt/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://thiemjason-work.site/classly/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/blog/"/>
+  </url>
+  <url>
     <loc>https://thiemjason-work.site/classly/75-percent-attendance-calculator/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/75-percent-attendance-calculator/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://thiemjason-work.site/classly/es/asistencia-80-por-ciento/"/>
@@ -483,5 +579,9 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://thiemjason-work.site/classly/tr/devamsizlik-hakki-hesaplama/"/>
     <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/tinh-so-buoi-duoc-nghi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/bunk-calculator/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/blog/how-to-calculate-attendance-percentage/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
 </urlset>

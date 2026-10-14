@@ -236,7 +236,7 @@ Khi thêm công cụ mới: thêm `id` của nó vào `related` của 1–2 tran
 
 ## 5. GIAI ĐOẠN 4 — Bài viết trả lời ngay (blog)
 
-### Task 4.1 — Mở rộng generator cho bài viết
+### Task 4.1 — Mở rộng generator cho bài viết ✅
 - **File mới:** `content/<lang>/articles/<name>.html`, cùng định dạng JSON header + `---` + thân HTML.
   Header:
   ```json

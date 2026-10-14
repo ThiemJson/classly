@@ -86,7 +86,12 @@ def content_slugs() -> set[str]:
     for site_path in CONTENT.glob("*/site.json"):
         site = json.loads(site_path.read_text(encoding="utf-8"))
         slugs.add(site["hub"]["slug"])
+        lang = site_path.parent.name
+        slugs.add("blog/" if lang == "en" else f"{lang}/blog/")
     for page_path in CONTENT.glob("*/tools/*.html"):
+        header = page_path.read_text(encoding="utf-8").partition("\n---\n")[0]
+        slugs.add(json.loads(header)["slug"])
+    for page_path in CONTENT.glob("*/articles/*.html"):
         header = page_path.read_text(encoding="utf-8").partition("\n---\n")[0]
         slugs.add(json.loads(header)["slug"])
     return slugs

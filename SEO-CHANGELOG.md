@@ -24,3 +24,4 @@ later, add the numbers again under the entry.
 | 2026-10-15 | reviewed by native speaker: no | pt/… | pending review | | |
 | 2026-10-15 | reviewed by native speaker: no | tr/… | pending review | | |
 | 2026-10-15 | reviewed by native speaker: no | fr/… | pending review | | |
+| 2026-10-15 | Added article generator, localized blog hubs and first answer-first article | blog/, */blog/, blog/how-to-calculate-attendance-percentage/ | new | | |
