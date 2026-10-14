@@ -1,5 +1,7 @@
 # SEO plan
 
+Detailed task specs for the remaining work: SEO-HANDOFF.md.
+
 Goal: bring students who search attendance questions to Classly, in the
 languages the app already speaks. Progress is recorded in SEO-CHANGELOG.md.
 
@@ -30,7 +32,7 @@ Rules for every page:
 Check search volume (Keyword Planner / Ahrefs free tools) before building each one.
 
 ## Phase 3 — Languages (weeks 2–4)
-en, vi, hi, id done. Next: es, pt, tr, fr. Terms come from lib/l10n/app_<lang>.arb
+en, vi, hi, id done. es written in content/es/ but not generated or checked yet. Next: pt, tr, fr. Terms come from lib/l10n/app_<lang>.arb
 in the app repo; slugs use the local search phrase. Native review for en, vi, hi.
 
 ## Phase 4 — Answer-first articles (weeks 3–8, ~10 a week)

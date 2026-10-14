@@ -1,0 +1,38 @@
+{
+  "id": "attendance-calculator",
+  "order": 1,
+  "slug": "es/calculadora-de-asistencia/",
+  "title": "Calculadora de asistencia: ¿cuántas clases puedo faltar? · Classly",
+  "description": "Introduce las clases impartidas y asistidas para ver tu porcentaje de asistencia, cuántas faltas te quedan o cuántas clases necesitas para llegar al 80 % (o al objetivo que quieras).",
+  "og_title": "Calculadora de asistencia: ¿cuántas clases puedo faltar?",
+  "h1": "Calculadora de asistencia",
+  "card_title": "Calculadora de asistencia",
+  "card_text": "Tu porcentaje y cuántas clases puedes faltar o necesitas asistir.",
+  "intro": "<p><b>Tu porcentaje de asistencia es clases asistidas ÷ clases impartidas × 100.</b> Introduce tus números para ver cuántas clases más puedes faltar, o a cuántas seguidas tienes que asistir para volver a tu objetivo.</p>",
+  "widgets": [
+    {"kind": "standing", "defaults": {"held": 40, "attended": 34, "target": 80}},
+    {"kind": "plan", "defaults": {"total": 16, "target": 80}}
+  ],
+  "related": ["bunk-calculator", "minimum-table", "recovery"],
+  "faq": [
+    {"q": "¿Qué porcentaje de asistencia necesito?", "a": "Depende de tu centro. Muchas universidades piden entre el 75 % y el 80 % para tener derecho a examen. Consulta el reglamento de tu facultad o pregunta a tu profesor e introduce esa cifra como objetivo."},
+    {"q": "¿Cuentan las clases canceladas?", "a": "Normalmente no. Una clase que no se impartió no cuenta, así que déjala fuera de los dos números. En Classly puedes marcar una clase como cancelada para que no cuente."},
+    {"q": "¿Se calcula por materia o en total?", "a": "La mayoría de los centros aplican la regla a cada materia por separado, así que un buen porcentaje total puede ocultar una materia por debajo del límite. Calcula cada materia por su cuenta."},
+    {"q": "¿Por qué la calculadora dice que puedo faltar 0 clases?", "a": "Estás justo en tu objetivo o un poco por encima, y una falta más te dejaría por debajo. Asiste a la próxima clase para ganar margen."}
+  ]
+}
+---
+<h2>Cómo funciona la calculadora</h2>
+<h3>Porcentaje de asistencia</h3>
+<p class="formula">asistencia % = asistidas ÷ impartidas × 100</p>
+<p>Asistir a 34 de 40 clases es 34 ÷ 40 × 100 = <b>85 %</b>.</p>
+
+<h3>¿Cuántas clases puedo faltar?</h3>
+<p>Cada clase a la que faltas sigue contando como impartida, así que tu porcentaje baja. Lo máximo que puedes faltar sin bajar de tu objetivo es:</p>
+<p class="formula">puedes faltar = ⌊ asistidas × 100 ÷ objetivo − impartidas ⌋</p>
+<p>Con 34 de 40 y un objetivo del 80 %: 34 × 100 ÷ 80 − 40 = 2,5, redondeado hacia abajo, <b>2 clases</b>. Después de faltar a ambas tendrías 34 ÷ 42 = 80,95 %; una tercera te dejaría en 79,06 %.</p>
+
+<h3>¿Cuántas clases necesito para llegar al 80 %?</h3>
+<p>Si estás por debajo del objetivo, cada clase a la que asistas desde ahora sube tu porcentaje. Las que necesitas seguidas son:</p>
+<p class="formula">necesitas = ⌈ (objetivo × impartidas − asistidas) ÷ (1 − objetivo) ⌉</p>
+<p>Aquí el objetivo va en decimal (80 % = 0,8). Con 30 de 40 (75 %): (0,8 × 40 − 30) ÷ 0,2 = <b>10 clases</b>, que te llevan a 40 de 50 = 80 %. Si el semestre termina antes, usa la <a href="/classly/es/recuperar-asistencia/">calculadora para recuperar asistencia</a>.</p>

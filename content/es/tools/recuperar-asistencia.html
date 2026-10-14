@@ -1,0 +1,36 @@
+{
+  "id": "recovery",
+  "order": 4,
+  "slug": "es/recuperar-asistencia/",
+  "title": "¿A cuántas clases tengo que ir para llegar al 80 %? · Classly",
+  "description": "¿Estás por debajo del 80 %? Calcula a cuántas clases seguidas debes asistir para recuperarte y si todavía puedes llegar con las clases que quedan este semestre.",
+  "og_title": "¿A cuántas clases tengo que ir para llegar al 80 %?",
+  "h1": "Calculadora para recuperar asistencia",
+  "card_title": "Recuperar asistencia",
+  "card_text": "¿Por debajo del objetivo? A cuántas clases ir, y si aún es posible.",
+  "intro": "<p><b>Para volver al 80 %, asiste a (0,8 × impartidas − asistidas) ÷ 0,2 clases seguidas, redondeando hacia arriba.</b> Si el semestre termina antes, lo que cuenta es a cuántas de las clases restantes asistes. Las calculadoras de abajo responden a las dos cosas.</p>",
+  "widgets": [
+    {"kind": "recover", "defaults": {"held": 20, "attended": 14, "remaining": 25, "target": 80}},
+    {"kind": "standing", "title": "¿Cuántas seguidas necesito ahora?", "defaults": {"held": 20, "attended": 14, "target": 80}}
+  ],
+  "related": ["attendance-calculator", "bunk-calculator", "minimum-table"],
+  "faq": [
+    {"q": "¿A cuántas clases tengo que ir para llegar al 80 %?", "a": "A (0,8 × impartidas − asistidas) ÷ 0,2 clases seguidas, redondeando hacia arriba. Con 14 de 20, son 10 clases, que te llevan a 24 de 30."},
+    {"q": "¿Todavía puedo llegar al 80 % a final de semestre?", "a": "Solo si (asistidas + restantes) ÷ (impartidas + restantes) llega al 80 %. Si ni asistiendo a todas te alcanza, pregunta pronto por justificantes o clases de recuperación."},
+    {"q": "¿Por qué cuesta tanto subir la asistencia?", "a": "Cada clase a la que asistes también suma a las impartidas. Cerca del objetivo, cada clase sube tu porcentaje muy poco, así que se sube mucho más despacio de lo que se baja."}
+  ]
+}
+---
+<h2>Dos formas de verlo</h2>
+<h3>Volver al objetivo cuanto antes</h3>
+<p class="formula">asistir seguidas = ⌈ (objetivo × impartidas − asistidas) ÷ (1 − objetivo) ⌉</p>
+<p>Con 14 de 20 (70 %) y un objetivo del 80 %: (0,8 × 20 − 14) ÷ 0,2 = <b>10 clases</b>, que te llevan a 24 de 30 = 80 %.</p>
+
+<h3>Llegar al objetivo a final de semestre</h3>
+<p>Muchas veces solo necesitas estar por encima cuando se revisa la asistencia, normalmente antes del examen final. Entonces cuenta las clases restantes:</p>
+<p class="formula">asistir al menos a = ⌈ objetivo × (impartidas + restantes) − asistidas ⌉</p>
+<p>Con 14 de 20 y 25 clases restantes: 0,8 × 45 − 14 = <b>22 de 25</b>, así que aún puedes faltar a 3.</p>
+
+<h3>Cuando ya es tarde</h3>
+<p>Con 12 de 20 y solo 10 clases restantes, ni asistiendo a todas pasas de 22 de 30 = 73,33 %. En ese caso habla cuanto antes con tu profesor o tu facultad: los justificantes y las recuperaciones suelen tener plazo.</p>
+<p>Para no llegar a esto, lleva la cuenta con la <a href="/classly/es/cuantas-faltas-puedo-tener/">calculadora de faltas</a>, o deja que la app Classly te avise antes de que una materia baje del objetivo.</p>
