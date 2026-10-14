@@ -17,3 +17,10 @@ later, add the numbers again under the entry.
 | 2026-10-15 | Added automated SEO validation and shortened metadata that exceeded limits | 11 tool pages across en/es/hi/id/vi | no data yet | | |
 | 2026-10-15 | Four Brazilian Portuguese tools and tools hub; hreflang now includes pt | pt/… and all translated tool pages | new | | |
 | 2026-10-15 | Four Turkish tools and tools hub; 70% defaults and class-hour wording; hreflang now includes tr | tr/… and all translated tool pages | new | | |
+| 2026-10-15 | Four French tools and tools hub; neutral wording for justified and unjustified absences; hreflang now includes fr | fr/… and all translated tool pages | new | | |
+| 2026-10-15 | reviewed by native speaker: no | hi/… | pending review | | |
+| 2026-10-15 | reviewed by native speaker: no | id/… | pending review | | |
+| 2026-10-15 | reviewed by native speaker: no | es/… | pending review | | |
+| 2026-10-15 | reviewed by native speaker: no | pt/… | pending review | | |
+| 2026-10-15 | reviewed by native speaker: no | tr/… | pending review | | |
+| 2026-10-15 | reviewed by native speaker: no | fr/… | pending review | | |

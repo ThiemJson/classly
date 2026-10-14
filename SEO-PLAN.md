@@ -37,7 +37,7 @@ Check search volume (Keyword Planner / Ahrefs free tools) before building each o
 - [x] es: four tools and hub generated and checked
 - [x] pt-BR: four tools and hub generated and checked
 - [x] tr: four tools and hub generated and checked
-- [ ] fr
+- [x] fr: four tools and hub generated and checked
 - [ ] Native review for hi, id, es, pt, tr, fr
 
 Terms come from `lib/l10n/app_<lang>.arb` in the app repo; slugs use the local search phrase.

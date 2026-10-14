@@ -30,7 +30,7 @@ Mỗi task có: mục tiêu, file cần sửa, đặc tả, số liệu kiểm t
 | Tiếng Tây Ban Nha (es) | ✅ 4 công cụ + hub đã sinh và kiểm tra |
 | Tiếng Bồ Đào Nha–Brazil (pt) | ✅ 4 công cụ + hub đã sinh và kiểm tra |
 | Tiếng Thổ Nhĩ Kỳ (tr) | ✅ 4 công cụ + hub đã sinh và kiểm tra |
-| fr | ❌ Chưa làm |
+| Tiếng Pháp (fr) | ✅ 4 công cụ + hub đã sinh và kiểm tra |
 | FAQ tĩnh trong faq.html | ✅ Xong |
 | Link Google Play có `utm_campaign` | ✅ Xong |
 | Link App Store có campaign | ❌ Chờ chủ app đưa provider token `pt` |
@@ -156,7 +156,7 @@ Widget hiện có (`assets/calculator.js` → `KINDS`): `standing`, `plan`, `wha
   Quy tắc nhẩm 70 %: tổng buổi vắng ≤ 3/7 số buổi có mặt. Bảng dùng `{{table:70}}`.
 - **og_locale:** `tr_TR`. `language_name`: "Türkçe".
 
-### Task 3.4 — Tiếng Pháp (fr)
+### Task 3.4 — Tiếng Pháp (fr) ✅
 - **Thuật ngữ app:** "présence", "cours", "matière", "absent"; app xưng "tu" → web cũng dùng "tu".
 - **Thực tế:** ở Pháp quy định hay tính theo **số buổi vắng không lý do** hơn là %. Viết trung lập:
   "selon ton établissement", mặc định 75 %, nhấn mạnh "absences justifiées / injustifiées".

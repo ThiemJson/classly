@@ -1,0 +1,23 @@
+{
+  "id": "recovery", "order": 4, "slug": "fr/rattraper-assiduite/",
+  "title": "Rattraper son Assiduité jusqu'à 75 % · Classly",
+  "description": "Sous 75 % ? Calcule combien de cours tu dois suivre sans interruption et si tu peux encore atteindre ton objectif avant la fin du semestre.",
+  "og_title": "Combien de cours pour revenir à 75 % ?", "h1": "Calculateur pour rattraper ton assiduité", "card_title": "Rattraper ton assiduité", "card_text": "Les cours à suivre et la possibilité d'atteindre encore ton objectif.",
+  "intro": "<p><b>Pour revenir à 75 %, suis (0,75 × cours effectués − cours suivis) ÷ 0,25 cours de suite, avec un arrondi supérieur.</b> Si le semestre finit avant, calcule le minimum parmi les cours restants.</p>",
+  "widgets": [{"kind": "recover", "defaults": {"held": 30, "attended": 20, "remaining": 30, "target": 75}}, {"kind": "standing", "title": "Combien de cours dois-je suivre de suite ?", "defaults": {"held": 30, "attended": 20, "target": 75}}],
+  "related": ["attendance-calculator", "bunk-calculator", "minimum-table"],
+  "faq": [
+    {"q": "Combien de cours pour atteindre 75 % ?", "a": "Calcule (0,75 × cours effectués − cours suivis) ÷ 0,25 et arrondis au supérieur. Avec 20 cours suivis sur 30, il en faut 10."},
+    {"q": "Puis-je encore atteindre 75 % avant la fin ?", "a": "Seulement si (cours suivis + cours restants) ÷ (cours effectués + cours restants) peut atteindre 75 %."},
+    {"q": "Un justificatif médical change-t-il le calcul ?", "a": "Cela dépend du règlement de ton établissement. Demande rapidement comment sont traitées les absences justifiées."}
+  ]
+}
+---
+<h2>Revenir à l'objectif le plus vite possible</h2>
+<p class="formula">cours à suivre = ⌈ (objectif × effectués − suivis) ÷ (1 − objectif) ⌉</p>
+<p>Avec 20 cours suivis sur 30 (66,66 %) et un objectif de 75 %, il faut suivre <b>10 cours</b> de suite pour arriver à 30 sur 40 = 75 %.</p>
+<h2>Atteindre l'objectif avant la fin du semestre</h2>
+<p class="formula">présence minimale = ⌈ objectif × (effectués + restants) − suivis ⌉</p>
+<p>Avec 20 cours suivis sur 30 et 30 cours restants, tu dois en suivre au moins <b>25 sur 30</b>. Tu peux encore en manquer 5.</p>
+<h2>Quand l'objectif n'est plus atteignable</h2>
+<p>Avec 20 cours suivis sur 40 et seulement 20 cours restants, même une présence parfaite finirait à 40 sur 60 = 66,66 %. Contacte rapidement ton établissement au sujet des justificatifs et rattrapages.</p>

@@ -1,0 +1,25 @@
+{
+  "id": "attendance-calculator", "order": 1, "slug": "fr/calcul-assiduite/",
+  "title": "Calcul d'Assiduité : Combien de Cours Puis-je Manquer ? · Classly",
+  "description": "Entre les cours effectués et suivis pour calculer ton taux de présence, tes absences possibles ou les cours nécessaires pour atteindre 75 %.",
+  "og_title": "Calcul d'assiduité : combien de cours puis-je manquer ?", "h1": "Calculateur d'assiduité", "card_title": "Calculateur d'assiduité", "card_text": "Ton pourcentage, tes absences possibles et les cours à suivre.",
+  "intro": "<p><b>Ton taux de présence est le nombre de cours suivis ÷ cours effectués × 100.</b> Entre tes chiffres pour savoir combien de cours tu peux encore manquer ou combien tu dois suivre pour revenir à ton objectif.</p>",
+  "widgets": [{"kind": "standing", "defaults": {"held": 40, "attended": 32, "target": 75}}, {"kind": "plan", "defaults": {"total": 45, "target": 75}}],
+  "related": ["bunk-calculator", "minimum-table", "recovery"],
+  "faq": [
+    {"q": "Quel taux de présence dois-je avoir ?", "a": "Cela dépend de ton établissement, de ta formation et parfois de la matière. Vérifie le règlement ou demande à la scolarité, puis entre ce chiffre comme objectif."},
+    {"q": "Les cours annulés comptent-ils ?", "a": "En général, un cours qui n'a pas eu lieu n'est pas compté. Dans Classly, marque-le comme annulé pour l'exclure automatiquement."},
+    {"q": "Dois-je calculer par matière ou au total ?", "a": "Beaucoup d'établissements contrôlent chaque matière séparément. Une bonne moyenne générale peut donc cacher une matière sous le seuil."},
+    {"q": "Les absences justifiées comptent-elles ?", "a": "Cela dépend du règlement. Une absence justifiée peut rester enregistrée tout en ayant des conséquences différentes d'une absence injustifiée."}
+  ]
+}
+---
+<h2>Comment calculer ton taux de présence</h2>
+<p class="formula">présence % = cours suivis ÷ cours effectués × 100</p>
+<p>Si tu as suivi 32 cours sur 40, ton taux est de <b>80 %</b>.</p>
+<h3>Combien de cours peux-tu manquer ?</h3>
+<p class="formula">absences possibles = ⌊ suivis × 100 ÷ objectif − effectués ⌋</p>
+<p>Avec 32 cours sur 40 et un objectif de 75 % : 32 × 100 ÷ 75 − 40 = 2,67, soit <b>2 cours</b> après arrondi inférieur. Après ces absences, tu serais à 32 ÷ 42 = 76,19 % ; une troisième te ferait tomber à 74,41 %.</p>
+<h3>Combien de cours pour revenir à 75 % ?</h3>
+<p class="formula">cours nécessaires = ⌈ (objectif × effectués − suivis) ÷ (1 − objectif) ⌉</p>
+<p>Avec 28 cours suivis sur 40 (70 %), il faut suivre <b>8 cours</b> de suite pour arriver à 36 sur 48 = 75 %. Si le semestre se termine avant, utilise le <a href="/classly/fr/rattraper-assiduite/">calculateur de rattrapage</a>.</p>
