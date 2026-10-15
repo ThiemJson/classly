@@ -362,11 +362,14 @@ hoá. Classly học cấu trúc và nguyên tắc chuyển đổi, **không sao 
   contact; `/whats-new/` lấy phiên bản 3.7.0+56 cùng nội dung 3.7/3.6/3.5 từ metadata app. Hai trang có
   canonical, breadcrumb schema, được thêm vào sitemap và homepage navigation/footer.
 
-### Task 6.4 — Social preview và store alignment (P1)
+### Task 6.4 — Social preview và store alignment (P1) ✅
 - Tạo ảnh OG/Twitter 1200×630 có UI thật, tên Classly và một lợi ích ngắn; giữ icon làm favicon.
 - Bổ sung `twitter:card`, image dimensions và alt. Kiểm tra link preview sau deploy.
 - Đồng bộ tên Classly, mô tả lợi ích, support/privacy URL và lịch sử phiên bản trên website/App Store/Google Play.
 - Không hard-code rating nếu không có quy trình kiểm tra định kỳ.
+- Đã triển khai 2026-10-15: `assets/classly-social-preview.png` đúng 1200×630, dùng screenshot app thật,
+  icon và benefit chính; các trang indexable dùng ảnh này cho Open Graph/Twitter, có kích thước và alt.
+  Rating homepage có nguồn/ngày kiểm tra; cần rà lại khi store listing thay đổi.
 
 ### Task 6.5 — App-intent landing pages (P2, có data gate)
 - Chỉ tạo 2–3 trang khi Keyword Planner hoặc Search Console xác nhận nhu cầu, ví dụ:

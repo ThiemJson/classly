@@ -202,9 +202,14 @@ def shell(site, lang, *, title, description, slug, head_extra, body, scripts='',
   <meta name="theme-color" content="#121314" media="(prefers-color-scheme: dark)">
   <meta property="og:title" content="{esc(og_title or title)}">
   <meta property="og:description" content="{esc(og_description or description)}">
-  <meta property="og:image" content="{BASE}assets/classly-icon.png">
+  <meta property="og:image" content="{BASE}assets/classly-social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Classly attendance tracker app preview">
   <meta property="og:type" content="website">{locale}
   <meta property="og:url" content="{BASE}{slug}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{BASE}assets/classly-social-preview.png">
   <link rel="canonical" href="{BASE}{slug}">
   {head_extra}
   <link rel="icon" type="image/png" href="/classly/assets/favicon.png">

@@ -38,3 +38,4 @@ later, add the numbers again under the entry.
 | 2026-10-15 | Added the first 10 Vietnamese answer-first articles with localized 80% examples and source-backed attendance-rule guidance | vi/blog/… and vi/blog/ | new | | |
 | 2026-10-15 | Reworked homepage around the attendance pain point; added dated Google Play proof, six calculator entry points and contextual store CTAs | /classly/ | no Classly impressions yet | | |
 | 2026-10-15 | Added dedicated support and consolidated release-notes pages from app metadata | support/, whats-new/ | new | | |
+| 2026-10-15 | Replaced the square-icon social preview with a branded 1200×630 OG/Twitter image using the real app UI | all indexable pages | no data yet | | |
