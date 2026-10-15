@@ -341,13 +341,16 @@ hoá. Classly học cấu trúc và nguyên tắc chuyển đổi, **không sao 
   meta refresh `0` và `location.replace`; tạo mapping riêng cho mọi URL cũ có dữ liệu thay vì dùng custom 404.
 - Giữ redirect tối thiểu 12 tháng. DoD: URL cũ không còn 404; Search Console nhận redirect/canonical mới.
 
-### Task 6.2 — Homepage conversion (P0)
+### Task 6.2 — Homepage conversion (P0) ✅
 - Thêm section “Free attendance calculators” với 6 công cụ chính và link tới hub; đặt trước FAQ.
 - Thêm social proof từ store listing: rating + số ratings + link nguồn + ngày kiểm tra. Không dùng
   `AggregateRating`/`Review` schema cho review tự hiển thị trên website.
 - Làm rõ pain point ngay hero: biết chính xác được nghỉ bao nhiêu buổi và cần đi học bao nhiêu buổi.
 - Thêm CTA tải app sau tools và sau phần product proof; giữ UTM/campaign attribution.
 - DoD: mobile 375 px không tràn; CTA bàn phím/screen reader dùng được; không làm chậm LCP bằng ảnh không tối ưu.
+- Đã triển khai 2026-10-15: hero nêu trực tiếp số buổi có thể nghỉ/cần học để phục hồi; social proof
+  Google Play (4,50/5 từ 76 người dùng theo Play Console) có link và ngày kiểm tra; 6 calculator chính; CTA iOS/Android sau tools với campaign
+  `home-tools`. Không thêm `AggregateRating`/`Review` schema.
 
 ### Task 6.3 — Trust và freshness (P1)
 - Tạo `/support/`: getting started, backup/restore, notifications, privacy, import/export, contact; trả lời theo
