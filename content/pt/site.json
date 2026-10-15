@@ -39,7 +39,9 @@
     "cancelled": "Feriados ou cancelamentos",
     "hours_total": "Total de horas-aula",
     "hours_per_class": "Horas-aula por encontro",
-    "hours_missed": "Horas-aula já perdidas", "exam_date": "Data da prova", "exclude_sundays": "Excluir domingos dos dias de estudo"
+    "hours_missed": "Horas-aula já perdidas", "exam_date": "Data da prova", "exclude_sundays": "Excluir domingos dos dias de estudo",
+    "credits": "Créditos", "credit_system": "Sistema de créditos", "hours_per_credit": "Total de horas por crédito",
+    "credit_system_options": {"us": "Créditos semestrais dos EUA", "ects": "ECTS", "custom": "Personalizado"}
   },
   "widgets": {
     "standing": {"title": "Como está minha frequência?", "hint": "Conte todas as aulas dadas até agora, inclusive aquelas em que você faltou."},
@@ -49,7 +51,8 @@
     "subjects": {"title": "Frequência por disciplina", "hint": "Adicione cada disciplina para comparar com a frequência geral."},
     "semester": {"title": "Planeje o semestre inteiro", "hint": "Desconte feriados e aulas canceladas do calendário previsto."},
     "hours": {"title": "Calcule por horas-aula", "hint": "Use a mesma unidade para a carga total, cada encontro e as faltas."},
-    "countdown": {"title": "Contagem regressiva para a prova", "hint": "A data fica apenas nesta aba e não é salva."}
+    "countdown": {"title": "Contagem regressiva para a prova", "hint": "A data fica apenas nesta aba e não é salva."},
+    "credits": {"title": "Converta créditos em horas de estudo semanais", "hint": "Escolha o sistema, informe os créditos e as semanas letivas do período."}
   },
   "table": {"held": "Aulas dadas", "min": "Frequentar pelo menos", "missed": "Faltas permitidas"},
   "calc": {
@@ -73,6 +76,13 @@
     "recoverImpossibleDetail": "Não é mais possível atingir {target}% neste semestre. Converse com o professor ou a instituição sobre atestados e reposições.",
     "wholeNumbers": "Use números inteiros e informe pelo menos 1 aula dada.",
     "attendedTooMany": "As aulas frequentadas não podem superar as aulas dadas.",
-    "targetRange": "Informe uma meta entre 1 e 100."
+    "targetRange": "Informe uma meta entre 1 e 100.",
+    "creditsPositive": "Informe créditos e horas positivos e um número inteiro de semanas.",
+    "creditsUs": "Planeje cerca de {weekly} horas totais por semana, incluindo cerca de {outside} horas fora da sala de aula.",
+    "creditsUsDetail": "{credits} créditos semestrais dos EUA representam cerca de {total} horas totais distribuídas por {weeks} semanas segundo a referência federal.",
+    "creditsEcts": "Planeje cerca de {low}–{high} horas totais por semana.",
+    "creditsEctsDetail": "{credits} ECTS representam cerca de {low}–{high} horas de trabalho total distribuídas por {weeks} semanas.",
+    "creditsCustom": "Planeje cerca de {weekly} horas totais por semana.",
+    "creditsCustomDetail": "{credits} créditos × {perCredit} horas = {total} horas totais em {weeks} semanas."
   }
 }

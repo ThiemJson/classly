@@ -29,7 +29,7 @@ Rules for every page:
 - [x] Semester planner by weeks × classes per week − holidays across all 8 languages
 - [x] Periods/hours (tiết) calculator across all 8 languages
 - [x] Exam countdown across all 8 languages
-- [ ] Credit hours → study hours per week (English complete; translations/source-backed Vietnamese pending)
+- [ ] Credit hours → study hours per week (en/es/pt/tr/fr/id/hi complete; Vietnamese pending a current, generally applicable Ministry source)
 - [ ] Trial: CGPA → percentage, GPA calculator (only after phase 2 tools get impressions)
 Check search volume (Keyword Planner / Ahrefs free tools) before building each one.
 

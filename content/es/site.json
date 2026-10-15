@@ -39,7 +39,9 @@
     "cancelled": "Festivos o cancelaciones",
     "hours_total": "Total de horas o periodos",
     "hours_per_class": "Periodos por clase",
-    "hours_missed": "Periodos ya ausentes", "exam_date": "Fecha del examen", "exclude_sundays": "Excluir domingos de los días de estudio"
+    "hours_missed": "Periodos ya ausentes", "exam_date": "Fecha del examen", "exclude_sundays": "Excluir domingos de los días de estudio",
+    "credits": "Créditos", "credit_system": "Sistema de créditos", "hours_per_credit": "Horas totales por crédito",
+    "credit_system_options": {"us": "Créditos semestrales de EE. UU.", "ects": "ECTS", "custom": "Personalizado"}
   },
   "widgets": {
     "standing": {"title": "¿Cómo voy?", "hint": "Cuenta todas las clases impartidas hasta ahora, incluidas las que faltaste."},
@@ -49,7 +51,8 @@
     "subjects": {"title": "Asistencia por asignatura", "hint": "Añade cada asignatura para compararla con tu asistencia general."},
     "semester": {"title": "Planifica todo el semestre", "hint": "Resta los festivos y las clases canceladas del calendario previsto."},
     "hours": {"title": "Calcula por horas o periodos", "hint": "Usa la misma unidad para el total, cada clase y el tiempo ausente."},
-    "countdown": {"title": "Cuenta atrás para el examen", "hint": "La fecha solo se usa en esta pestaña y no se guarda."}
+    "countdown": {"title": "Cuenta atrás para el examen", "hint": "La fecha solo se usa en esta pestaña y no se guarda."},
+    "credits": {"title": "Convierte créditos en horas de estudio semanales", "hint": "Elige el sistema, introduce los créditos y las semanas lectivas del periodo."}
   },
   "table": {"held": "Clases impartidas", "min": "Asistir al menos a", "missed": "Faltas permitidas"},
   "calc": {
@@ -73,6 +76,13 @@
     "recoverImpossibleDetail": "El {target}% ya no es alcanzable este semestre. Habla con tu profesor o tu facultad sobre justificantes médicos o clases de recuperación.",
     "wholeNumbers": "Usa números enteros, con al menos 1 clase impartida.",
     "attendedTooMany": "Las clases asistidas no pueden ser más que las impartidas.",
-    "targetRange": "Introduce un objetivo entre 1 y 100."
+    "targetRange": "Introduce un objetivo entre 1 y 100.",
+    "creditsPositive": "Introduce créditos y horas positivos, y un número entero de semanas.",
+    "creditsUs": "Planifica unas {weekly} horas totales por semana, incluidas unas {outside} horas fuera de clase.",
+    "creditsUsDetail": "{credits} créditos semestrales de EE. UU. equivalen a unas {total} horas totales repartidas en {weeks} semanas según la referencia federal.",
+    "creditsEcts": "Planifica unas {low}–{high} horas totales por semana.",
+    "creditsEctsDetail": "{credits} ECTS equivalen a unas {low}–{high} horas de trabajo total repartidas en {weeks} semanas.",
+    "creditsCustom": "Planifica unas {weekly} horas totales por semana.",
+    "creditsCustomDetail": "{credits} créditos × {perCredit} horas = {total} horas totales en {weeks} semanas."
   }
 }

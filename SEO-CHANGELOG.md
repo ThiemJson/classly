@@ -33,5 +33,6 @@ later, add the numbers again under the entry.
 | 2026-10-15 | Added the period/hour attendance calculator with remaining allowance and full-meeting conversion in all eight languages | class-hours-attendance-calculator/ and seven translations | new | | |
 | 2026-10-15 | Added a privacy-preserving exam countdown with optional Sunday exclusion in all eight languages | exam-countdown/ and seven translations | new | | |
 | 2026-10-15 | Added a source-backed US semester credit and ECTS workload calculator in English | credit-hours-calculator/ | new | | |
+| 2026-10-15 | Localized the source-backed US semester credit and ECTS workload calculator into six additional languages | es/calculadora-horas-por-credito/, pt/calculadora-horas-por-credito/, tr/kredi-calisma-saati-hesaplama/, fr/calculateur-heures-par-credit/, id/kalkulator-kredit-ke-jam-belajar/, hi/credit-hours-to-study-hours-calculator/ | new | | |
 | 2026-10-15 | Expanded the current-attendance and semester-date FAQs into screenshot-based guides | blog/start-with-current-attendance/, blog/change-semester-dates/, faq.html | new | | |
 | 2026-10-15 | Added the first 10 Vietnamese answer-first articles with localized 80% examples and source-backed attendance-rule guidance | vi/blog/… and vi/blog/ | new | | |

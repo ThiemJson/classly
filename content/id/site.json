@@ -39,7 +39,9 @@
     "cancelled": "Libur atau pertemuan batal",
     "hours_total": "Total jam pelajaran",
     "hours_per_class": "Jam per pertemuan",
-    "hours_missed": "Jam yang sudah dilewatkan", "exam_date": "Tanggal ujian", "exclude_sundays": "Kecualikan Minggu dari hari belajar"
+    "hours_missed": "Jam yang sudah dilewatkan", "exam_date": "Tanggal ujian", "exclude_sundays": "Kecualikan Minggu dari hari belajar",
+    "credits": "Kredit", "credit_system": "Sistem kredit", "hours_per_credit": "Total jam per kredit",
+    "credit_system_options": {"us": "Kredit semester AS", "ects": "ECTS", "custom": "Kustom"}
   },
   "widgets": {
     "standing": {"title": "Posisi kehadiranku sekarang?", "hint": "Hitung semua pertemuan yang sudah berlangsung, termasuk yang kamu lewatkan."},
@@ -49,7 +51,8 @@
     "subjects": {"title": "Kehadiran per mata kuliah", "hint": "Tambahkan setiap mata kuliah untuk membandingkannya dengan kehadiran keseluruhan."},
     "semester": {"title": "Rencanakan satu semester", "hint": "Kurangi hari libur dan pertemuan batal dari jadwal kuliah."},
     "hours": {"title": "Hitung berdasarkan jam pelajaran", "hint": "Gunakan unit yang sama untuk total, tiap pertemuan, dan waktu yang dilewatkan."},
-    "countdown": {"title": "Hitung mundur menuju ujian", "hint": "Tanggal hanya dipakai di tab ini dan tidak disimpan."}
+    "countdown": {"title": "Hitung mundur menuju ujian", "hint": "Tanggal hanya dipakai di tab ini dan tidak disimpan."},
+    "credits": {"title": "Ubah kredit menjadi jam belajar mingguan", "hint": "Pilih sistem kredit, masukkan jumlah kredit dan minggu perkuliahan."}
   },
   "table": {"held": "Pertemuan berlangsung", "min": "Hadir minimal", "missed": "Boleh absen maksimal"},
   "calc": {
@@ -73,6 +76,13 @@
     "recoverImpossibleDetail": "{target}% tidak bisa dicapai semester ini. Bicarakan dengan dosen atau bagian akademik soal izin sakit atau kelas pengganti.",
     "wholeNumbers": "Gunakan bilangan bulat, dengan minimal 1 pertemuan berlangsung.",
     "attendedTooMany": "Pertemuan dihadiri tidak boleh lebih banyak dari pertemuan berlangsung.",
-    "targetRange": "Masukkan target antara 1 dan 100."
+    "targetRange": "Masukkan target antara 1 dan 100.",
+    "creditsPositive": "Masukkan kredit dan jam positif serta jumlah minggu berupa bilangan bulat.",
+    "creditsUs": "Rencanakan sekitar {weekly} jam total per minggu, termasuk sekitar {outside} jam di luar kelas.",
+    "creditsUsDetail": "{credits} kredit semester AS mewakili sekitar {total} jam total yang dibagi dalam {weeks} minggu berdasarkan acuan federal.",
+    "creditsEcts": "Rencanakan sekitar {low}–{high} jam total per minggu.",
+    "creditsEctsDetail": "{credits} ECTS mewakili sekitar {low}–{high} jam beban kerja total yang dibagi dalam {weeks} minggu.",
+    "creditsCustom": "Rencanakan sekitar {weekly} jam total per minggu.",
+    "creditsCustomDetail": "{credits} kredit × {perCredit} jam = {total} jam total selama {weeks} minggu."
   }
 }

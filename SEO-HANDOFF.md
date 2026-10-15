@@ -219,16 +219,19 @@ Khi thêm công cụ mới: thêm `id` của nó vào `related` của 1–2 tran
 - **Widget `countdown`:** ô ngày thi (`type="date"`), tuỳ chọn bỏ Chủ nhật. Kết quả: số ngày, số tuần,
   số ngày học còn lại. Không lưu dữ liệu. Liên kết sang tính năng nhắc deadline của app.
 
-### Task 2.5 — Tín chỉ → giờ học mỗi tuần (đang làm: bản en đã triển khai)
+### Task 2.5 — Tín chỉ → giờ học mỗi tuần (đã triển khai 7 ngôn ngữ; vi đang chờ nguồn phù hợp)
 - **Câu:** "credit hours to study hours", "how many hours per credit".
 - **Slug:** `credit-hours-calculator/`.
 - **Widget `credits`:** số tín chỉ, hệ (US credit hour | ECTS | tuỳ chỉnh giờ/tín chỉ), số tuần.
 - **Bắt buộc có nguồn** cho từng hệ quy đổi: định nghĩa credit hour của US Department of Education
   (34 CFR 600.2) và ECTS Users' Guide của European Commission. Không có nguồn → không làm hệ đó.
   Bản vi chỉ làm nếu tìm được văn bản của Bộ GD&ĐT quy định giờ/tín chỉ, kèm link.
-- **Đã có:** bản en với hệ US, ECTS và tuỳ chỉnh; ECTS hiển thị khoảng 25–30 giờ thay vì lấy trung bình.
-- **Còn lại:** kiểm tra dữ liệu tìm kiếm rồi dịch sang các ngôn ngữ phù hợp. Chưa làm bản vi cho đến khi có
-  nguồn chính thức của Bộ GD&ĐT như yêu cầu trên.
+- **Đã có:** en, es, pt, tr, fr, id, hi với hệ US, ECTS và tuỳ chỉnh; ECTS hiển thị khoảng
+  25–30 giờ thay vì lấy trung bình. Mỗi bản đều liên kết trực tiếp tới 34 CFR 600.2 và ECTS Users' Guide.
+- **Bản vi đang chờ:** đã rà nguồn chính thức và tìm thấy Thông tư 24/2019/TT-BGDĐT, nhưng phạm vi chỉ
+  áp dụng cho trình độ trung cấp, cao đẳng nhóm ngành đào tạo giáo viên và quy định dùng cả “tiết” lẫn “giờ”.
+  Không dùng văn bản này như quy tắc tín chỉ chung cho sinh viên Việt Nam. Chỉ triển khai khi có văn bản
+  Bộ GD&ĐT hiện hành, áp dụng đủ rộng và cho phép quy đổi tổng khối lượng học tập không gây hiểu nhầm.
 
 ### Task 2.6 — (Thử nghiệm) CGPA → phần trăm
 - Lượng tìm kiếm lớn ở Ấn Độ nhưng **mỗi trường một công thức**. Chỉ làm các công thức có văn bản

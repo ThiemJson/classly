@@ -8,7 +8,7 @@
   "nav": {"label": "Ana menü", "features": "Özellikler", "tools": "Araçlar", "download": "İndir", "footer_label": "Alt menü", "footer": [["Ana sayfa", "/classly/"], ["Tüm araçlar", "/classly/tr/araclar/"], ["SSS", "/classly/faq.html"], ["Gizlilik", "/classly/privacy.html"], ["Koşullar", "/classly/terms.html"]]},
   "download": {"title": "Hesabı Classly tutsun", "text": "Her dersi tek dokunuşla işaretle, dönem boyunca her ders için devam durumunu gör. Ücretsiz, çevrimdışı ve hesapsız."},
   "hub": {"slug": "tr/araclar/", "title": "Ücretsiz Devamsızlık Hesaplama Araçları · Classly", "description": "Devamsızlık hesaplama araçları: devam yüzdeniz, kaç saat devamsızlık hakkınız olduğu, %70 tablosu ve telafi hesabı.", "h1": "Ücretsiz devamsızlık hesaplama araçları", "intro": "Öğrencilerin devam durumu hakkında en çok sorduğu sorulara hızlı yanıtlar. Kayıt gerekmez; hesaplamalar tarayıcınızda yapılır."},
-  "fields": {"held": "İşlenen ders saati", "attended": "Katıldığınız ders saati", "target": "Hedef %", "total": "Dönemdeki toplam ders", "skip": "Kaçırılacak ders", "remaining": "Kalan ders", "subject": "Ders", "add_subject": "Ders ekle", "remove_subject": "Dersi kaldır", "weeks": "Eğitim haftası", "per_week": "Haftalık ders", "cancelled": "Tatil veya iptal edilen ders", "hours_total": "Toplam ders saati", "hours_per_class": "Oturum başına ders saati", "hours_missed": "Kaçırılan ders saati", "exam_date": "Sınav tarihi", "exclude_sundays": "Pazar günlerini çalışma gününden çıkar"},
+  "fields": {"held": "İşlenen ders saati", "attended": "Katıldığınız ders saati", "target": "Hedef %", "total": "Dönemdeki toplam ders", "skip": "Kaçırılacak ders", "remaining": "Kalan ders", "subject": "Ders", "add_subject": "Ders ekle", "remove_subject": "Dersi kaldır", "weeks": "Eğitim haftası", "per_week": "Haftalık ders", "cancelled": "Tatil veya iptal edilen ders", "hours_total": "Toplam ders saati", "hours_per_class": "Oturum başına ders saati", "hours_missed": "Kaçırılan ders saati", "exam_date": "Sınav tarihi", "exclude_sundays": "Pazar günlerini çalışma gününden çıkar", "credits": "Kredi", "credit_system": "Kredi sistemi", "hours_per_credit": "Kredi başına toplam saat", "credit_system_options": {"us": "ABD dönem kredisi", "ects": "AKTS", "custom": "Özel"}},
   "widgets": {
     "standing": {"title": "Devam durumum nasıl?", "hint": "Kaçırdıklarınız dahil şimdiye kadar işlenen tüm dersleri sayın. İsterseniz ders saati kullanabilirsiniz."},
     "plan": {"title": "Tüm dönemi mi planlıyorsunuz?", "hint": "Dersin dönem boyunca toplam kaç kez veya kaç saat işleneceğini biliyorsanız kullanın."},
@@ -17,7 +17,8 @@
     "subjects": {"title": "Ders bazında devam durumu", "hint": "Her dersi ekleyerek genel devam oranınızla karşılaştırın."},
     "semester": {"title": "Tüm dönemi planlayın", "hint": "Tatil ve iptal edilen dersleri planlanan derslerden çıkarın."},
     "hours": {"title": "Ders saatine göre hesaplayın", "hint": "Toplam, her oturum ve kaçırılan süre için aynı birimi kullanın."},
-    "countdown": {"title": "Sınava geri sayım", "hint": "Tarih yalnızca bu sekmede kullanılır ve kaydedilmez."}
+    "countdown": {"title": "Sınava geri sayım", "hint": "Tarih yalnızca bu sekmede kullanılır ve kaydedilmez."},
+    "credits": {"title": "Krediyi haftalık çalışma saatine çevirin", "hint": "Kredi sistemini seçin; kredi sayısını ve dönemdeki eğitim haftalarını girin."}
   },
   "table": {"held": "İşlenen ders", "min": "En az katılmanız gereken", "missed": "Devamsızlık hakkı"},
   "calc": {
@@ -40,6 +41,13 @@
     "recoverImpossibleDetail": "Bu dönem %{target} hedefine ulaşmak artık mümkün değil. Mazeret ve telafi seçeneklerini okulunuza sorun.",
     "wholeNumbers": "Tam sayı kullanın ve işlenen ders sayısını en az 1 girin.",
     "attendedTooMany": "Katıldığınız ders sayısı işlenen ders sayısından fazla olamaz.",
-    "targetRange": "1 ile 100 arasında bir hedef girin."
+    "targetRange": "1 ile 100 arasında bir hedef girin.",
+    "creditsPositive": "Pozitif kredi ve saat değerleri ile tam sayı hafta girin.",
+    "creditsUs": "Haftada yaklaşık {weekly} toplam saat planlayın; bunun yaklaşık {outside} saati ders dışı çalışmadır.",
+    "creditsUsDetail": "{credits} ABD dönem kredisi, federal ölçüte göre {weeks} haftaya yayılan yaklaşık {total} toplam saati temsil eder.",
+    "creditsEcts": "Haftada yaklaşık {low}–{high} toplam saat planlayın.",
+    "creditsEctsDetail": "{credits} AKTS, {weeks} haftaya yayılan yaklaşık {low}–{high} toplam iş yükü saatini temsil eder.",
+    "creditsCustom": "Haftada yaklaşık {weekly} toplam saat planlayın.",
+    "creditsCustomDetail": "{credits} kredi × {perCredit} saat = {weeks} haftada {total} toplam saat."
   }
 }

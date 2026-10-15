@@ -8,7 +8,7 @@
   "nav": {"label": "Principal", "features": "Fonctions", "tools": "Outils", "download": "Télécharger", "footer_label": "Pied de page", "footer": [["Accueil", "/classly/"], ["Tous les outils", "/classly/fr/outils/"], ["FAQ", "/classly/faq.html"], ["Confidentialité", "/classly/privacy.html"], ["Conditions", "/classly/terms.html"]]},
   "download": {"title": "Laisse Classly compter pour toi", "text": "Note chaque cours en un geste et suis ces chiffres pour chaque matière pendant tout le semestre. Gratuit, hors ligne et sans compte."},
   "hub": {"slug": "fr/outils/", "title": "Calculateurs d'Assiduité Gratuits · Classly", "description": "Calcule ton taux de présence, le nombre d'absences possibles, le seuil de 75 % et les cours nécessaires pour rattraper ton assiduité.", "h1": "Outils gratuits pour calculer ton assiduité", "intro": "Des réponses rapides aux questions fréquentes sur la présence en cours. Sans inscription ni données enregistrées : tout est calculé dans ton navigateur."},
-  "fields": {"held": "Cours effectués", "attended": "Cours suivis", "target": "Objectif %", "total": "Cours du semestre", "skip": "Prochaines absences", "remaining": "Cours restants", "subject": "Matière", "add_subject": "Ajouter une matière", "remove_subject": "Supprimer la matière", "weeks": "Semaines de cours", "per_week": "Cours par semaine", "cancelled": "Jours fériés ou annulations", "hours_total": "Total d'heures ou périodes", "hours_per_class": "Périodes par séance", "hours_missed": "Périodes déjà manquées", "exam_date": "Date de l'examen", "exclude_sundays": "Exclure les dimanches des jours d'étude"},
+  "fields": {"held": "Cours effectués", "attended": "Cours suivis", "target": "Objectif %", "total": "Cours du semestre", "skip": "Prochaines absences", "remaining": "Cours restants", "subject": "Matière", "add_subject": "Ajouter une matière", "remove_subject": "Supprimer la matière", "weeks": "Semaines de cours", "per_week": "Cours par semaine", "cancelled": "Jours fériés ou annulations", "hours_total": "Total d'heures ou périodes", "hours_per_class": "Périodes par séance", "hours_missed": "Périodes déjà manquées", "exam_date": "Date de l'examen", "exclude_sundays": "Exclure les dimanches des jours d'étude", "credits": "Crédits", "credit_system": "Système de crédits", "hours_per_credit": "Total d'heures par crédit", "credit_system_options": {"us": "Crédits semestriels américains", "ects": "ECTS", "custom": "Personnalisé"}},
   "widgets": {
     "standing": {"title": "Où en est mon assiduité ?", "hint": "Compte tous les cours effectués jusqu'ici, y compris ceux où tu étais absent."},
     "plan": {"title": "Tu planifies tout le semestre ?", "hint": "Utilise ce calcul si tu connais le nombre total de cours de la matière."},
@@ -17,7 +17,8 @@
     "subjects": {"title": "Assiduité par matière", "hint": "Ajoute chaque matière pour la comparer à ton assiduité globale."},
     "semester": {"title": "Planifie tout le semestre", "hint": "Déduis les jours fériés et les cours annulés du calendrier prévu."},
     "hours": {"title": "Calcule par heures ou périodes", "hint": "Utilise la même unité pour le total, chaque séance et le temps manqué."},
-    "countdown": {"title": "Compte à rebours avant l'examen", "hint": "La date reste dans cet onglet et n'est pas enregistrée."}
+    "countdown": {"title": "Compte à rebours avant l'examen", "hint": "La date reste dans cet onglet et n'est pas enregistrée."},
+    "credits": {"title": "Convertis les crédits en heures d'étude par semaine", "hint": "Choisis le système, saisis les crédits et le nombre de semaines de cours."}
   },
   "table": {"held": "Cours effectués", "min": "Présence minimale", "missed": "Absences possibles"},
   "calc": {
@@ -40,6 +41,13 @@
     "recoverImpossibleDetail": "L'objectif de {target} % n'est plus atteignable ce semestre. Renseigne-toi sur les justificatifs et les rattrapages auprès de ton établissement.",
     "wholeNumbers": "Utilise des nombres entiers et au moins 1 cours effectué.",
     "attendedTooMany": "Le nombre de cours suivis ne peut pas dépasser les cours effectués.",
-    "targetRange": "Entre un objectif compris entre 1 et 100."
+    "targetRange": "Entre un objectif compris entre 1 et 100.",
+    "creditsPositive": "Saisis des crédits et des heures positifs, ainsi qu'un nombre entier de semaines.",
+    "creditsUs": "Prévois environ {weekly} heures au total par semaine, dont environ {outside} heures hors cours.",
+    "creditsUsDetail": "{credits} crédits semestriels américains représentent environ {total} heures réparties sur {weeks} semaines selon la référence fédérale.",
+    "creditsEcts": "Prévois environ {low}–{high} heures au total par semaine.",
+    "creditsEctsDetail": "{credits} ECTS représentent environ {low}–{high} heures de travail total réparties sur {weeks} semaines.",
+    "creditsCustom": "Prévois environ {weekly} heures au total par semaine.",
+    "creditsCustomDetail": "{credits} crédits × {perCredit} heures = {total} heures au total sur {weeks} semaines."
   }
 }
