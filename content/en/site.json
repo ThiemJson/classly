@@ -13,8 +13,8 @@
     "footer": [["Home", "/classly/"], ["All tools", "/classly/tools/"], ["FAQ", "/classly/faq.html"], ["Privacy", "/classly/privacy.html"], ["Terms", "/classly/terms.html"]]
   },
   "download": {
-    "title": "Let Classly keep count for you",
-    "text": "Mark each class in one tap and see these numbers for every subject, all semester. Free, offline, no account."
+    "title": "Turn the calculation into a plan",
+    "text": "Mark each class, simulate what happens next, then keep your timetable and tasks together. Free, offline-first, no Classly account."
   },
   "hub": {
     "slug": "tools/",

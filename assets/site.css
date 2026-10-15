@@ -60,6 +60,8 @@ h2{font-size:clamp(28px,4vw,44px);line-height:1.1;letter-spacing:-.9px;margin:10
 .card .icon svg{width:22px;height:22px;stroke:var(--ink)}
 .card h3{font-size:18px;margin:0 0 6px;letter-spacing:-.2px}
 .card p{margin:0;color:var(--muted);font-size:15px}
+.feature-link{text-decoration:none;transition:transform .15s ease,border-color .15s ease}
+.feature-link:hover{transform:translateY(-2px);border-color:var(--sage)}
 
 .screens{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,1fr);gap:18px;overflow-x:auto;padding:4px 4px 20px;scroll-snap-type:x mandatory}
 .screen{scroll-snap-align:start;margin:0}

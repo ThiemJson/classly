@@ -1072,6 +1072,10 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/blog/attendance-condonation/"/>
   </url>
   <url>
+    <loc>https://thiemjason-work.site/classly/blog/attendance-simulator-for-students/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
     <loc>https://thiemjason-work.site/classly/blog/change-semester-dates/</loc>
     <lastmod>2026-10-15</lastmod>
   </url>
@@ -1164,6 +1168,10 @@
     <lastmod>2026-10-15</lastmod>
   </url>
   <url>
+    <loc>https://thiemjason-work.site/classly/blog/student-to-do-list-app/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
     <loc>https://thiemjason-work.site/classly/blog/subject-wise-vs-overall-attendance/</loc>
     <lastmod>2026-10-15</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/blog/subject-wise-vs-overall-attendance/"/>
@@ -1190,5 +1198,9 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/blog/track-attendance-on-phone/"/>
     <xhtml:link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/blog/theo-doi-chuyen-can-tren-dien-thoai/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/blog/track-attendance-on-phone/"/>
+  </url>
+  <url>
+    <loc>https://thiemjason-work.site/classly/blog/weekly-college-timetable-app/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
 </urlset>
