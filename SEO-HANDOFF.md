@@ -280,10 +280,12 @@ Mỗi bài 600–1200 từ, câu đầu là đáp án, có ít nhất 1 ví dụ
 | 9 | college-timetable-tips | how to make a college timetable | Link tính năng thời khoá biểu của app |
 | 10 | track-attendance-on-phone | how to track attendance on phone | Hướng dẫn dùng Classly, ảnh trong `screenshots/` |
 
-### Task 4.3 — Bài từ FAQ
+### Task 4.3 — Bài từ FAQ ✅
 - Với mỗi câu trong `assets/faq.json` có câu trả lời ≥ 3 bước (ví dụ `starting-attendance`), viết thành
   bài hướng dẫn riêng dài hơn, có ảnh chụp màn hình. FAQ giữ nguyên, thêm link "Đọc hướng dẫn đầy đủ".
   (Sửa `faq.json` xong phải chạy lại generator.)
+- **Đã làm:** hai FAQ có danh sách 3+ bước (`starting-attendance`, `semester-dates`) đã có bài hướng dẫn
+  riêng, ảnh chụp màn hình và link ngược từ `faq.html`.
 
 ### Task 4.4 — 10 bài tiếng Việt
 Ví dụ: "cách tính % chuyên cần", "nghỉ quá 20% có bị cấm thi không" (chỉ trích quy chế của các trường
