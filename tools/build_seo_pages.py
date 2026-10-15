@@ -158,17 +158,33 @@ def alternates(group):
     return links
 
 
-def language_switch(page, group, sites):
-    if len(group) < 2:
-        return ''
-    parts = []
-    for other in sorted(group, key=lambda p: p['lang'] != DEFAULT_LANG):
-        name = esc(sites[other['lang']]['language_name'])
-        if other is page:
-            parts.append(name)
+def language_menu(page, group, sites, *, fallback='blog'):
+    """Header language picker; prefer the same translated page when available."""
+    exact_slugs = {item['lang']: item['slug'] for item in group}
+    links = []
+    for lang in sorted(sites, key=lambda code: code != DEFAULT_LANG):
+        site = sites[lang]
+        if fallback == 'tools':
+            fallback_slug = site['hub']['slug']
         else:
-            parts.append(f'<a href="/classly/{other["slug"]}" hreflang="{other["lang"]}" lang="{other["lang"]}">{name}</a>')
-    return '<p class="lang-switch">' + ' · '.join(parts) + '</p>'
+            fallback_slug = 'blog/' if lang == DEFAULT_LANG else f'{lang}/blog/'
+        slug = exact_slugs.get(lang, fallback_slug)
+        current = ' aria-current="page"' if lang == page['lang'] else ''
+        check = '<span class="language-check" aria-hidden="true">✓</span>' if lang == page['lang'] else ''
+        links.append(
+            f'<a href="/classly/{slug}" hreflang="{lang}" lang="{lang}"{current}>'
+            f'<span class="language-code">{esc(lang.upper())}</span>'
+            f'<span>{esc(site["language_name"])}</span>{check}</a>'
+        )
+    current_name = esc(sites[page['lang']]['language_name'])
+    return (
+        '<details class="language-menu">'
+        '<summary aria-label="Change language">'
+        '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/>'
+        '<path d="M3 12h18M12 3c2.4 2.5 3.7 5.5 3.7 9S14.4 18.5 12 21c-2.4-2.5-3.7-5.5-3.7-9S9.6 5.5 12 3Z"/></svg>'
+        f'<span>{current_name}</span></summary>'
+        f'<div class="language-popover">{"".join(links)}</div></details>'
+    )
 
 
 def download_box(site, campaign):
@@ -183,7 +199,7 @@ def download_box(site, campaign):
             '</div>')
 
 
-def shell(site, lang, *, title, description, slug, head_extra, body, scripts='', og_title=None, og_description=None):
+def shell(site, lang, *, title, description, slug, head_extra, body, language_nav='', scripts='', og_title=None, og_description=None):
     nav = site['nav']
     blog_slug = 'blog/' if lang == DEFAULT_LANG else f'{lang}/blog/'
     footer = list(nav['footer'])
@@ -221,7 +237,7 @@ def shell(site, lang, *, title, description, slug, head_extra, body, scripts='',
 <header>
   <nav class="wrap" aria-label="{esc(nav['label'])}">
     <a class="brand" href="/classly/"><img src="/classly/assets/classly-icon.png" alt="" width="34" height="34">Classly</a>
-    <div class="links"><a href="/classly/#features">{esc(nav['features'])}</a><a href="/classly/{site['hub']['slug']}">{esc(nav['tools'])}</a><a href="/classly/{blog_slug}">{esc(site['blog_label'])}</a><a href="/classly/faq.html">FAQ</a><a class="btn btn-ink" href="/classly/#download">{esc(nav['download'])}</a></div>
+    <div class="links"><a href="/classly/#features">{esc(nav['features'])}</a><a href="/classly/{site['hub']['slug']}">{esc(nav['tools'])}</a><a href="/classly/{blog_slug}">{esc(site['blog_label'])}</a><a href="/classly/faq.html">FAQ</a>{language_nav}<a class="btn btn-ink" href="/classly/#download">{esc(nav['download'])}</a></div>
   </nav>
 </header>
 <main class="wrap">
@@ -263,7 +279,6 @@ def tool_page(page, group, site, sites, tools_by_id):
     article = f'''  <article class="doc">
     <span class="kicker">{esc(site['tool_kicker'])}</span>
     <h1>{esc(page['h1'])}</h1>
-    {language_switch(page, group, sites)}
     {page['intro']}
     <div class="calc">
 {widgets}
@@ -278,7 +293,8 @@ def tool_page(page, group, site, sites, tools_by_id):
     scripts = (f'<script>window.CALC_TEXT = {json.dumps(calc_text, ensure_ascii=False)};</script>\n'
                '<script src="/classly/assets/calculator.js"></script>')
     return shell(site, lang, title=page['title'], description=page['description'], slug=page['slug'],
-                 head_extra=head, body=article, scripts=scripts, og_title=page.get('og_title'), og_description=page.get('og_description'))
+                 head_extra=head, body=article, language_nav=language_menu(page, group, sites, fallback='tools'),
+                 scripts=scripts, og_title=page.get('og_title'), og_description=page.get('og_description'))
 
 
 def hub_page(lang, site, sites, pages):
@@ -290,13 +306,13 @@ def hub_page(lang, site, sites, pages):
     body = f'''  <article class="doc">
     <span class="kicker">{esc(site['tool_kicker'])}</span>
     <h1>{esc(hub['h1'])}</h1>
-    {language_switch(page, group, sites)}
     <p>{esc(hub['intro'])}</p>
     <div class="tool-grid">{cards}</div>
 {download_box(site, f'tools-{lang}')}
   </article>'''
     return shell(site, lang, title=hub['title'], description=hub['description'], slug=hub['slug'],
-                 head_extra='\n  '.join(alternates(group)), body=body), group
+                 head_extra='\n  '.join(alternates(group)), body=body,
+                 language_nav=language_menu(page, group, sites, fallback='tools')), group
 
 
 def blog_slug(lang):
@@ -343,7 +359,6 @@ def article_page(page, group, site, sites, tools_by_id):
     body = f'''  <article class="doc article">
     <span class="kicker">{esc(site['blog_label'])}</span>
     <h1>{esc(page['h1'])}</h1>
-    {language_switch(page, group, sites)}
     <p class="updated">{esc(updated_label)}: {esc(page['updated'])}</p>
     <div class="answer-box">{esc(page['answer'])}</div>
 {page['body']}
@@ -353,7 +368,8 @@ def article_page(page, group, site, sites, tools_by_id):
 {faq_block}
   </article>'''
     return shell(site, lang, title=page['title'], description=page['description'], slug=page['slug'],
-                 head_extra=head, body=body, og_title=page.get('og_title'))
+                 head_extra=head, body=body, language_nav=language_menu(page, group, sites),
+                 og_title=page.get('og_title'))
 
 
 def blog_page(lang, site, sites, articles):
@@ -366,11 +382,12 @@ def blog_page(lang, site, sites, articles):
     intro = article_words.get('blog_intro', 'Practical answers for attendance and study planning.')
     empty = '' if cards else f'<p>{esc(article_words.get("empty", "No articles yet."))}</p>'
     body = f'''  <article class="doc"><span class="kicker">Classly</span><h1>{esc(site['blog_label'])}</h1>
-    {language_switch(page, group, sites)}<p>{esc(intro)}</p>
+    <p>{esc(intro)}</p>
     <div class="tool-grid">{cards}</div>{empty}</article>'''
     return shell(site, lang, title=f'{site["blog_label"]} · Classly',
                  description=article_words.get('blog_description', 'Practical answers for attendance, classes and study planning.'), slug=slug,
-                 head_extra='\n  '.join(alternates(group)), body=body), group
+                 head_extra='\n  '.join(alternates(group)), body=body,
+                 language_nav=language_menu(page, group, sites)), group
 
 
 def build_faq():

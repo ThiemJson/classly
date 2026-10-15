@@ -24,6 +24,18 @@ nav{height:68px;display:flex;align-items:center;justify-content:space-between;ga
 .links{display:flex;align-items:center;gap:26px;font-size:15px}
 .links a{text-decoration:none;color:var(--muted)}
 .links a:hover{color:var(--ink)}
+.language-menu{position:relative;background:none;border:0;border-radius:0;padding:0}
+.language-menu summary{height:40px;align-items:center;justify-content:flex-start;gap:7px;padding:0 11px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--muted);font-size:14px;font-weight:600;white-space:nowrap}
+.language-menu summary:hover,.language-menu[open] summary{color:var(--ink);border-color:var(--sage)}
+.language-menu summary::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);margin-left:2px}
+.language-menu[open] summary::after{content:"";transform:rotate(225deg) translate(-1px,-1px)}
+.language-menu summary svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.language-popover{position:absolute;z-index:20;top:calc(100% + 10px);right:0;width:360px;max-height:min(480px,calc(100vh - 100px));overflow-y:auto;display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:8px;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 18px 48px color-mix(in srgb,#000 18%,transparent)}
+.links .language-popover a{display:grid;grid-template-columns:28px 1fr 16px;align-items:center;gap:7px;min-height:42px;padding:8px 10px;border-radius:11px;color:var(--ink);font-size:14px;text-decoration:none}
+.links .language-popover a:hover{background:var(--variant)}
+.links .language-popover a[aria-current="page"]{background:var(--sage-soft);color:var(--sage);font-weight:700}
+.language-code{color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.05em}
+.language-check{text-align:right}
 .btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;border-radius:999px;padding:12px 20px;font-size:15px;transition:transform .15s ease}
 .btn:hover{transform:translateY(-1px)}
 .btn-ink{background:var(--ink);color:var(--bg)}
@@ -127,6 +139,7 @@ footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
 
 @media (max-width:900px){
   .links a:not(.btn){display:none}
+  .links .language-popover a{display:grid}
   .hero{padding:48px 0 24px}
   .hero-grid,.privacy{grid-template-columns:1fr;gap:40px}
   .hero-copy{text-align:center}
@@ -189,7 +202,6 @@ footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
 .result-headline{font-weight:700;font-size:18px;margin:0}
 .result-detail{color:var(--muted);margin:4px 0 0;font-size:15px}
 .result-detail:empty{display:none}
-.doc .lang-switch{font-size:14px;color:var(--muted);margin:0 0 20px}
 .doc .formula{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:15px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;overflow-x:auto}
 .app-cta{display:flex;flex-wrap:wrap;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin:32px 0}
 .app-cta img{width:56px;height:56px;border-radius:14px}
@@ -225,3 +237,9 @@ footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
 .subject-results p{margin:0;font-size:14px}
 .check-field{display:flex;align-items:center;gap:8px;align-self:end;min-height:46px;font-size:14px;font-weight:600}.check-field input{width:18px;height:18px;accent-color:var(--sage)}
 @media (max-width:560px){.subject-head{display:none}.subject-row{grid-template-columns:1fr 1fr 36px}.subject-row label:first-child{grid-column:1/-1}.subject-actions{align-items:stretch}.subject-actions .field{width:110px}}
+@media (max-width:560px){
+  .language-menu summary span{display:none}
+  .language-menu summary{width:40px;justify-content:center;padding:0}
+  .language-menu summary::after{display:none}
+  .language-popover{position:fixed;top:76px;left:16px;right:16px;width:auto;grid-template-columns:1fr;max-height:calc(100vh - 92px)}
+}
