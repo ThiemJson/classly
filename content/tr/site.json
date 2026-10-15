@@ -5,36 +5,146 @@
   "tool_kicker": "Ücretsiz araç",
   "faq_heading": "Sık sorulan sorular",
   "related_heading": "Diğer devam araçları",
-  "nav": {"label": "Ana menü", "features": "Özellikler", "tools": "Araçlar", "download": "İndir", "footer_label": "Alt menü", "footer": [["Ana sayfa", "/classly/"], ["Tüm araçlar", "/classly/tr/araclar/"], ["SSS", "/classly/faq.html"], ["Gizlilik", "/classly/privacy.html"], ["Koşullar", "/classly/terms.html"]]},
-  "download": {"title": "Hesabı Classly tutsun", "text": "Her dersi tek dokunuşla işaretle, dönem boyunca her ders için devam durumunu gör. Ücretsiz, çevrimdışı ve hesapsız."},
-  "hub": {"slug": "tr/araclar/", "title": "Ücretsiz Devamsızlık Hesaplama Araçları · Classly", "description": "Devamsızlık hesaplama araçları: devam yüzdeniz, kaç saat devamsızlık hakkınız olduğu, %70 tablosu ve telafi hesabı.", "h1": "Ücretsiz devamsızlık hesaplama araçları", "intro": "Öğrencilerin devam durumu hakkında en çok sorduğu sorulara hızlı yanıtlar. Kayıt gerekmez; hesaplamalar tarayıcınızda yapılır."},
-  "fields": {"held": "İşlenen ders saati", "attended": "Katıldığınız ders saati", "target": "Hedef %", "total": "Dönemdeki toplam ders", "skip": "Kaçırılacak ders", "remaining": "Kalan ders", "subject": "Ders", "add_subject": "Ders ekle", "remove_subject": "Dersi kaldır", "weeks": "Eğitim haftası", "per_week": "Haftalık ders", "cancelled": "Tatil veya iptal edilen ders", "hours_total": "Toplam ders saati", "hours_per_class": "Oturum başına ders saati", "hours_missed": "Kaçırılan ders saati", "exam_date": "Sınav tarihi", "exclude_sundays": "Pazar günlerini çalışma gününden çıkar", "credits": "Kredi", "credit_system": "Kredi sistemi", "hours_per_credit": "Kredi başına toplam saat", "credit_system_options": {"us": "ABD dönem kredisi", "ects": "AKTS", "custom": "Özel"}},
-  "widgets": {
-    "standing": {"title": "Devam durumum nasıl?", "hint": "Kaçırdıklarınız dahil şimdiye kadar işlenen tüm dersleri sayın. İsterseniz ders saati kullanabilirsiniz."},
-    "plan": {"title": "Tüm dönemi mi planlıyorsunuz?", "hint": "Dersin dönem boyunca toplam kaç kez veya kaç saat işleneceğini biliyorsanız kullanın."},
-    "whatif": {"title": "Birkaç ders daha kaçırırsam ne olur?", "hint": "Sonraki derslere katılmazsanız devam yüzdenizin nasıl değişeceğini görün."},
-    "recover": {"title": "Dönem sonunda hedefe ulaşabilir miyim?", "hint": "Bu ders için dönemde kaç ders veya ders saati kaldığını ekleyin."},
-    "subjects": {"title": "Ders bazında devam durumu", "hint": "Her dersi ekleyerek genel devam oranınızla karşılaştırın."},
-    "semester": {"title": "Tüm dönemi planlayın", "hint": "Tatil ve iptal edilen dersleri planlanan derslerden çıkarın."},
-    "hours": {"title": "Ders saatine göre hesaplayın", "hint": "Toplam, her oturum ve kaçırılan süre için aynı birimi kullanın."},
-    "countdown": {"title": "Sınava geri sayım", "hint": "Tarih yalnızca bu sekmede kullanılır ve kaydedilmez."},
-    "credits": {"title": "Krediyi haftalık çalışma saatine çevirin", "hint": "Kredi sistemini seçin; kredi sayısını ve dönemdeki eğitim haftalarını girin."}
+  "nav": {
+    "label": "Ana menü",
+    "features": "Özellikler",
+    "tools": "Araçlar",
+    "download": "İndir",
+    "footer_label": "Alt menü",
+    "footer": [
+      [
+        "Ana sayfa",
+        "/classly/"
+      ],
+      [
+        "Tüm araçlar",
+        "/classly/tr/araclar/"
+      ],
+      [
+        "SSS",
+        "/classly/faq.html"
+      ],
+      [
+        "Gizlilik",
+        "/classly/privacy.html"
+      ],
+      [
+        "Koşullar",
+        "/classly/terms.html"
+      ]
+    ]
   },
-  "table": {"held": "İşlenen ders", "min": "En az katılmanız gereken", "missed": "Devamsızlık hakkı"},
+  "download": {
+    "title": "Hesabı Classly tutsun",
+    "text": "Her dersi tek dokunuşla işaretle, dönem boyunca her ders için devam durumunu gör. Ücretsiz, çevrimdışı ve hesapsız."
+  },
+  "hub": {
+    "slug": "tr/araclar/",
+    "title": "Ücretsiz Devamsızlık Hesaplama Araçları · Classly",
+    "description": "Devamsızlık hesaplama araçları: devam yüzdeniz, kaç saat devamsızlık hakkınız olduğu, %70 tablosu ve telafi hesabı.",
+    "h1": "Ücretsiz devamsızlık hesaplama araçları",
+    "intro": "Öğrencilerin devam durumu hakkında en çok sorduğu sorulara hızlı yanıtlar. Kayıt gerekmez; hesaplamalar tarayıcınızda yapılır."
+  },
+  "fields": {
+    "held": "İşlenen ders saati",
+    "attended": "Katıldığınız ders saati",
+    "target": "Hedef %",
+    "total": "Dönemdeki toplam ders",
+    "skip": "Kaçırılacak ders",
+    "remaining": "Kalan ders",
+    "subject": "Ders",
+    "add_subject": "Ders ekle",
+    "remove_subject": "Dersi kaldır",
+    "weeks": "Eğitim haftası",
+    "per_week": "Haftalık ders",
+    "cancelled": "Tatil veya iptal edilen ders",
+    "hours_total": "Toplam ders saati",
+    "hours_per_class": "Oturum başına ders saati",
+    "hours_missed": "Kaçırılan ders saati",
+    "exam_date": "Sınav tarihi",
+    "exclude_sundays": "Pazar günlerini çalışma gününden çıkar",
+    "credits": "Kredi",
+    "credit_system": "Kredi sistemi",
+    "hours_per_credit": "Kredi başına toplam saat",
+    "credit_system_options": {
+      "us": "ABD dönem kredisi",
+      "ects": "AKTS",
+      "custom": "Özel"
+    }
+  },
+  "widgets": {
+    "standing": {
+      "title": "Devam durumum nasıl?",
+      "hint": "Kaçırdıklarınız dahil şimdiye kadar işlenen tüm dersleri sayın. İsterseniz ders saati kullanabilirsiniz."
+    },
+    "plan": {
+      "title": "Tüm dönemi mi planlıyorsunuz?",
+      "hint": "Dersin dönem boyunca toplam kaç kez veya kaç saat işleneceğini biliyorsanız kullanın."
+    },
+    "whatif": {
+      "title": "Birkaç ders daha kaçırırsam ne olur?",
+      "hint": "Sonraki derslere katılmazsanız devam yüzdenizin nasıl değişeceğini görün."
+    },
+    "recover": {
+      "title": "Dönem sonunda hedefe ulaşabilir miyim?",
+      "hint": "Bu ders için dönemde kaç ders veya ders saati kaldığını ekleyin."
+    },
+    "subjects": {
+      "title": "Ders bazında devam durumu",
+      "hint": "Her dersi ekleyerek genel devam oranınızla karşılaştırın."
+    },
+    "semester": {
+      "title": "Tüm dönemi planlayın",
+      "hint": "Tatil ve iptal edilen dersleri planlanan derslerden çıkarın."
+    },
+    "hours": {
+      "title": "Ders saatine göre hesaplayın",
+      "hint": "Toplam, her oturum ve kaçırılan süre için aynı birimi kullanın."
+    },
+    "countdown": {
+      "title": "Sınava geri sayım",
+      "hint": "Tarih yalnızca bu sekmede kullanılır ve kaydedilmez."
+    },
+    "credits": {
+      "title": "Krediyi haftalık çalışma saatine çevirin",
+      "hint": "Kredi sistemini seçin; kredi sayısını ve dönemdeki eğitim haftalarını girin."
+    }
+  },
+  "table": {
+    "held": "İşlenen ders",
+    "min": "En az katılmanız gereken",
+    "missed": "Devamsızlık hakkı"
+  },
   "calc": {
     "current": "Şu an devam oranınız %{pct}.",
-    "canMiss": {"one": "%{target} seviyesinde kalmak için 1 ders daha kaçırabilirsiniz.", "other": "%{target} seviyesinde kalmak için {n} ders daha kaçırabilirsiniz."},
+    "canMiss": {
+      "one": "%{target} seviyesinde kalmak için 1 ders daha kaçırabilirsiniz.",
+      "other": "%{target} seviyesinde kalmak için {n} ders daha kaçırabilirsiniz."
+    },
     "canMissDetail": "{current} Bu dersleri kaçırdıktan sonra oranınız %{pct} olur.",
-    "atEdge": "Sonraki dersi kaçırmayın.", "atEdgeDetail": "{current} Bir devamsızlık daha sizi %{target} altına düşürür.",
-    "mustAttend": {"one": "%{target} seviyesine dönmek için sonraki derse katılın.", "other": "%{target} seviyesine dönmek için sonraki {n} derse aralıksız katılın."},
+    "atEdge": "Sonraki dersi kaçırmayın.",
+    "atEdgeDetail": "{current} Bir devamsızlık daha sizi %{target} altına düşürür.",
+    "mustAttend": {
+      "one": "%{target} seviyesine dönmek için sonraki derse katılın.",
+      "other": "%{target} seviyesine dönmek için sonraki {n} derse aralıksız katılın."
+    },
     "mustAttendDetail": "{current} Böylece oranınız %{pct} olur.",
     "unreachable": "Bir ders kaçırıldıktan sonra %100 hedefi artık mümkün değildir.",
-    "planMiss": {"one": "Toplam {total} dersten en fazla 1 tanesini kaçırabilirsiniz.", "other": "Toplam {total} dersten en fazla {n} tanesini kaçırabilirsiniz."},
+    "planMiss": {
+      "one": "Toplam {total} dersten en fazla 1 tanesini kaçırabilirsiniz.",
+      "other": "Toplam {total} dersten en fazla {n} tanesini kaçırabilirsiniz."
+    },
     "planDetail": "Hedef için {total} dersin en az {attend} tanesine katılın.",
-    "whatif": {"one": "1 ders daha kaçırırsanız devam oranınız %{pct} olur.", "other": "{n} ders daha kaçırırsanız devam oranınız %{pct} olur."},
+    "whatif": {
+      "one": "1 ders daha kaçırırsanız devam oranınız %{pct} olur.",
+      "other": "{n} ders daha kaçırırsanız devam oranınız %{pct} olur."
+    },
     "whatifAbove": "Bu oran hâlâ %{target} veya üzerindedir. Hedefin altına düşmeden toplam en fazla {m} ders kaçırabilirsiniz.",
     "whatifBelow": "Bu oran %{target} altındadır. Hedefin altına düşmeden toplam en fazla {m} ders kaçırabilirsiniz.",
-    "recover": {"one": "Kalan {rem} dersin en az 1'ine katılın.", "other": "Kalan {rem} dersin en az {n} tanesine katılın."},
+    "recover": {
+      "one": "Kalan {rem} dersin en az 1'ine katılın.",
+      "other": "Kalan {rem} dersin en az {n} tanesine katılın."
+    },
     "recoverDetail": "Bunların {m} tanesini kaçırıp dönemi yine %{target} veya üzerinde bitirebilirsiniz.",
     "recoverSafe": "Kalan {rem} dersin tamamını kaçırsanız bile dönemi %{target} veya üzerinde bitirirsiniz.",
     "recoverImpossible": "Kalan {rem} dersin tamamına katılsanız bile oranınız %{pct} olur.",
@@ -49,5 +159,12 @@
     "creditsEctsDetail": "{credits} AKTS, {weeks} haftaya yayılan yaklaşık {low}–{high} toplam iş yükü saatini temsil eder.",
     "creditsCustom": "Haftada yaklaşık {weekly} toplam saat planlayın.",
     "creditsCustomDetail": "{credits} kredi × {perCredit} saat = {weeks} haftada {total} toplam saat."
+  },
+  "article": {
+    "updated_label": "Güncellendi",
+    "sources_heading": "Kaynaklar",
+    "blog_intro": "Katılım ve çalışma planlaması için pratik cevaplar.",
+    "blog_description": "Katılım, dersler ve çalışma planlaması için pratik cevaplar.",
+    "empty": "Henüz makale yok."
   }
 }

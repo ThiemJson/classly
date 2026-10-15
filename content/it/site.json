@@ -1,0 +1,188 @@
+{
+  "language_name": "Italiano",
+  "blog_label": "Blog",
+  "tool_kicker": "Strumento gratuito",
+  "faq_heading": "Domande comuni",
+  "related_heading": "Altri strumenti di partecipazione",
+  "nav": {
+    "label": "Principale",
+    "features": "Caratteristiche",
+    "tools": "Strumenti",
+    "download": "Scarica",
+    "footer_label": "Piè di pagina",
+    "footer": [
+      [
+        "Casa",
+        "/classly/"
+      ],
+      [
+        "Tutti gli strumenti",
+        "/classly/it/strumenti/"
+      ],
+      [
+        "FAQ",
+        "/classly/faq.html"
+      ],
+      [
+        "Privacy",
+        "/classly/privacy.html"
+      ],
+      [
+        "Termini",
+        "/classly/terms.html"
+      ]
+    ]
+  },
+  "download": {
+    "title": "Trasforma il calcolo in un piano",
+    "text": "Segna ogni lezione, simula cosa succede dopo, poi tieni insieme il tuo orario e i compiti. Gratuito, prima offline, senza account Classly."
+  },
+  "hub": {
+    "slug": "it/strumenti/",
+    "title": "Calcolatori di frequenza gratuiti per studenti · Classly",
+    "description": "Calcolatori gratuiti di frequenza: la tua percentuale di frequenza, quante lezioni puoi saltare, la regola del 75% e quante lezioni devi recuperare.",
+    "h1": "Strumenti gratuiti per la gestione delle presenze",
+    "intro": "Risposte rapide alle domande che gli studenti fanno più spesso sulla frequenza. Nessuna registrazione, nulla viene memorizzato: ogni calcolo avviene nel tuo browser."
+  },
+  "fields": {
+    "held": "Lezioni tenute",
+    "attended": "Lezioni frequentate",
+    "target": "Percentuale obiettivo",
+    "total": "Lezioni di questo semestre",
+    "skip": "Lezioni da saltare",
+    "remaining": "Lezioni rimaste",
+    "subject": "Oggetto",
+    "add_subject": "Aggiungi oggetto",
+    "remove_subject": "Rimuovere il soggetto",
+    "weeks": "Settimane di insegnamento",
+    "per_week": "Lezioni a settimana",
+    "cancelled": "Vacanze o cancellazioni",
+    "hours_total": "Totale periodi o ore",
+    "hours_per_class": "Periodi per incontro di lezione",
+    "hours_missed": "Periodi già persi",
+    "exam_date": "Data dell'esame",
+    "exclude_sundays": "Escludi le domeniche dai giorni di studio",
+    "credits": "Crediti",
+    "credit_system": "Sistema dei crediti",
+    "hours_per_credit": "Ore totali per credito",
+    "credit_system_options": {
+      "us": "Crediti semestrali USA",
+      "ects": "ECTS",
+      "custom": "Personalizzato"
+    }
+  },
+  "widgets": {
+    "standing": {
+      "title": "A che punto sono?",
+      "hint": "Conta tutte le lezioni svolte finora, comprese quelle che hai perso."
+    },
+    "plan": {
+      "title": "Pianificando un intero semestre?",
+      "hint": "Se sai quante lezioni avrà in totale una materia."
+    },
+    "whatif": {
+      "title": "Cosa succede se perdo altre lezioni?",
+      "hint": "Vedi la tua percentuale dopo aver perso le prossime lezioni."
+    },
+    "recover": {
+      "title": "Posso ancora farcela entro la fine del semestre?",
+      "hint": "Aggiungi quante lezioni di questa materia restano questo semestre."
+    },
+    "subjects": {
+      "title": "Calcola ogni materia",
+      "hint": "Aggiungi ogni materia con le lezioni svolte e quelle frequentate. Il risultato complessivo non nasconde mai una materia sotto il target."
+    },
+    "semester": {
+      "title": "Pianifica l'intero semestre",
+      "hint": "Sottrai festività e lezioni cancellate dalle settimane di insegnamento programmate."
+    },
+    "hours": {
+      "title": "Calcola per periodi o ore",
+      "hint": "Usa la stessa unità per il totale del corso, ogni incontro e il tempo già perso."
+    },
+    "countdown": {
+      "title": "Conta alla rovescia fino all'esame",
+      "hint": "La data rimane in questa scheda del browser e non viene salvata."
+    },
+    "credits": {
+      "title": "Convert credits to weekly study hours",
+      "hint": "Scegli il sistema di crediti, inserisci i crediti del corso e usa il numero di settimane di lezione nel tuo periodo."
+    }
+  },
+  "table": {
+    "held": "Lezioni tenute",
+    "min": "Partecipa ad almeno",
+    "missed": "Puoi aver perso"
+  },
+  "calc": {
+    "current": "Ora sei al {pct}%.",
+    "canMiss": {
+      "one": "Puoi perdere 1 altra lezione e restare al {target}%.",
+      "other": "Puoi perdere {n} altre lezioni e restare al {target}%."
+    },
+    "canMissDetail": "{current} Dopo averle perse saresti al {pct}%.",
+    "atEdge": "Non perdere la prossima lezione.",
+    "atEdgeDetail": "{current} Perderne un'altra ti porterebbe sotto il {target}%.",
+    "mustAttend": {
+      "one": "Partecipa alla prossima lezione per tornare al {target}%.",
+      "other": "Partecipa alle prossime {n} lezioni consecutive per tornare al {target}%."
+    },
+    "mustAttendDetail": "{current} Questo ti porterebbe al {pct}%.",
+    "unreachable": "Un obiettivo del 100% non può più essere raggiunto una volta persa una lezione.",
+    "planMiss": {
+      "one": "Puoi perdere fino a 1 lezione su {total}.",
+      "other": "Puoi perdere fino a {n} lezioni su {total}."
+    },
+    "planDetail": "Partecipa ad almeno {attend} su {total} per rimanere sull'obiettivo.",
+    "whatif": {
+      "one": "Se perdi 1 altra lezione, sarai al {pct}%.",
+      "other": "Se perdi {n} altre lezioni, sarai al {pct}%."
+    },
+    "whatifAbove": "Questo è ancora al livello o sopra il {target}%. Il massimo che puoi perdere per restarci è {m}.",
+    "whatifBelow": "Questo è sotto il {target}%. Il massimo che puoi perdere per restarci è {m}.",
+    "recover": {
+      "one": "Partecipa ad almeno 1 delle {rem} lezioni rimaste.",
+      "other": "Partecipa ad almeno {n} delle {rem} lezioni rimaste."
+    },
+    "recoverDetail": "Puoi perdere {m} di esse e comunque finire al {target}% o sopra.",
+    "recoverSafe": "Finirai al {target}% o sopra anche se perdi tutte le {rem} lezioni rimaste.",
+    "recoverImpossible": "Anche frequentando tutte le {rem} lezioni rimanenti, finiresti al {pct}%.",
+    "recoverImpossibleDetail": "{target}% è fuori portata questo semestre. Parla con il tuo insegnante o dipartimento riguardo a un congedo medico o lezioni di recupero.",
+    "wholeNumbers": "Usa numeri interi, con almeno 1 lezione tenuta.",
+    "attendedTooMany": "Le lezioni frequentate non possono essere più delle lezioni tenute.",
+    "targetRange": "Inserisci un obiettivo tra 1 e 100.",
+    "subjectsOverall": "Frequenza complessiva: {pct}% ({attended} di {held}).",
+    "subjectsWarning": "La frequenza complessiva è in linea con l'obiettivo, ma {names} è sotto il {target}%.",
+    "subjectsWarnings": "La frequenza complessiva è in linea con l'obiettivo, ma {names} sono sotto il {target}%.",
+    "subjectsBelow": "La frequenza complessiva è sotto il {target}%.",
+    "subjectCanMiss": "{name}: {pct}% — puoi perdere ancora {n}.",
+    "subjectMustAttend": "{name}: {pct}% — devi frequentare {n} di seguito.",
+    "subjectAtEdge": "{name}: {pct}% — non perdere la prossima lezione.",
+    "subjectUnreachable": "{name}: {pct}% — l'obiettivo non è raggiungibile.",
+    "subjectFallback": "Materia {n}",
+    "semesterMiss": "Puoi perdere fino a {miss} di {total} lezioni e frequentarne almeno {attend}.",
+    "semesterSummary": "{weeks} settimane × {perWeek} lezioni − {cancelled} cancellate = {total} lezioni.",
+    "semesterWeeks": "Questo corrisponde a circa {weeks} settimane di lezioni con {perWeek} lezioni per settimana.",
+    "semesterCancelled": "Le vacanze o le cancellazioni devono essere inferiori alle lezioni programmate.",
+    "hoursRemaining": "Puoi perdere ancora {remaining} periodi o ore, equivalenti a {meetings} lezioni complete.",
+    "hoursDetail": "Il permesso è di {allowed} su {total}; hai perso {missed}, con {perClass} per lezione.",
+    "hoursOver": "Hai superato di {over} periodi o ore il permesso di {allowed}.",
+    "hoursOverDetail": "Hai perso {missed}; l'obiettivo del {target}% non è più raggiunto.",
+    "hoursMissedTooMany": "Il tempo già perso non può superare il totale del corso.",
+    "creditsPositive": "Inserisci crediti e ore positivi, e un numero intero di settimane.",
+    "creditsUs": "Pianifica circa {weekly} ore totali a settimana, incluse circa {outside} ore fuori dalla classe.",
+    "creditsUsDetail": "{credits} crediti semestrali USA rappresentano circa {total} ore totali distribuite in {weeks} settimane secondo il benchmark federale.",
+    "creditsEcts": "Pianifica circa {low}–{high} ore totali a settimana.",
+    "creditsEctsDetail": "{credits} ECTS rappresentano circa {low}–{high} ore totali di carico di lavoro distribuite in {weeks} settimane.",
+    "creditsCustom": "Pianifica circa {weekly} ore totali a settimana.",
+    "creditsCustomDetail": "{credits} crediti × {perCredit} ore = {total} ore totali in {weeks} settimane."
+  },
+  "og_locale": "it_IT",
+  "article": {
+    "updated_label": "Aggiornato",
+    "sources_heading": "Fonti",
+    "blog_intro": "Risposte pratiche per la frequenza e la pianificazione dello studio.",
+    "blog_description": "Risposte pratiche per la frequenza, le lezioni e la pianificazione dello studio.",
+    "empty": "Nessun articolo ancora."
+  }
+}

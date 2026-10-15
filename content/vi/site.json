@@ -18,7 +18,28 @@
     "tools": "Công cụ",
     "download": "Tải app",
     "footer_label": "Chân trang",
-    "footer": [["Trang chủ", "/classly/"], ["Tất cả công cụ", "/classly/vi/cong-cu/"], ["FAQ", "/classly/faq.html"], ["Quyền riêng tư", "/classly/privacy.html"], ["Điều khoản", "/classly/terms.html"]]
+    "footer": [
+      [
+        "Trang chủ",
+        "/classly/"
+      ],
+      [
+        "Tất cả công cụ",
+        "/classly/vi/cong-cu/"
+      ],
+      [
+        "FAQ",
+        "/classly/faq.html"
+      ],
+      [
+        "Quyền riêng tư",
+        "/classly/privacy.html"
+      ],
+      [
+        "Điều khoản",
+        "/classly/terms.html"
+      ]
+    ]
   },
   "download": {
     "title": "Để Classly đếm giúp bạn",
@@ -46,26 +67,59 @@
     "cancelled": "Buổi nghỉ lễ hoặc bị hủy",
     "hours_total": "Tổng số tiết hoặc giờ",
     "hours_per_class": "Số tiết mỗi buổi",
-    "hours_missed": "Số tiết đã vắng", "exam_date": "Ngày thi", "exclude_sundays": "Không tính Chủ nhật là ngày học"
+    "hours_missed": "Số tiết đã vắng",
+    "exam_date": "Ngày thi",
+    "exclude_sundays": "Không tính Chủ nhật là ngày học"
   },
   "widgets": {
-    "standing": {"title": "Mình đang ở đâu?", "hint": "Đếm mọi buổi đã diễn ra, kể cả những buổi bạn vắng."},
-    "plan": {"title": "Tính trước cho cả học kỳ", "hint": "Khi bạn biết tổng số buổi của học phần."},
-    "whatif": {"title": "Nếu nghỉ thêm vài buổi thì sao?", "hint": "Xem tỷ lệ của bạn sau khi nghỉ thêm vài buổi tới."},
-    "recover": {"title": "Cuối kỳ còn kịp không?", "hint": "Nhập thêm số buổi còn lại của môn này trong học kỳ."},
-    "subjects": {"title": "Chuyên cần theo từng môn", "hint": "Thêm từng môn để so sánh với tỷ lệ chuyên cần tổng thể."},
-    "semester": {"title": "Lập kế hoạch cả học kỳ", "hint": "Trừ các buổi nghỉ lễ và bị hủy khỏi lịch học dự kiến."},
-    "hours": {"title": "Tính theo tiết hoặc giờ", "hint": "Dùng cùng một đơn vị cho tổng học phần, mỗi buổi và thời lượng đã vắng."},
-    "countdown": {"title": "Đếm ngược đến ngày thi", "hint": "Ngày thi chỉ dùng trong tab này và không được lưu."}
+    "standing": {
+      "title": "Mình đang ở đâu?",
+      "hint": "Đếm mọi buổi đã diễn ra, kể cả những buổi bạn vắng."
+    },
+    "plan": {
+      "title": "Tính trước cho cả học kỳ",
+      "hint": "Khi bạn biết tổng số buổi của học phần."
+    },
+    "whatif": {
+      "title": "Nếu nghỉ thêm vài buổi thì sao?",
+      "hint": "Xem tỷ lệ của bạn sau khi nghỉ thêm vài buổi tới."
+    },
+    "recover": {
+      "title": "Cuối kỳ còn kịp không?",
+      "hint": "Nhập thêm số buổi còn lại của môn này trong học kỳ."
+    },
+    "subjects": {
+      "title": "Chuyên cần theo từng môn",
+      "hint": "Thêm từng môn để so sánh với tỷ lệ chuyên cần tổng thể."
+    },
+    "semester": {
+      "title": "Lập kế hoạch cả học kỳ",
+      "hint": "Trừ các buổi nghỉ lễ và bị hủy khỏi lịch học dự kiến."
+    },
+    "hours": {
+      "title": "Tính theo tiết hoặc giờ",
+      "hint": "Dùng cùng một đơn vị cho tổng học phần, mỗi buổi và thời lượng đã vắng."
+    },
+    "countdown": {
+      "title": "Đếm ngược đến ngày thi",
+      "hint": "Ngày thi chỉ dùng trong tab này và không được lưu."
+    }
   },
-  "table": {"held": "Số buổi đã học", "min": "Phải có mặt ít nhất", "missed": "Được vắng tối đa"},
+  "table": {
+    "held": "Số buổi đã học",
+    "min": "Phải có mặt ít nhất",
+    "missed": "Được vắng tối đa"
+  },
   "calc": {
     "current": "Hiện bạn đang ở mức {pct}%.",
     "canMiss": "Bạn còn được nghỉ {n} buổi mà vẫn giữ {target}%.",
     "canMissDetail": "{current} Nghỉ hết số buổi đó, bạn còn {pct}%.",
     "atEdge": "Đừng nghỉ buổi tới.",
     "atEdgeDetail": "{current} Nghỉ thêm một buổi sẽ xuống dưới {target}%.",
-    "mustAttend": {"one": "Đi học buổi tới là bạn quay lại {target}%.", "other": "Đi học liên tiếp {n} buổi tới để quay lại {target}%."},
+    "mustAttend": {
+      "one": "Đi học buổi tới là bạn quay lại {target}%.",
+      "other": "Đi học liên tiếp {n} buổi tới để quay lại {target}%."
+    },
     "mustAttendDetail": "{current} Khi đó bạn sẽ đạt {pct}%.",
     "unreachable": "Đã vắng một buổi thì không thể đạt lại 100%.",
     "planMiss": "Bạn được nghỉ tối đa {n} trên {total} buổi.",

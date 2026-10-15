@@ -1,0 +1,53 @@
+{
+  "id": "calculate-attendance-percentage",
+  "slug": "id/blog/cara-menghitung-persentase-kehadiran/",
+  "title": "Cara Menghitung Persentase Kehadiran · Classly",
+  "description": "Hitung persentase kehadiran dengan membagi jumlah kelas yang dihadiri dengan jumlah kelas yang diadakan dan dikalikan dengan 100, dengan contoh kerja dan rumus.",
+  "h1": "Cara menghitung persentase kehadiran",
+  "answer": "Bagi jumlah kelas yang Anda hadiri dengan jumlah kelas yang diadakan, lalu kalikan dengan 100.",
+  "published": "2026-10-15",
+  "updated": "2026-10-15",
+  "sources": [],
+  "related_tools": [
+    "attendance-calculator",
+    "bunk-calculator"
+  ],
+  "faq": [
+    {
+      "q": "Apa rumus persentase kehadiran?",
+      "a": "Persentase kehadiran = kelas yang dihadiri ÷ kelas yang diadakan × 100."
+    },
+    {
+      "q": "Apakah kelas yang terlewat dihitung sebagai kelas yang diadakan?",
+      "a": "Ya. Jika sebuah kelas diadakan dan Anda tidak hadir, kelas tersebut tetap dimasukkan dalam total kelas yang diadakan."
+    }
+  ]
+}
+---
+<h2>Rumus persentase kehadiran</h2>
+<p class="formula">persentase kehadiran = hadir ÷ diadakan × 100</p>
+<p>Jika 40 kelas diadakan dan Anda menghadiri 32, hitung 32 ÷ 40 × 100. Kehadiran Anda adalah <b>80%</b>.</p>
+<h2>Dua contoh lagi</h2>
+<p>Jika Anda menghadiri 27 dari 36 kelas, 27 ÷ 36 × 100 menghasilkan <b>75%</b>. Jika Anda menghadiri 17 dari 24, hasilnya adalah 70,83%. Classly menampilkan persentase dengan pembulatan ke bawah hingga dua tempat desimal sehingga nilai yang sedikit di bawah ambang yang diperlukan tidak ditampilkan seolah-olah memenuhi ambang tersebut.</p>
+<h2>Excel dan Google Sheets rumus</h2>
+<p>Masukkan kelas yang dihadiri di sel A2 dan kelas yang diadakan di B2, kemudian gunakan <code>=A2/B2*100</code>. Format hasil sebagai angka, atau gunakan <code>=A2/B2</code> dan format sel sebagai persentase.</p>
+<h2>Apa yang termasuk dalam setiap angka?</h2>
+<ul><li><b>Diadakan:</b> setiap kelas yang benar-benar berlangsung, termasuk kelas yang Anda lewatkan.</li><li><b>Dihadiri:</b> hanya kelas di mana Anda hadir.</li><li><b>Dibatalkan:</b> biasanya diabaikan karena kelas tidak berlangsung.</li></ul>
+<p>Aturan bervariasi menurut institusi, terutama untuk cuti sakit dan ketidakhadiran yang sah. Periksa kebijakan Anda sendiri sebelum memutuskan apakah suatu kelas termasuk dalam total.</p>
+<h2>Cara menghitung berapa banyak kelas yang bisa Anda lewatkan</h2>
+<p>Persentase Anda saat ini tidak langsung memberitahu berapa banyak kelas di masa depan yang bisa Anda lewatkan, karena setiap kelas yang dilewatkan menambah total kelas yang diadakan sementara jumlah yang dihadiri tetap tidak berubah. Gunakan rumus ini:</p>
+<p class="formula">kelas yang bisa dilewatkan = ⌊ hadir × 100 ÷ target − diadakan ⌋</p>
+<p>Misalkan Anda menghadiri 34 dari 40 kelas dan target Anda adalah 75%. Perhitungannya adalah 34 × 100 ÷ 75 − 40 = 5,33. Bulatkan ke bawah, sehingga Anda bisa melewatkan 5 kelas lagi. Setelah kelas-kelas tersebut, persentase kehadiran Anda adalah 34 dari 45, atau 75,55%. Melewatkan kelas keenam akan menjadi 34 dari 46, atau 73,91%, yang di bawah target.</p>
+<h2>Cara menghitung kelas yang diperlukan untuk memulihkan</h2>
+<p>Jika persentase Anda di bawah target, menghadiri kelas baru akan meningkatkan jumlah yang dihadiri dan jumlah kelas yang diadakan. Itulah mengapa pemulihan mungkin memerlukan waktu lebih lama dari yang diharapkan. Untuk target yang ditulis dalam desimal, gunakan:</p>
+<p class="formula">kelas yang dibutuhkan = ⌈ (target × diadakan − dihadiri) ÷ (1 − target) ⌉</p>
+<p>Sebagai contoh, 20 hadir dari 30 adalah 66,66%. Dengan target 75%, (0,75 × 30 − 20) ÷ 0,25 = 10. Anda perlu menghadiri 10 kelas berturut-turut, sehingga menjadi 30 dari 40, untuk kembali tepat ke 75%.</p>
+<h2>Kesalahan perhitungan umum</h2>
+<ul><li>Jangan membagi ketidakhadiran dengan jumlah kelas yang diadakan; persentase kehadiran menggunakan jumlah kelas yang dihadiri.</li><li>Jangan menghapus kelas hanya karena Anda tidak hadir. Jika kelas tersebut diadakan, itu tetap menjadi penyebut.</li><li>Hitung setiap mata pelajaran secara terpisah ketika institusi Anda memeriksa kehadiran per mata pelajaran.</li><li>Jangan menganggap 74,5% akan dibulatkan menjadi 75%. Gunakan hasil yang tepat kecuali aturan Anda secara eksplisit mengizinkan pembulatan.</li></ul>
+<p>Kalkulator berguna untuk memeriksa aritmetika, tetapi target dan perlakuan terhadap kelas yang dibatalkan, yang dibenarkan, laboratorium, atau pengganti harus berasal dari silabus atau institusi Anda sendiri.</p>
+<h2>Seberapa sering Anda harus memperbarui perhitungan?</h2>
+<p>\nPerbarui setiap kali kelas diadakan, bukan hanya setelah ketidakhadiran. Jika Anda menghadiri kelas, tambahkan satu pada jumlah dihadiri dan diadakan. Jika Anda tidak hadir, tambahkan satu hanya pada jumlah diadakan. Jika kelas dibatalkan dan institusi Anda tidak menghitung pembatalan, jangan ubah kedua angka. Rutinitas kecil ini menjaga hasil tetap sesuai dengan jadwal sebenarnya.</p>
+<p>Bandingkan catatan Anda dengan portal resmi secara teratur. Tanda kehadiran yang hilang, perubahan jadwal yang terlambat, atau laboratorium yang dicatat secara terpisah dapat mengubah hasil. Laporkan perbedaan saat kelas masih baru daripada menunggu hingga kelayakan ujian diperiksa.</p>
+<h2>Persentase versus poin persentase</h2>
+<p>Berpindah dari 60% kehadiran menjadi 75% berarti mendapatkan 15 poin persentase, tetapi ini tidak berarti hanya menghadiri 15 kelas tambahan. Kelas baru menambah penyebut, jadi jumlah yang dibutuhkan tergantung pada berapa banyak kelas yang telah diadakan. Seorang siswa yang hadir 12 dari 20 kelas dan satu lagi hadir 30 dari 50 kelas keduanya berada pada 60%, namun yang pertama membutuhkan 12 kelas berturut-turut untuk mencapai 75% sementara yang kedua membutuhkan 30 kelas.</p>
+<p>Pertahankan jumlahnya bersamaan dengan persentase yang ditampilkan. Pasangan "32 dari 40" lebih berguna untuk perencanaan daripada hanya "80%" karena tetap mempertahankan angka yang dibutuhkan untuk setiap perhitungan di masa depan.</p>

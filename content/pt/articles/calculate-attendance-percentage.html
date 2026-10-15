@@ -1,0 +1,53 @@
+{
+  "id": "calculate-attendance-percentage",
+  "slug": "pt/blog/como-calcular-a-percentagem-de-presenca/",
+  "title": "Como Calcular a Percentagem de Presença · Classly",
+  "description": "Calcule a percentagem de presença dividindo as aulas assistidas pelo número de aulas realizadas e multiplicando por 100, com exemplos práticos e fórmulas.",
+  "h1": "Como calcular a percentagem de presença",
+  "answer": "Divida o número de aulas que você assistiu pelo número de aulas realizadas, e depois multiplique por 100.",
+  "published": "2026-10-15",
+  "updated": "2026-10-15",
+  "sources": [],
+  "related_tools": [
+    "attendance-calculator",
+    "bunk-calculator"
+  ],
+  "faq": [
+    {
+      "q": "Qual é a fórmula da percentagem de presença?",
+      "a": "Percentagem de presença = aulas assistidas ÷ aulas realizadas × 100."
+    },
+    {
+      "q": "As aulas perdidas contam como aulas realizadas?",
+      "a": "Sim. Se uma aula ocorreu e você esteve ausente, ela permanece no total de aulas realizadas."
+    }
+  ]
+}
+---
+<h2>A fórmula da percentagem de presença</h2>
+<p class="formula">percentagem de presença = assistidas ÷ realizadas × 100</p>
+<p>Se 40 aulas foram realizadas e você assistiu 32, calcule 32 ÷ 40 × 100. Sua presença é <b>80%</b>.</p>
+<h2>Mais dois exemplos</h2>
+<p>Se você assistiu 27 de 36 aulas, 27 ÷ 36 × 100 dá <b>75%</b>. Se você assistiu 17 de 24, o resultado é 70,83%. Classly exibe percentagens arredondando para baixo até duas casas decimais, para que um valor ligeiramente abaixo de um limite requerido não seja mostrado como se tivesse atingido o limite.</p>
+<h2>Excel e fórmula do Google Sheets</h2>
+<p>Coloque as aulas assistidas na célula A2 e as aulas realizadas em B2, depois use <code>=A2/B2*100</code>. Formate o resultado como número, ou use <code>=A2/B2</code> e formate a célula como percentagem.</p>
+<h2>O que pertence a cada número?</h2>
+<ul><li><b>Realizadas:</b> todas as aulas que realmente ocorreram, incluindo as que você perdeu.</li><li><b>Assistidas:</b> apenas as aulas em que você esteve presente.</li><li><b>Canceladas:</b> normalmente deixe estas de fora porque a aula não ocorreu.</li></ul>
+<p>As regras variam de acordo com a instituição, especialmente para licenças médicas e ausências justificadas. Verifique a sua própria política antes de decidir se uma determinada aula deve ser incluída em qualquer total.</p>
+<h2>Como calcular quantas aulas você pode perder</h2>
+<p>Sua porcentagem atual não indica diretamente quantas aulas futuras você pode perder, porque cada aula perdida aumenta o total de aulas realizadas enquanto o número de aulas assistidas permanece inalterado. Use esta fórmula:</p>
+<p class="formula">aulas que você pode perder = ⌊ assistidas × 100 ÷ alvo − realizadas ⌋</p>
+<p>Suponha que você tenha assistido 34 de 40 aulas e seu alvo seja 75%. O cálculo é 34 × 100 ÷ 75 − 40 = 5,33. Arredonde para baixo, então você pode perder mais 5 aulas. Após essas aulas, sua frequência será 34 de 45, ou 75,55%. Perder uma sexta aula faria com que fosse 34 de 46, ou 73,91%, o que está abaixo do alvo.</p>
+<h2>Como calcular as aulas necessárias para recuperar</h2>
+<p>Se sua porcentagem estiver abaixo do alvo, frequentar uma nova aula aumenta tanto o número de aulas assistidas quanto o número de aulas realizadas. É por isso que a recuperação pode levar mais tempo do que o esperado. Para um alvo escrito como decimal, use:</p>
+<p class="formula">aulas necessárias = ⌈ (alvo × realizadas − assistidas) ÷ (1 − alvo) ⌉</p>
+<p>Por exemplo, 20 assistidas de 30 é 66,66%. Com um alvo de 75%, (0,75 × 30 − 20) ÷ 0,25 = 10. Você precisa assistir 10 aulas seguidas, alcançando 30 de 40, para voltar exatamente a 75%.</p>
+<h2>Erros comuns de cálculo</h2>
+<ul><li>Não divida faltas pelo número de aulas realizadas; a porcentagem de frequência usa as aulas assistidas.</li><li>Não remova uma aula apenas porque você a perdeu. Se ela ocorreu, permanece no denominador.</li><li>Calcule cada disciplina separadamente quando sua instituição verifica a frequência por disciplina.</li><li>Não presuma que 74,5% será arredondado para 75%. Use o resultado exato, a menos que suas regras permitam explicitamente arredondamento.</li></ul>
+<p>Uma calculadora é útil para conferir a aritmética, mas o alvo e o tratamento de aulas canceladas, justificadas, laboratoriais ou de reposição devem vir do seu próprio plano de ensino ou instituição.</p>
+<h2>Com que frequência você deve atualizar o cálculo?</h2>
+<p>Atualize sempre que uma aula for realizada, não apenas após uma falta. Se você assistir à aula, adicione um tanto ao comparecimento quanto ao total de aulas realizadas. Se você perder, adicione apenas ao total de aulas realizadas. Se a aula for cancelada e sua instituição não contabilizar cancelamentos, não altere nenhum número. Essa pequena rotina mantém o resultado alinhado com o cronograma real.</p>
+<p>Compare seu registro com o portal oficial regularmente. Uma marca de presença ausente, uma alteração tardia no cronograma ou um laboratório registrado separadamente pode alterar o resultado. Levante discrepâncias enquanto a aula ainda é recente, em vez de esperar até a verificação da elegibilidade para exames.</p>
+<h2>Percentual versus pontos percentuais</h2>
+<p>Passar de 60% de presença para 75% significa ganhar 15 pontos percentuais, mas isso não significa assistir apenas mais 15 aulas. Novas aulas aumentam o denominador, então o número necessário depende de quantas aulas já foram realizadas. Um estudante com 12 de 20 e outro com 30 de 50 estão ambos em 60%, ainda que o primeiro precise de 12 aulas consecutivas para atingir 75%, enquanto o segundo precisa de 30.</p>
+<p>Mantenha a contagem junto com o percentual exibido. O par “32 de 40” é mais útil para planejamento do que “80%” sozinho porque preserva os números necessários para cada cálculo futuro.</p>

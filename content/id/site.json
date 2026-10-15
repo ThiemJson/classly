@@ -11,7 +11,28 @@
     "tools": "Alat",
     "download": "Unduh",
     "footer_label": "Footer",
-    "footer": [["Beranda", "/classly/"], ["Semua alat", "/classly/id/alat/"], ["FAQ", "/classly/faq.html"], ["Privasi", "/classly/privacy.html"], ["Ketentuan", "/classly/terms.html"]]
+    "footer": [
+      [
+        "Beranda",
+        "/classly/"
+      ],
+      [
+        "Semua alat",
+        "/classly/id/alat/"
+      ],
+      [
+        "FAQ",
+        "/classly/faq.html"
+      ],
+      [
+        "Privasi",
+        "/classly/privacy.html"
+      ],
+      [
+        "Ketentuan",
+        "/classly/terms.html"
+      ]
+    ]
   },
   "download": {
     "title": "Biar Classly yang menghitung",
@@ -39,29 +60,71 @@
     "cancelled": "Libur atau pertemuan batal",
     "hours_total": "Total jam pelajaran",
     "hours_per_class": "Jam per pertemuan",
-    "hours_missed": "Jam yang sudah dilewatkan", "exam_date": "Tanggal ujian", "exclude_sundays": "Kecualikan Minggu dari hari belajar",
-    "credits": "Kredit", "credit_system": "Sistem kredit", "hours_per_credit": "Total jam per kredit",
-    "credit_system_options": {"us": "Kredit semester AS", "ects": "ECTS", "custom": "Kustom"}
+    "hours_missed": "Jam yang sudah dilewatkan",
+    "exam_date": "Tanggal ujian",
+    "exclude_sundays": "Kecualikan Minggu dari hari belajar",
+    "credits": "Kredit",
+    "credit_system": "Sistem kredit",
+    "hours_per_credit": "Total jam per kredit",
+    "credit_system_options": {
+      "us": "Kredit semester AS",
+      "ects": "ECTS",
+      "custom": "Kustom"
+    }
   },
   "widgets": {
-    "standing": {"title": "Posisi kehadiranku sekarang?", "hint": "Hitung semua pertemuan yang sudah berlangsung, termasuk yang kamu lewatkan."},
-    "plan": {"title": "Merencanakan satu semester?", "hint": "Jika kamu tahu jumlah pertemuan mata kuliah ini dalam satu semester."},
-    "whatif": {"title": "Kalau aku bolos lagi?", "hint": "Lihat persentasemu setelah melewatkan beberapa pertemuan berikutnya."},
-    "recover": {"title": "Masih bisa terkejar sampai akhir semester?", "hint": "Tambahkan berapa pertemuan mata kuliah ini yang tersisa semester ini."},
-    "subjects": {"title": "Kehadiran per mata kuliah", "hint": "Tambahkan setiap mata kuliah untuk membandingkannya dengan kehadiran keseluruhan."},
-    "semester": {"title": "Rencanakan satu semester", "hint": "Kurangi hari libur dan pertemuan batal dari jadwal kuliah."},
-    "hours": {"title": "Hitung berdasarkan jam pelajaran", "hint": "Gunakan unit yang sama untuk total, tiap pertemuan, dan waktu yang dilewatkan."},
-    "countdown": {"title": "Hitung mundur menuju ujian", "hint": "Tanggal hanya dipakai di tab ini dan tidak disimpan."},
-    "credits": {"title": "Ubah kredit menjadi jam belajar mingguan", "hint": "Pilih sistem kredit, masukkan jumlah kredit dan minggu perkuliahan."}
+    "standing": {
+      "title": "Posisi kehadiranku sekarang?",
+      "hint": "Hitung semua pertemuan yang sudah berlangsung, termasuk yang kamu lewatkan."
+    },
+    "plan": {
+      "title": "Merencanakan satu semester?",
+      "hint": "Jika kamu tahu jumlah pertemuan mata kuliah ini dalam satu semester."
+    },
+    "whatif": {
+      "title": "Kalau aku bolos lagi?",
+      "hint": "Lihat persentasemu setelah melewatkan beberapa pertemuan berikutnya."
+    },
+    "recover": {
+      "title": "Masih bisa terkejar sampai akhir semester?",
+      "hint": "Tambahkan berapa pertemuan mata kuliah ini yang tersisa semester ini."
+    },
+    "subjects": {
+      "title": "Kehadiran per mata kuliah",
+      "hint": "Tambahkan setiap mata kuliah untuk membandingkannya dengan kehadiran keseluruhan."
+    },
+    "semester": {
+      "title": "Rencanakan satu semester",
+      "hint": "Kurangi hari libur dan pertemuan batal dari jadwal kuliah."
+    },
+    "hours": {
+      "title": "Hitung berdasarkan jam pelajaran",
+      "hint": "Gunakan unit yang sama untuk total, tiap pertemuan, dan waktu yang dilewatkan."
+    },
+    "countdown": {
+      "title": "Hitung mundur menuju ujian",
+      "hint": "Tanggal hanya dipakai di tab ini dan tidak disimpan."
+    },
+    "credits": {
+      "title": "Ubah kredit menjadi jam belajar mingguan",
+      "hint": "Pilih sistem kredit, masukkan jumlah kredit dan minggu perkuliahan."
+    }
   },
-  "table": {"held": "Pertemuan berlangsung", "min": "Hadir minimal", "missed": "Boleh absen maksimal"},
+  "table": {
+    "held": "Pertemuan berlangsung",
+    "min": "Hadir minimal",
+    "missed": "Boleh absen maksimal"
+  },
   "calc": {
     "current": "Kehadiranmu sekarang {pct}%.",
     "canMiss": "Kamu masih boleh absen {n} pertemuan lagi dan tetap di {target}%.",
     "canMissDetail": "{current} Setelah melewatkannya, kehadiranmu menjadi {pct}%.",
     "atEdge": "Jangan lewatkan pertemuan berikutnya.",
     "atEdgeDetail": "{current} Absen satu kali lagi akan membuatmu di bawah {target}%.",
-    "mustAttend": {"one": "Hadiri pertemuan berikutnya untuk kembali ke {target}%.", "other": "Hadiri {n} pertemuan berikutnya berturut-turut untuk kembali ke {target}%."},
+    "mustAttend": {
+      "one": "Hadiri pertemuan berikutnya untuk kembali ke {target}%.",
+      "other": "Hadiri {n} pertemuan berikutnya berturut-turut untuk kembali ke {target}%."
+    },
     "mustAttendDetail": "{current} Itu akan membawamu ke {pct}%.",
     "unreachable": "Target 100% tidak bisa dicapai lagi setelah ada satu pertemuan terlewat.",
     "planMiss": "Kamu boleh absen maksimal {n} dari {total} pertemuan.",
@@ -84,5 +147,12 @@
     "creditsEctsDetail": "{credits} ECTS mewakili sekitar {low}–{high} jam beban kerja total yang dibagi dalam {weeks} minggu.",
     "creditsCustom": "Rencanakan sekitar {weekly} jam total per minggu.",
     "creditsCustomDetail": "{credits} kredit × {perCredit} jam = {total} jam total selama {weeks} minggu."
+  },
+  "article": {
+    "updated_label": "Diperbarui",
+    "sources_heading": "Sumber",
+    "blog_intro": "Jawaban praktis untuk absensi dan perencanaan studi.",
+    "blog_description": "Jawaban praktis untuk absensi, kelas, dan perencanaan studi.",
+    "empty": "Belum ada artikel."
   }
 }

@@ -5,36 +5,146 @@
   "tool_kicker": "Outil gratuit",
   "faq_heading": "Questions fréquentes",
   "related_heading": "Autres outils d'assiduité",
-  "nav": {"label": "Principal", "features": "Fonctions", "tools": "Outils", "download": "Télécharger", "footer_label": "Pied de page", "footer": [["Accueil", "/classly/"], ["Tous les outils", "/classly/fr/outils/"], ["FAQ", "/classly/faq.html"], ["Confidentialité", "/classly/privacy.html"], ["Conditions", "/classly/terms.html"]]},
-  "download": {"title": "Laisse Classly compter pour toi", "text": "Note chaque cours en un geste et suis ces chiffres pour chaque matière pendant tout le semestre. Gratuit, hors ligne et sans compte."},
-  "hub": {"slug": "fr/outils/", "title": "Calculateurs d'Assiduité Gratuits · Classly", "description": "Calcule ton taux de présence, le nombre d'absences possibles, le seuil de 75 % et les cours nécessaires pour rattraper ton assiduité.", "h1": "Outils gratuits pour calculer ton assiduité", "intro": "Des réponses rapides aux questions fréquentes sur la présence en cours. Sans inscription ni données enregistrées : tout est calculé dans ton navigateur."},
-  "fields": {"held": "Cours effectués", "attended": "Cours suivis", "target": "Objectif %", "total": "Cours du semestre", "skip": "Prochaines absences", "remaining": "Cours restants", "subject": "Matière", "add_subject": "Ajouter une matière", "remove_subject": "Supprimer la matière", "weeks": "Semaines de cours", "per_week": "Cours par semaine", "cancelled": "Jours fériés ou annulations", "hours_total": "Total d'heures ou périodes", "hours_per_class": "Périodes par séance", "hours_missed": "Périodes déjà manquées", "exam_date": "Date de l'examen", "exclude_sundays": "Exclure les dimanches des jours d'étude", "credits": "Crédits", "credit_system": "Système de crédits", "hours_per_credit": "Total d'heures par crédit", "credit_system_options": {"us": "Crédits semestriels américains", "ects": "ECTS", "custom": "Personnalisé"}},
-  "widgets": {
-    "standing": {"title": "Où en est mon assiduité ?", "hint": "Compte tous les cours effectués jusqu'ici, y compris ceux où tu étais absent."},
-    "plan": {"title": "Tu planifies tout le semestre ?", "hint": "Utilise ce calcul si tu connais le nombre total de cours de la matière."},
-    "whatif": {"title": "Et si je manque d'autres cours ?", "hint": "Vois ton pourcentage après tes prochaines absences."},
-    "recover": {"title": "Puis-je encore atteindre mon objectif ?", "hint": "Indique combien de cours de cette matière restent ce semestre."},
-    "subjects": {"title": "Assiduité par matière", "hint": "Ajoute chaque matière pour la comparer à ton assiduité globale."},
-    "semester": {"title": "Planifie tout le semestre", "hint": "Déduis les jours fériés et les cours annulés du calendrier prévu."},
-    "hours": {"title": "Calcule par heures ou périodes", "hint": "Utilise la même unité pour le total, chaque séance et le temps manqué."},
-    "countdown": {"title": "Compte à rebours avant l'examen", "hint": "La date reste dans cet onglet et n'est pas enregistrée."},
-    "credits": {"title": "Convertis les crédits en heures d'étude par semaine", "hint": "Choisis le système, saisis les crédits et le nombre de semaines de cours."}
+  "nav": {
+    "label": "Principal",
+    "features": "Fonctions",
+    "tools": "Outils",
+    "download": "Télécharger",
+    "footer_label": "Pied de page",
+    "footer": [
+      [
+        "Accueil",
+        "/classly/"
+      ],
+      [
+        "Tous les outils",
+        "/classly/fr/outils/"
+      ],
+      [
+        "FAQ",
+        "/classly/faq.html"
+      ],
+      [
+        "Confidentialité",
+        "/classly/privacy.html"
+      ],
+      [
+        "Conditions",
+        "/classly/terms.html"
+      ]
+    ]
   },
-  "table": {"held": "Cours effectués", "min": "Présence minimale", "missed": "Absences possibles"},
+  "download": {
+    "title": "Laisse Classly compter pour toi",
+    "text": "Note chaque cours en un geste et suis ces chiffres pour chaque matière pendant tout le semestre. Gratuit, hors ligne et sans compte."
+  },
+  "hub": {
+    "slug": "fr/outils/",
+    "title": "Calculateurs d'Assiduité Gratuits · Classly",
+    "description": "Calcule ton taux de présence, le nombre d'absences possibles, le seuil de 75 % et les cours nécessaires pour rattraper ton assiduité.",
+    "h1": "Outils gratuits pour calculer ton assiduité",
+    "intro": "Des réponses rapides aux questions fréquentes sur la présence en cours. Sans inscription ni données enregistrées : tout est calculé dans ton navigateur."
+  },
+  "fields": {
+    "held": "Cours effectués",
+    "attended": "Cours suivis",
+    "target": "Objectif %",
+    "total": "Cours du semestre",
+    "skip": "Prochaines absences",
+    "remaining": "Cours restants",
+    "subject": "Matière",
+    "add_subject": "Ajouter une matière",
+    "remove_subject": "Supprimer la matière",
+    "weeks": "Semaines de cours",
+    "per_week": "Cours par semaine",
+    "cancelled": "Jours fériés ou annulations",
+    "hours_total": "Total d'heures ou périodes",
+    "hours_per_class": "Périodes par séance",
+    "hours_missed": "Périodes déjà manquées",
+    "exam_date": "Date de l'examen",
+    "exclude_sundays": "Exclure les dimanches des jours d'étude",
+    "credits": "Crédits",
+    "credit_system": "Système de crédits",
+    "hours_per_credit": "Total d'heures par crédit",
+    "credit_system_options": {
+      "us": "Crédits semestriels américains",
+      "ects": "ECTS",
+      "custom": "Personnalisé"
+    }
+  },
+  "widgets": {
+    "standing": {
+      "title": "Où en est mon assiduité ?",
+      "hint": "Compte tous les cours effectués jusqu'ici, y compris ceux où tu étais absent."
+    },
+    "plan": {
+      "title": "Tu planifies tout le semestre ?",
+      "hint": "Utilise ce calcul si tu connais le nombre total de cours de la matière."
+    },
+    "whatif": {
+      "title": "Et si je manque d'autres cours ?",
+      "hint": "Vois ton pourcentage après tes prochaines absences."
+    },
+    "recover": {
+      "title": "Puis-je encore atteindre mon objectif ?",
+      "hint": "Indique combien de cours de cette matière restent ce semestre."
+    },
+    "subjects": {
+      "title": "Assiduité par matière",
+      "hint": "Ajoute chaque matière pour la comparer à ton assiduité globale."
+    },
+    "semester": {
+      "title": "Planifie tout le semestre",
+      "hint": "Déduis les jours fériés et les cours annulés du calendrier prévu."
+    },
+    "hours": {
+      "title": "Calcule par heures ou périodes",
+      "hint": "Utilise la même unité pour le total, chaque séance et le temps manqué."
+    },
+    "countdown": {
+      "title": "Compte à rebours avant l'examen",
+      "hint": "La date reste dans cet onglet et n'est pas enregistrée."
+    },
+    "credits": {
+      "title": "Convertis les crédits en heures d'étude par semaine",
+      "hint": "Choisis le système, saisis les crédits et le nombre de semaines de cours."
+    }
+  },
+  "table": {
+    "held": "Cours effectués",
+    "min": "Présence minimale",
+    "missed": "Absences possibles"
+  },
   "calc": {
     "current": "Ton taux actuel est de {pct} %.",
-    "canMiss": {"one": "Tu peux manquer encore 1 cours et rester à {target} %.", "other": "Tu peux manquer encore {n} cours et rester à {target} %."},
+    "canMiss": {
+      "one": "Tu peux manquer encore 1 cours et rester à {target} %.",
+      "other": "Tu peux manquer encore {n} cours et rester à {target} %."
+    },
     "canMissDetail": "{current} Après ces absences, ton taux serait de {pct} %.",
-    "atEdge": "Ne manque pas le prochain cours.", "atEdgeDetail": "{current} Une absence de plus te ferait passer sous {target} %.",
-    "mustAttend": {"one": "Va au prochain cours pour revenir à {target} %.", "other": "Va aux {n} prochains cours sans interruption pour revenir à {target} %."},
+    "atEdge": "Ne manque pas le prochain cours.",
+    "atEdgeDetail": "{current} Une absence de plus te ferait passer sous {target} %.",
+    "mustAttend": {
+      "one": "Va au prochain cours pour revenir à {target} %.",
+      "other": "Va aux {n} prochains cours sans interruption pour revenir à {target} %."
+    },
     "mustAttendDetail": "{current} Tu arriverais alors à {pct} %.",
     "unreachable": "Après une absence, un objectif de 100 % n'est plus atteignable.",
-    "planMiss": {"one": "Tu peux manquer au maximum 1 cours sur {total}.", "other": "Tu peux manquer au maximum {n} cours sur {total}."},
+    "planMiss": {
+      "one": "Tu peux manquer au maximum 1 cours sur {total}.",
+      "other": "Tu peux manquer au maximum {n} cours sur {total}."
+    },
     "planDetail": "Suis au moins {attend} cours sur {total} pour atteindre l'objectif.",
-    "whatif": {"one": "Si tu manques encore 1 cours, ton taux sera de {pct} %.", "other": "Si tu manques encore {n} cours, ton taux sera de {pct} %."},
+    "whatif": {
+      "one": "Si tu manques encore 1 cours, ton taux sera de {pct} %.",
+      "other": "Si tu manques encore {n} cours, ton taux sera de {pct} %."
+    },
     "whatifAbove": "Tu restes à {target} % ou plus. Tu peux manquer au maximum {m} cours au total sans passer sous l'objectif.",
     "whatifBelow": "Ce résultat est sous {target} %. Tu peux manquer au maximum {m} cours au total sans passer sous l'objectif.",
-    "recover": {"one": "Suis au moins 1 des {rem} cours restants.", "other": "Suis au moins {n} des {rem} cours restants."},
+    "recover": {
+      "one": "Suis au moins 1 des {rem} cours restants.",
+      "other": "Suis au moins {n} des {rem} cours restants."
+    },
     "recoverDetail": "Tu peux en manquer {m} et finir quand même à {target} % ou plus.",
     "recoverSafe": "Tu finiras à {target} % ou plus même en manquant les {rem} cours restants.",
     "recoverImpossible": "Même en suivant les {rem} cours restants, tu finirais à {pct} %.",
@@ -49,5 +159,12 @@
     "creditsEctsDetail": "{credits} ECTS représentent environ {low}–{high} heures de travail total réparties sur {weeks} semaines.",
     "creditsCustom": "Prévois environ {weekly} heures au total par semaine.",
     "creditsCustomDetail": "{credits} crédits × {perCredit} heures = {total} heures au total sur {weeks} semaines."
+  },
+  "article": {
+    "updated_label": "Mis à jour",
+    "sources_heading": "Sources",
+    "blog_intro": "Des réponses pratiques pour la fréquentation et la planification des études.",
+    "blog_description": "Des réponses pratiques pour l'assiduité, les cours et la planification des études.",
+    "empty": "Aucun article pour l'instant."
   }
 }

@@ -1,0 +1,53 @@
+{
+  "id": "calculate-attendance-percentage",
+  "slug": "de/blog/so-berechnen-sie-den-anwesenheitsprozentsatz/",
+  "title": "So berechnen Sie den Anwesenheitsprozentsatz · Classly",
+  "description": "Berechnen Sie den Anwesenheitsprozentsatz, indem Sie die besuchten Kurse durch die gehaltenen Kurse dividieren und mit 100 multiplizieren, mit ausgearbeiteten…",
+  "h1": "So berechnen Sie den Anwesenheitsprozentsatz",
+  "answer": "Teilen Sie die Anzahl der von Ihnen besuchten Kurse durch die Anzahl der abgehaltenen Kurse und multiplizieren Sie sie dann mit 100.",
+  "published": "2026-10-15",
+  "updated": "2026-10-15",
+  "sources": [],
+  "related_tools": [
+    "attendance-calculator",
+    "bunk-calculator"
+  ],
+  "faq": [
+    {
+      "q": "Wie lautet die Formel für den Anwesenheitsprozentsatz?",
+      "a": "Anwesenheitsprozentsatz = besuchte Kurse ÷ abgehaltene Kurse × 100."
+    },
+    {
+      "q": "Zählen versäumte Kurse als gehaltene Kurse?",
+      "a": "Ja. Wenn ein Kurs stattgefunden hat und Sie abwesend waren, bleibt dieser in der Gesamtzahl der abgehaltenen Kurse erhalten."
+    }
+  ]
+}
+---
+<h2>Die Formel für den Anwesenheitsprozentsatz</h2>
+<p class="formula">Anwesenheitsprozentsatz = besucht ÷ gehalten × 100</p>
+<p>Wenn 40 Unterrichtsstunden stattgefunden haben und Sie 32 besucht haben, berechnen Sie 32 ÷ 40 × 100. Ihre Anwesenheit beträgt <b>80%</b>.</p>
+<h2>Zwei weitere Beispiele</h2>
+<p>Wenn Sie 27 von 36 Kursen besucht haben, ergibt sich 27 ÷ 36 × 100 <b>75%</b>. Wenn Sie 17 von 24 besucht haben, beträgt das Ergebnis 70,83 %. Classly zeigt Prozentsätze durch Abrunden auf zwei Dezimalstellen an, sodass ein Wert knapp unter einem erforderlichen Schwellenwert nicht so angezeigt wird, als ob er den Schwellenwert erreicht hätte.</p>
+<h2>Excel und Google Sheets Formel</h2>
+<p>Tragen Sie die besuchten Kurse in Zelle A2 und die gehaltenen Kurse in Zelle B2 ein und verwenden Sie dann <code>=A2/B2*100</code>. Formatieren Sie das Ergebnis als Zahl oder verwenden Sie <code>=A2/B2</code> und formatieren Sie die Zelle als Prozentsatz.</p>
+<h2>Was gehört in jede Zahl?</h2>
+<ul><li><b>Gehalten:</b> alle Kurse, die tatsächlich stattgefunden haben, einschließlich der Kurse, die Sie verpasst haben.</li><li><b>Besucht:</b> Nur Kurse, in denen Sie anwesend waren.</li><li><b>Abgesagt:</b> Normalerweise lassen Sie diese weg, da der Unterricht nicht stattgefunden hat.</li></ul>
+<p>Die Regeln variieren je nach Einrichtung, insbesondere für Krankheitsurlaub und begründete Abwesenheiten. Überprüfen Sie Ihre eigene Richtlinie, bevor Sie entscheiden, ob eine bestimmte Klasse zu einer der beiden Gruppen gehört.</p>
+<h2>So berechnen Sie, wie viele Unterrichtsstunden Sie verpassen können</h2>
+<p>Ihr aktueller Prozentsatz sagt Ihnen nicht direkt, wie viele zukünftige Kurse Sie verpassen können, da jeder verpasste Kurs die Gesamtzahl der besuchten Kurse erhöht, während die Anzahl der besuchten Kurse unverändert bleibt. Verwenden Sie diese Formel:</p>
+<p class="formula">Kurse, die Sie verpassen können = ⌊ besucht × 100 ÷ Ziel − gehalten ⌋</p>
+<p>Angenommen, Sie haben 34 von 40 Kursen besucht und Ihr Ziel liegt bei 75 %. Die Berechnung lautet 34 × 100 ÷ 75 − 40 = 5,33. Runden Sie ab, damit Sie 5 weitere Unterrichtsstunden verpassen können. Nach diesen Kursen liegt Ihre Anwesenheitsquote bei 34 von 45, also 75,55 %. Das Fehlen einer sechsten Klasse würde 34 von 46 oder 73,91 % bedeuten, was unter dem Ziel liegt.</p>
+<h2>So berechnen Sie die zur Wiederherstellung erforderlichen Klassen</h2>
+<p>Wenn Ihr Prozentsatz unter dem Zielwert liegt, erhöht der Besuch eines neuen Kurses sowohl die Anzahl der besuchten als auch der gehaltenen Kurse. Aus diesem Grund kann die Erholung länger dauern als erwartet. Für ein als Dezimalzahl geschriebenes Ziel verwenden Sie:</p>
+<p class="formula">Benötigte Kurse = ⌈ (Ziel × gehalten − besucht) ÷ (1 − Ziel) ⌉</p>
+<p>Beispielsweise sind 20 von 30 Personen anwesend, also 66,66 %. Bei einem Ziel von 75 % ist (0,75 × 30 − 20) ÷ 0,25 = 10. Sie müssen 10 Unterrichtsstunden hintereinander besuchen und 30 von 40 erreichen, um genau 75 % zu erreichen.</p>
+<h2>Häufige Rechenfehler</h2>
+<ul><li>Teilen Sie Abwesenheiten nicht nach abgehaltenen Kursen auf; Der Anwesenheitsprozentsatz verwendet die besuchten Kurse.</li><li>Entfernen Sie einen Kurs nicht, nur weil Sie ihn verpasst haben. Wenn es stattgefunden hat, bleibt es im Nenner.</li><li>Berechnen Sie jedes Fach separat, wenn Ihre Institution die fachbezogene Anwesenheit überprüft.</li><li>Gehen Sie nicht davon aus, dass 74,5 % auf 75 % gerundet werden. Verwenden Sie das genaue Ergebnis, es sei denn, Ihre Regeln erlauben eine Rundung ausdrücklich.</li></ul>
+<p>Zur Überprüfung der Rechenleistung ist ein Taschenrechner nützlich, das Ziel und die Behandlung von abgesagten, begründeten, Labor- oder Nachholkursen müssen jedoch aus Ihrem eigenen Lehrplan oder Ihrer Institution stammen.</p>
+<h2>Wie oft sollten Sie die Berechnung aktualisieren?</h2>
+<p>Aktualisieren Sie es immer dann, wenn ein Kurs stattfindet, nicht nur nach einer Abwesenheit. Wenn Sie an dem Kurs teilnehmen, fügen Sie jeweils einen zu „besucht“ und „gehalten“ hinzu. Wenn Sie es vermissen, fügen Sie es nur zu „held“ hinzu. Wenn der Kurs abgesagt wird und Ihre Einrichtung keine Absagen zählt, ändern Sie keine der beiden Nummern. Diese kleine Routine sorgt dafür, dass das Ergebnis mit dem tatsächlichen Zeitplan übereinstimmt.</p>
+<p>Vergleichen Sie Ihre Unterlagen regelmäßig mit dem offiziellen Portal. Eine fehlende Anwesenheitsnote, ein verspäteter Stundenplanwechsel oder ein gesondert erfasstes Labor können das Ergebnis verändern. Heben Sie Unstimmigkeiten auf, während der Kurs aktuell ist, anstatt zu warten, bis die Prüfungsberechtigung überprüft wird.</p>
+<h2>Prozent gegenüber Prozentpunkten</h2>
+<p>Der Übergang von 60 % Anwesenheit auf 75 % bedeutet einen Gewinn von 15 Prozentpunkten, bedeutet aber nicht, dass nur noch 15 Kurse besucht werden. Neue Kurse vergrößern den Nenner, sodass die erforderliche Anzahl davon abhängt, wie viele Kurse bereits stattgefunden haben. Ein Schüler mit 12 von 20 und einer mit 30 von 50 erreichen beide 60 %, der erste benötigt jedoch 12 aufeinanderfolgende Unterrichtsstunden, um 75 % zu erreichen, während der zweite 30 benötigt.</p>
+<p>Behalten Sie die Zählungen neben dem angezeigten Prozentsatz bei. Das Paar „32 von 40“ ist für die Planung nützlicher als „80 %“ allein, da es die Zahlen beibehält, die für jede zukünftige Berechnung benötigt werden.</p>

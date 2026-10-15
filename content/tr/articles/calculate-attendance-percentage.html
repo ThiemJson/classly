@@ -1,0 +1,53 @@
+{
+  "id": "calculate-attendance-percentage",
+  "slug": "tr/blog/katılım-yuzdesi-nasıl-hesaplanır/",
+  "title": "Katılım Yüzdesi Nasıl Hesaplanır · Classly",
+  "description": "Katılım yüzdesini, katıldığınız ders sayısını yapılan ders sayısına bölüp 100 ile çarparak, örnekler ve formüllerle hesaplayın.",
+  "h1": "Katılım yüzdesi nasıl hesaplanır",
+  "answer": "Katıldığınız ders sayısını yapılan ders sayısına bölün, ardından 100 ile çarpın.",
+  "published": "2026-10-15",
+  "updated": "2026-10-15",
+  "sources": [],
+  "related_tools": [
+    "attendance-calculator",
+    "bunk-calculator"
+  ],
+  "faq": [
+    {
+      "q": "Katılım yüzdesi formülü nedir?",
+      "a": "Katılım yüzdesi = katıldığınız dersler ÷ yapılan dersler × 100."
+    },
+    {
+      "q": "Kaçırılan dersler yapılan dersler olarak sayılır mı?",
+      "a": "Evet. Eğer bir ders yapıldıysa ve siz yoksa, bu ders yapılan dersler toplamında kalır."
+    }
+  ]
+}
+---
+<h2>Katılım yüzdesi formülü</h2>
+<p class="formula">katılım yüzdesi = katıldığınız ÷ yapılan × 100</p>
+<p>Eğer 40 ders yapıldı ve siz 32 dersinize katıldıysanız, 32 ÷ 40 × 100 hesaplayın. Katılımınız <b>80%</b>.</p>
+<h2>İki örnek daha</h2>
+<p>Eğer 36 dersten 27'sine katıldıysanız, 27 ÷ 36 × 100 verir <b>75%</b>. Eğer 24 dersten 17'sine katıldıysanız sonuç %70,83 olur. Classly yüzdeleri iki ondalık basamağa yuvarlayarak gösterir, böylece gerekli eşik değerinin hemen altında kalan bir değer sanki eşik değerini karşılamış gibi gösterilmez.</p>
+<h2>Excel ve Google Sheets formülü</h2>
+<p>Katıldığınız dersleri A2 hücresine, yapılan dersleri B2 hücresine koyun, ardından <code>=A2/B2*100</code>. Sonucu sayı olarak formatlayın veya kullanın <code>=A2/B2</code> ve hücreyi yüzde olarak formatlayın.</p>
+<h2>Her sayıya ne gelir?</h2>
+<ul><li><b>Düzenlenen:</b> Gerçekleşen her ders, kaçırdığınız dersler dahil.</li><li><b>Katıldığınız:</b> Sadece bulunduğunuz dersler.</li><li><b>İptal Edilen:</b> Genellikle bunlar dahil edilmez çünkü ders gerçekleşmedi.</li></ul>
+<p>Kurallar kurumdan kuruma değişir, özellikle sağlık izni ve haklı mazeretler için. Belirli bir dersin toplamın bir parçası olup olmayacağına karar vermeden önce kendi politikanızı kontrol edin.</p>
+<h2>Kaç ders kaçırabileceğinizi hesaplama</h2>
+<p>Mevcut yüzdelik değeri doğrudan gelecekte kaç ders kaçırabileceğinizi göstermez, çünkü her kaçırılan ders toplam düzenlenen sayısını artırırken, katıldığınız ders sayısı değişmez. Bu formülü kullanın:</p>
+<p class="formula">kaçırabileceğiniz dersler = ⌊ katıldığınız × 100 ÷ hedef − düzenlenen ⌋</p>
+<p>Diyelim ki 40 dersten 34üne katıldınız ve hedefiniz %75. Hesaplama şu şekildedir: 34 × 100 ÷ 75 − 40 = 5,33. Aşağı yuvarlayın, böylece 5 ders daha kaçırabilirsiniz. Bu derslerden sonra katılımınız 34/45 veya %75,55 olur. Altıncı bir dersi kaçırmak 34/46 veya %73,91 yapar ve bu hedefin altındadır.</p>
+<h2>Gerekli dersleri toparlama hesaplama</h2>
+<p>Eğer yüzdelik değeriniz hedefin altındaysa, yeni bir derse katılmak hem katıldığınız hem de düzenlenen sayıları artırır. Bu yüzden toparlama beklenenden daha uzun sürebilir. Hedef ondalık olarak verildiyse, şunu kullanın:</p>
+<p class="formula">Gerekli dersler = ⌈ (hedef × düzenlenen − katıldığınız) ÷ (1 − hedef) ⌉</p>
+<p>Örneğin, 30 dersten 20'si %66,66. %75 hedefle, (0,75 × 30 − 20) ÷ 0,25 = 10. Yüzdeyi tam olarak %75'e getirmek için art arda 10 derse katılmanız gerekir ve bu da 30/40 yapar.</p>
+<h2>Yaygın Hesaplama Hataları</h2>
+<ul><li>Devamsızlıkları yapılan ders sayısına bölmeyin; devam yüzdesi katıldığınız dersleri kullanır.</li><li>Sadece kaçırdığınız için bir dersi kaldırmayın. Ders gerçekleştiyse, paydada kalır.</li><li>Kuruluşunuz ders bazında devamsızlığı kontrol ediyorsa her dersi ayrı ayrı hesaplayın.</li><li>%74,5’in %75’e yuvarlanacağını varsaymayın. Kurallar açıkça yuvarlamaya izin vermediği sürece tam sonucu kullanın.</li></ul>
+<p>Aritmetiği kontrol etmek için bir hesap makinesi faydalıdır, ancak iptal edilen, mazeretli, laboratuvar veya telafi derslerinin hedefi ve muamelesi kendi müfredatınız veya kurumunuzdan gelmelidir.</p>
+<h2>Hesaplamayı ne sıklıkla güncellemelisiniz?</h2>
+<p>Bir ders yapıldığında, sadece devamsızlıktan sonra değil, her zaman güncelleyin. Derse katılırsanız, hem katıldığınız hem de yapılan ders sayısına bir ekleyin. Kaçırırsanız, sadece yapılan ders sayısına bir ekleyin. Ders iptal edilmişse ve kurumunuz iptalleri saymıyorsa, hiçbir sayıyı değiştirmeyin. Bu küçük rutin sonucu gerçek zamanlı ders programıyla uyumlu tutar.</p>
+<p>Kaydınızı resmi portal ile düzenli olarak karşılaştırın. Eksik bir devamsızlık işareti, gecikmiş bir ders programı değişikliği veya ayrı kaydedilmiş bir laboratuvar sonucu değiştirebilir. Tutarsızlıkları sınav uygunluğunu kontrol etmeyi beklemek yerine ders hâlâ güncel iken bildirin.</p>
+<h2>Yüzde ve yüzde puanı</h2>
+<p>%60 devamsızlıktan %75’e geçmek 15 yüzde puanı kazanmak anlamına gelir, ancak sadece 15 ders daha katılmanız gerektiği anlamına gelmez. Yeni dersler paydayı büyütür, bu nedenle gereken sayı, artık kaç ders yapıldığına bağlıdır. 20 dersten 12’sine ve 50 dersten 30’una katılan iki öğrenci de %60’ta, ancak ilki %75’e ulaşmak için 12 ardışık derse, ikincisi ise 30 derse ihtiyaç duyar.</p>
+<p>Görüntülenen yüzde ile birlikte sayıları da tutun. “40 üzerinden 32” çifti, yalnızca “%80” ifadesinden daha kullanışlıdır çünkü her gelecekteki hesaplama için gereken sayıları korur.</p>

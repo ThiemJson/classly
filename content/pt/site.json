@@ -11,7 +11,28 @@
     "tools": "Ferramentas",
     "download": "Baixar",
     "footer_label": "Rodapé",
-    "footer": [["Início", "/classly/"], ["Todas as ferramentas", "/classly/pt/ferramentas/"], ["FAQ", "/classly/faq.html"], ["Privacidade", "/classly/privacy.html"], ["Termos", "/classly/terms.html"]]
+    "footer": [
+      [
+        "Início",
+        "/classly/"
+      ],
+      [
+        "Todas as ferramentas",
+        "/classly/pt/ferramentas/"
+      ],
+      [
+        "FAQ",
+        "/classly/faq.html"
+      ],
+      [
+        "Privacidade",
+        "/classly/privacy.html"
+      ],
+      [
+        "Termos",
+        "/classly/terms.html"
+      ]
+    ]
   },
   "download": {
     "title": "Deixe o Classly fazer as contas",
@@ -39,37 +60,91 @@
     "cancelled": "Feriados ou cancelamentos",
     "hours_total": "Total de horas-aula",
     "hours_per_class": "Horas-aula por encontro",
-    "hours_missed": "Horas-aula já perdidas", "exam_date": "Data da prova", "exclude_sundays": "Excluir domingos dos dias de estudo",
-    "credits": "Créditos", "credit_system": "Sistema de créditos", "hours_per_credit": "Total de horas por crédito",
-    "credit_system_options": {"us": "Créditos semestrais dos EUA", "ects": "ECTS", "custom": "Personalizado"}
+    "hours_missed": "Horas-aula já perdidas",
+    "exam_date": "Data da prova",
+    "exclude_sundays": "Excluir domingos dos dias de estudo",
+    "credits": "Créditos",
+    "credit_system": "Sistema de créditos",
+    "hours_per_credit": "Total de horas por crédito",
+    "credit_system_options": {
+      "us": "Créditos semestrais dos EUA",
+      "ects": "ECTS",
+      "custom": "Personalizado"
+    }
   },
   "widgets": {
-    "standing": {"title": "Como está minha frequência?", "hint": "Conte todas as aulas dadas até agora, inclusive aquelas em que você faltou."},
-    "plan": {"title": "Planejando o semestre inteiro?", "hint": "Use esta opção se souber quantas aulas a matéria terá no total."},
-    "whatif": {"title": "E se eu faltar a mais aulas?", "hint": "Veja sua porcentagem depois de faltar às próximas aulas."},
-    "recover": {"title": "Ainda dá para atingir a meta?", "hint": "Informe quantas aulas desta matéria ainda restam no semestre."},
-    "subjects": {"title": "Frequência por disciplina", "hint": "Adicione cada disciplina para comparar com a frequência geral."},
-    "semester": {"title": "Planeje o semestre inteiro", "hint": "Desconte feriados e aulas canceladas do calendário previsto."},
-    "hours": {"title": "Calcule por horas-aula", "hint": "Use a mesma unidade para a carga total, cada encontro e as faltas."},
-    "countdown": {"title": "Contagem regressiva para a prova", "hint": "A data fica apenas nesta aba e não é salva."},
-    "credits": {"title": "Converta créditos em horas de estudo semanais", "hint": "Escolha o sistema, informe os créditos e as semanas letivas do período."}
+    "standing": {
+      "title": "Como está minha frequência?",
+      "hint": "Conte todas as aulas dadas até agora, inclusive aquelas em que você faltou."
+    },
+    "plan": {
+      "title": "Planejando o semestre inteiro?",
+      "hint": "Use esta opção se souber quantas aulas a matéria terá no total."
+    },
+    "whatif": {
+      "title": "E se eu faltar a mais aulas?",
+      "hint": "Veja sua porcentagem depois de faltar às próximas aulas."
+    },
+    "recover": {
+      "title": "Ainda dá para atingir a meta?",
+      "hint": "Informe quantas aulas desta matéria ainda restam no semestre."
+    },
+    "subjects": {
+      "title": "Frequência por disciplina",
+      "hint": "Adicione cada disciplina para comparar com a frequência geral."
+    },
+    "semester": {
+      "title": "Planeje o semestre inteiro",
+      "hint": "Desconte feriados e aulas canceladas do calendário previsto."
+    },
+    "hours": {
+      "title": "Calcule por horas-aula",
+      "hint": "Use a mesma unidade para a carga total, cada encontro e as faltas."
+    },
+    "countdown": {
+      "title": "Contagem regressiva para a prova",
+      "hint": "A data fica apenas nesta aba e não é salva."
+    },
+    "credits": {
+      "title": "Converta créditos em horas de estudo semanais",
+      "hint": "Escolha o sistema, informe os créditos e as semanas letivas do período."
+    }
   },
-  "table": {"held": "Aulas dadas", "min": "Frequentar pelo menos", "missed": "Faltas permitidas"},
+  "table": {
+    "held": "Aulas dadas",
+    "min": "Frequentar pelo menos",
+    "missed": "Faltas permitidas"
+  },
   "calc": {
     "current": "Sua frequência atual é {pct}%.",
-    "canMiss": {"one": "Você pode faltar a mais 1 aula e manter {target}%.", "other": "Você pode faltar a mais {n} aulas e manter {target}%."},
+    "canMiss": {
+      "one": "Você pode faltar a mais 1 aula e manter {target}%.",
+      "other": "Você pode faltar a mais {n} aulas e manter {target}%."
+    },
     "canMissDetail": "{current} Depois dessas faltas, sua frequência seria {pct}%.",
     "atEdge": "Não falte à próxima aula.",
     "atEdgeDetail": "{current} Mais uma falta deixaria você abaixo de {target}%.",
-    "mustAttend": {"one": "Frequente a próxima aula para voltar a {target}%.", "other": "Frequente as próximas {n} aulas seguidas para voltar a {target}%."},
+    "mustAttend": {
+      "one": "Frequente a próxima aula para voltar a {target}%.",
+      "other": "Frequente as próximas {n} aulas seguidas para voltar a {target}%."
+    },
     "mustAttendDetail": "{current} Assim você chegaria a {pct}%.",
     "unreachable": "Depois de faltar a uma aula, não é mais possível atingir uma meta de 100%.",
-    "planMiss": {"one": "Você pode faltar a no máximo 1 de {total} aulas.", "other": "Você pode faltar a no máximo {n} de {total} aulas."},
+    "planMiss": {
+      "one": "Você pode faltar a no máximo 1 de {total} aulas.",
+      "other": "Você pode faltar a no máximo {n} de {total} aulas."
+    },
     "planDetail": "Frequente pelo menos {attend} de {total} aulas para atingir a meta.",
-    "whatif": {"one": "Se faltar a mais 1 aula, sua frequência será {pct}%.", "other": "Se faltar a mais {n} aulas, sua frequência será {pct}%."},
+    "whatif": {
+      "one": "Se faltar a mais 1 aula, sua frequência será {pct}%.",
+      "other": "Se faltar a mais {n} aulas, sua frequência será {pct}%."
+    },
     "whatifAbove": "Você ainda estará em {target}% ou mais. O máximo de faltas sem cair abaixo da meta é {m}.",
     "whatifBelow": "Isso fica abaixo de {target}%. O máximo de faltas sem cair abaixo da meta é {m}.",
-    "recover": {"one": "Frequente pelo menos 1 das {rem} aulas restantes.", "other": "Frequente pelo menos {n} das {rem} aulas restantes."},
+    "recover": {
+      "one": "Frequente pelo menos 1 das {rem} aulas restantes.",
+      "other": "Frequente pelo menos {n} das {rem} aulas restantes."
+    },
     "recoverDetail": "Você pode faltar a {m} delas e ainda terminar com {target}% ou mais.",
     "recoverSafe": "Você terminará com {target}% ou mais mesmo se faltar a todas as {rem} aulas restantes.",
     "recoverImpossible": "Mesmo frequentando todas as {rem} aulas restantes, você terminaria com {pct}%.",
@@ -84,5 +159,12 @@
     "creditsEctsDetail": "{credits} ECTS representam cerca de {low}–{high} horas de trabalho total distribuídas por {weeks} semanas.",
     "creditsCustom": "Planeje cerca de {weekly} horas totais por semana.",
     "creditsCustomDetail": "{credits} créditos × {perCredit} horas = {total} horas totais em {weeks} semanas."
+  },
+  "article": {
+    "updated_label": "Atualizado",
+    "sources_heading": "Fontes",
+    "blog_intro": "Respostas práticas para presença e planejamento de estudo.",
+    "blog_description": "Respostas práticas para presença, aulas e planejamento de estudo.",
+    "empty": "Ainda não há artigos."
   }
 }

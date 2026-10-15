@@ -1,0 +1,53 @@
+{
+  "id": "calculate-attendance-percentage",
+  "slug": "it/blog/come-calcolare-la-percentuale-di-frequenza/",
+  "title": "Come calcolare la percentuale di frequenza · Classly",
+  "description": "Calcola la percentuale di frequenza dividendo le lezioni frequentate per le lezioni tenute e moltiplicando per 100, con esempi pratici e formule.",
+  "h1": "Come calcolare la percentuale di frequenza",
+  "answer": "Dividi il numero di lezioni che hai frequentato per il numero di lezioni tenute, poi moltiplica per 100.",
+  "published": "2026-10-15",
+  "updated": "2026-10-15",
+  "sources": [],
+  "related_tools": [
+    "attendance-calculator",
+    "bunk-calculator"
+  ],
+  "faq": [
+    {
+      "q": "Qual è la formula della percentuale di frequenza?",
+      "a": "Percentuale di frequenza = lezioni frequentate ÷ lezioni tenute × 100."
+    },
+    {
+      "q": "Le lezioni perse contano come lezioni tenute?",
+      "a": "Sì. Se una lezione si è svolta e sei stato assente, questa rimane nel totale delle lezioni tenute."
+    }
+  ]
+}
+---
+<h2>La formula della percentuale di frequenza</h2>
+<p class="formula">percentuale di frequenza = frequentate ÷ tenute × 100</p>
+<p>Se si sono tenute 40 lezioni e ne hai frequentate 32, calcola 32 ÷ 40 × 100. La tua frequenza è <b>80%</b>.</p>
+<h2>Altri due esempi</h2>
+<p>Se hai frequentato 27 di 36 lezioni, 27 ÷ 36 × 100 dà <b>75%</b>. Se hai frequentato 17 di 24, il risultato è 70,83%. Classly mostra le percentuali arrotondando per difetto a due decimali, quindi un valore appena sotto la soglia richiesta non appare come se avesse raggiunto la soglia.</p>
+<h2>Excel e Google Sheets formula</h2>
+<p>Metti le lezioni frequentate nella cella A2 e le lezioni tenute in B2, poi usa <code>=A2/B2*100</code>. Format il risultato come numero, o usa <code>=A2/B2</code> e formatta la cella come percentuale.</p>
+<h2>Cosa appartiene a ciascun numero?</h2>
+<ul><li><b>Tenuto:</b> otni le lezioni che si sono effettivamente svolte, incluse quelle che hai saltato.</li><li><b>Frequentato:</b> solo le lezioni a cui eri presente.</li><li><b>Cancellato:</b> di solito si escludono perché la lezione non si è svolta.</li></ul>
+<p>Le regole variano a seconda dell'istituzione, specialmente per malattia e assenze giustificate. Controlla la tua politica prima di decidere se una specifica lezione appartiene a uno dei totali.</p>
+<h2>Come calcolare quante lezioni puoi saltare</h2>
+<p>La tua percentuale attuale non indica direttamente quante lezioni future puoi saltare, perché ogni lezione saltata aumenta il totale delle lezioni tenute mentre il numero di lezioni frequentate rimane invariato. Usa questa formula:</p>
+<p class="formula">lezioni che puoi saltare = ⌊ frequentate × 100 ÷ obiettivo − tenute ⌋</p>
+<p>Supponiamo che tu abbia frequentato 34 su 40 lezioni e il tuo obiettivo sia il 75%. Il calcolo è 34 × 100 ÷ 75 − 40 = 5,33. Arrotonda per difetto, quindi puoi saltare altre 5 lezioni. Dopo quelle lezioni la tua frequenza sarà 34 su 45, o 75,55%. Saltare una sesta lezione la ridurrebbe a 34 su 46, o 73,91%, che è sotto l'obiettivo.</p>
+<h2>Come calcolare le lezioni necessarie per recuperare</h2>
+<p>Se la tua percentuale è sotto l'obiettivo, frequentare una nuova lezione aumenta sia il numero di frequentate sia il numero di tenute. Ecco perché il recupero può richiedere più tempo del previsto. Per un obiettivo scritto come decimale, usa:</p>
+<p class="formula">lezioni necessarie = ⌈ (obiettivo × tenute − frequentate) ÷ (1 − obiettivo) ⌉</p>
+<p>Ad esempio, 20 frequentate su 30 è 66,66%. Con un obiettivo del 75%, (0,75 × 30 − 20) ÷ 0,25 = 10. Devi frequentare 10 lezioni consecutive, arrivando a 30 su 40, per tornare esattamente al 75%.</p>
+<h2>Errori comuni nel calcolo</h2>
+<ul><li>Non dividere le assenze per le lezioni tenute; la percentuale di frequenza utilizza le lezioni effettivamente frequentate.</li><li>Non eliminare una lezione semplicemente perché l'hai persa. Se si è svolta, rimane nel denominatore.</li><li>Calcola ogni materia separatamente quando la tua istituzione verifica la frequenza per materia.</li><li>Non presumere che il 74,5% venga arrotondato al 75%. Usa il risultato esatto, a meno che le tue regole non permettano esplicitamente l'arrotondamento.</li></ul>
+<p>Una calcolatrice è utile per controllare l'aritmetica, ma l'obiettivo e il trattamento di lezioni cancellate, giustificate, di laboratorio o di recupero devono provenire dal tuo syllabus o dall'istituzione.</p>
+<h2>Quanto spesso dovresti aggiornare il calcolo?</h2>
+<p>Aggiornalo ogni volta che si tiene una lezione, non solo dopo un'assenza. Se partecipi alla lezione, aggiungi uno sia alle lezioni frequentate che a quelle tenute. Se la perdi, aggiungi uno solo a quelle tenute. Se la lezione viene cancellata e la tua istituzione non considera le cancellazioni, non modificare nessun numero. Questa piccola routine mantiene il risultato allineato con l'orario reale.</p>
+<p>Confronta regolarmente il tuo registro con il portale ufficiale. Una registrazione di presenza mancante, un cambio di orario tardivo o un laboratorio registrato separatamente possono cambiare il risultato. Segnala le discrepanze mentre la lezione è recente invece di aspettare che venga verificata l'idoneità agli esami.</p>
+<h2>Percentuale contro punti percentuali</h2>
+<p>Passare dal 60% di frequenza al 75% significa guadagnare 15 punti percentuali, ma non significa frequentare solo 15 lezioni in più. Nuove lezioni aumentano il denominatore, quindi il numero necessario dipende da quante lezioni sono già state tenute. Uno studente con 12 su 20 e uno con 30 su 50 sono entrambi al 60%, eppure il primo ha bisogno di 12 lezioni consecutive per raggiungere il 75% mentre il secondo ne ha bisogno di 30.</p>
+<p>Mantieni i conti accanto alla percentuale mostrata. La coppia “32 su 40” è più utile per la pianificazione di “80%” da sola perché conserva i numeri necessari per ogni calcolo futuro.</p>

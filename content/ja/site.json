@@ -1,0 +1,188 @@
+{
+  "language_name": "日本語",
+  "blog_label": "ブログ",
+  "tool_kicker": "無料ツール",
+  "faq_heading": "よくある質問",
+  "related_heading": "さらに多くの出席ツール",
+  "nav": {
+    "label": "メイン",
+    "features": "特徴",
+    "tools": "道具",
+    "download": "ダウンロード",
+    "footer_label": "フッター",
+    "footer": [
+      [
+        "ホーム",
+        "/classly/"
+      ],
+      [
+        "すべてのツール",
+        "/classly/ja/tools/"
+      ],
+      [
+        "FAQ",
+        "/classly/faq.html"
+      ],
+      [
+        "プライバシー",
+        "/classly/privacy.html"
+      ],
+      [
+        "条件",
+        "/classly/terms.html"
+      ]
+    ]
+  },
+  "download": {
+    "title": "計算を計画に変える",
+    "text": "各クラスに印を付け、次に何が起こるかをシミュレーションし、それから時間割とタスクをまとめて管理してください。無料で、オフライン優先、Classlyアカウント不要です。"
+  },
+  "hub": {
+    "slug": "ja/tools/",
+    "title": "学生向けの無料出席計算機 · Classly",
+    "description": "無料出席計算機：出席率、欠席できる授業数、75％ルール、取り戻す必要がある授業数",
+    "h1": "無料の出席管理ツール",
+    "intro": "学生が出席について最もよく尋ねる質問への迅速な回答。サインアップ不要、データ保存なし：すべての計算はブラウザ上で実行されます。"
+  },
+  "fields": {
+    "held": "授業が行われる",
+    "attended": "出席した授業",
+    "target": "目標％",
+    "total": "今学期の授業",
+    "skip": "欠席する授業",
+    "remaining": "残りの授業",
+    "subject": "件名",
+    "add_subject": "件名を追加",
+    "remove_subject": "主語を取り除く",
+    "weeks": "授業週",
+    "per_week": "週あたりの授業",
+    "cancelled": "休日またはキャンセル",
+    "hours_total": "総授業回数または時間",
+    "hours_per_class": "授業ごとの時間数",
+    "hours_missed": "既に欠席した授業回数",
+    "exam_date": "試験日",
+    "exclude_sundays": "勉強日から日曜日を除外する",
+    "credits": "単位",
+    "credit_system": "単位制度",
+    "hours_per_credit": "単位あたりの総時間",
+    "credit_system_options": {
+      "us": "米国学期単位",
+      "ects": "ECTS",
+      "custom": "カスタム"
+    }
+  },
+  "widgets": {
+    "standing": {
+      "title": "現在の状況は？",
+      "hint": "これまでに行われたすべての授業（欠席した分も含む）を数える。"
+    },
+    "plan": {
+      "title": "学期全体を計画していますか？",
+      "hint": "科目の授業総数がわかっている場合。"
+    },
+    "whatif": {
+      "title": "さらに授業を欠席したらどうなる？",
+      "hint": "次の授業をいくつか欠席した場合の出席率を見る。"
+    },
+    "recover": {
+      "title": "学期末までに達成可能ですか？",
+      "hint": "この学期に残っている授業回数を追加する。"
+    },
+    "subjects": {
+      "title": "すべての科目を計算する",
+      "hint": "各科目に、行われた授業と出席した授業を追加する。全体の結果は、目標未達の科目を隠さない。"
+    },
+    "semester": {
+      "title": "学期全体を計画する",
+      "hint": "予定された授業週から休日や中止された授業を差し引く。"
+    },
+    "hours": {
+      "title": "時間または授業回数で計算する",
+      "hint": "コースの総数、各授業、既に欠席した時間に対して同じ単位を使用する。"
+    },
+    "countdown": {
+      "title": "試験までカウントダウンする",
+      "hint": "日付はこのブラウザタブ内にとどまり、保存されない。"
+    },
+    "credits": {
+      "title": "単位を週間学習時間に換算する",
+      "hint": "単位制を選択し、科目の単位数を入力し、学期内の授業週数を使用してください。"
+    }
+  },
+  "table": {
+    "held": "授業が行われる",
+    "min": "少なくとも出席してください",
+    "missed": "欠席できる授業数"
+  },
+  "calc": {
+    "current": "現在の出席率は{pct}%です。",
+    "canMiss": {
+      "one": "あと1回欠席しても{target}%を維持できます。",
+      "other": "あと{n}回欠席しても{target}%を維持できます。"
+    },
+    "canMissDetail": "{current} それらを欠席すると、{pct}%になります。",
+    "atEdge": "次の授業は欠席しないでください。",
+    "atEdgeDetail": "{current} あと1回欠席すると{target}%を下回ります。",
+    "mustAttend": {
+      "one": "次の授業に出席して{target}%に戻してください。",
+      "other": "次の{n}回連続の授業に出席して{target}%に戻してください。"
+    },
+    "mustAttendDetail": "{current} それにより{pct}%になります。",
+    "unreachable": "授業を欠席すると、100%の目標にはもう到達できません。",
+    "planMiss": {
+      "one": "全{total}回中1回まで欠席できます。",
+      "other": "全{total}回中{n}回まで欠席できます。"
+    },
+    "planDetail": "目標を維持するには、全{total}回中少なくとも{attend}回出席してください。",
+    "whatif": {
+      "one": "あと1回欠席すると、出席率は{pct}%になります。",
+      "other": "あと{n}回欠席すると、出席率は{pct}%になります。"
+    },
+    "whatifAbove": "それでも{target}%以上です。そこを維持するために最大で欠席できるのは{m}回です。",
+    "whatifBelow": "それは{target}%を下回っています。そこを維持するために最大で欠席できるのは{m}回です。",
+    "recover": {
+      "one": "残り{rem}回の授業のうち少なくとも1回出席してください。",
+      "other": "残り{rem}回の授業のうち少なくとも{n}回出席してください。"
+    },
+    "recoverDetail": "そのうち{m}回欠席しても、{target}%以上で終了できます。",
+    "recoverSafe": "残りの{rem}回をすべて欠席しても、{target}%以上で終了します。",
+    "recoverImpossible": "すべての残りの{rem}クラスに出席しても、最終的な出席率は{pct}%になります。",
+    "recoverImpossibleDetail": "今学期の{target}%は到達不可能です。病気休暇や補講については、先生や学科に相談してください。",
+    "wholeNumbers": "開催されたクラスが少なくとも1回以上ある場合、整数を使用してください。",
+    "attendedTooMany": "出席したクラスは、開催されたクラスを超えることはできません。",
+    "targetRange": "1から100の間で目標値を入力してください。",
+    "subjectsOverall": "総出席率: {pct}% ({attended}／{held})",
+    "subjectsWarning": "全体の出席率は目標に達していますが、{names}は{target}%未満です。",
+    "subjectsWarnings": "全体の出席率は目標に達していますが、{names}は{target}%未満です。",
+    "subjectsBelow": "総出席率が{target}%未満です。",
+    "subjectCanMiss": "{name}: {pct}% — あと{n}回欠席できます。",
+    "subjectMustAttend": "{name}: {pct}% — {n}回連続で出席する必要があります。",
+    "subjectAtEdge": "{name}: {pct}% — 次のクラスを欠席しないでください。",
+    "subjectUnreachable": "{name}: {pct}% — 目標には到達できません。",
+    "subjectFallback": "科目 {n}",
+    "semesterMiss": "合計{total}クラスのうち、最大で{miss}回欠席でき、少なくとも{attend}回出席する必要があります。",
+    "semesterSummary": "{weeks}週間 × 週{perWeek}クラス − {cancelled}回キャンセル = 合計{total}クラス",
+    "semesterWeeks": "それは、おおよそ週{perWeek}クラスを行う{weeks}週間の授業です。",
+    "semesterCancelled": "休暇やキャンセルは、予定されたクラスの数を下回る必要があります。",
+    "hoursRemaining": "あと{remaining}回の授業または時間を欠席でき、これは{meetings}回分のフルクラスに相当します。",
+    "hoursDetail": "許される欠席は{total}中{allowed}回です。すでに{missed}回欠席しており、1回の会議ごとに{perClass}が計算されます。",
+    "hoursOver": "あなたは許可されている{allowed}回の欠席を{over}回超えています。",
+    "hoursOverDetail": "すでに{missed}回欠席しています。{target}%の目標はもう達成できません。",
+    "hoursMissedTooMany": "既に逃した時間は、コースの合計を超えることはできません。",
+    "creditsPositive": "正の単位数と時間数、および整数値の週数を入力してください。",
+    "creditsUs": "1週間あたり合計で約 {weekly} 時間、授業外で約 {outside} 時間を含めて計画してください。",
+    "creditsUsDetail": "{credits} 米国学期単位は、連邦基準に基づき {weeks} 週間にわたって約 {total} 総時間を表します。",
+    "creditsEcts": "1週間あたり合計で約 {low}–{high} 時間を計画してください。",
+    "creditsEctsDetail": "{credits} ECTS は、{weeks} 週間にわたって約 {low}–{high} 総作業時間を表します。",
+    "creditsCustom": "1週間あたり合計で約 {weekly} 時間を計画してください。",
+    "creditsCustomDetail": "{credits} 単位 × {perCredit} 時間 = {weeks} 週間にわたる合計 {total} 時間。"
+  },
+  "og_locale": "ja_JP",
+  "article": {
+    "updated_label": "更新済み",
+    "sources_heading": "情報源",
+    "blog_intro": "出席や学習計画に関する実用的な回答。",
+    "blog_description": "出席、授業、学習計画に関する実用的な回答。",
+    "empty": "記事はまだありません。"
+  }
+}

@@ -338,6 +338,8 @@ def article_page(page, group, site, sites, tools_by_id):
     updated_label = article_words.get('updated_label', 'Updated')
     source_block = f'<h2>{esc(source_heading)}</h2><ul class="sources">{sources}</ul>' if sources else ''
     faq_block = f'<h2>{esc(site["faq_heading"])}</h2><div class="faq">{faq}</div>' if faq else ''
+    related_block = (f'<h2>{esc(site["related_heading"])}</h2><div class="tool-grid">{"".join(related)}</div>'
+                     if related else '')
     body = f'''  <article class="doc article">
     <span class="kicker">{esc(site['blog_label'])}</span>
     <h1>{esc(page['h1'])}</h1>
@@ -345,10 +347,10 @@ def article_page(page, group, site, sites, tools_by_id):
     <p class="updated">{esc(updated_label)}: {esc(page['updated'])}</p>
     <div class="answer-box">{esc(page['answer'])}</div>
 {page['body']}
-    {source_block}
+{source_block}
 {download_box(site, f"article-{page['id']}-{lang}")}
-    <h2>{esc(site['related_heading'])}</h2><div class="tool-grid">{''.join(related)}</div>
-    {faq_block}
+{related_block}
+{faq_block}
   </article>'''
     return shell(site, lang, title=page['title'], description=page['description'], slug=page['slug'],
                  head_extra=head, body=body, og_title=page.get('og_title'))
@@ -418,11 +420,29 @@ def write(slug, text):
     path.write_text(text, encoding='utf-8')
 
 
+def prune_stale_article_pages(valid_slugs):
+    """Remove only generated article pages whose source slug no longer exists."""
+    candidates = list(ROOT.glob('blog/*/index.html')) + list(ROOT.glob('*/blog/*/index.html'))
+    for path in candidates:
+        slug = path.parent.relative_to(ROOT).as_posix() + '/'
+        if slug in valid_slugs:
+            continue
+        text = path.read_text(encoding='utf-8')
+        if GENERATED not in text:
+            continue
+        path.unlink()
+        try:
+            path.parent.rmdir()
+        except OSError:
+            pass
+
+
 def main():
     sites = {d.name: json.loads((d / 'site.json').read_text(encoding='utf-8'))
              for d in sorted(CONTENT.iterdir()) if (d / 'site.json').exists()}
     pages = [read_page(p) for p in sorted(CONTENT.glob('*/tools/*.html'))]
     articles = [read_page(p) for p in sorted(CONTENT.glob('*/articles/*.html'))]
+    prune_stale_article_pages({page['slug'] for page in articles})
     tools_by_id = {(p['id'], p['lang']): p for p in pages}
     groups = {}
     for page in pages:
