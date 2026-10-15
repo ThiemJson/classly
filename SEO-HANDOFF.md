@@ -352,12 +352,15 @@ hoá. Classly học cấu trúc và nguyên tắc chuyển đổi, **không sao 
   Google Play (4,50/5 từ 76 người dùng theo Play Console) có link và ngày kiểm tra; 6 calculator chính; CTA iOS/Android sau tools với campaign
   `home-tools`. Không thêm `AggregateRating`/`Review` schema.
 
-### Task 6.3 — Trust và freshness (P1)
+### Task 6.3 — Trust và freshness (P1) ✅
 - Tạo `/support/`: getting started, backup/restore, notifications, privacy, import/export, contact; trả lời theo
   hành vi app hiện tại và link sang FAQ/guide chi tiết.
 - Tạo `/whats-new/`: version, ngày phát hành, thay đổi quan trọng và CTA store; lấy dữ liệu từ release metadata
   của app để tránh lệch với listing. Một trang tổng hợp là đủ, chưa tạo một URL cho mỗi version.
 - Thêm cả hai vào nav/footer, sitemap, canonical và `BreadcrumbList` phù hợp.
+- Đã triển khai 2026-10-15: `/support/` định tuyến tới setup, attendance, reminder, backup/privacy và
+  contact; `/whats-new/` lấy phiên bản 3.7.0+56 cùng nội dung 3.7/3.6/3.5 từ metadata app. Hai trang có
+  canonical, breadcrumb schema, được thêm vào sitemap và homepage navigation/footer.
 
 ### Task 6.4 — Social preview và store alignment (P1)
 - Tạo ảnh OG/Twitter 1200×630 có UI thật, tên Classly và một lợi ích ngắn; giữ icon làm favicon.

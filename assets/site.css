@@ -118,6 +118,10 @@ footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
 .doc li{margin:6px 0}
 .doc a{color:var(--sage)}
 .doc .note{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:20px 0}
+.support-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0}
+.support-card{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.support-card:hover{border-color:var(--sage)}.support-card h2{font-size:19px;margin:0 0 6px}.support-card p{color:var(--muted);margin:0;font-size:15px}
+.release{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;margin:20px 0}.release h2{font-size:23px;margin:0 0 4px}.release .updated{margin-bottom:14px}.release ul{margin-bottom:0}
 
 @media (max-width:900px){
   .links a:not(.btn){display:none}
@@ -133,6 +137,7 @@ footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
 }
 @media (max-width:560px){
   .features,.home-tools{grid-template-columns:1fr}
+  .support-grid{grid-template-columns:1fr}
   .btn{padding:11px 16px}
   .tools-conversion .actions{display:grid;width:100%}.tools-conversion .btn{text-align:center;justify-content:center}
 }

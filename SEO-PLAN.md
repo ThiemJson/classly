@@ -61,7 +61,7 @@ in SEO-CHANGELOG.md → compare after 14 days.
 ## Phase 6 — Product-led SEO and conversion (Doz benchmark)
 - [ ] Preserve existing demand: redirect `/attendmate-website/` to `/classly/` and verify the old URL no longer returns 404
 - [x] Homepage conversion: show verified store rating, six useful calculators and contextual download CTAs
-- [ ] Trust and freshness: publish dedicated Support and What's New pages
+- [x] Trust and freshness: publish dedicated Support and What's New pages
 - [ ] Social sharing: replace the square icon with a purpose-built 1200×630 OG/Twitter image
 - [ ] App-intent landing pages: add only 2–3 pages supported by Keyword Planner or Search Console demand
 - [ ] Comparison hub: publish sourced, dated and balanced comparisons only after validating query demand

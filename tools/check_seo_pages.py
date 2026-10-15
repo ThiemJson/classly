@@ -14,7 +14,7 @@ from html.parser import HTMLParser
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
 BASE = "https://thiemjason-work.site/classly/"
-STATIC_PAGES = {"", "faq.html", "privacy.html", "terms.html"}
+STATIC_PAGES = {"", "faq.html", "privacy.html", "terms.html", "support/", "whats-new/"}
 NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 
 
