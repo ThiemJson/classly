@@ -59,7 +59,7 @@ rewrite title and description (put the answer or number in the title) → log it
 in SEO-CHANGELOG.md → compare after 14 days.
 
 ## Phase 6 — Product-led SEO and conversion (Doz benchmark)
-- [ ] Preserve existing demand: redirect `/attendmate-website/` to `/classly/` and verify the old URL no longer returns 404
+- [x] Preserve existing demand: redirect `/attendmate-website/` to `/classly/` and verify the old URL no longer returns 404
 - [x] Homepage conversion: show verified store rating, six useful calculators and contextual download CTAs
 - [x] Trust and freshness: publish dedicated Support and What's New pages
 - [x] Social sharing: replace the square icon with a purpose-built 1200×630 OG/Twitter image

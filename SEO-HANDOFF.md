@@ -334,12 +334,16 @@ landing page theo pain point, social proof, calculators, blog, comparison pages,
 để đưa người tìm kiếm từ câu hỏi cụ thể đến App Store. Sitemap công khai có 115 URL en và 805 URL bản địa
 hoá. Classly học cấu trúc và nguyên tắc chuyển đổi, **không sao chép số lượng trang** khi chưa có dữ liệu.
 
-### Task 6.1 — Giữ tín hiệu URL cũ (P0)
+### Task 6.1 — Giữ tín hiệu URL cũ (P0) ✅
 - `https://thiemjason-work.site/attendmate-website/` từng có impressions/clicks nhưng đang trả 404.
 - Tốt nhất: redirect HTTP 301 toàn bộ `/attendmate-website/*` → `/classly/*`, giữ query string.
 - Nếu hạ tầng GitHub Pages không hỗ trợ 301: dựng lại repo/path cũ với trang HTML 200, canonical đến URL mới,
   meta refresh `0` và `location.replace`; tạo mapping riêng cho mọi URL cũ có dữ liệu thay vì dùng custom 404.
 - Giữ redirect tối thiểu 12 tháng. DoD: URL cũ không còn 404; Search Console nhận redirect/canonical mới.
+- Đã triển khai 2026-10-15 bằng repo GitHub Pages riêng `ThiemJson/attendmate-website`, commit
+  `b6d989f`: URL cũ trả HTTP 200, canonical và meta refresh tới `/classly/`, JavaScript dùng
+  `location.replace` và giữ query/hash. Đã kiểm tra live bằng HTTP và trình duyệt. Đây là client-side
+  redirect vì GitHub Pages không hỗ trợ cấu hình HTTP 301; giữ repo hoạt động tối thiểu 12 tháng.
 
 ### Task 6.2 — Homepage conversion (P0) ✅
 - Thêm section “Free attendance calculators” với 6 công cụ chính và link tới hub; đặt trước FAQ.
