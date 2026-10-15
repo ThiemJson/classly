@@ -57,3 +57,19 @@ only once the original gets impressions.
 Search Console → Performance → Pages: position 5–20 with CTR under 2% →
 rewrite title and description (put the answer or number in the title) → log it
 in SEO-CHANGELOG.md → compare after 14 days.
+
+## Phase 6 — Product-led SEO and conversion (Doz benchmark)
+- [ ] Preserve existing demand: redirect `/attendmate-website/` to `/classly/` and verify the old URL no longer returns 404
+- [ ] Homepage conversion: show verified store rating, six useful calculators and contextual download CTAs
+- [ ] Trust and freshness: publish dedicated Support and What's New pages
+- [ ] Social sharing: replace the square icon with a purpose-built 1200×630 OG/Twitter image
+- [ ] App-intent landing pages: add only 2–3 pages supported by Keyword Planner or Search Console demand
+- [ ] Comparison hub: publish sourced, dated and balanced comparisons only after validating query demand
+- [ ] Authority: connect the website, store listings and official community profiles; earn relevant links without paid/link-scheme tactics
+- [ ] Domain decision: evaluate a product-owned root domain after indexing stabilizes; migrate only with a complete redirect map
+
+Gates:
+- Do not copy Doz's page count. New topics require query/search-volume evidence and a distinct user intent.
+- Do not mass-translate articles. Translate after the English original receives impressions, then obtain native review.
+- Never add self-authored review/aggregate-rating schema. Visible ratings must match a linked store listing and include the observation date.
+- Every comparison must use primary sources, include “when the alternative is better”, and show a checked/updated date.

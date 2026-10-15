@@ -327,7 +327,77 @@ Ví dụ: "cách tính % chuyên cần", "nghỉ quá 20% có bị cấm thi kh�
 
 ---
 
-## 7. Hạ tầng còn thiếu (Giai đoạn 1)
+## 7. GIAI ĐOẠN 6 — Product-led SEO và conversion
+
+Benchmark ngày 2026-10-15: sản phẩm tham chiếu là `getdoz.app` (không phải `getdoz.com`). Doz dùng
+landing page theo pain point, social proof, calculators, blog, comparison pages, release notes và support
+để đưa người tìm kiếm từ câu hỏi cụ thể đến App Store. Sitemap công khai có 115 URL en và 805 URL bản địa
+hoá. Classly học cấu trúc và nguyên tắc chuyển đổi, **không sao chép số lượng trang** khi chưa có dữ liệu.
+
+### Task 6.1 — Giữ tín hiệu URL cũ (P0)
+- `https://thiemjason-work.site/attendmate-website/` từng có impressions/clicks nhưng đang trả 404.
+- Tốt nhất: redirect HTTP 301 toàn bộ `/attendmate-website/*` → `/classly/*`, giữ query string.
+- Nếu hạ tầng GitHub Pages không hỗ trợ 301: dựng lại repo/path cũ với trang HTML 200, canonical đến URL mới,
+  meta refresh `0` và `location.replace`; tạo mapping riêng cho mọi URL cũ có dữ liệu thay vì dùng custom 404.
+- Giữ redirect tối thiểu 12 tháng. DoD: URL cũ không còn 404; Search Console nhận redirect/canonical mới.
+
+### Task 6.2 — Homepage conversion (P0)
+- Thêm section “Free attendance calculators” với 6 công cụ chính và link tới hub; đặt trước FAQ.
+- Thêm social proof từ store listing: rating + số ratings + link nguồn + ngày kiểm tra. Không dùng
+  `AggregateRating`/`Review` schema cho review tự hiển thị trên website.
+- Làm rõ pain point ngay hero: biết chính xác được nghỉ bao nhiêu buổi và cần đi học bao nhiêu buổi.
+- Thêm CTA tải app sau tools và sau phần product proof; giữ UTM/campaign attribution.
+- DoD: mobile 375 px không tràn; CTA bàn phím/screen reader dùng được; không làm chậm LCP bằng ảnh không tối ưu.
+
+### Task 6.3 — Trust và freshness (P1)
+- Tạo `/support/`: getting started, backup/restore, notifications, privacy, import/export, contact; trả lời theo
+  hành vi app hiện tại và link sang FAQ/guide chi tiết.
+- Tạo `/whats-new/`: version, ngày phát hành, thay đổi quan trọng và CTA store; lấy dữ liệu từ release metadata
+  của app để tránh lệch với listing. Một trang tổng hợp là đủ, chưa tạo một URL cho mỗi version.
+- Thêm cả hai vào nav/footer, sitemap, canonical và `BreadcrumbList` phù hợp.
+
+### Task 6.4 — Social preview và store alignment (P1)
+- Tạo ảnh OG/Twitter 1200×630 có UI thật, tên Classly và một lợi ích ngắn; giữ icon làm favicon.
+- Bổ sung `twitter:card`, image dimensions và alt. Kiểm tra link preview sau deploy.
+- Đồng bộ tên Classly, mô tả lợi ích, support/privacy URL và lịch sử phiên bản trên website/App Store/Google Play.
+- Không hard-code rating nếu không có quy trình kiểm tra định kỳ.
+
+### Task 6.5 — App-intent landing pages (P2, có data gate)
+- Chỉ tạo 2–3 trang khi Keyword Planner hoặc Search Console xác nhận nhu cầu, ví dụ:
+  `attendance-tracker-app-for-students`, `bunk-calculator-app`, `college-attendance-tracker`.
+- Mỗi trang phải có intent khác homepage/tool page, ảnh app, use case, giới hạn, FAQ và CTA store.
+- Trước khi publish, lập keyword map để tránh cannibalization với homepage và calculators.
+
+### Task 6.6 — Comparison hub (P2, có data gate)
+- Chỉ làm khi query “X vs Y”, “best attendance app” hoặc tương đương có volume/impressions.
+- Dùng nguồn chính thức của đối thủ và store listing; ghi “Checked <date>”; nêu giá, privacy, platform, offline,
+  export, reminder và tính năng attendance bằng bảng có cùng tiêu chí.
+- Bắt buộc có phần “When the alternative may be better”. Không bịa thiếu tính năng; dùng “not stated” khi
+  nguồn chính thức không nói. Rà lại ít nhất mỗi 90 ngày.
+
+### Task 6.7 — Authority và distribution (P2)
+- Liên kết hai chiều website ↔ App Store/Google Play ↔ hồ sơ cộng đồng chính thức.
+- Chia sẻ calculator/guide hữu ích trong cộng đồng phù hợp, không spam và không mua/link-exchange hàng loạt.
+- Theo dõi store clicks bằng campaign parameters; backlink chỉ được đánh giá theo mức liên quan và referral traffic.
+
+### Task 6.8 — Domain ở root (P3, quyết định sau khi index ổn định)
+- Domain sản phẩm riêng ở root giúp thương hiệu rõ hơn subfolder `/classly/`, nhưng migration sớm tạo thêm rủi ro.
+- Chỉ quyết định sau khi sitemap hiện tại đã được crawl và có baseline 28 ngày. Nếu chuyển: mapping 1:1, 301,
+  canonical/hreflang/sitemap mới, Change of Address khi phù hợp và giữ domain cũ tối thiểu 12 tháng.
+
+### Thứ tự triển khai và đo lường
+1. **Ngay:** 6.1 → 6.2 → 6.3 → 6.4.
+2. **Sau 7–14 ngày:** kiểm tra Pages/Queries, index coverage và store-click campaigns; sửa lỗi crawl trước nội dung mới.
+3. **Khi có ≥100 impressions/query cluster:** 6.5 hoặc 6.6, tối đa 2–3 trang mỗi đợt.
+4. **Sau 28 ngày:** so CTR, clicks và store clicks với baseline; chỉ nhân rộng format có tín hiệu tốt.
+
+KPI giai đoạn đầu: URL cũ không còn 404; sitemap không lỗi; ≥80% URL ưu tiên được index trong 28 ngày;
+CTR mục tiêu ≥3% cho trang ở vị trí 5–20; mọi CTA store có campaign attribution; không có trang mới không có
+impressions sau hai chu kỳ đánh giá mà vẫn tiếp tục nhân bản cùng format.
+
+---
+
+## 8. Hạ tầng còn thiếu (Giai đoạn 1)
 
 ### Task 1.8 — Script kiểm tra tự động `tools/check_seo_pages.py` ✅
 Tự động hoá phần không cần trình duyệt của checklist 2.4: mọi link `/classly/...` trong HTML trỏ tới
@@ -341,7 +411,7 @@ chạy lại generator, và thêm `?pt=…&ct=home-hero` / `home-download` vào 
 
 ---
 
-## 8. Việc chủ app phải tự làm (AI không làm được)
+## 9. Việc chủ app phải tự làm (AI không làm được)
 
 | Việc | Khi nào |
 |---|---|
@@ -353,9 +423,10 @@ chạy lại generator, và thêm `?pt=…&ct=home-hero` / `home-download` vào 
 | Nhờ người bản xứ đọc hi, id, es, pt, tr, fr | Task 3.5 |
 | Gửi ảnh chụp hoặc file xuất Search Console mỗi tuần | Giai đoạn 5 |
 
-## 9. Thứ tự đề xuất
+## 10. Thứ tự đề xuất
 
 1. Task 3.1 (es) → 1.8 (script kiểm tra) → 3.2 (pt) → 3.3 (tr) → 3.4 (fr)
 2. Task 4.1 (generator blog) → 4.2 (10 bài en) → 2.1 → 2.2 → 2.3
 3. Task 4.4 (10 bài vi) → 4.3 → 2.4 → 2.5
 4. Từ tuần 3: Task 5.1 mỗi tuần; Task 4.5 liên tục.
+5. Product-led SEO: Task 6.1 → 6.2 → 6.3 → 6.4; chỉ mở 6.5/6.6 khi có query data.
