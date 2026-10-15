@@ -5,6 +5,13 @@
   "tool_kicker": "Công cụ miễn phí",
   "faq_heading": "Câu hỏi thường gặp",
   "related_heading": "Công cụ chuyên cần khác",
+  "article": {
+    "updated_label": "Cập nhật",
+    "sources_heading": "Nguồn",
+    "blog_intro": "Câu trả lời thực tế về chuyên cần, thời khóa biểu và cách lập kế hoạch học tập.",
+    "blog_description": "Hướng dẫn chuyên cần, cách tính số buổi được nghỉ, thời khóa biểu và lập kế hoạch học tập dành cho sinh viên.",
+    "empty": "Chưa có bài viết."
+  },
   "nav": {
     "label": "Điều hướng",
     "features": "Tính năng",

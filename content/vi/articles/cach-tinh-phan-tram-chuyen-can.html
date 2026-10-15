@@ -1,0 +1,21 @@
+{
+  "id": "calculate-attendance-percentage", "slug": "vi/blog/cach-tinh-phan-tram-chuyen-can/",
+  "title": "Cách tính phần trăm chuyên cần chính xác · Classly",
+  "description": "Tính phần trăm chuyên cần bằng số buổi có mặt chia số buổi đã học nhân 100, kèm ví dụ, công thức Excel và cách tính số buổi được nghỉ.",
+  "h1": "Cách tính phần trăm chuyên cần",
+  "answer": "Lấy số buổi có mặt chia cho số buổi đã học rồi nhân 100; buổi đã học gồm cả những buổi bạn vắng nhưng không gồm buổi bị hủy.",
+  "published": "2026-10-15", "updated": "2026-10-15", "sources": [],
+  "related_tools": ["attendance-calculator", "bunk-calculator", "subject-wise"],
+  "faq": [{"q":"Công thức tính chuyên cần là gì?","a":"Chuyên cần = số buổi có mặt ÷ số buổi đã học × 100."},{"q":"Buổi vắng có tính vào số buổi đã học không?","a":"Có, nếu buổi học thực sự diễn ra. Buổi bị hủy thường không được tính."}]
+}
+---
+<h2>Công thức tính</h2><p class="formula">tỷ lệ chuyên cần = có mặt ÷ đã học × 100</p>
+<p>Nếu đã học 40 buổi và bạn có mặt 32 buổi, kết quả là 32 ÷ 40 × 100 = <b>80%</b>. Nếu có mặt 17 trên 24 buổi, kết quả là 70,83% khi làm tròn xuống hai chữ số thập phân.</p>
+<h2>Nhập đúng hai con số</h2><ul><li><b>Số buổi đã học:</b> mọi buổi thực sự diễn ra, kể cả buổi bạn vắng.</li><li><b>Số buổi có mặt:</b> chỉ những buổi bạn tham dự.</li><li><b>Buổi bị hủy:</b> thường không cộng vào bên nào vì lớp không diễn ra.</li></ul>
+<p>Hãy dùng đúng đơn vị trường ghi nhận: buổi, tiết hoặc giờ. Không trộn 45 tiết với 15 buổi trong cùng một phép tính.</p>
+<h2>Công thức Excel và Google Sheets</h2><p>Đặt số buổi có mặt ở A2 và số buổi đã học ở B2, dùng <code>=A2/B2</code> rồi định dạng ô thành phần trăm. Nếu muốn kết quả dạng số, dùng <code>=A2/B2*100</code>.</p>
+<h2>Tính số buổi còn được nghỉ</h2><p class="formula">được nghỉ = ⌊ có mặt × 100 ÷ mức yêu cầu − đã học ⌋</p>
+<p>Ví dụ bạn có mặt 34 trên 40 buổi và cần 80%. Phép tính 34 × 100 ÷ 80 − 40 = 2,5, làm tròn xuống còn <b>2 buổi</b>. Nghỉ hai buổi sẽ còn 34/42 = 80,95%; nghỉ buổi thứ ba sẽ còn 34/43 = 79,06%.</p>
+<h2>Khi đang dưới mức yêu cầu</h2><p>Ở mức 14/20 = 70%, để quay lại 80% bạn phải đi học liên tiếp 10 buổi: 24/30 = 80%. Cần giữ số buổi gốc vì cùng một tỷ lệ 70% nhưng 7/10 và 70/100 cần số buổi phục hồi rất khác nhau.</p>
+<h2>Lỗi thường gặp</h2><ul><li>Lấy số buổi vắng chia số buổi đã học thay vì dùng số buổi có mặt.</li><li>Xóa buổi đã vắng khỏi mẫu số.</li><li>Lấy trung bình phần trăm các môn có số buổi khác nhau.</li><li>Tự làm tròn 79,5% lên 80% khi quy chế không cho phép.</li></ul>
+<p>Công cụ giúp tính đúng toán học; quy định của trường quyết định mức yêu cầu và cách xử lý nghỉ ốm, thực hành hoặc học bù.</p>

@@ -300,6 +300,7 @@ def blog_slug(lang):
 
 def article_page(page, group, site, sites, tools_by_id):
     lang = page['lang']
+    article_words = site.get('article', {})
     faq = ''.join(f'<details><summary>{esc(item["q"])}</summary><p>{esc(item["a"])}</p></details>'
                   for item in page.get('faq', []))
     sources = ''.join(f'<li><a href="{esc(item["url"])}" rel="noopener">{esc(item["title"])}</a></li>'
@@ -328,13 +329,15 @@ def article_page(page, group, site, sites, tools_by_id):
             for item in page['faq']]})
     head = '\n  '.join(alternates(group) + [
         '<script type="application/ld+json">' + json.dumps(schemas, ensure_ascii=False) + '</script>'])
-    source_block = f'<h2>Sources</h2><ul class="sources">{sources}</ul>' if sources else ''
+    source_heading = article_words.get('sources_heading', 'Sources')
+    updated_label = article_words.get('updated_label', 'Updated')
+    source_block = f'<h2>{esc(source_heading)}</h2><ul class="sources">{sources}</ul>' if sources else ''
     faq_block = f'<h2>{esc(site["faq_heading"])}</h2><div class="faq">{faq}</div>' if faq else ''
     body = f'''  <article class="doc article">
     <span class="kicker">{esc(site['blog_label'])}</span>
     <h1>{esc(page['h1'])}</h1>
     {language_switch(page, group, sites)}
-    <p class="updated">Updated: {esc(page['updated'])}</p>
+    <p class="updated">{esc(updated_label)}: {esc(page['updated'])}</p>
     <div class="answer-box">{esc(page['answer'])}</div>
 {page['body']}
     {source_block}
@@ -352,12 +355,14 @@ def blog_page(lang, site, sites, articles):
     page = next(item for item in group if item['lang'] == lang)
     cards = ''.join(f'<a class="tool-link" href="/classly/{article["slug"]}"><b>{esc(article["h1"])}</b>'
                     f'<span>{esc(article["description"])}</span></a>' for article in articles)
-    empty = '' if cards else '<p>No articles yet.</p>'
+    article_words = site.get('article', {})
+    intro = article_words.get('blog_intro', 'Practical answers for attendance and study planning.')
+    empty = '' if cards else f'<p>{esc(article_words.get("empty", "No articles yet."))}</p>'
     body = f'''  <article class="doc"><span class="kicker">Classly</span><h1>{esc(site['blog_label'])}</h1>
-    {language_switch(page, group, sites)}<p>Practical answers for attendance and study planning.</p>
+    {language_switch(page, group, sites)}<p>{esc(intro)}</p>
     <div class="tool-grid">{cards}</div>{empty}</article>'''
     return shell(site, lang, title=f'{site["blog_label"]} · Classly',
-                 description='Practical answers for attendance, classes and study planning.', slug=slug,
+                 description=article_words.get('blog_description', 'Practical answers for attendance, classes and study planning.'), slug=slug,
                  head_extra='\n  '.join(alternates(group)), body=body), group
 
 

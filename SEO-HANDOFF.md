@@ -287,10 +287,12 @@ Mỗi bài 600–1200 từ, câu đầu là đáp án, có ít nhất 1 ví dụ
 - **Đã làm:** hai FAQ có danh sách 3+ bước (`starting-attendance`, `semester-dates`) đã có bài hướng dẫn
   riêng, ảnh chụp màn hình và link ngược từ `faq.html`.
 
-### Task 4.4 — 10 bài tiếng Việt
+### Task 4.4 — 10 bài tiếng Việt ✅
 Ví dụ: "cách tính % chuyên cần", "nghỉ quá 20% có bị cấm thi không" (chỉ trích quy chế của các trường
 **có link văn bản**), "cách lập thời khoá biểu đại học", "nghỉ ốm có được tính chuyên cần không",
 "bao nhiêu buổi thì được nghỉ trong một học phần 15 tuần".
+- **Đã làm:** 10 bài vi tương ứng với bộ 10 bài en, bản địa hóa ví dụ sang mức 80%; các bài về
+  điều kiện dự thi và nghỉ ốm trích quy chế chính thức của từng trường và không khái quát thành luật chung.
 
 ### Task 4.5 — Nhịp sản xuất (tuần 3–8)
 - Khoảng 10 bài/tuần. Từ bài thứ 11, **chọn chủ đề từ Search Console → Performance → Queries**

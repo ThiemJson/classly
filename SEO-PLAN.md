@@ -47,6 +47,7 @@ Terms come from `lib/l10n/app_<lang>.arb` in the app repo; slugs use the local s
 - [x] Generator support for articles, localized blog hubs and structured data
 - [x] First 10 English articles
 - [x] Expanded multi-step FAQ answers into screenshot-based guides
+- [x] First 10 Vietnamese answer-first articles
 Topics: attendance rules (sourced), calculating and recovering attendance,
 timetables and study planning, how-to for the app (from the FAQ). After the first
 10, pick topics from Search Console → Performance → Queries. Translate an article
