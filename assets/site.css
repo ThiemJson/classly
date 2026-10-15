@@ -157,8 +157,9 @@ footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
 .fields{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .fields.two{grid-template-columns:repeat(2,1fr)}
 .field{display:grid;gap:6px;font-size:14px;font-weight:600}
-.field input{font:inherit;font-size:18px;font-weight:600;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px;width:100%;min-width:0}
-.field input:focus{outline:none;border-color:var(--sage)}
+.field[hidden]{display:none}
+.field input,.field select{font:inherit;font-size:18px;font-weight:600;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px;width:100%;min-width:0}
+.field input:focus,.field select:focus{outline:none;border-color:var(--sage)}
 .result{margin-top:16px;border-radius:14px;padding:14px 16px;background:var(--variant)}
 .result[data-tone="good"]{background:var(--sage-soft)}
 .result-headline{font-weight:700;font-size:18px;margin:0}

@@ -32,3 +32,4 @@ later, add the numbers again under the entry.
 | 2026-10-15 | Added the semester attendance planner with teaching weeks, weekly frequency and cancellations in all eight languages | semester-attendance-planner/ and seven translations | new | | |
 | 2026-10-15 | Added the period/hour attendance calculator with remaining allowance and full-meeting conversion in all eight languages | class-hours-attendance-calculator/ and seven translations | new | | |
 | 2026-10-15 | Added a privacy-preserving exam countdown with optional Sunday exclusion in all eight languages | exam-countdown/ and seven translations | new | | |
+| 2026-10-15 | Added a source-backed US semester credit and ECTS workload calculator in English | credit-hours-calculator/ | new | | |

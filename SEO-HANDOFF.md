@@ -219,13 +219,16 @@ Khi thêm công cụ mới: thêm `id` của nó vào `related` của 1–2 tran
 - **Widget `countdown`:** ô ngày thi (`type="date"`), tuỳ chọn bỏ Chủ nhật. Kết quả: số ngày, số tuần,
   số ngày học còn lại. Không lưu dữ liệu. Liên kết sang tính năng nhắc deadline của app.
 
-### Task 2.5 — Tín chỉ → giờ học mỗi tuần
+### Task 2.5 — Tín chỉ → giờ học mỗi tuần (đang làm: bản en đã triển khai)
 - **Câu:** "credit hours to study hours", "how many hours per credit".
 - **Slug:** `credit-hours-calculator/`.
 - **Widget `credits`:** số tín chỉ, hệ (US credit hour | ECTS | tuỳ chỉnh giờ/tín chỉ), số tuần.
 - **Bắt buộc có nguồn** cho từng hệ quy đổi: định nghĩa credit hour của US Department of Education
   (34 CFR 600.2) và ECTS Users' Guide của European Commission. Không có nguồn → không làm hệ đó.
   Bản vi chỉ làm nếu tìm được văn bản của Bộ GD&ĐT quy định giờ/tín chỉ, kèm link.
+- **Đã có:** bản en với hệ US, ECTS và tuỳ chỉnh; ECTS hiển thị khoảng 25–30 giờ thay vì lấy trung bình.
+- **Còn lại:** kiểm tra dữ liệu tìm kiếm rồi dịch sang các ngôn ngữ phù hợp. Chưa làm bản vi cho đến khi có
+  nguồn chính thức của Bộ GD&ĐT như yêu cầu trên.
 
 ### Task 2.6 — (Thử nghiệm) CGPA → phần trăm
 - Lượng tìm kiếm lớn ở Ấn Độ nhưng **mỗi trường một công thức**. Chỉ làm các công thức có văn bản

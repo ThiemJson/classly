@@ -112,6 +112,20 @@ def widget(spec, site, index):
                 f'<label class="check-field"><input name="exclude_sundays" type="checkbox"{checked}> <span>{esc(site["fields"]["exclude_sundays"])}</span></label></div>\n'
                 '  <div class="result" aria-live="polite" hidden><p class="result-headline"></p><p class="result-detail"></p></div>\n'
                 '</section>')
+    if kind == 'credits':
+        title_id = f'calc-{index}'
+        options = ''.join(
+            f'<option value="{esc(value)}"{" selected" if value == spec["defaults"]["system"] else ""}>{esc(label)}</option>'
+            for value, label in site['fields']['credit_system_options'].items()
+        )
+        return (f'<section class="calc-card credits-widget" data-widget="credits" aria-labelledby="{title_id}">\n'
+                f'  <h2 id="{title_id}">{esc(words["title"])}</h2><p>{esc(words["hint"])}</p>\n'
+                f'  <div class="fields four"><label class="field">{esc(site["fields"]["credits"])}<input name="credits" type="number" inputmode="decimal" min="0.1" step="any" value="{esc(spec["defaults"]["credits"])}"></label>'
+                f'<label class="field">{esc(site["fields"]["credit_system"])}<select name="system">{options}</select></label>'
+                f'<label class="field">{esc(site["fields"]["weeks"])}<input name="weeks" type="number" inputmode="numeric" min="1" step="1" value="{esc(spec["defaults"]["weeks"])}"></label>'
+                f'<label class="field custom-hours-field" hidden>{esc(site["fields"]["hours_per_credit"])}<input name="hours_per_credit" type="number" inputmode="decimal" min="0.1" step="any" value="{esc(spec["defaults"]["hours_per_credit"])}"></label></div>\n'
+                '  <div class="result" aria-live="polite" hidden><p class="result-headline"></p><p class="result-detail"></p></div>\n'
+                '</section>')
     fields = []
     for name in WIDGET_FIELDS[kind]:
         mode = 'decimal' if name == 'target' else 'numeric'

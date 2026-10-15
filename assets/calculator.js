@@ -223,6 +223,52 @@
     root.addEventListener('input', run); root.addEventListener('change', run); run();
   }
 
+  function attachCredits(root) {
+    var box = root.querySelector('.result');
+    var creditsInput = root.querySelector('input[name="credits"]');
+    var weeksInput = root.querySelector('input[name="weeks"]');
+    var systemInput = root.querySelector('select[name="system"]');
+    var customField = root.querySelector('.custom-hours-field');
+    var customInput = root.querySelector('input[name="hours_per_credit"]');
+    function run() {
+      var credits = Number(creditsInput.value.trim());
+      var weeks = Number(weeksInput.value.trim());
+      var custom = Number(customInput.value.trim());
+      var system = systemInput.value;
+      customField.hidden = system !== 'custom';
+      if (creditsInput.value.trim() === '' || weeksInput.value.trim() === '' ||
+          (system === 'custom' && customInput.value.trim() === '')) {
+        box.hidden = true; return;
+      }
+      if (!isFinite(credits) || credits <= 0 || !isCount(weeks) || weeks < 1 ||
+          (system === 'custom' && (!isFinite(custom) || custom <= 0))) {
+        box.hidden = false; box.dataset.tone = 'warn';
+        box.querySelector('.result-headline').textContent = text('creditsPositive');
+        box.querySelector('.result-detail').textContent = ''; return;
+      }
+      var headline, detail;
+      if (system === 'us') {
+        var usTotal = credits * 45;
+        var usWeekly = usTotal / weeks;
+        var usOutside = credits * 30 / weeks;
+        headline = fill(text('creditsUs'), {weekly: fmt(usWeekly), outside: fmt(usOutside)});
+        detail = fill(text('creditsUsDetail'), {credits: fmt(credits), total: fmt(usTotal), weeks: weeks});
+      } else if (system === 'ects') {
+        var lowTotal = credits * 25, highTotal = credits * 30;
+        headline = fill(text('creditsEcts'), {low: fmt(lowTotal / weeks), high: fmt(highTotal / weeks)});
+        detail = fill(text('creditsEctsDetail'), {credits: fmt(credits), low: fmt(lowTotal), high: fmt(highTotal), weeks: weeks});
+      } else {
+        var total = credits * custom;
+        headline = fill(text('creditsCustom'), {weekly: fmt(total / weeks)});
+        detail = fill(text('creditsCustomDetail'), {credits: fmt(credits), perCredit: fmt(custom), total: fmt(total), weeks: weeks});
+      }
+      box.hidden = false; box.dataset.tone = 'good';
+      box.querySelector('.result-headline').textContent = headline;
+      box.querySelector('.result-detail').textContent = detail;
+    }
+    root.addEventListener('input', run); root.addEventListener('change', run); run();
+  }
+
   function attach(root) {
     var calculate = KINDS[root.dataset.widget];
     var box = root.querySelector('.result');
@@ -253,6 +299,7 @@
   document.querySelectorAll('[data-widget]').forEach(function (root) {
     if (root.dataset.widget === 'subjects') attachSubjects(root);
     else if (root.dataset.widget === 'countdown') attachCountdown(root);
+    else if (root.dataset.widget === 'credits') attachCredits(root);
     else attach(root);
   });
 })();
