@@ -28,7 +28,8 @@ Rules for every page:
 - [x] Subject-wise and overall attendance calculator across all 8 languages
 - [x] Semester planner by weeks × classes per week − holidays across all 8 languages
 - [x] Periods/hours (tiết) calculator across all 8 languages
-- [ ] Exam countdown; credit hours → study hours per week
+- [x] Exam countdown across all 8 languages
+- [ ] Credit hours → study hours per week
 - [ ] Trial: CGPA → percentage, GPA calculator (only after phase 2 tools get impressions)
 Check search volume (Keyword Planner / Ahrefs free tools) before building each one.
 

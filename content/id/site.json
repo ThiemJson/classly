@@ -39,7 +39,7 @@
     "cancelled": "Libur atau pertemuan batal",
     "hours_total": "Total jam pelajaran",
     "hours_per_class": "Jam per pertemuan",
-    "hours_missed": "Jam yang sudah dilewatkan"
+    "hours_missed": "Jam yang sudah dilewatkan", "exam_date": "Tanggal ujian", "exclude_sundays": "Kecualikan Minggu dari hari belajar"
   },
   "widgets": {
     "standing": {"title": "Posisi kehadiranku sekarang?", "hint": "Hitung semua pertemuan yang sudah berlangsung, termasuk yang kamu lewatkan."},
@@ -48,7 +48,8 @@
     "recover": {"title": "Masih bisa terkejar sampai akhir semester?", "hint": "Tambahkan berapa pertemuan mata kuliah ini yang tersisa semester ini."},
     "subjects": {"title": "Kehadiran per mata kuliah", "hint": "Tambahkan setiap mata kuliah untuk membandingkannya dengan kehadiran keseluruhan."},
     "semester": {"title": "Rencanakan satu semester", "hint": "Kurangi hari libur dan pertemuan batal dari jadwal kuliah."},
-    "hours": {"title": "Hitung berdasarkan jam pelajaran", "hint": "Gunakan unit yang sama untuk total, tiap pertemuan, dan waktu yang dilewatkan."}
+    "hours": {"title": "Hitung berdasarkan jam pelajaran", "hint": "Gunakan unit yang sama untuk total, tiap pertemuan, dan waktu yang dilewatkan."},
+    "countdown": {"title": "Hitung mundur menuju ujian", "hint": "Tanggal hanya dipakai di tab ini dan tidak disimpan."}
   },
   "table": {"held": "Pertemuan berlangsung", "min": "Hadir minimal", "missed": "Boleh absen maksimal"},
   "calc": {

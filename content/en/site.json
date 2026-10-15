@@ -38,7 +38,7 @@
     "cancelled": "Holidays or cancellations",
     "hours_total": "Total periods or hours",
     "hours_per_class": "Periods per class meeting",
-    "hours_missed": "Periods already missed"
+    "hours_missed": "Periods already missed", "exam_date": "Exam date", "exclude_sundays": "Exclude Sundays from study days"
   },
   "widgets": {
     "standing": {"title": "Where do I stand?", "hint": "Count every class held so far, including the ones you missed."},
@@ -47,7 +47,8 @@
     "recover": {"title": "Can I still make it by the end of term?", "hint": "Add how many classes of this subject are left this semester."},
     "subjects": {"title": "Calculate every subject", "hint": "Add each subject with its classes held and attended. The overall result never hides a subject below target."},
     "semester": {"title": "Plan the whole semester", "hint": "Subtract holidays and cancelled classes from the scheduled teaching weeks."},
-    "hours": {"title": "Calculate by periods or hours", "hint": "Use the same unit for the course total, each meeting and time already missed."}
+    "hours": {"title": "Calculate by periods or hours", "hint": "Use the same unit for the course total, each meeting and time already missed."},
+    "countdown": {"title": "Count down to the exam", "hint": "The date stays in this browser tab and is not saved."}
   },
   "table": {"held": "Classes held", "min": "Attend at least", "missed": "Can have missed"},
   "calc": {

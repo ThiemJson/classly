@@ -213,7 +213,7 @@ Khi thêm công cụ mới: thêm `id` của nó vào `related` của 1–2 tran
   Tiết được vắng = ⌊tổng × (1 − mục tiêu)⌋; còn lại = được vắng − đã vắng; quy ra số buổi = ⌊còn lại ÷ tiết mỗi buổi⌋.
   Ví dụ: 45 tiết, 3 tiết/buổi, đã vắng 3, mục tiêu 80 → được vắng 9 tiết, còn 6 tiết = 2 buổi.
 
-### Task 2.4 — Đếm ngược ngày thi
+### Task 2.4 ✅ — Đếm ngược ngày thi (hoàn tất 8 ngôn ngữ)
 - **Câu:** "days until exam", "exam countdown".
 - **Slug:** `exam-countdown/`; vi `vi/dem-nguoc-ngay-thi/`.
 - **Widget `countdown`:** ô ngày thi (`type="date"`), tuỳ chọn bỏ Chủ nhật. Kết quả: số ngày, số tuần,

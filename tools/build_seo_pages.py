@@ -103,6 +103,15 @@ def widget(spec, site, index):
                 f'<label class="field">{esc(site["fields"]["target"])}<input name="target" type="number" inputmode="decimal" min="1" max="100" step="any" value="{esc(spec["defaults"]["target"])}"></label></div>\n'
                 '  <div class="result" aria-live="polite" hidden><p class="result-headline"></p><p class="result-detail"></p><div class="subject-results"></div></div>\n'
                 '</section>')
+    if kind == 'countdown':
+        title_id = f'calc-{index}'
+        checked = ' checked' if spec['defaults'].get('exclude_sundays', True) else ''
+        return (f'<section class="calc-card countdown-widget" data-widget="countdown" aria-labelledby="{title_id}" data-days-ahead="{esc(spec["defaults"].get("days_ahead", 30))}">\n'
+                f'  <h2 id="{title_id}">{esc(words["title"])}</h2><p>{esc(words["hint"])}</p>\n'
+                f'  <div class="fields two"><label class="field">{esc(site["fields"]["exam_date"])}<input name="exam_date" type="date"></label>'
+                f'<label class="check-field"><input name="exclude_sundays" type="checkbox"{checked}> <span>{esc(site["fields"]["exclude_sundays"])}</span></label></div>\n'
+                '  <div class="result" aria-live="polite" hidden><p class="result-headline"></p><p class="result-detail"></p></div>\n'
+                '</section>')
     fields = []
     for name in WIDGET_FIELDS[kind]:
         mode = 'decimal' if name == 'target' else 'numeric'

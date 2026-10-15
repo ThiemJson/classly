@@ -198,4 +198,5 @@ footer{padding:40px 0 56px;color:var(--muted);font-size:14px}
 .subject-actions .field{width:130px}
 .subject-results{display:grid;gap:4px;margin-top:10px}
 .subject-results p{margin:0;font-size:14px}
+.check-field{display:flex;align-items:center;gap:8px;align-self:end;min-height:46px;font-size:14px;font-weight:600}.check-field input{width:18px;height:18px;accent-color:var(--sage)}
 @media (max-width:560px){.subject-head{display:none}.subject-row{grid-template-columns:1fr 1fr 36px}.subject-row label:first-child{grid-column:1/-1}.subject-actions{align-items:stretch}.subject-actions .field{width:110px}}

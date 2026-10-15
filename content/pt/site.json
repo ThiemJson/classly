@@ -39,7 +39,7 @@
     "cancelled": "Feriados ou cancelamentos",
     "hours_total": "Total de horas-aula",
     "hours_per_class": "Horas-aula por encontro",
-    "hours_missed": "Horas-aula já perdidas"
+    "hours_missed": "Horas-aula já perdidas", "exam_date": "Data da prova", "exclude_sundays": "Excluir domingos dos dias de estudo"
   },
   "widgets": {
     "standing": {"title": "Como está minha frequência?", "hint": "Conte todas as aulas dadas até agora, inclusive aquelas em que você faltou."},
@@ -48,7 +48,8 @@
     "recover": {"title": "Ainda dá para atingir a meta?", "hint": "Informe quantas aulas desta matéria ainda restam no semestre."},
     "subjects": {"title": "Frequência por disciplina", "hint": "Adicione cada disciplina para comparar com a frequência geral."},
     "semester": {"title": "Planeje o semestre inteiro", "hint": "Desconte feriados e aulas canceladas do calendário previsto."},
-    "hours": {"title": "Calcule por horas-aula", "hint": "Use a mesma unidade para a carga total, cada encontro e as faltas."}
+    "hours": {"title": "Calcule por horas-aula", "hint": "Use a mesma unidade para a carga total, cada encontro e as faltas."},
+    "countdown": {"title": "Contagem regressiva para a prova", "hint": "A data fica apenas nesta aba e não é salva."}
   },
   "table": {"held": "Aulas dadas", "min": "Frequentar pelo menos", "missed": "Faltas permitidas"},
   "calc": {

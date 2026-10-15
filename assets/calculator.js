@@ -185,6 +185,44 @@
     run();
   }
 
+  function attachCountdown(root) {
+    var box = root.querySelector('.result');
+    var dateInput = root.querySelector('input[name="exam_date"]');
+    var exclude = root.querySelector('input[name="exclude_sundays"]');
+    var today = new Date();
+    var todayUtc = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+    if (!dateInput.value) {
+      var initial = new Date(todayUtc + Number(root.dataset.daysAhead || 30) * 86400000);
+      dateInput.value = initial.toISOString().slice(0, 10);
+    }
+    function run() {
+      if (!dateInput.value) { box.hidden = true; return; }
+      var parts = dateInput.value.split('-').map(Number);
+      var examUtc = Date.UTC(parts[0], parts[1] - 1, parts[2]);
+      var days = Math.round((examUtc - todayUtc) / 86400000);
+      box.hidden = false;
+      if (days < 0) {
+        box.dataset.tone = 'bad'; box.querySelector('.result-headline').textContent = text('countdownPast');
+        box.querySelector('.result-detail').textContent = ''; return;
+      }
+      if (days === 0) {
+        box.dataset.tone = 'edge'; box.querySelector('.result-headline').textContent = text('countdownToday');
+        box.querySelector('.result-detail').textContent = fill(text('countdownStudy'), {study: 0}); return;
+      }
+      var study = days;
+      if (exclude.checked) {
+        var fullWeeks = Math.floor(days / 7), remainder = days % 7, sundays = fullWeeks;
+        var tomorrowDay = new Date(todayUtc + 86400000).getUTCDay();
+        for (var i = 0; i < remainder; i++) if ((tomorrowDay + i) % 7 === 0) sundays++;
+        study -= sundays;
+      }
+      box.dataset.tone = 'good';
+      box.querySelector('.result-headline').textContent = fill(text('countdownHeadline'), {days: days});
+      box.querySelector('.result-detail').textContent = fill(text('countdownDetail'), {weeks: Math.floor(days / 7), extra: days % 7}) + ' ' + fill(text('countdownStudy'), {study: study});
+    }
+    root.addEventListener('input', run); root.addEventListener('change', run); run();
+  }
+
   function attach(root) {
     var calculate = KINDS[root.dataset.widget];
     var box = root.querySelector('.result');
@@ -214,6 +252,7 @@
 
   document.querySelectorAll('[data-widget]').forEach(function (root) {
     if (root.dataset.widget === 'subjects') attachSubjects(root);
+    else if (root.dataset.widget === 'countdown') attachCountdown(root);
     else attach(root);
   });
 })();
