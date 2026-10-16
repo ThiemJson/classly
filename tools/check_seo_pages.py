@@ -83,6 +83,13 @@ def local_path(url: str) -> pathlib.Path | None:
 
 def content_slugs() -> set[str]:
     slugs = set(STATIC_PAGES)
+    locales = [path.parent.name for path in CONTENT.glob("*/site.json") if path.parent.name != "en"]
+    for english_slug in STATIC_PAGES:
+        localized_name = "home" if not english_slug else english_slug.removesuffix(".html").strip("/")
+        for lang in locales:
+            slug = f"{lang}/" if not english_slug else f"{lang}/{localized_name}/"
+            if (ROOT / slug / "index.html").is_file():
+                slugs.add(slug)
     for site_path in CONTENT.glob("*/site.json"):
         site = json.loads(site_path.read_text(encoding="utf-8"))
         slugs.add(site["hub"]["slug"])

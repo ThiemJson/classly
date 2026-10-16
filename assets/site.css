@@ -34,6 +34,9 @@ nav{height:68px;display:flex;align-items:center;justify-content:space-between;ga
 .links .language-popover a{display:grid;grid-template-columns:28px 1fr 16px;align-items:center;gap:7px;min-height:42px;padding:8px 10px;border-radius:11px;color:var(--ink);font-size:14px;text-decoration:none}
 .links .language-popover a:hover{background:var(--variant)}
 .links .language-popover a[aria-current="page"]{background:var(--sage-soft);color:var(--sage);font-weight:700}
+.language-menu.has-suggestion summary{border-color:var(--sage)}
+.language-menu.has-suggestion summary > span::after{content:"";display:inline-block;width:7px;height:7px;margin-left:7px;border-radius:50%;background:var(--sage);box-shadow:0 0 0 3px var(--sage-soft)}
+.language-suggested{color:var(--sage);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;text-align:right}
 .language-code{color:var(--muted);font-size:11px;font-weight:700;letter-spacing:.05em}
 .language-check{text-align:right}
 .btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;border-radius:999px;padding:12px 20px;font-size:15px;transition:transform .15s ease}

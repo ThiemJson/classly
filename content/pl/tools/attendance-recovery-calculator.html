@@ -1,0 +1,66 @@
+{
+  "id": "recovery",
+  "order": 4,
+  "slug": "pl/kalkulator-odzyskiwania-frekwencji/",
+  "title": "Kalkulator odzyskiwania frekwencji 75% · Classly",
+  "description": "Poniżej 75%? Zobacz, ile zajęć musisz uczęszczać z rzędu, aby wrócić do normy, i czy nadal możesz osiągnąć 75% przy pozostałych zajęciach w tym semestrze.",
+  "og_title": "Ile zajęć muszę uczęszczać, aby osiągnąć 75%?",
+  "h1": "Kalkulator odzyskiwania frekwencji",
+  "card_title": "Kalkulator odzyskiwania frekwencji",
+  "card_text": "Poniżej celu? Ile zajęć uczęszczać i czy jeszcze jest to możliwe.",
+  "intro": "<p><b>Aby wrócić do 75%, uczęszczaj na (0,75 × odbytych − uczęszczonych) ÷ 0,25 zajęć z rzędu, zaokrąglając w górę.</b> Jeśli semestr kończy się jako pierwszy, liczy się, ile z pozostałych zajęć uczęszczasz. Poniższe kalkulatory odpowiadają na oba pytania.</p>",
+  "widgets": [
+    {
+      "kind": "recover",
+      "defaults": {
+        "held": 30,
+        "attended": 20,
+        "remaining": 30,
+        "target": 75
+      }
+    },
+    {
+      "kind": "standing",
+      "title": "Ile z rzędu muszę teraz uczęszczać, aby wrócić do normy?",
+      "defaults": {
+        "held": 30,
+        "attended": 20,
+        "target": 75
+      }
+    }
+  ],
+  "related": [
+    "subject-wise",
+    "attendance-calculator",
+    "bunk-calculator",
+    "minimum-table"
+  ],
+  "faq": [
+    {
+      "q": "Ile zajęć muszę uczęszczać, aby osiągnąć 75% frekwencji?",
+      "a": "Uczęszczaj na (0,75 × odbytych − uczęszczonych) ÷ 0,25 zajęć z rzędu, zaokrąglając w górę. Gdy uczęszczono na 20 z 30, to 10 zajęć, co daje 30 z 40."
+    },
+    {
+      "q": "Czy nadal mogę osiągnąć 75% do końca semestru?",
+      "a": "Tylko jeśli (uczęszczone + pozostałe zajęcia) ÷ (odbyte + pozostałe zajęcia) wynosi przynajmniej 75%. Jeśli nawet uczęszczając na wszystkie pozostałe zajęcia jest to niewystarczające, zapytaj o zwolnienie lekarskie, odroczenie lub zajęcia uzupełniające."
+    },
+    {
+      "q": "Dlaczego powrót do normy wymaga tylu zajęć?",
+      "a": "Każde uczestniczone zajęcia dodają również do odbytych zajęć. Blisko 75%, każde uczęszczone zajęcie podnosi Twój procent tylko trochę, więc odzyskiwanie jest znacznie wolniejsze niż spadek."
+    }
+  ]
+}
+---
+<h2>Dwa sposoby spojrzenia na odzyskiwanie</h2>
+<h3>Powrót do celu jak najszybciej</h3>
+<p class="formula">uczestniczyć pod rząd = ⌈ (cel × odbyte − uczestniczone) ÷ (1 − cel) ⌉</p>
+<p>Przy 20 z 30 uczestniczonych (66,66%) i celu 75%: (0,75 × 30 − 20) ÷ 0,25 = <b>10 zajęć</b>, co daje 30 z 40 = 75%.</p>
+
+<h3>Na celu pod koniec semestru</h3>
+<p>Często trzeba być powyżej progu tylko wtedy, gdy sprawdzana jest frekwencja, zwykle na koniec semestru. Następnie policz pozostałe zajęcia:</p>
+<p class="formula">uczestnicz przynajmniej = ⌈ cel × (odbyte + pozostałe) − uczestniczone ⌉</p>
+<p>Przy 20 z 30 uczestniczonych i 30 pozostałych zajęciach: 0,75 × 60 − 20 = <b>25 z 30</b>, więc nadal możesz opuścić 5.</p>
+
+<h3>Kiedy jest za późno</h3>
+<p>Przy 20 z 40 uczestniczonych i 20 pozostałych zajęciach, nawet idealna frekwencja kończy się na 40 z 60 = 66,66%. W takim przypadku skontaktuj się wcześnie z nauczycielem lub działem: zwolnienia lekarskie, zaliczenia lub zajęcia uzupełniające są możliwe tylko przed terminem.</p>
+<p>Aby uniknąć takiej sytuacji, prowadź bieżące liczenie z <a href="/classly/pl/kalkulator-opuszczeń/">kalkulatorem opuszczeń</a>lub pozwól aplikacji Classly ostrzegać Cię, zanim przedmiot spadnie poniżej celu.</p>

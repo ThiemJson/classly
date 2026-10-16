@@ -1,0 +1,49 @@
+{
+  "id": "hours-calculator",
+  "order": 7,
+  "slug": "it/calcolatore-di-frequenza-delle-ore-di-lezione/",
+  "title": "Calcolatore di Ore di Lezione e Frequenza · Classly",
+  "description": "Calcola la frequenza per periodi o ore. Vedi il tuo totale di assenze consentite, le ore rimanenti e l'equivalente in incontri di classe completi.",
+  "og_title": "Calcolatore di Frequenza delle Ore di Lezione",
+  "h1": "Calcolatore di frequenza delle ore di lezione",
+  "card_title": "Calcolatore delle ore di lezione",
+  "card_text": "Converti un'indennità di frequenza in periodi o ore in incontri di classe completi.",
+  "intro": "<p><b>Calcola l'assenza consentita nella stessa unità in cui la tua istituzione registra: periodi o ore.</b> Inserisci il totale del corso, la durata di ogni incontro e il tempo già perso.</p>",
+  "widgets": [
+    {
+      "kind": "hours",
+      "defaults": {
+        "hours_total": 45,
+        "hours_per_class": 3,
+        "hours_missed": 3,
+        "target": 80
+      }
+    }
+  ],
+  "related": [
+    "attendance-calculator",
+    "semester-planner",
+    "bunk-calculator"
+  ],
+  "faq": [
+    {
+      "q": "Come calcolo la frequenza per ore di lezione?",
+      "a": "Moltiplica le ore del corso per la percentuale di assenza consentita, arrotonda per difetto ai periodi interi, poi sottrai i periodi già persi."
+    },
+    {
+      "q": "Perché arrotondare per difetto l'indennità di assenza?",
+      "a": "Un periodo parziale di solito non può essere utilizzato come assenza piena senza scendere sotto l'obiettivo."
+    },
+    {
+      "q": "Posso mescolare ore e periodi?",
+      "a": "No. Usa un'unità coerente per tutti e tre gli input, basata sul modo in cui la tua istituzione registra la frequenza."
+    }
+  ]
+}
+---
+<h2>Esempio funzionante con 45 periodi</h2>
+<p>Per un corso di 45 periodi con un obiettivo dell'80%, il numero consentito di assenze è floor(45 × 20%) = <b>9 periodi</b>. Se hai già perso 3, ti restano <b>6 periodi</b>.</p>
+<p>Quando ogni lezione comprende 3 periodi, 6 periodi rimanenti equivalgono a <b>2 lezioni complete</b>. Se una lezione ha una durata diversa, aggiorna quel campo piuttosto che considerare tutte le lezioni uguali.</p>
+<h2>Usa l'unità di frequenza corretta</h2>
+<ol><li>Verifica se la tua istituzione registra lezioni, periodi o ore di lezione.</li><li>Inserisci il totale completo del corso in quell'unità.</li><li>Inserisci la stessa unità per ogni lezione e per il tempo già perso.</li><li>Conferma il tuo obiettivo secondo le regole del corso corrente.</li></ol>
+<p>Questa conversione è utile quando una voce dell'orario comprende più periodi. Il tuo registro ufficiale di frequenza dovrebbe decidere quale unità usare.</p>

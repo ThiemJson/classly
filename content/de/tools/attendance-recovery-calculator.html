@@ -1,0 +1,66 @@
+{
+  "id": "recovery",
+  "order": 4,
+  "slug": "de/anwesenheitswiederherstellungsrechner/",
+  "title": "75% Teilnahme-Wiederherstellungsrechner · Classly",
+  "description": "Unter 75%? Sieh nach, wie viele Kurse du hintereinander besuchen musst, um wieder auf 75% zu kommen, und ob du mit den verbleibenden Kursen dieses Semesters…",
+  "og_title": "Wie viele Unterrichtsstunden muss ich besuchen, um 75 % zu erreichen?",
+  "h1": "Anwesenheitswiederherstellungsrechner",
+  "card_title": "Anwesenheitswiederherstellungsrechner",
+  "card_text": "Unter dem Ziel? Wie viele Kurse zu besuchen sind und ob es noch möglich ist.",
+  "intro": "<p><b>Um wieder auf 75 % zu kommen, nehmen Sie an (0,75 × gehalten − besucht) ÷ 0,25 Unterrichtsstunden hintereinander teil, aufgerundet.</b> Wenn das Semester zuerst endet, ist wichtig, wie viele der verbleibenden Stunden Sie besuchen. Die untenstehenden Rechner beantworten beides.</p>",
+  "widgets": [
+    {
+      "kind": "recover",
+      "defaults": {
+        "held": 30,
+        "attended": 20,
+        "remaining": 30,
+        "target": 75
+      }
+    },
+    {
+      "kind": "standing",
+      "title": "Wie viele hintereinander, um jetzt zurückzukommen?",
+      "defaults": {
+        "held": 30,
+        "attended": 20,
+        "target": 75
+      }
+    }
+  ],
+  "related": [
+    "subject-wise",
+    "attendance-calculator",
+    "bunk-calculator",
+    "minimum-table"
+  ],
+  "faq": [
+    {
+      "q": "Wie viele Kurse muss ich besuchen, um 75 % Anwesenheit zu erreichen?",
+      "a": "Besuche (0,75 × gehalten − besucht) ÷ 0,25 Kurse hintereinander, aufgerundet. Bei 20 von 30 besuchten Kursen sind das 10 Kurse, was dich auf 30 von 40 bringt."
+    },
+    {
+      "q": "Kann ich bis zum Ende des Semesters noch 75 % erreichen?",
+      "a": "Nur wenn (besucht + verbleibende Klassen) ÷ (gehalten + verbleibende Klassen) mindestens 75 % beträgt. Wenn selbst das Besuchen aller verbleibenden Klassen nicht ausreicht, frage nach medizinischer Beurlaubung, Nachsicht oder Ersatzklassen."
+    },
+    {
+      "q": "Warum dauert es so viele Kurse, um wieder aufzustehen?",
+      "a": "Jede Klasse, die Sie besuchen, trägt auch zu den abgehaltenen Klassen bei. In der Nähe von 75 % erhöht jede besuchte Klasse nur ein wenig Ihren Prozentsatz, sodass die Erholung viel langsamer ist als das Fallen."
+    }
+  ]
+}
+---
+<h2>Zwei Möglichkeiten, die Erholung zu betrachten</h2>
+<h3>So schnell wie möglich wieder im Ziel</h3>
+<p class="formula">anwenden in einer Reihe = ⌈ (Ziel × gehalten − besucht) ÷ (1 − Ziel) ⌉</p>
+<p>Mit 20 von 30 besucht (66,66%) und einem Ziel von 75%: (0,75 × 30 − 20) ÷ 0,25 = <b>10 Unterrichtsstunden</b>, wodurch man auf 30 von 40 = 75% kommt.</p>
+
+<h3>Am Ende des Semesters auf Kurs</h3>
+<p>Oft müssen Sie nur über der Linie sein, wenn die Anwesenheit überprüft wird, normalerweise am Ende des Semesters. Zählen Sie dann die verbleibenden Klassen:</p>
+<p class="formula">mindestens teilnehmen = ⌈ Ziel × (gehalten + verbleibend) − besucht ⌉</p>
+<p>Mit 20 von 30 besucht und 30 verbleibenden Klassen: 0,75 × 60 − 20 = <b>25 von 30</b>, sodass Sie noch 5 verpassen können.</p>
+
+<h3>Wenn es zu spät ist</h3>
+<p>Mit 20 von 40 besucht und 20 verbleibenden Klassen endet selbst perfekte Anwesenheit bei 40 von 60 = 66,66%. In diesem Fall sprechen Sie frühzeitig mit Ihrem Lehrer oder Ihrer Abteilung: ärztliche Atteste, Aufhebung oder Nachholunterricht sind nur vor Ablauf der Frist möglich.</p>
+<p>Um zu vermeiden, hier zu landen, führen Sie eine laufende Zählung mit dem <a href="/classly/de/schwänzrechner/">Schwänzrechner</a>oder lassen Sie die Classly App warnen, bevor ein Fach unter das Ziel fällt.</p>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Calcolatore di Ore di Lezione e Frequenza · Classly</title>
+  <meta name="description" content="Calcola la frequenza per periodi o ore. Vedi il tuo totale di assenze consentite, le ore rimanenti e l&#x27;equivalente in incontri di classe completi.">
+  <meta name="theme-color" content="#F7F7F5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121314" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Calcolatore di Frequenza delle Ore di Lezione">
+  <meta property="og:description" content="Calcola la frequenza per periodi o ore. Vedi il tuo totale di assenze consentite, le ore rimanenti e l&#x27;equivalente in incontri di classe completi.">
+  <meta property="og:image" content="https://thiemjason-work.site/classly/assets/classly-social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Classly attendance tracker app preview">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:url" content="https://thiemjason-work.site/classly/it/calcolatore-di-frequenza-delle-ore-di-lezione/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://thiemjason-work.site/classly/assets/classly-social-preview.png">
+  <link rel="canonical" href="https://thiemjason-work.site/classly/it/calcolatore-di-frequenza-delle-ore-di-lezione/">
+  <link rel="alternate" hreflang="de" href="https://thiemjason-work.site/classly/de/rechner-für-klassenstunden-anwesenheit/">
+  <link rel="alternate" hreflang="en" href="https://thiemjason-work.site/classly/class-hours-attendance-calculator/">
+  <link rel="alternate" hreflang="es" href="https://thiemjason-work.site/classly/es/calculadora-asistencia-por-horas/">
+  <link rel="alternate" hreflang="fr" href="https://thiemjason-work.site/classly/fr/calculateur-assiduite-heures/">
+  <link rel="alternate" hreflang="hi" href="https://thiemjason-work.site/classly/hi/class-hours-attendance-calculator/">
+  <link rel="alternate" hreflang="id" href="https://thiemjason-work.site/classly/id/kalkulator-kehadiran-jam-pelajaran/">
+  <link rel="alternate" hreflang="it" href="https://thiemjason-work.site/classly/it/calcolatore-di-frequenza-delle-ore-di-lezione/">
+  <link rel="alternate" hreflang="ja" href="https://thiemjason-work.site/classly/ja/クラス時間出席計算機/">
+  <link rel="alternate" hreflang="ko" href="https://thiemjason-work.site/classly/ko/수업-시간-출석-계산기/">
+  <link rel="alternate" hreflang="pl" href="https://thiemjason-work.site/classly/pl/kalkulator-obecności-na-zajęciach/">
+  <link rel="alternate" hreflang="pt" href="https://thiemjason-work.site/classly/pt/calculadora-frequencia-por-horas/">
+  <link rel="alternate" hreflang="ru" href="https://thiemjason-work.site/classly/ru/калькулятор-посещаемости-часов-занятий/">
+  <link rel="alternate" hreflang="tr" href="https://thiemjason-work.site/classly/tr/ders-saati-devamsizlik-hesaplama/">
+  <link rel="alternate" hreflang="vi" href="https://thiemjason-work.site/classly/vi/tinh-so-tiet-duoc-nghi/">
+  <link rel="alternate" hreflang="x-default" href="https://thiemjason-work.site/classly/class-hours-attendance-calculator/">
+  <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calcolatore di frequenza delle ore di lezione", "url": "https://thiemjason-work.site/classly/it/calcolatore-di-frequenza-delle-ore-di-lezione/", "applicationCategory": "EducationalApplication", "operatingSystem": "Any", "inLanguage": "it", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Come calcolo la frequenza per ore di lezione?", "acceptedAnswer": {"@type": "Answer", "text": "Moltiplica le ore del corso per la percentuale di assenza consentita, arrotonda per difetto ai periodi interi, poi sottrai i periodi già persi."}}, {"@type": "Question", "name": "Perché arrotondare per difetto l'indennità di assenza?", "acceptedAnswer": {"@type": "Answer", "text": "Un periodo parziale di solito non può essere utilizzato come assenza piena senza scendere sotto l'obiettivo."}}, {"@type": "Question", "name": "Posso mescolare ore e periodi?", "acceptedAnswer": {"@type": "Answer", "text": "No. Usa un'unità coerente per tutti e tre gli input, basata sul modo in cui la tua istituzione registra la frequenza."}}]}]</script>
+  <link rel="icon" type="image/png" href="/classly/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/classly/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/classly/assets/site.css">
+  <script src="/classly/assets/language-preference.js" defer></script>
+</head>
+<body>
+<!-- Generated by tools/build_seo_pages.py from content/; edit those instead. -->
+<header>
+  <nav class="wrap" aria-label="Principale">
+    <a class="brand" href="/classly/"><img src="/classly/assets/classly-icon.png" alt="" width="34" height="34">Classly</a>
+    <div class="links"><a href="/classly/#features">Caratteristiche</a><a href="/classly/it/strumenti/">Strumenti</a><a href="/classly/it/blog/">Blog</a><a href="/classly/faq.html">FAQ</a><details class="language-menu"><summary aria-label="Change language"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.5 3.7 5.5 3.7 9S14.4 18.5 12 21c-2.4-2.5-3.7-5.5-3.7-9S9.6 5.5 12 3Z"/></svg><span>Italiano</span></summary><div class="language-popover"><a href="/classly/class-hours-attendance-calculator/" hreflang="en" lang="en"><span class="language-code">EN</span><span>English</span></a><a href="/classly/de/rechner-für-klassenstunden-anwesenheit/" hreflang="de" lang="de"><span class="language-code">DE</span><span>Deutsch</span></a><a href="/classly/es/calculadora-asistencia-por-horas/" hreflang="es" lang="es"><span class="language-code">ES</span><span>Español</span></a><a href="/classly/fr/calculateur-assiduite-heures/" hreflang="fr" lang="fr"><span class="language-code">FR</span><span>Français</span></a><a href="/classly/hi/class-hours-attendance-calculator/" hreflang="hi" lang="hi"><span class="language-code">HI</span><span>हिन्दी</span></a><a href="/classly/id/kalkulator-kehadiran-jam-pelajaran/" hreflang="id" lang="id"><span class="language-code">ID</span><span>Bahasa Indonesia</span></a><a href="/classly/it/calcolatore-di-frequenza-delle-ore-di-lezione/" hreflang="it" lang="it" aria-current="page"><span class="language-code">IT</span><span>Italiano</span><span class="language-check" aria-hidden="true">✓</span></a><a href="/classly/ja/クラス時間出席計算機/" hreflang="ja" lang="ja"><span class="language-code">JA</span><span>日本語</span></a><a href="/classly/ko/수업-시간-출석-계산기/" hreflang="ko" lang="ko"><span class="language-code">KO</span><span>한국어</span></a><a href="/classly/pl/kalkulator-obecności-na-zajęciach/" hreflang="pl" lang="pl"><span class="language-code">PL</span><span>Polski</span></a><a href="/classly/pt/calculadora-frequencia-por-horas/" hreflang="pt" lang="pt"><span class="language-code">PT</span><span>Português</span></a><a href="/classly/ru/калькулятор-посещаемости-часов-занятий/" hreflang="ru" lang="ru"><span class="language-code">RU</span><span>Русский</span></a><a href="/classly/tr/ders-saati-devamsizlik-hesaplama/" hreflang="tr" lang="tr"><span class="language-code">TR</span><span>Türkçe</span></a><a href="/classly/vi/tinh-so-tiet-duoc-nghi/" hreflang="vi" lang="vi"><span class="language-code">VI</span><span>Tiếng Việt</span></a></div></details><a class="btn btn-ink" href="/classly/#download">Scarica</a></div>
+  </nav>
+</header>
+<main class="wrap">
+  <article class="doc">
+    <span class="kicker">Strumento gratuito</span>
+    <h1>Calcolatore di frequenza delle ore di lezione</h1>
+    <p><b>Calcola l'assenza consentita nella stessa unità in cui la tua istituzione registra: periodi o ore.</b> Inserisci il totale del corso, la durata di ogni incontro e il tempo già perso.</p>
+    <div class="calc">
+<section class="calc-card" data-widget="hours" aria-labelledby="calc-0">
+  <h2 id="calc-0">Calcola per periodi o ore</h2>
+  <p>Usa la stessa unità per il totale del corso, ogni incontro e orario già perso.</p>
+  <div class="fields four"><label class="field">Totale ore o periodi<input name="hours_total" type="number" inputmode="numeric" min="0" step="1" value="45"></label><label class="field">Ore per incontro di lezione<input name="hours_per_class" type="number" inputmode="numeric" min="0" step="1" value="3"></label><label class="field">Ore già perse<input name="hours_missed" type="number" inputmode="numeric" min="0" step="1" value="3"></label><label class="field">% Obiettivo<input name="target" type="number" inputmode="decimal" min="1" max="100" step="any" value="80"></label></div>
+  <div class="result" aria-live="polite" hidden><p class="result-headline"></p><p class="result-detail"></p></div>
+</section>
+    </div>
+<div class="app-cta">
+  <img src="/classly/assets/classly-icon.png" alt="" width="56" height="56">
+  <div><b>Trasforma il calcolo in un piano</b><span>Segna ogni lezione, simula cosa succede dopo, quindi tieni insieme il tuo orario e i compiti. Gratuito, offline-first, nessun account Classly.</span></div>
+  <div class="actions"><a class="btn btn-ink" href="https://apps.apple.com/app/id6760553317" rel="noopener">App Store</a><a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.thiemjason.classattendance&amp;referrer=utm_source%3Dclassly_site%26utm_medium%3Dweb%26utm_campaign%3Dhours-calculator-it" rel="noopener">Google Play</a></div>
+</div>
+<h2>Esempio funzionante con 45 periodi</h2>
+<p>Per un corso di 45 periodi con un obiettivo dell'80%, il numero consentito di assenze è floor(45 × 20%) = <b>9 periodi</b>. Se hai già perso 3, ti restano <b>6 periodi</b>.</p>
+<p>Quando ogni lezione comprende 3 periodi, 6 periodi rimanenti equivalgono a <b>2 lezioni complete</b>. Se una lezione ha una durata diversa, aggiorna quel campo piuttosto che considerare tutte le lezioni uguali.</p>
+<h2>Usa l'unità di frequenza corretta</h2>
+<ol><li>Verifica se la tua istituzione registra lezioni, periodi o ore di lezione.</li><li>Inserisci il totale completo del corso in quell'unità.</li><li>Inserisci la stessa unità per ogni lezione e per il tempo già perso.</li><li>Conferma il tuo obiettivo secondo le regole del corso corrente.</li></ol>
+<p>Questa conversione è utile quando una voce dell'orario comprende più periodi. Il tuo registro ufficiale di frequenza dovrebbe decidere quale unità usare.</p>
+    <h2>Domande comuni</h2>
+    <div class="faq"><details><summary>Come calcolo la frequenza per ore di lezione?</summary><p>Moltiplica le ore del corso per la percentuale di assenza consentita, arrotonda per difetto ai periodi interi, poi sottrai i periodi già persi.</p></details><details><summary>Perché arrotondare per difetto l&#x27;indennità di assenza?</summary><p>Un periodo parziale di solito non può essere utilizzato come assenza piena senza scendere sotto l&#x27;obiettivo.</p></details><details><summary>Posso mescolare ore e periodi?</summary><p>No. Usa un&#x27;unità coerente per tutti e tre gli input, basata sul modo in cui la tua istituzione registra la frequenza.</p></details></div>
+    <h2>Altri strumenti per la frequenza</h2>
+    <div class="tool-grid"><a class="tool-link" href="/classly/it/calcolatore-di-frequenza/"><b>Calcolatore di frequenza</b><span>La tua percentuale, e quante lezioni puoi perdere o devi frequentare.</span></a><a class="tool-link" href="/classly/it/pianificatore-frequenza-del-semestre/"><b>Pianificatore frequenza del semestre</b><span>Trasforma settimane di insegnamento e festività in un piano frequenza sicuro.</span></a><a class="tool-link" href="/classly/it/calcolatore-di-assenze/"><b>Calcolatore di assenze</b><span>Quante lezioni puoi saltare e la tua percentuale dopo averle saltate.</span></a></div>
+  </article>
+</main>
+<footer><div class="wrap"><div class="footer-row"><span>© 2026 Nguyen Cao Thiem · Classly</span><nav class="footer-links" aria-label="Piè di pagina"><a href="/classly/">Home</a><a href="/classly/it/strumenti/">Tutti gli strumenti</a><a href="/classly/it/blog/">Blog</a><a href="/classly/faq.html">FAQ</a><a href="/classly/privacy.html">Privacy</a><a href="/classly/terms.html">Termini</a></nav></div></div></footer>
+<script>window.CALC_TEXT = {"current": "Ora sei al {pct}%.", "canMiss": {"one": "Puoi saltare un'altra lezione e restare al {target}%.", "other": "Puoi saltare {n} altre lezioni e restare al {target}%."}, "canMissDetail": "{current} Dopo averle perse saresti a {pct}%.", "atEdge": "Non perdere la prossima lezione.", "atEdgeDetail": "{current} Perderne un'altra ti porterebbe sotto {target}%.", "mustAttend": {"one": "Partecipa alla prossima lezione per tornare a {target}%.", "other": "Partecipa alle prossime {n} lezioni consecutive per tornare a {target}%."}, "mustAttendDetail": "{current} Questo ti porterebbe a {pct}%.", "unreachable": "Un obiettivo del 100% non può più essere raggiunto una volta persa una lezione.", "planMiss": {"one": "Puoi perdere fino a 1 delle {total} lezioni.", "other": "Puoi perdere fino a {n} delle {total} lezioni."}, "planDetail": "Partecipa ad almeno {attend} delle {total} lezioni per rimanere sull'obiettivo.", "whatif": {"one": "Se perdi un'altra lezione, sarai a {pct}%.", "other": "Se perdi altre {n} lezioni, sarai a {pct}%."}, "whatifAbove": "Questo è ancora uguale o superiore a {target}%. Il massimo che puoi perdere e restare lì è {m}.", "whatifBelow": "Questo è sotto {target}%. Il massimo che puoi perdere e restare lì è {m}.", "recover": {"one": "Partecipa ad almeno 1 delle {rem} lezioni rimanenti.", "other": "Partecipa ad almeno {n} delle {rem} lezioni rimanenti."}, "recoverDetail": "Puoi perderne {m} e finire comunque a {target}% o più.", "recoverSafe": "Finirai a {target}% o più anche se perdi tutte le {rem} lezioni rimanenti.", "recoverImpossible": "Anche partecipando a tutte le {rem} lezioni rimanenti, finiresti a {pct}%.", "recoverImpossibleDetail": "{target}% è fuori portata questo semestre. Parla con il tuo insegnante o dipartimento riguardo il congedo medico o le lezioni di recupero.", "wholeNumbers": "Usa numeri interi, con almeno 1 lezione tenuta.", "attendedTooMany": "Le lezioni frequentate non possono essere più delle lezioni tenute.", "targetRange": "Inserisci un obiettivo tra 1 e 100.", "subjectsOverall": "Affluenza complessiva: {pct}% ({attended} di {held}).", "subjectsWarning": "Nel complesso è nell'obiettivo, ma {names} sotto il {target}%.", "subjectsWarnings": "Nel complesso è nell'obiettivo, ma {names} sono sotto il {target}%.", "subjectsBelow": "La presenza complessiva è sotto il {target}%.", "subjectCanMiss": "{name}: {pct}% — posso mancare {n} di più.", "subjectMustAttend": "{name}: {pct}% — deve partecipare a {n} di fila.", "subjectAtEdge": "{name}: {pct}% — non saltare la prossima lezione.", "subjectUnreachable": "{name}: {pct}% — l'obiettivo non è raggiungibile.", "subjectFallback": "Soggetto {n}", "semesterMiss": "Puoi saltare fino a {miss} di {total} corsi e frequentare almeno {attend}.", "semesterSummary": "{weeks} settimane × {perWeek} lezioni − {cancelled} cancellate = {total} corsi.", "semesterWeeks": "Circa {weeks} settimane di insegnamento in {perWeek} lezioni a settimana.", "semesterCancelled": "Le festività o le cancellazioni devono essere inferiori alle lezioni previste.", "hoursRemaining": "Puoi saltare {remaining} ore o ore in più, equivalenti a {meetings} riunioni complete di classe.", "hoursDetail": "L'indennità è {allowed} di {total}; hai perso {missed}, con {perClass} per riunione.", "hoursOver": "Sei {over} periodi o ore oltre la {allowed} allowance.", "hoursOverDetail": "Hai perso {missed}; l'obiettivo del {target}% non è più stato raggiunto.", "hoursMissedTooMany": "Il tempo già perso non può superare il totale del percorso.", "creditsPositive": "Inserisci crediti e ore positive, e un intero numero di settimane.", "creditsUs": "Pianifica circa {weekly} ore totali a settimana, incluse circa {outside} ore fuori dalle lezioni.", "creditsUsDetail": "{credits} crediti semestrali statunitensi rappresentano circa {total} ore totali distribuite su {weeks} settimane secondo il benchmark federale.", "creditsEcts": "Pianifica circa {low}–{high} ore totali a settimana.", "creditsEctsDetail": "{credits} ECTS rappresentano circa {low}–{high} ore totali di lavoro distribuite su {weeks} settimane.", "creditsCustom": "Pianifica circa {weekly} ore totali a settimana.", "creditsCustomDetail": "{credits} crediti × {perCredit} ore = {total} ore totali distribuite su {weeks} settimane."};</script>
+<script src="/classly/assets/calculator.js"></script>
+</body>
+</html>

@@ -5,8 +5,8 @@
   "faq_heading": "자주 묻는 질문",
   "related_heading": "더 많은 출석 도구",
   "nav": {
-    "label": "메인",
-    "features": "기능",
+    "label": "주요",
+    "features": "특징",
     "tools": "도구",
     "download": "다운로드",
     "footer_label": "푸터",
@@ -28,21 +28,21 @@
         "/classly/privacy.html"
       ],
       [
-        "이용 약관",
+        "이용약관",
         "/classly/terms.html"
       ]
     ]
   },
   "download": {
-    "title": "계산을 계획으로 바꾸기",
-    "text": "각 수업을 표시하고, 다음에 일어날 일을 시뮬레이션한 후, 시간표와 과제를 함께 유지하십시오. 무료, 오프라인 우선, Classly 계정 필요 없음."
+    "title": "계산을 계획으로 전환",
+    "text": "각 수업을 표시하고, 다음에 무슨 일이 일어날지 시뮬레이션한 뒤, 시간표와 과제를 함께 유지하세요. 무료, 오프라인 우선, Classly 계정 불필요."
   },
   "hub": {
     "slug": "ko/tools/",
     "title": "학생을 위한 무료 출석 계산기 · Classly",
-    "description": "무료 출석 계산기: 출석률, 결석 가능한 수업 수, 75% 규칙, 그리고 회복해야 할 수업 수.",
+    "description": "무료 출석 계산기: 출석 비율, 결석 가능한 수업 수, 75% 규칙, 회복해야 할 수업 수.",
     "h1": "무료 출석 도구",
-    "intro": "학생들이 출석에 대해 가장 많이 묻는 질문에 대한 빠른 답변. 가입 없음, 저장 없음: 모든 계산은 브라우저에서 실행됨."
+    "intro": "학생들이 출석에 대해 가장 많이 묻는 질문에 대한 빠른 답변. 회원가입 없음, 저장 없음: 모든 계산이 브라우저에서 실행됩니다."
   },
   "fields": {
     "held": "개최된 수업",
@@ -54,14 +54,14 @@
     "subject": "과목",
     "add_subject": "과목 추가",
     "remove_subject": "과목 제거",
-    "weeks": "수업 주차",
+    "weeks": "강의 주차",
     "per_week": "주당 수업 수",
     "cancelled": "휴일 또는 취소",
-    "hours_total": "총 학기 또는 시간",
-    "hours_per_class": "수업 회당 학기",
-    "hours_missed": "이미 결석한 학기",
+    "hours_total": "총 교시 또는 시간",
+    "hours_per_class": "수업당 교시 수",
+    "hours_missed": "이미 결석한 교시",
     "exam_date": "시험 날짜",
-    "exclude_sundays": "공부일에서 일요일 제외",
+    "exclude_sundays": "공부하는 날에서 일요일 제외",
     "credits": "학점",
     "credit_system": "학점 제도",
     "hours_per_credit": "학점당 총 시간",
@@ -73,109 +73,109 @@
   },
   "widgets": {
     "standing": {
-      "title": "내 현재 위치는?",
-      "hint": "지금까지 열린 모든 수업을, 결석한 수업도 포함해서 계산하세요."
+      "title": "내 상태는?",
+      "hint": "지금까지 진행된 모든 수업을, 결석한 수업도 포함하여, 세세요."
     },
     "plan": {
-      "title": "한 학기 전체를 계획 중인가요?",
-      "hint": "과목별 총 수업 수를 알고 있다면."
+      "title": "전체 학기를 계획하시나요?",
+      "hint": "과목의 총 수업 횟수를 알고 있다면."
     },
     "whatif": {
-      "title": "만약 더 많은 수업을 결석하면?",
-      "hint": "다음 수업 몇 회 결석 후의 비율을 확인하세요."
+      "title": "더 많은 수업을 결석하면 어떻게 되나요?",
+      "hint": "앞으로 몇 번의 수업을 결석했을 때의 출석률을 확인하세요."
     },
     "recover": {
-      "title": "학기 끝까지 여전히 가능할까요?",
-      "hint": "이번 학기에 남은 이 과목 수업 수를 추가하세요."
+      "title": "학기 말까지 목표를 달성할 수 있을까요?",
+      "hint": "이번 학기에 남은 이 과목의 수업 수를 추가하세요."
     },
     "subjects": {
       "title": "모든 과목 계산",
-      "hint": "각 과목을 열린 수업과 참석한 수업 수를 포함해 추가하세요. 전체 결과는 목표 이하 과목을 숨기지 않습니다."
+      "hint": "각 과목을 진행된 수업과 참석한 수업과 함께 추가하세요. 전체 결과는 목표 이하인 과목을 숨기지 않습니다."
     },
     "semester": {
-      "title": "한 학기 전체 계획",
-      "hint": "예정된 수업 주에서 공휴일과 취소된 수업을 빼세요."
+      "title": "전체 학기 계획",
+      "hint": "예정된 강의 주에서 휴일과 취소된 수업을 빼세요."
     },
     "hours": {
-      "title": "학기 또는 시간으로 계산",
-      "hint": "과목 총합, 각 수업 및 이미 결석한 시간에 동일한 단위를 사용하세요."
+      "title": "교시 또는 시간별 계산",
+      "hint": "강좌 총 시간, 각 회차, 이미 결석한 시간에 동일한 단위를 사용하세요."
     },
     "countdown": {
-      "title": "시험일까지 카운트다운",
+      "title": "시험까지 카운트다운",
       "hint": "날짜는 이 브라우저 탭에 남아 있으며 저장되지 않습니다."
     },
     "credits": {
-      "title": "학점을 주간 공부 시간으로 변환",
-      "hint": "학점 제도를 선택하고 학점을 입력한 후 학기 내 강의 주수를 사용하세요."
+      "title": "학점을 주간 학습 시간으로 변환",
+      "hint": "학점 제도를 선택하고, 강좌 학점을 입력하고, 학기 동안의 강의 주 수를 사용하세요."
     }
   },
   "table": {
     "held": "개최된 수업",
-    "min": "적어도 참석은 해",
-    "missed": "놓쳤을 수도 있어요"
+    "min": "최소 출석",
+    "missed": "결석 가능"
   },
   "calc": {
-    "current": "지금 {pct}%입니다.",
+    "current": "현재 {pct}% 위치에 있습니다.",
     "canMiss": {
-      "one": "한 과목만 더 빠져도 {target}% 수준에 머물러도 됩니다.",
-      "other": "수업을 {n} 더 빠져도 {target}% 수준에 머물 수 있습니다."
+      "one": "수업 1번 더 결석하면 {target}%를 유지할 수 있습니다.",
+      "other": "수업 {n}번을 더 결석하면 {target}%를 유지할 수 있습니다."
     },
-    "canMissDetail": "{current} 놓치면 {pct}%가 됩니다.",
-    "atEdge": "다음 수업 놓치지 마세요.",
-    "atEdgeDetail": "{current} 하나만 더 빠지면 {target}% 이하로 떨어집니다.",
+    "canMissDetail": "{current} 그것들을 놓친 후 당신은 {pct}%에 있을 것입니다.",
+    "atEdge": "다음 수업을 놓치지 마세요.",
+    "atEdgeDetail": "{current} 한 번 더 놓치면 {target}% 아래로 내려갑니다.",
     "mustAttend": {
-      "one": "다음 수업에 참석해서 {target}% 수준으로 회복하세요.",
-      "other": "다음 {n} 수업을 연속으로 듣고 {target}% 수준으로 회복하세요."
+      "one": "다음 수업에 참석하면 {target}%로 돌아갈 수 있습니다.",
+      "other": "다음 {n} 수업에 연속으로 참석하면 {target}%로 돌아갈 수 있습니다."
     },
-    "mustAttendDetail": "{current} 그렇게 하면 {pct}%가 됩니다.",
-    "unreachable": "수업을 놓치면 100% 목표에 도달할 수 없습니다.",
+    "mustAttendDetail": "{current} 그것은 당신을 {pct}%로 데려갈 것입니다.",
+    "unreachable": "한 번의 수업을 놓치면 100% 목표는 더 이상 달성할 수 없습니다.",
     "planMiss": {
-      "one": "{total} 수업 중 최대 한 과목을 빠질 수 있습니다.",
-      "other": "{total} 수업 중 최대 {n} 개를 빠질 수 있습니다."
+      "one": "당신은 {total} 수업 중 최대 1번까지 놓칠 수 있습니다.",
+      "other": "당신은 {n} 중 {total} 수업까지 놓칠 수 있습니다."
     },
-    "planDetail": "목표를 유지하려면 최소 {attend} {total} 참석하세요.",
+    "planDetail": "목표를 유지하려면 {total} 중 최소 {attend}에 참석하세요.",
     "whatif": {
-      "one": "한 과목만 더 빠지면 {pct}% 점수가 떨어집니다.",
-      "other": "수업을 {n} 더 빠지면 {pct}% 점수가 떨어집니다."
+      "one": "한 번 더 수업을 놓치면 {pct}%에 있게 됩니다.",
+      "other": "{n} 번 더 수업을 놓치면 {pct}%에 있게 됩니다."
     },
-    "whatifAbove": "그 수치는 여전히 {target}% 이상입니다. 놓치고 그 자리에 머무를 수 있는 최대 기간은 {m} 입니다.",
-    "whatifBelow": "그 비율은 {target}% 이하입니다. 놓치고 그 자리에 머무를 수 있는 최대 수는 {m} 입니다.",
+    "whatifAbove": "이는 여전히 {target}% 이상입니다. 거기서 머무르면서 최대한 놓칠 수 있는 수는 {m}입니다.",
+    "whatifBelow": "이는 {target}% 이하입니다. 거기서 머무르면서 최대한 놓칠 수 있는 수는 {m}입니다.",
     "recover": {
-      "one": "남은 {rem} 수업 중 최소 한 번은 꼭 참석하세요.",
+      "one": "남은 {rem} 수업 중 최소 1개의 수업에 참석하세요.",
       "other": "남은 {rem} 수업 중 최소 {n} 수업에 참석하세요."
     },
-    "recoverDetail": "{m} 과목을 놓쳐도 {target}% 이상으로 마칠 수 있습니다.",
-    "recoverSafe": "남은 과목을 모두 빠져도 {target}% 이상으로 {rem} 이상 마칠 수 있습니다.",
-    "recoverImpossible": "모든 {rem} 수업에 참석하더라도, {pct}%에서 끝나게 됩니다.",
-    "recoverImpossibleDetail": "이번 학기에는 {target}%는 도달할 수 없습니다. 의료 휴학이나 보강 수업에 대해 선생님이나 학과에 문의하세요.",
-    "wholeNumbers": "최소 1회 이상 열린 수업을 기준으로 정수로 입력하세요.",
-    "attendedTooMany": "참석한 수업은 열린 수업 수보다 많을 수 없습니다.",
-    "targetRange": "목표를 1에서 100 사이로 입력하세요.",
-    "subjectsOverall": "전체 출석률: {pct}% (총 {held}번 중 {attended} 회 참석).",
-    "subjectsWarning": "전체 출석률은 목표에 맞지만, {names}은 {target}% 이하입니다.",
-    "subjectsWarnings": "전체 출석률은 목표에 맞지만, {names}은 {target}% 이하입니다.",
-    "subjectsBelow": "전체 출석률이 {target}% 이하입니다.",
-    "subjectCanMiss": "{name}: {pct}% — {n}회 더 결석 가능합니다.",
-    "subjectMustAttend": "{name}: {pct}% — 연속으로 {n}회 참석해야 합니다.",
-    "subjectAtEdge": "{name}: {pct}% — 다음 수업을 결석하지 마세요.",
-    "subjectUnreachable": "{name}: {pct}% — 목표 달성이 불가능합니다.",
-    "subjectFallback": "과목: {n}",
-    "semesterMiss": "총 {total} 수업 중 최대 {miss}회 결석 가능하며 최소 {attend}회 출석해야 합니다.",
-    "semesterSummary": "{weeks}주 × {perWeek} 수업 − {cancelled} 취소 = {total} 수업.",
-    "semesterWeeks": "이는 주당 {perWeek} 수업, 총 약 {weeks}주 수업입니다.",
-    "semesterCancelled": "휴일이나 취소된 수업은 예정된 수업보다 적어야 합니다.",
-    "hoursRemaining": "총 {meetings} 회 수업에 해당하는, 최대 {remaining}회 더 결석 가능합니다.",
-    "hoursDetail": "허용치는 총 {total} 수업의 {allowed}; 현재까지 {missed}회를 결석했으며, 회당 {perClass}회입니다.",
-    "hoursOver": "허용치 {allowed}를 {over}교시 또는 시간 초과했습니다.",
-    "hoursOverDetail": "총 {missed}회를 결석했으며; {target}% 목표를 더 이상 달성하지 못했습니다.",
-    "hoursMissedTooMany": "이미 놓친 시간은 전체 수업 시간을 초과할 수 없습니다.",
-    "creditsPositive": "양의 학점과 시간을 입력하고, 정수 주 수를 입력하세요.",
-    "creditsUs": "수업 외 시간을 포함하여 주당 약 {weekly} 시간을 계획하세요, 약 {outside} 시간.",
-    "creditsUsDetail": "{credits} 미국 학기 학점은 연방 기준에 따라 {weeks} 주에 걸쳐 약 {total} 시간에 해당합니다.",
-    "creditsEcts": "주당 약 {low}–{high} 시간을 계획하세요.",
-    "creditsEctsDetail": "{credits} ECTS 은 약 {low}–{high} 총 작업량 시간을 {weeks} 주에 분산한 것을 나타냅니다.",
-    "creditsCustom": "주당 약 {weekly} 시간을 계획하세요.",
-    "creditsCustomDetail": "{credits} 학점 × {perCredit} 시간 = {total} 총 시간을 {weeks} 주에 걸쳐 계산합니다."
+    "recoverDetail": "그 중 {m} 수업을 놓치더라도 {target}% 이상으로 마칠 수 있습니다.",
+    "recoverSafe": "남은 {rem} 수업을 모두 놓치더라도 {target}% 이상으로 마칩니다.",
+    "recoverImpossible": "남은 모든 {rem} 수업에 참석하더라도 {pct}%로 마치게 됩니다.",
+    "recoverImpossibleDetail": "{target}%는 이번 학기에 도달할 수 없습니다. 담당 교수님이나 학과에 연락하여 병가나 보충 수업에 대해 상담하세요.",
+    "wholeNumbers": "최소 1회 수업이 개최되었음을 전제로 정수를 사용하세요.",
+    "attendedTooMany": "출석한 수업은 열린 수업보다 많을 수 없습니다.",
+    "targetRange": "1에서 100 사이의 목표를 입력하세요.",
+    "subjectsOverall": "전체 관중 수: {pct}% ({held} 명 중 {attended}).",
+    "subjectsWarning": "전체적으로는 목표에 맞지만 {names}%는 {target}% 미만입니다.",
+    "subjectsWarnings": "전체적으로는 목표치에 맞지만, {names} {target}% 미만입니다.",
+    "subjectsBelow": "전체 출석률은 {target}% 미만입니다.",
+    "subjectCanMiss": "{name}: {pct}% — 더 놓칠 수 {n} 있습니다.",
+    "subjectMustAttend": "{name}: {pct}% — 연속으로 {n} 참석해야 합니다.",
+    "subjectAtEdge": "{name}: {pct}% — 다음 수업을 놓치지 마세요.",
+    "subjectUnreachable": "{name}: {pct}% — 목표에 도달할 수 없습니다.",
+    "subjectFallback": "주제 {n}",
+    "semesterMiss": "{total} 수업 중 최대 {miss} 개를 빠져도 최소 {attend} 수업에 참석할 수 있습니다.",
+    "semesterSummary": "{weeks} 주 × {perWeek} 수업 − 취소 {cancelled} = {total} 수업.",
+    "semesterWeeks": "이는 주당 {perWeek} 수업 주간 수업 {weeks} 정도입니다.",
+    "semesterCancelled": "휴일이나 취소는 예정된 수업보다 적어야 합니다.",
+    "hoursRemaining": "수업 {remaining} 시간이나 시간을 더 빠질 수 있는데, 이는 전체 수업 회의 {meetings} 것과 같습니다.",
+    "hoursDetail": "수당은 {total} {allowed}; 회의당 {perClass} {missed} 놓쳤습니다.",
+    "hoursOver": "{allowed} 수당을 초과한 시간이나 시간이 {over} 있습니다.",
+    "hoursOverDetail": "{missed} 놓쳤습니다; {target}% 목표치가 더 이상 달성되지 않았습니다.",
+    "hoursMissedTooMany": "이미 결석한 시간은 총 수강 기간을 초과할 수 없습니다.",
+    "creditsPositive": "긍정적인 학점과 근무 시간, 그리고 정확히 몇 주 정도의 근무 기간을 입력합니다.",
+    "creditsUs": "주당 총 {weekly} 시간, 수업 외 시간도 약 {outside} 시간 계획하세요.",
+    "creditsUsDetail": "미국 학기 학점 {credits} 연방 기준으로 {weeks} 주에 걸쳐 약 {total} 시간의 총 시간을 나타냅니다.",
+    "creditsEcts": "{low}–{high}에 대한 주간 총 시간을 계획합니다.",
+    "creditsEctsDetail": "{credits} ECTS은(는) {low}–{high}의 총 작업 시간을 {weeks}주에 걸쳐 분배한 것을 나타냅니다.",
+    "creditsCustom": "{weekly}의 주간 총 시간을 계획합니다.",
+    "creditsCustomDetail": "{credits} 학점 × {perCredit} 시간 = {total}의 총 시간을 {weeks}주에 걸쳐."
   },
   "og_locale": "ko_KR",
   "article": {

@@ -487,46 +487,54 @@ function existingArticleIds(locale) {
   );
 }
 
-const englishSite = JSON.parse(fs.readFileSync(path.join(CONTENT, "en", "site.json"), "utf8"));
-const englishFiles = fs.readdirSync(path.join(CONTENT, "en", "articles"))
-  .filter((file) => file.endsWith(".html"))
-  .sort();
+function runBlogTranslation() {
+  const englishSite = JSON.parse(fs.readFileSync(path.join(CONTENT, "en", "site.json"), "utf8"));
+  const englishFiles = fs.readdirSync(path.join(CONTENT, "en", "articles"))
+    .filter((file) => file.endsWith(".html"))
+    .sort();
 
-for (const locale of requested) {
-  console.log(`[${locale}] preparing site labels`);
-  ensureSite(locale, englishSite);
-  if (GENERATED_SITE_LOCALES.has(locale)) {
-    validateSitePlaceholders(
-      englishSite,
-      JSON.parse(fs.readFileSync(path.join(CONTENT, locale, "site.json"), "utf8")),
-    );
+  for (const locale of requested) {
+    console.log(`[${locale}] preparing site labels`);
+    ensureSite(locale, englishSite);
+    if (GENERATED_SITE_LOCALES.has(locale)) {
+      validateSitePlaceholders(
+        englishSite,
+        JSON.parse(fs.readFileSync(path.join(CONTENT, locale, "site.json"), "utf8")),
+      );
+    }
+    const directory = path.join(CONTENT, locale, "articles");
+    fs.mkdirSync(directory, { recursive: true });
+    const existing = existingArticleIds(locale);
+    const pending = englishFiles
+      .map((file) => ({ file, ...readArticle(path.join(CONTENT, "en", "articles", file)) }))
+      .filter(({ header }) => !existing.has(header.id));
+    console.log(`[${locale}] ${pending.length} article(s) to translate`);
+    if (pending.length) {
+      translateStrings(
+        pending.flatMap((article) => [
+          ...articleStrings(article.header),
+          ...htmlStrings(article.body),
+        ]),
+        locale,
+      );
+    }
+    for (const [index, article] of pending.entries()) {
+      const translations = translateStrings(articleStrings(article.header), locale);
+      const header = localizedHeader(article.header, locale, translations);
+      const body = localizeHtml(article.body, locale);
+      const output = path.join(directory, `${article.header.id}.html`);
+      fs.writeFileSync(output, `${JSON.stringify(header, null, 2)}\n---\n${body}\n`);
+      console.log(`[${locale}] ${index + 1}/${pending.length} ${article.header.id}`);
+    }
+    normalizeArticleMetadata(locale);
+    rewriteInternalArticleLinks(locale);
   }
-  const directory = path.join(CONTENT, locale, "articles");
-  fs.mkdirSync(directory, { recursive: true });
-  const existing = existingArticleIds(locale);
-  const pending = englishFiles
-    .map((file) => ({ file, ...readArticle(path.join(CONTENT, "en", "articles", file)) }))
-    .filter(({ header }) => !existing.has(header.id));
-  console.log(`[${locale}] ${pending.length} article(s) to translate`);
-  if (pending.length) {
-    translateStrings(
-      pending.flatMap((article) => [
-        ...articleStrings(article.header),
-        ...htmlStrings(article.body),
-      ]),
-      locale,
-    );
-  }
-  for (const [index, article] of pending.entries()) {
-    const translations = translateStrings(articleStrings(article.header), locale);
-    const header = localizedHeader(article.header, locale, translations);
-    const body = localizeHtml(article.body, locale);
-    const output = path.join(directory, `${article.header.id}.html`);
-    fs.writeFileSync(output, `${JSON.stringify(header, null, 2)}\n---\n${body}\n`);
-    console.log(`[${locale}] ${index + 1}/${pending.length} ${article.header.id}`);
-  }
-  normalizeArticleMetadata(locale);
-  rewriteInternalArticleLinks(locale);
+
+  console.log("Blog translations complete.");
 }
 
-console.log("Blog translations complete.");
+export { LOCALES, htmlStrings, localizeHtml, readArticle, slugify, translateStrings, translatedClone };
+
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  runBlogTranslation();
+}

@@ -1,0 +1,57 @@
+{
+  "id": "minimum-table",
+  "order": 3,
+  "slug": "de/75-anwesenheitsrechner/",
+  "title": "75%-Anwesenheitsrechner: Klassen, die Sie verpassen… · Classly",
+  "description": "75%-Anwesenheitsrechner mit fertiger Tabelle: wie viele Klassen Sie besuchen müssen und wie viele Sie von 10 bis 60 gehaltenen Klassen verpassen können…",
+  "og_title": "75%-Anwesenheitsrechner und Tabelle",
+  "h1": "75%-Anwesenheitsrechner",
+  "card_title": "75%-Anwesenheitstabelle",
+  "card_text": "Die geringste Anzahl zu besuchender Klassen für 75%, für 10 bis 60 gehaltene Klassen.",
+  "intro": "<p><b>Um 75% Anwesenheit zu behalten, müssen Sie mindestens drei von vier Klassen besuchen, sodass Sie höchstens eine Klasse für jede drei besuchten verpassen können.</b> Verwenden Sie den Rechner für Ihre genauen Zahlen oder lesen Sie Ihre Zeile in der Tabelle unten.</p>",
+  "widgets": [
+    {
+      "kind": "standing",
+      "defaults": {
+        "held": 30,
+        "attended": 24,
+        "target": 75
+      }
+    }
+  ],
+  "related": [
+    "attendance-calculator",
+    "bunk-calculator",
+    "recovery"
+  ],
+  "faq": [
+    {
+      "q": "Wie berechne ich 75% meiner Klassen?",
+      "a": "Multiplizieren Sie die gehaltenen Klassen mit 0,75 und runden Sie auf. Für 48 gehaltene Klassen: 48 × 0,75 = 36, also müssen Sie mindestens 36 besucht haben."
+    },
+    {
+      "q": "Wird 74,5% auf 75% aufgerundet?",
+      "a": "Nur wenn Ihre Hochschule dies sagt. Viele Anwesenheitssysteme vergleichen den exakten Prozentsatz mit 75 und runden nicht, behandeln Sie also 74,5% als unterhalb des Limits, sofern Ihre Regeln nichts anderes besagen."
+    },
+    {
+      "q": "Wie viele Klassen kann ich von 60 für 75% verpassen?",
+      "a": "15. Sie müssen mindestens 45 von 60 besuchen (60 × 0,75)."
+    },
+    {
+      "q": "Was passiert, wenn meine Anwesenheit unter 75% liegt?",
+      "a": "Das hängt von Ihrer Institution ab. Übliche Folgen sind eine Warnung, eine Geldstrafe oder ein Antrag auf Nachsicht oder dass Sie nicht zur Endsemesterprüfung zugelassen werden. Prüfen Sie die Regeln Ihrer Hochschule."
+    }
+  ]
+}
+---
+<h2>75%-Anwesenheitstabelle</h2>
+<p>Für jede bisher gehaltene Anzahl von Klassen: die geringste Anzahl, die Sie besucht haben müssen, um 75% zu erreichen, und die maximale Anzahl, die Sie verpasst haben können.</p>
+{{table:75}}
+
+<h2>Wie man es selbst berechnet</h2>
+<p class="formula">mindestens teilnehmen = ⌈ gehalten × 0,75 ⌉</p>
+<p class="formula">kann insgesamt fehlen = ⌊ gehalten × 0,25 ⌋</p>
+<p>Bei 30 abgehaltenen Kursen: 30 × 0,75 = 22,5, aufgerundet auf <b>23 besucht</b>, also bis zu 7 verpasst. Wenn Sie 24 besucht haben, sind Sie bei 80% und können noch <b>2 fehlen</b>: 24 von 32 sind genau 75%.</p>
+
+<h2>Woher die 75%-Regel kommt</h2>
+<p>75% ist ein häufiges Mindestmaß an Universitäten und Hochschulen, besonders in Indien, aber es wird von jeder Institution festgelegt, und einige verlangen 80% oder 85%. Wenn Ihre Institution eine andere Zahl verwendet, ändern Sie das Ziel im <a href="/classly/de/anwesenheitsrechner/">Anwesenheitsrechner</a>.</p>

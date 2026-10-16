@@ -1,0 +1,49 @@
+{
+  "id": "hours-calculator",
+  "order": 7,
+  "slug": "pl/kalkulator-obecności-na-zajęciach/",
+  "title": "Kalkulator godzin lekcyjnych i frekwencji na zajęciach · Classly",
+  "description": "Oblicz frekwencję według okresów lub godzin. Zobacz swoją całkowitą liczbę dni nieobecności, pozostałe godziny oraz równoważną liczbę pełnych zajęć.",
+  "og_title": "Kalkulator Obecności na Zajęciach",
+  "h1": "Kalkulator obecności na zajęciach",
+  "card_title": "Kalkulator godzin zajęć",
+  "card_text": "Przelicz zasiłek za frekwencję w okresach lub godzinach na pełne spotkania klasowe.",
+  "intro": "<p><b>Oblicz dozwoloną nieobecność w tej samej jednostce, w której Twoja instytucja dokonuje zapisów: okresy lub godziny.</b> Wprowadź całkowitą liczbę godzin kursu, długość każdego spotkania i czas już stracony.</p>",
+  "widgets": [
+    {
+      "kind": "hours",
+      "defaults": {
+        "hours_total": 45,
+        "hours_per_class": 3,
+        "hours_missed": 3,
+        "target": 80
+      }
+    }
+  ],
+  "related": [
+    "attendance-calculator",
+    "semester-planner",
+    "bunk-calculator"
+  ],
+  "faq": [
+    {
+      "q": "Jak obliczam frekwencję według godzin zajęć?",
+      "a": "Pomnóż godziny kursu przez dozwolony procent nieobecności, zaokrąglij w dół do pełnych okresów, a następnie odejmij już opuszczone okresy."
+    },
+    {
+      "q": "Dlaczego zaokrąglać w dół limit nieobecności?",
+      "a": "Częściowy okres zazwyczaj nie może być użyty jako pełna nieobecność bez zejścia poniżej celu."
+    },
+    {
+      "q": "Czy mogę mieszać godziny i okresy?",
+      "a": "Nie. Używaj jednej spójnej jednostki dla wszystkich trzech danych wejściowych, w oparciu o sposób, w jaki Twoja instytucja rejestruje frekwencję."
+    }
+  ]
+}
+---
+<h2>Przykład rozwiązany z 45 okresami</h2>
+<p>Dla kursu trwającego 45 okresów z celem 80%, dopuszczalna liczba nieobecności wynosi floor(45 × 20%) = <b>9 okresów</b>. Jeśli już opuściłeś 3, masz <b>Pozostało 6 okresów</b>.</p>
+<p>Gdy każde spotkanie klasy zawiera 3 okresy, 6 pozostałych okresów równa się <b>2 pełne spotkania</b>. Jeśli spotkanie ma inną długość, zaktualizuj to pole zamiast traktować każde spotkanie jako równe.</p>
+<h2>Użyj właściwej jednostki frekwencji</h2>
+<ol><li>Sprawdź, czy Twoja instytucja rejestruje spotkania, okresy lub godziny zegarowe.</li><li>Wprowadź pełną sumę kursu w tej jednostce.</li><li>Wprowadź tę samą jednostkę dla każdego spotkania i dla czasu już nieobecnego.</li><li>Potwierdź swój cel zgodnie z aktualnymi zasadami kursu.</li></ol>
+<p>Ta konwersja jest przydatna, gdy jedna pozycja w harmonogramie zawiera wiele okresów. Twój oficjalny zapis obecności powinien decydować, której jednostki użyć.</p>

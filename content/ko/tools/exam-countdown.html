@@ -1,0 +1,49 @@
+{
+  "id": "exam-countdown",
+  "order": 8,
+  "slug": "ko/시험-카운트다운/",
+  "title": "시험 카운트다운: 남은 일수 및 학습 일수 · Classly",
+  "description": "시험까지의 달력 일수, 전체 주 및 학습 일수를 계산합니다. 선택적으로 일요일은 제외할 수 있으며, 날짜는 저장되지 않습니다.",
+  "og_title": "시험 카운트다운",
+  "h1": "시험 카운트다운",
+  "card_title": "시험 카운트다운",
+  "card_text": "날짜를 저장하지 않고 남은 달력 일수, 주 및 학습 일수를 계산합니다.",
+  "intro": "<p><b>시험 카운트다운은 남은 달력 일수와 전체 주를 보여주며, 선택적으로 일요일을 제외한 학습 일수도 보여줍니다.</b> 선택한 날짜는 이 탭에만 남아 있습니다.</p>",
+  "widgets": [
+    {
+      "kind": "countdown",
+      "defaults": {
+        "days_ahead": 30,
+        "exclude_sundays": true
+      }
+    }
+  ],
+  "related": [
+    "semester-planner",
+    "attendance-calculator",
+    "subject-wise"
+  ],
+  "calc": {
+    "countdownHeadline": "{days} calendar days until the exam.",
+    "countdownDetail": "That is {weeks} full weeks and {extra} days.",
+    "countdownStudy": "{study} study days remain with the current Sunday setting.",
+    "countdownToday": "The exam is today.",
+    "countdownPast": "Choose today or a future exam date."
+  },
+  "faq": [
+    {
+      "q": "시험 카운트다운이 내 날짜를 저장하나요?",
+      "a": "아니요. 계산은 이 브라우저 탭에서 실행되며 날짜는 저장되지 않습니다."
+    },
+    {
+      "q": "카운트다운에 시험일이 포함되나요?",
+      "a": "네. 카운트는 내일부터 선택한 시험일까지 진행됩니다; 오늘은 0일입니다."
+    },
+    {
+      "q": "일요일을 제외하면 무엇이 바뀌나요?",
+      "a": "공부일 수에서만 일요일이 제외됩니다. 달력 날짜와 주는 변경되지 않습니다."
+    }
+  ]
+}
+---
+<h2>시험 카운트다운 작동 방식</h2><p>공식 시험일을 선택하세요. 이 도구는 내일부터 해당 날짜까지 카운트합니다. 따라서 시험이 내일이면 하루 남은 것입니다. 전체 주는 7개의 달력일로 구성되며, 남은 일수는 별도로 표시됩니다.</p><p>일요일이 정상적인 공부일이라면 일요일 옵션을 끄세요. 다른 공휴일은 자동으로 제거되지 않으니, 결과를 단순한 계획으로 사용하고 지역 공휴일을 일정에 표시하세요.</p><h2>숫자를 공부 계획으로 바꾸기</h2><ol><li>최신 시험 일정에서 날짜를 확인하세요.</li><li>남은 공부일에 주제를 나누세요.</li><li>마지막 날은 복습과 연습을 위해 남겨두세요.</li><li>Classly 마감 알림을 사용하여 계획을 보이게 유지하세요.</li></ol>

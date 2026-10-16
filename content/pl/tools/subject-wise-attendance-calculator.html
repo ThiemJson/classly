@@ -1,0 +1,64 @@
+{
+  "id": "subject-wise",
+  "order": 5,
+  "slug": "pl/kalkulator-frekwencji-według-przedmiotów/",
+  "title": "Kalkulator frekwencji według przedmiotów i ogólnej · Classly",
+  "description": "Oblicz frekwencję dla wielu przedmiotów, sprawdź ogólną frekwencję i dowiedz się, ile zajęć możesz opuścić lub musisz uczęszczać w każdym przedmiocie.",
+  "og_title": "Kalkulator frekwencji według przedmiotów",
+  "h1": "Kalkulator frekwencji według przedmiotów",
+  "card_title": "Kalkulator frekwencji według przedmiotów",
+  "card_text": "Porównaj każdy przedmiot ze swoją ogólną frekwencją w jednej tabeli.",
+  "intro": "<p><b>Kontrole frekwencji według przedmiotów sprawdzają każdy przedmiot osobno, podczas gdy ogólna frekwencja obejmuje wszystkie zajęcia.</b> Dodaj poniżej swoje przedmioty, aby znaleźć ukryte braki, które może maskować wysoki ogólny procent.</p>",
+  "widgets": [
+    {
+      "kind": "subjects",
+      "defaults": {
+        "target": 75,
+        "subjects": [
+          {
+            "name": "Mathematics",
+            "held": 30,
+            "attended": 26
+          },
+          {
+            "name": "Physics",
+            "held": 30,
+            "attended": 21
+          },
+          {
+            "name": "Chemistry",
+            "held": 24,
+            "attended": 22
+          }
+        ]
+      }
+    }
+  ],
+  "related": [
+    "attendance-calculator",
+    "bunk-calculator",
+    "recovery"
+  ],
+  "faq": [
+    {
+      "q": "Co to jest frekwencja według przedmiotów?",
+      "a": "Jest to procent frekwencji obliczany osobno dla każdego przedmiotu, wykorzystując liczby odbytych i przeprowadzonych zajęć tego przedmiotu."
+    },
+    {
+      "q": "Dlaczego moja ogólna frekwencja jest bezpieczna, podczas gdy jeden przedmiot ma niską frekwencję?",
+      "a": "Ogólna frekwencja obejmuje wszystkie zajęcia. Wysoka frekwencja w innych przedmiotach może zrekompensować brak, ale nie podnosi procentu frekwencji w samym niskim przedmiocie."
+    },
+    {
+      "q": "Czy laboratoria powinny być osobnymi przedmiotami?",
+      "a": "Śledź je osobno, jeśli Twoja instytucja wymaga od nich niezależnej frekwencji lub osobnej ewidencji."
+    }
+  ]
+}
+---
+<h2>Frekwencja według przedmiotów a frekwencja ogólna</h2>
+<p>Dla każdego wiersza obecność oblicza się jako: obecność ÷ przeprowadzone × 100. Ogólna obecność sumuje wszystkie obecne zajęcia, sumuje wszystkie przeprowadzone zajęcia, a następnie dzieli te dwie sumy. Nie należy po prostu uśredniać procentów, gdy przedmioty mają różną liczbę zajęć.</p>
+<p>W przykładzie, Matematyka to 26 z 30 = <b>86.66%</b> i można opuścić jeszcze 4 zajęcia. Fizyka to 21 z 30 = <b>70%</b> i potrzebuje 6 kolejnych zajęć, aby osiągnąć 27 z 36 = 75%. Chemia to 22 z 24 = <b>91.66%</b> i można opuścić jeszcze 5 zajęć.</p>
+<p>Ogólny wynik to 69 z 84 = <b>82.14%</b>. Osiąga cel 75%, ale Fizyka pozostaje poniżej celu, więc kalkulator wyświetla ostrzeżenie.</p>
+<h2>Jak korzystać z tabeli</h2>
+<ol><li>Dodaj jeden wiersz na przedmiot lub niezależnie oceniany element.</li><li>Wpisz wszystkie przeprowadzone zajęcia, w tym zajęcia, które opuściłeś.</li><li>Wpisz tylko zajęcia, w których uczestniczyłeś.</li><li>Użyj celu określonego przez aktualne zasady Twojej instytucji.</li><li>Aktualizuj wiersze po odwołaniach, dodatkowych zajęciach lub korektach.</li></ol>
+<p>Możesz używać okresów lub godzin zamiast spotkań lekcyjnych, gdy Twoja instytucja liczy obecność w ten sposób, o ile każdy wiersz używa spójnych jednostek.</p>

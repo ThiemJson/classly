@@ -1,0 +1,64 @@
+{
+  "id": "subject-wise",
+  "order": 5,
+  "slug": "de/fächerbezogener-anwesenheitsrechner/",
+  "title": "Fächer- und Gesamtanwesenheitsrechner · Classly",
+  "description": "Berechne die Anwesenheit für mehrere Fächer, sieh die Gesamtanwesenheit ein und finde heraus, wie viele Klassen du in jedem Fach verpassen oder besuchen musst.",
+  "og_title": "Fächerbezogener Anwesenheitsrechner",
+  "h1": "Fächerbezogener Anwesenheitsrechner",
+  "card_title": "Fächerbezogener Anwesenheitsrechner",
+  "card_text": "Vergleiche jedes Fach mit deiner Gesamtanwesenheit in einer Tabelle.",
+  "intro": "<p><b>Die fächerbezogene Anwesenheit prüft jedes Fach separat, während die Gesamtanwesenheit alle Klassen kombiniert.</b> Füge deine Fächer unten hinzu, um verborgene Defizite zu entdecken, die ein hoher Gesamtprozentsatz verschleiern kann.</p>",
+  "widgets": [
+    {
+      "kind": "subjects",
+      "defaults": {
+        "target": 75,
+        "subjects": [
+          {
+            "name": "Mathematics",
+            "held": 30,
+            "attended": 26
+          },
+          {
+            "name": "Physics",
+            "held": 30,
+            "attended": 21
+          },
+          {
+            "name": "Chemistry",
+            "held": 24,
+            "attended": 22
+          }
+        ]
+      }
+    }
+  ],
+  "related": [
+    "attendance-calculator",
+    "bunk-calculator",
+    "recovery"
+  ],
+  "faq": [
+    {
+      "q": "Was ist fächerbezogene Anwesenheit?",
+      "a": "Es ist der Anwesenheitsprozentsatz, der für jedes Fach separat unter Verwendung der besuchten und abgehaltenen Klassen dieses Fachs berechnet wird."
+    },
+    {
+      "q": "Warum ist meine Gesamtanwesenheit sicher, während ein Fach niedrig ist?",
+      "a": "Die Gesamtanwesenheit kombiniert alle Klassen. Hohe Anwesenheit in anderen Fächern kann einen Mangel ausgleichen, erhöht jedoch nicht den Prozentsatz des niedrigen Fachs selbst."
+    },
+    {
+      "q": "Sollten Labore als separate Fächer behandelt werden?",
+      "a": "Verfolge sie separat, wenn deine Institution eine unabhängige Anwesenheitspflicht oder ein separates Protokoll dafür hat."
+    }
+  ]
+}
+---
+<h2>Fächerbezogene versus Gesamtanwesenheit</h2>
+<p>Für jede Zeile wird die Anwesenheit berechnet als besucht ÷ gehalten × 100. Die Gesamte Anwesenheit summiert alle besuchten Klassen, addiert alle gehaltenen Klassen und teilt dann die beiden Gesamtsummen. Durchschnittswerte der Prozentsätze dürfen nicht einfach gebildet werden, wenn die Fächer unterschiedliche Klassenanzahlen haben.</p>
+<p>Im Beispiel sind es beim Mathematikunterricht 26 von 30 = <b>86.66%</b> und man kann noch 4 weitere Klassen verpassen. Physik ist 21 von 30 = <b>70%</b> und benötigt 6 aufeinanderfolgende Klassen, um 27 von 36 = 75% zu erreichen. Chemie ist 22 von 24 = <b>91.66%</b> und man kann noch 5 weitere Klassen verpassen.</p>
+<p>Das Gesamtergebnis beträgt 69 von 84 = <b>82.14%</b>. Es erreicht ein Ziel von 75%, aber Physik bleibt unter dem Ziel, sodass der Rechner eine Warnung anzeigt.</p>
+<h2>Wie man die Tabelle benutzt</h2>
+<ol><li>Fügen Sie pro Fach oder unabhängig bewertetem Bestandteil eine Zeile hinzu.</li><li>Geben Sie jede gehaltene Klasse ein, einschließlich der Klassen, die Sie verpasst haben.</li><li>Geben Sie nur die Klassen ein, die Sie besucht haben.</li><li>Verwenden Sie das Ziel gemäß den aktuellen Regeln Ihrer Institution.</li><li>Aktualisieren Sie die Zeilen nach Absagen, zusätzlichen Klassen oder Korrekturen.</li></ol>
+<p>Sie können Perioden oder Stunden anstelle von Klassentreffen verwenden, wenn Ihre Institution die Anwesenheit auf diese Weise zählt, solange jede Zeile konsistente Einheiten verwendet.</p>

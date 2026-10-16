@@ -1,0 +1,70 @@
+{
+  "id": "bunk-calculator",
+  "order": 2,
+  "slug": "de/schwänzrechner/",
+  "title": "Schwänzrechner: Wie viele Klassen kann ich verpassen? · Classly",
+  "description": "Kostenloser Schwänzrechner. Geben Sie gehaltene und besuchte Klassen ein, um zu sehen, wie viele Klassen Sie schwänzen können und trotzdem 75% erreichen, und…",
+  "og_title": "Schwänzrechner: Wie viele Klassen kann ich schwänzen?",
+  "h1": "Schwänzrechner",
+  "card_title": "Schwänzrechner",
+  "card_text": "Wie viele Klassen Sie schwänzen können und Ihr Prozentsatz nach dem Schwänzen.",
+  "intro": "<p><b>Sie können Klassen schwänzen, bis besucht ÷ gehalten auf Ihr Minimum sinkt.</b> Für eine 75%-Regel gilt: ein Kurs für jeweils drei, die Sie besucht haben. Geben Sie Ihre Zahlen ein, um Ihr genaues Limit zu sehen und was das Schwänzen der nächsten Kurse mit Ihrem Prozentsatz macht.</p>",
+  "widgets": [
+    {
+      "kind": "whatif",
+      "defaults": {
+        "held": 40,
+        "attended": 34,
+        "skip": 3,
+        "target": 75
+      }
+    },
+    {
+      "kind": "standing",
+      "title": "Wie viele kann ich insgesamt schwänzen?",
+      "defaults": {
+        "held": 40,
+        "attended": 34,
+        "target": 75
+      }
+    }
+  ],
+  "related": [
+    "attendance-calculator",
+    "minimum-table",
+    "recovery"
+  ],
+  "faq": [
+    {
+      "q": "Wie viele Kurse kann ich bei 75% Anwesenheit schwänzen?",
+      "a": "Höchstens ein Kurs für jeden drei besuchten. Genau: erlaubte Fehlzeiten = besucht × 100 ÷ 75 − gehalten, abgerundet. Bei 34 von 40 besuchten Kursen sind das 5 weitere Kurse."
+    },
+    {
+      "q": "Ist es besser, früh oder spät im Semester zu schwänzen?",
+      "a": "Spät, wenn überhaupt. Früh im Semester ist jeder Kurs ein großer Anteil an der Gesamtsumme, sodass eine einzelne Abwesenheit Ihren Prozentsatz stark verändert, und Sie wissen noch nicht, wie viele Kurse abgesagt werden oder wie streng das Fach ist."
+    },
+    {
+      "q": "Zählen Labore und Tutorien separat?",
+      "a": "An vielen Hochschulen ja: Ein Labor oder Tutorium ist oft ein eigenes Fach mit eigener Anwesenheit. Überprüfen Sie, wie es in Ihrem Stundenplan aufgeführt ist, und berechnen Sie jedes separat."
+    },
+    {
+      "q": "Zählt ein Fehlen an einem Tag mit zwei Kursen doppelt?",
+      "a": "Wenn das Fach an diesem Tag zweimal stattfindet, werden beide Kurse gehalten und beide verpasst, also zählt es als zwei. Geben Sie Kurse, nicht Tage, ein."
+    }
+  ]
+}
+---
+<h2>Wie Schwänzen Ihre Anwesenheit verändert</h2>
+<p>Ein geschwänzter Kurs zählt trotzdem als gehalten, sodass Ihr Prozentsatz jedes Mal fällt. Das Limit für ein Ziel ist:</p>
+<p class="formula">verbleibende Fehlzeiten = ⌊ besucht × 100 ÷ Ziel − gehalten ⌋</p>
+<p>Mit 34 von 40 besuchten Kursen (85%) und der 75%-Regel: 34 × 100 ÷ 75 − 40 = 5,33, also können Sie schwänzen <b>5 Kurse</b>. Danach wären Sie bei 34 ÷ 45 = 75,55%. Eine sechste Fehlzeit würde Sie auf 34 ÷ 46 = 73,91% bringen.</p>
+
+<h2>Die Ein-von-vier-Regel als Faustregel</h2>
+<p>Für ein Minimum von 75 % müssen mindestens drei von vier Unterrichtsstunden besucht werden. Das heißt, dass höchstens ein Drittel der besuchten Stunden verpasst werden darf: Bei 30 besuchten Stunden dürfen 10 fehlen, bei 45 besuchten Stunden 15. Die Tabelle auf dem <a href="/classly/de/75-anwesenheitsrechner/">75%-Anwesenheitsrechner</a> zeigt dies für gängige Unterrichtsanzahlen.</p>
+
+<h2>Bevor Sie fehlen</h2>
+<ul>
+  <li>Berechnen Sie pro Fach. Ein sicherer Gesamtprozentsatz kann verbergen, dass ein Fach unter der Grenze liegt.</li>
+  <li>Halten Sie ein oder zwei Stunden für Krankheitstage in Reserve. Krankheitsurlaub wird nicht immer genehmigt.</li>
+  <li>Überprüfen Sie, ob Ihr College 74,5 % aufrundet. Viele tun es nicht.</li>
+</ul>

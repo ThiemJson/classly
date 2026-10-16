@@ -1,0 +1,49 @@
+{
+  "id": "exam-countdown",
+  "order": 8,
+  "slug": "ja/試験カウントダウン/",
+  "title": "試験カウントダウン: 残り日数と学習日 · Classly",
+  "description": "カレンダーの日数、完全な週、試験までの学習日数を数えます。オプションで日曜日を除外可能。日付は保存されません。",
+  "og_title": "試験カウントダウン",
+  "h1": "試験カウントダウン",
+  "card_title": "試験カウントダウン",
+  "card_text": "日付を保存せずに残りのカレンダー日、週、学習日を数えます。",
+  "intro": "<p><b>試験カウントダウンでは、残りのカレンダー日数と完全な週数、さらに日曜日を除外するオプション付きの学習日数を表示します。</b> 選択した日付はこのタブ内にのみ保持されます。</p>",
+  "widgets": [
+    {
+      "kind": "countdown",
+      "defaults": {
+        "days_ahead": 30,
+        "exclude_sundays": true
+      }
+    }
+  ],
+  "related": [
+    "semester-planner",
+    "attendance-calculator",
+    "subject-wise"
+  ],
+  "calc": {
+    "countdownHeadline": "{days} calendar days until the exam.",
+    "countdownDetail": "That is {weeks} full weeks and {extra} days.",
+    "countdownStudy": "{study} study days remain with the current Sunday setting.",
+    "countdownToday": "The exam is today.",
+    "countdownPast": "Choose today or a future exam date."
+  },
+  "faq": [
+    {
+      "q": "試験のカウントダウンは私の日付を保存しますか？",
+      "a": "いいえ。計算はこのブラウザのタブで実行され、日付は保存されません。"
+    },
+    {
+      "q": "カウントダウンには試験日も含まれますか？",
+      "a": "はい。明日から選択した試験日までを数えます。今日がゼロ日目です。"
+    },
+    {
+      "q": "日曜日を除くと何が変わりますか？",
+      "a": "これは、学習日の数から日曜日のみを除きます。カレンダーの日や週は変更されません。"
+    }
+  ]
+}
+---
+<h2>試験カウントダウンの仕組み</h2><p>公式試験日を選んでください。このツールは明日からその日までの日数を数えるので、明日が試験の場合は1日後となります。1週間は7日間のカレンダー日で構成され、残りの日数は別に表示されます。</p><p>日曜日が通常の勉強日である場合は、日曜日のオプションをオフにしてください。他の休日は自動的には削除されないため、結果は簡単な計画として使用し、タイムテーブルに現地の休日を記入してください。</p><h2>その数字を学習計画に変える</h2><ol><li>最新の試験時間割で日付を確認してください。</li><li>残りの学習日数にトピックを分ける。</li><li>最後の日は復習と練習のために取っておく。</li><li>計画が見えるように、締め切りのリマインダーとして Classly を使用してください。</li></ol>

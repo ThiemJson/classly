@@ -1,0 +1,49 @@
+{
+  "id": "hours-calculator",
+  "order": 7,
+  "slug": "de/rechner-für-klassenstunden-anwesenheit/",
+  "title": "Klassenstunden- und Anwesenheitsrechner · Classly",
+  "description": "Berechnen Sie die Anwesenheit nach Stunden oder Perioden. Sehen Sie Ihre Gesamtabwesenheitszulage, verbleibende Stunden und die entsprechenden vollständigen…",
+  "og_title": "Klassenstunden-Anwesenheitsrechner",
+  "h1": "Rechner für Klassenstunden-Anwesenheit",
+  "card_title": "Klassenstunden-Rechner",
+  "card_text": "Wandeln Sie eine Anwesenheitszulage in Perioden oder Stunden in vollständige Unterrichtseinheiten um.",
+  "intro": "<p><b>Berechnen Sie die erlaubte Abwesenheit in der Einheit, in der Ihre Einrichtung die Anwesenheit erfasst: Perioden oder Stunden.</b> Geben Sie die Gesamtstundenzahl des Kurses, die Länge jeder Einheit und die bereits verpasste Zeit ein.</p>",
+  "widgets": [
+    {
+      "kind": "hours",
+      "defaults": {
+        "hours_total": 45,
+        "hours_per_class": 3,
+        "hours_missed": 3,
+        "target": 80
+      }
+    }
+  ],
+  "related": [
+    "attendance-calculator",
+    "semester-planner",
+    "bunk-calculator"
+  ],
+  "faq": [
+    {
+      "q": "Wie berechne ich die Anwesenheit nach Klassenstunden?",
+      "a": "Multiplizieren Sie die Kursstunden mit dem erlaubten Abwesenheitsprozentsatz, runden Sie auf ganze Perioden ab und ziehen Sie die bereits verpassten Perioden ab."
+    },
+    {
+      "q": "Warum die Abwesenheitszulage abrunden?",
+      "a": "Eine teilweise Periode kann normalerweise nicht als volle Abwesenheit genutzt werden, ohne unter das Ziel zu fallen."
+    },
+    {
+      "q": "Kann ich Stunden und Perioden mischen?",
+      "a": "Nein. Verwenden Sie eine einheitliche Einheit für alle drei Eingaben, basierend darauf, wie Ihre Institution die Anwesenheit erfasst."
+    }
+  ]
+}
+---
+<h2>Beispielrechnung mit 45 Unterrichtsstunden</h2>
+<p>Für einen Kurs mit 45 Unterrichtsstunden und einem Ziel von 80 % beträgt die erlaubte Abwesenheit floor(45 × 20%) = <b>9 Unterrichtsstunden</b>. Wenn Sie bereits 3 verpasst haben, verbleiben Ihnen <b>6 Unterrichtsstunden</b>.</p>
+<p>Wenn jede Unterrichtseinheit 3 Stunden umfasst, entsprechen die verbleibenden 6 Stunden <b>2 vollständigen Unterrichtseinheiten</b>. Wenn eine Unterrichtseinheit eine andere Länge hat, aktualisieren Sie dieses Feld, anstatt jede Einheit als gleich zu behandeln.</p>
+<h2>Verwenden Sie die korrekte Anwesenheitseinheit</h2>
+<ol><li>Prüfen Sie, ob Ihre Institution Sitzungen, Unterrichtsstunden oder Kalenderstunden erfasst.</li><li>Geben Sie die gesamte Kursanzahl in dieser Einheit ein.</li><li>Geben Sie dieselbe Einheit für jede Sitzung und für bereits verpasste Zeit ein.</li><li>Bestätigen Sie Ihr Ziel anhand der aktuellen Kursregeln.</li></ol>
+<p>Diese Umrechnung ist nützlich, wenn ein Stundenplaneintrag mehrere Unterrichtsstunden enthält. Ihre offizielle Anwesenheitsaufzeichnung sollte entscheiden, welche Einheit verwendet wird.</p>

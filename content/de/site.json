@@ -1,18 +1,18 @@
 {
   "language_name": "Deutsch",
   "blog_label": "Blog",
-  "tool_kicker": "Kostenloses Werkzeug",
+  "tool_kicker": "Kostenloses Tool",
   "faq_heading": "Häufige Fragen",
-  "related_heading": "Weitere Anwesenheits-Tools",
+  "related_heading": "Weitere Anwesenheitstools",
   "nav": {
-    "label": "Hauptseite",
+    "label": "Hauptsächlich",
     "features": "Funktionen",
     "tools": "Werkzeuge",
     "download": "Herunterladen",
     "footer_label": "Fußzeile",
     "footer": [
       [
-        "Startseite",
+        "Zuhause",
         "/classly/"
       ],
       [
@@ -24,7 +24,7 @@
         "/classly/faq.html"
       ],
       [
-        "Datenschutz",
+        "Privatsphäre",
         "/classly/privacy.html"
       ],
       [
@@ -34,39 +34,39 @@
     ]
   },
   "download": {
-    "title": "Die Berechnung in einen Plan umwandeln",
-    "text": "Markiere jede Klasse, simuliere, was als Nächstes passiert, und behalte dann deinen Stundenplan und deine Aufgaben zusammen. Kostenlos, offline-first, kein Classly Konto."
+    "title": "Machen Sie aus der Berechnung einen Plan",
+    "text": "Markieren Sie jede Unterrichtsstunde, simulieren Sie, was als nächstes passiert, und halten Sie dann Ihren Stundenplan und Ihre Aufgaben zusammen. Kostenlos, offline, kein Classly-Konto."
   },
   "hub": {
     "slug": "de/werkzeuge/",
-    "title": "Kostenlose Anwesenheitsrechner für Studenten · Classly",
-    "description": "Kostenlose Anwesenheitsrechner: dein Anwesenheitsprozentsatz, wie viele Klassen du schwänzen kannst, die 75%-Regel und wie viele Klassen du nachholen musst.",
-    "h1": "Kostenlose Anwesenheits-Tools",
-    "intro": "Schnelle Antworten auf die Fragen, die Studenten am meisten zur Anwesenheit stellen. Keine Anmeldung, nichts gespeichert: Jede Berechnung läuft in deinem Browser."
+    "title": "Kostenlose Anwesenheitsrechner für Studierende · Classly",
+    "description": "Kostenlose Anwesenheitsrechner: Ihre Anwesenheitsquote, wie viele Unterrichtsstunden Sie unterbringen können, die 75 %-Regel und wie viele Unterrichtsstunden…",
+    "h1": "Kostenlose Anwesenheitstools",
+    "intro": "Schnelle Antworten auf die Fragen, die Studierende zum Thema Anwesenheit am häufigsten stellen. Keine Anmeldung, keine Speicherung: Jede Berechnung läuft in Ihrem Browser."
   },
   "fields": {
-    "held": "Gehaltene Klassen",
-    "attended": "Besuchte Klassen",
+    "held": "Kurse abgehalten",
+    "attended": "Besuchte Kurse",
     "target": "Ziel %",
-    "total": "Klassen in diesem Semester",
-    "skip": "Zu versäumende Klassen",
-    "remaining": "Verbleibende Klassen",
-    "subject": "Fach",
-    "add_subject": "Fach hinzufügen",
-    "remove_subject": "Fach entfernen",
+    "total": "Kurse in diesem Semester",
+    "skip": "Unterricht, den man verpassen sollte",
+    "remaining": "Klassen übrig",
+    "subject": "Betreff",
+    "add_subject": "Betreff hinzufügen",
+    "remove_subject": "Betreff entfernen",
     "weeks": "Unterrichtswochen",
-    "per_week": "Klassen pro Woche",
-    "cancelled": "Feiertage oder Ausfälle",
+    "per_week": "Unterricht pro Woche",
+    "cancelled": "Feiertage oder Stornierungen",
     "hours_total": "Gesamtperioden oder Stunden",
-    "hours_per_class": "Perioden pro Kursstunde",
-    "hours_missed": "Bereits verpasste Perioden",
-    "exam_date": "Prüfungsdatum",
+    "hours_per_class": "Unterrichtsstunden pro Klassentreffen",
+    "hours_missed": "Die Periode ist bereits ausgeblieben",
+    "exam_date": "Prüfungstermin",
     "exclude_sundays": "Sonntage von den Studientagen ausschließen",
-    "credits": "Leistungspunkte",
-    "credit_system": "Leistungspunktesystem",
-    "hours_per_credit": "Gesamtstunden pro Leistungspunkt",
+    "credits": "Credits",
+    "credit_system": "Kreditsystem",
+    "hours_per_credit": "Gesamtstunden pro Credit",
     "credit_system_options": {
-      "us": "US-Semesterleistungspunkte",
+      "us": "US-Semesterkredite",
       "ects": "ECTS",
       "custom": "Benutzerdefiniert"
     }
@@ -74,115 +74,115 @@
   "widgets": {
     "standing": {
       "title": "Wo stehe ich?",
-      "hint": "Zähle alle bisher gehaltenen Kurse, einschließlich der verpassten."
+      "hint": "Zählen Sie alle bisher gehaltenen Kurse, einschließlich derjenigen, die Sie verpasst haben."
     },
     "plan": {
-      "title": "Plane ein ganzes Semester?",
-      "hint": "Wenn du weißt, wie viele Kurse ein Fach insgesamt haben wird."
+      "title": "Planen Sie ein ganzes Semester?",
+      "hint": "Wenn Sie wissen, wie viele Unterrichtsstunden ein Fach insgesamt haben wird."
     },
     "whatif": {
-      "title": "Was, wenn ich weitere Kurse verpasse?",
-      "hint": "Sieh dir deinen Prozentsatz nach dem Verpassen der nächsten Kurse an."
+      "title": "Was passiert, wenn ich weitere Kurse verpasse?",
+      "hint": "Sehen Sie sich Ihren Prozentsatz an, nachdem Sie die nächsten paar Unterrichtsstunden verpasst haben."
     },
     "recover": {
-      "title": "Kann ich es bis zum Ende des Semesters noch schaffen?",
-      "hint": "Füge hinzu, wie viele Kurse dieses Fachs in diesem Semester noch verbleiben."
+      "title": "Kann ich es bis zum Semesterende noch schaffen?",
+      "hint": "Addieren Sie, wie viele Lehrveranstaltungen dieses Fachs in diesem Semester noch übrig sind."
     },
     "subjects": {
-      "title": "Jedes Fach berechnen",
-      "hint": "Füge jedes Fach mit den gehaltenen und besuchten Kursen hinzu. Das Gesamtergebnis verschleiert niemals ein Fach, das unter dem Ziel liegt."
+      "title": "Berechnen Sie jedes Thema",
+      "hint": "Fügen Sie jedes Fach mit seinen abgehaltenen und besuchten Kursen hinzu. Das Gesamtergebnis verdeckt niemals ein Thema, das unter dem Ziel liegt."
     },
     "semester": {
-      "title": "Das ganze Semester planen",
-      "hint": "Ziehe Feiertage und ausgefallene Kurse von den geplanten Unterrichtswochen ab."
+      "title": "Planen Sie das ganze Semester",
+      "hint": "Ziehen Sie Feiertage und ausgefallene Kurse von den geplanten Unterrichtswochen ab."
     },
     "hours": {
-      "title": "Nach Perioden oder Stunden berechnen",
-      "hint": "Verwende dieselbe Einheit für die Gesamtzahl der Kurse, jede Unterrichtsstunde und die bereits verpasste Zeit."
+      "title": "Berechnen Sie nach Zeiträumen oder Stunden",
+      "hint": "Verwenden Sie dieselbe Einheit für die Kurssumme, jedes Meeting und die bereits versäumte Zeit."
     },
     "countdown": {
-      "title": "Bis zur Prüfung herunterzählen",
-      "hint": "Das Datum bleibt in diesem Browser-Tab und wird nicht gespeichert."
+      "title": "Countdown bis zur Prüfung",
+      "hint": "Das Datum verbleibt in diesem Browser-Tab und wird nicht gespeichert."
     },
     "credits": {
-      "title": "Leistungspunkte in wöchentliche Studienstunden umrechnen",
-      "hint": "Wählen Sie das Kreditsystem, geben Sie die Kursecredits ein und nutzen Sie die Anzahl der Unterrichtswochen in Ihrem Semester."
+      "title": "Wandeln Sie Credits in wöchentliche Studienstunden um",
+      "hint": "Wählen Sie das Credit-System, geben Sie die Studienleistungen ein und verwenden Sie die Anzahl der Unterrichtswochen in Ihrem Semester."
     }
   },
   "table": {
-    "held": "Gehaltene Klassen",
-    "min": "Nehmen Sie mindestens teil",
-    "missed": "Können verpasst haben"
+    "held": "Kurse abgehalten",
+    "min": "Nehmen Sie zumindest teil",
+    "missed": "Kann übersehen worden sein"
   },
   "calc": {
-    "current": "Sie sind jetzt bei {pct}%.",
+    "current": "Sie sind jetzt bei {pct} %.",
     "canMiss": {
-      "one": "Sie können 1 weitere Stunde verpassen und bei {target}% bleiben.",
-      "other": "Sie können {n} weitere Stunden verpassen und bei {target}% bleiben."
+      "one": "Sie können einen weiteren Kurs verpassen und bei {target} % bleiben.",
+      "other": "Sie können {n} weitere Kurse verpassen und bei {target} % bleiben."
     },
-    "canMissDetail": "{current} Nach dem Verpassen wären Sie bei {pct}%.",
-    "atEdge": "Verpassen Sie nicht die nächste Stunde.",
-    "atEdgeDetail": "{current} Eine weitere verpasste Stunde würde Sie unter {target}% bringen.",
+    "canMissDetail": "{current} Nachdem Sie sie verpasst haben, wären Sie bei {pct} %.",
+    "atEdge": "Verpassen Sie nicht den nächsten Kurs.",
+    "atEdgeDetail": "{current} Wenn Sie noch einen weiteren verpassen würden, würden Sie unter {target} % fallen.",
     "mustAttend": {
-      "one": "Besuchen Sie die nächste Stunde, um wieder auf {target}% zu kommen.",
-      "other": "Besuchen Sie die nächsten {n} Stunden in Folge, um wieder auf {target}% zu kommen."
+      "one": "Besuchen Sie den nächsten Kurs, um wieder {target} % zu erreichen.",
+      "other": "Nehmen Sie an den nächsten {n} Kursen in Folge teil, um wieder {target} % zu erreichen."
     },
-    "mustAttendDetail": "{current} Das würde Sie auf {pct}% bringen.",
-    "unreachable": "Ein 100%-Ziel kann nicht mehr erreicht werden, sobald eine Stunde verpasst wurde.",
+    "mustAttendDetail": "{current} Das würde Sie auf {pct} % bringen.",
+    "unreachable": "Ein 100-Prozent-Ziel kann nicht mehr erreicht werden, sobald eine Unterrichtsstunde verfehlt wird.",
     "planMiss": {
-      "one": "Sie können bis zu 1 von {total} Stunden verpassen.",
-      "other": "Sie können bis zu {n} von {total} Stunden verpassen."
+      "one": "Sie können bis zu 1 von {total} Kursen verpassen.",
+      "other": "Sie können bis zu {n} von {total} Kursen verpassen."
     },
-    "planDetail": "Besuchen Sie mindestens {attend} von {total}, um im Zielbereich zu bleiben.",
+    "planDetail": "Nehmen Sie an mindestens {attend} von {total} teil, um am Ziel zu bleiben.",
     "whatif": {
-      "one": "Wenn Sie 1 weitere Stunde verpassen, werden Sie bei {pct}% sein.",
-      "other": "Wenn Sie {n} weitere Stunden verpassen, werden Sie bei {pct}% sein."
+      "one": "Wenn Sie einen weiteren Kurs verpassen, sind Sie bei {pct} %.",
+      "other": "Wenn Sie {n} weitere Kurse verpassen, sind Sie bei {pct} %."
     },
-    "whatifAbove": "Das ist immer noch bei oder über {target}%. Das Maximum, das Sie verpassen können und dort bleiben, ist {m}.",
-    "whatifBelow": "Das ist unter {target}%. Das Maximum, das Sie verpassen können und dort bleiben, ist {m}.",
+    "whatifAbove": "Das liegt immer noch bei oder über {target} %. Das Höchste, was Sie verpassen und dort bleiben können, ist {m}.",
+    "whatifBelow": "Das liegt unter {target} %. Das Höchste, was Sie verpassen und dort bleiben können, ist {m}.",
     "recover": {
-      "one": "Besuchen Sie mindestens 1 der verbleibenden {rem} Stunden.",
-      "other": "Besuchen Sie mindestens {n} der verbleibenden {rem} Stunden."
+      "one": "Nehmen Sie an mindestens einem der verbleibenden {rem} Kurse teil.",
+      "other": "Nehmen Sie an mindestens {n} der verbleibenden {rem} Kurse teil."
     },
-    "recoverDetail": "Sie können {m} davon verpassen und trotzdem bei {target}% oder darüber abschließen.",
-    "recoverSafe": "Sie werden bei {target}% oder darüber abschließen, selbst wenn Sie alle verbleibenden {rem} Stunden verpassen.",
-    "recoverImpossible": "Selbst wenn Sie noch alle {rem} Klassen besuchen, würden Sie bei {pct}% abschließen.",
-    "recoverImpossibleDetail": "{target}% ist dieses Semester unerreichbar. Sprechen Sie mit Ihrem Lehrer oder Ihrer Abteilung über medizinische Beurlaubung oder Nachholstunden.",
-    "wholeNumbers": "Verwenden Sie ganze Zahlen, mindestens 1 durchgeführte Klasse.",
-    "attendedTooMany": "Besuchte Klassen dürfen nicht mehr als durchgeführte Klassen sein.",
+    "recoverDetail": "Sie können {m} davon verpassen und trotzdem mit {target} % oder mehr abschließen.",
+    "recoverSafe": "Sie werden bei {target} % oder mehr abschließen, auch wenn Sie alle verbleibenden {rem} Kurse verpassen.",
+    "recoverImpossible": "Selbst wenn Sie alle verbleibenden {rem} Kurse besuchen würden, würden Sie mit {pct} % abschließen.",
+    "recoverImpossibleDetail": "{target} % ist in diesem Semester unerreichbar. Sprechen Sie mit Ihrem Lehrer oder Ihrer Abteilung über krankheitsbedingten Urlaub oder Nachholunterricht.",
+    "wholeNumbers": "Verwenden Sie ganze Zahlen, wobei mindestens 1 Klasse gehalten wird.",
+    "attendedTooMany": "Die Anzahl der besuchten Kurse darf nicht höher sein als die Anzahl der abgehaltenen Kurse.",
     "targetRange": "Geben Sie ein Ziel zwischen 1 und 100 ein.",
-    "subjectsOverall": "Gesamtanwesenheit: {pct}% ({attended} von {held}).",
-    "subjectsWarning": "Gesamt liegt im Ziel, aber {names} liegt unter {target}%.",
-    "subjectsWarnings": "Gesamt liegt im Ziel, aber {names} liegen unter {target}%.",
-    "subjectsBelow": "Die gesamte Anwesenheit liegt unter {target}%.",
-    "subjectCanMiss": "{name}: {pct}% — kann noch {n} verpassen.",
-    "subjectMustAttend": "{name}: {pct}% — muss {n} hintereinander besuchen.",
-    "subjectAtEdge": "{name}: {pct}% — die nächste Klasse darf nicht versäumt werden.",
-    "subjectUnreachable": "{name}: {pct}% — das Ziel ist nicht erreichbar.",
-    "subjectFallback": "Fach {n}",
-    "semesterMiss": "Sie können bis zu {miss} von {total} Klassen verpassen und mindestens {attend} besuchen.",
-    "semesterSummary": "{weeks} Wochen × {perWeek} Klassen − {cancelled} abgesagt = {total} Klassen.",
-    "semesterWeeks": "Das sind etwa {weeks} Unterrichtswochen mit {perWeek} Klassen pro Woche.",
-    "semesterCancelled": "Feiertage oder Absagen müssen weniger als die geplanten Klassen sein.",
-    "hoursRemaining": "Sie können noch {remaining} Perioden oder Stunden verpassen, gleichbedeutend mit {meetings} vollständigen Unterrichtsstunden.",
-    "hoursDetail": "Die Zulassung beträgt {allowed} von {total}; Sie haben {missed} verpasst, mit {perClass} pro Sitzung.",
-    "hoursOver": "Sie sind {over} Perioden oder Stunden über der zulässigen {allowed}-Grenze.",
-    "hoursOverDetail": "Sie haben {missed} verpasst; das {target}% Ziel wird nicht mehr erreicht.",
-    "hoursMissedTooMany": "Bereits verpasste Zeit darf die Gesamtdauer des Kurses nicht überschreiten.",
-    "creditsPositive": "Geben Sie positive Credits und Stunden sowie eine ganze Zahl an Wochen ein.",
-    "creditsUs": "Planen Sie etwa {weekly} Gesamtstunden pro Woche, einschließlich etwa {outside} Stunden außerhalb des Unterrichts.",
-    "creditsUsDetail": "{credits} US-Semester-Credits entsprechen etwa {total} Gesamtstunden verteilt über {weeks} Wochen gemäß dem Bundesmaßstab.",
-    "creditsEcts": "Planen Sie etwa {low}–{high} Gesamtstunden pro Woche.",
-    "creditsEctsDetail": "{credits} ECTS entsprechen etwa {low}–{high} Gesamtstunden verteilt über {weeks} Wochen.",
-    "creditsCustom": "Planen Sie etwa {weekly} Gesamtstunden pro Woche.",
+    "subjectsOverall": "Gesamtteilnahme: {pct} % ({attended} von {held}).",
+    "subjectsWarning": "Insgesamt liegt es im Zielbereich, aber {names} liegt unter {target} %.",
+    "subjectsWarnings": "Insgesamt liegt es im Zielbereich, aber {names} liegt unter {target} %.",
+    "subjectsBelow": "Die Gesamtbesucherzahl liegt unter {target} %.",
+    "subjectCanMiss": "{name}: {pct} % – kann {n} mehr verpassen.",
+    "subjectMustAttend": "{name}: {pct} % – muss hintereinander an {n} teilnehmen.",
+    "subjectAtEdge": "{name}: {pct} % – Verpassen Sie nicht die nächste Unterrichtsstunde.",
+    "subjectUnreachable": "{name}: {pct} % – das Ziel ist nicht erreichbar.",
+    "subjectFallback": "Betreff {n}",
+    "semesterMiss": "Sie können bis zu {miss} von {total} Kursen verpassen und mindestens {attend} besuchen.",
+    "semesterSummary": "{weeks} Wochen × {perWeek} Kurse − {cancelled} abgesagt = {total} Kurse.",
+    "semesterWeeks": "Das sind etwa {weeks} Unterrichtswochen mit {perWeek} Unterrichtsstunden pro Woche.",
+    "semesterCancelled": "Es müssen weniger Feiertage oder Stornierungen stattfinden als die geplanten Unterrichtsstunden.",
+    "hoursRemaining": "Sie können {remaining} weitere Unterrichtseinheiten oder Stunden verpassen, entsprechend {meetings} kompletten Klassentreffen.",
+    "hoursDetail": "Die Zulage beträgt {allowed} von {total}; Sie haben {missed} verpasst, mit {perClass} pro Besprechung.",
+    "hoursOver": "Sie liegen um {over} Zeiträume oder Stunden über dem {allowed}-Kontingent.",
+    "hoursOverDetail": "Sie haben {missed} verpasst; Das Ziel von {target} % wird nicht mehr erreicht.",
+    "hoursMissedTooMany": "Die bereits versäumte Zeit darf die Kurssumme nicht überschreiten.",
+    "creditsPositive": "Geben Sie positive Credits und Stunden sowie eine ganze Wochenanzahl ein.",
+    "creditsUs": "Planen Sie etwa {weekly} Gesamtstunden pro Woche ein, einschließlich etwa {outside} Stunden außerhalb des Unterrichts.",
+    "creditsUsDetail": "{credits} US-Semester-Credits entsprechen etwa {total} Gesamtstunden, verteilt auf {weeks} Wochen unter dem bundesstaatlichen Benchmark.",
+    "creditsEcts": "Planen Sie etwa {low}–{high} Gesamtstunden pro Woche ein.",
+    "creditsEctsDetail": "{credits} ECTS stellen etwa {low}–{high} Gesamtarbeitsstunden dar, verteilt auf {weeks} Wochen.",
+    "creditsCustom": "Planen Sie etwa {weekly} Gesamtstunden pro Woche ein.",
     "creditsCustomDetail": "{credits} Credits × {perCredit} Stunden = {total} Gesamtstunden über {weeks} Wochen."
   },
   "og_locale": "de_DE",
   "article": {
     "updated_label": "Aktualisiert",
     "sources_heading": "Quellen",
-    "blog_intro": "Praktische Antworten für Anwesenheit und Studienplanung.",
-    "blog_description": "Praktische Antworten für Anwesenheit, Kurse und Studienplanung.",
+    "blog_intro": "Praktische Antworten zur Anwesenheits- und Studienplanung.",
+    "blog_description": "Praktische Antworten zu Anwesenheit, Unterricht und Studienplanung.",
     "empty": "Noch keine Artikel."
   }
 }

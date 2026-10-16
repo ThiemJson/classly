@@ -5,7 +5,7 @@
   "faq_heading": "Typowe pytania",
   "related_heading": "Więcej narzędzi do obecności",
   "nav": {
-    "label": "Główny",
+    "label": "Główna",
     "features": "Funkcje",
     "tools": "Narzędzia",
     "download": "Pobierz",
@@ -35,14 +35,14 @@
   },
   "download": {
     "title": "Przekształć obliczenie w plan",
-    "text": "Oznacz każdą klasę, zasymuluj, co wydarzy się dalej, a następnie trzymaj razem swój harmonogram i zadania. Darmowe, działające przede wszystkim offline, bez konta Classly."
+    "text": "Oznacz każdą klasę, zasymuluj, co będzie dalej, a następnie trzymaj razem swój plan zajęć i zadania. Darmowe, działające przede wszystkim offline, bez konta Classly."
   },
   "hub": {
     "slug": "pl/narzedzia/",
     "title": "Darmowe kalkulatory frekwencji dla studentów · Classly",
     "description": "Darmowe kalkulatory frekwencji: Twój procent frekwencji, ile zajęć możesz opuścić, zasada 75% i ile zajęć musisz odrobić.",
     "h1": "Bezpłatne narzędzia do rejestracji obecności",
-    "intro": "Szybkie odpowiedzi na pytania, które studenci najczęściej zadają na temat frekwencji. Bez rejestracji, nic nie jest przechowywane: wszystkie obliczenia wykonywane są w twojej przeglądarce."
+    "intro": "Szybkie odpowiedzi na pytania, które studenci najczęściej zadają na temat obecności. Bez rejestracji, nic nie jest przechowywane: każde obliczenie działa w Twojej przeglądarce."
   },
   "fields": {
     "held": "Zajęcia odbywają się",
@@ -50,7 +50,7 @@
     "target": "Cel %",
     "total": "Zajęcia w tym semestrze",
     "skip": "Zajęcia do opuszczenia",
-    "remaining": "Zajęcia odwołane",
+    "remaining": "Pozostałe zajęcia",
     "subject": "Temat",
     "add_subject": "Dodaj temat",
     "remove_subject": "Usuń temat",
@@ -74,7 +74,7 @@
   "widgets": {
     "standing": {
       "title": "Na czym stoję?",
-      "hint": "Policz wszystkie zajęcia, które się odbyły do tej pory, włącznie z tymi, których nie było cię."
+      "hint": "Policz wszystkie zajęcia, które się odbyły do tej pory, w tym te, które opuściłeś."
     },
     "plan": {
       "title": "Planujesz cały semestr?",
@@ -85,7 +85,7 @@
       "hint": "Zobacz swój procent po opuszczeniu kilku kolejnych zajęć."
     },
     "recover": {
-      "title": "Czy nadal mogę to zrobić do końca semestru?",
+      "title": "Czy nadal mogę to zrobić przed końcem semestru?",
       "hint": "Dodaj, ile zajęć z tego przedmiotu pozostało w tym semestrze."
     },
     "subjects": {
@@ -98,7 +98,7 @@
     },
     "hours": {
       "title": "Obliczaj według okresów lub godzin",
-      "hint": "Użyj tej samej jednostki dla całkowitej liczby godzin kursu, każdego spotkania i czasu już opuszczonego."
+      "hint": "Użyj tej samej jednostki dla całkowitej ilości godzin kursu, każdego spotkania oraz czasu już opuszczonego."
     },
     "countdown": {
       "title": "Odliczanie do egzaminu",
@@ -106,76 +106,76 @@
     },
     "credits": {
       "title": "Przekształć punkty na tygodniowe godziny nauki",
-      "hint": "Wybierz system punktów kredytowych, wpisz punkty kredytowe kursu i użyj liczby tygodni nauczania w swoim semestrze."
+      "hint": "Wybierz system punktów kredytowych, wpisz punkty kursu i użyj liczby tygodni nauczania w semestrze."
     }
   },
   "table": {
     "held": "Zajęcia odbywają się",
-    "min": "Uczęszczaj przynajmniej",
-    "missed": "Można opuścić"
+    "min": "Uczestnicz przynajmniej",
+    "missed": "Mógł przegapić"
   },
   "calc": {
-    "current": "Obecnie masz {pct}%.",
+    "current": "Jesteś teraz na {pct}%.",
     "canMiss": {
-      "one": "Możesz opuścić jeszcze 1 zajęcia i pozostać na poziomie {target}%.",
-      "other": "Możesz opuścić jeszcze {n} zajęć i pozostać na poziomie {target}%."
+      "one": "Możesz opuścić jeszcze 1 zajęcia i zostać na {target}%.",
+      "other": "Możesz opuścić więcej zajęć na {n} i zostać na {target}%."
     },
-    "canMissDetail": "{current} Po ich opuszczeniu będziesz mieć {pct}%.",
-    "atEdge": "Nie opuszczaj następnych zajęć.",
-    "atEdgeDetail": "{current} Jeszcze jedno opuszczenie spowoduje spadek poniżej {target}%.",
+    "canMissDetail": "{current} Po ich opuszczeniu będziesz na {pct}%.",
+    "atEdge": "Nie przegap następnej lekcji.",
+    "atEdgeDetail": "{current} Brak jednego więcej sprawiłby, że spadniesz poniżej {target}%.",
     "mustAttend": {
       "one": "Uczestnicz w następnych zajęciach, aby wrócić do {target}%.",
-      "other": "Uczestnicz w następnych {n} zajęciach z rzędu, aby wrócić do {target}%."
+      "other": "Uczestnicz w następnych zajęciach {n} z rzędu, aby wrócić do {target}%."
     },
-    "mustAttendDetail": "{current} To doprowadzi Cię do {pct}%.",
-    "unreachable": "Cel 100% nie może być już osiągnięty po opuszczeniu zajęć.",
+    "mustAttendDetail": "{current} To przeniosłoby cię do {pct}%.",
+    "unreachable": "Nie można już osiągnąć celu 100%, jeśli opuści się zajęcia.",
     "planMiss": {
-      "one": "Możesz opuścić do 1 z {total} zajęć.",
+      "one": "Możesz opuścić do 1 zajęć z {total}.",
       "other": "Możesz opuścić do {n} z {total} zajęć."
     },
-    "planDetail": "Uczęszczaj przynajmniej {attend} z {total}, aby pozostać na poziomie celu.",
+    "planDetail": "Uczestnicz przynajmniej w {attend} z {total}, aby pozostać na cel.",
     "whatif": {
-      "one": "Jeśli opuścisz jeszcze 1 zajęcia, będziesz mieć {pct}%.",
-      "other": "Jeśli opuścisz jeszcze {n} zajęć, będziesz mieć {pct}%."
+      "one": "Jeśli opuścisz jeszcze 1 zajęcia, będziesz na {pct}%.",
+      "other": "Jeśli opuścisz więcej zajęć na {n}, będziesz na {pct}%."
     },
-    "whatifAbove": "To nadal jest na poziomie lub powyżej {target}%. Najwięcej, co możesz opuścić i pozostać na tym poziomie, to {m}.",
-    "whatifBelow": "To jest poniżej {target}%. Najwięcej, co możesz opuścić i pozostać na tym poziomie, to {m}.",
+    "whatifAbove": "To wciąż jest na poziomie lub powyżej {target}%. Najwięcej, co możesz stracić i pozostać tam, to {m}.",
+    "whatifBelow": "To jest poniżej {target}%. Najwięcej, co możesz przegapić i pozostać tam, to {m}.",
     "recover": {
-      "one": "Uczęszczaj przynajmniej na 1 z pozostałych {rem} zajęć.",
-      "other": "Uczęszczaj przynajmniej na {n} z pozostałych {rem} zajęć."
+      "one": "Weź udział przynajmniej w 1 z pozostałych zajęć {rem}.",
+      "other": "Uczestnicz przynajmniej w {n} z pozostałych {rem} zajęć."
     },
-    "recoverDetail": "Możesz opuścić {m} z nich i nadal ukończyć z {target}% lub więcej.",
-    "recoverSafe": "Ukończysz z {target}% lub więcej, nawet jeśli opuścisz wszystkie pozostałe {rem} zajęcia.",
-    "recoverImpossible": "Nawet uczestnicząc we wszystkich pozostałych {rem} zajęciach, ukończyłbyś z wynikiem {pct}%.",
-    "recoverImpossibleDetail": "{target}% jest nieosiągalne w tym semestrze. Porozmawiaj ze swoim nauczycielem lub wydziałem o urlopie zdrowotnym lub zajęciach wyrównawczych.",
-    "wholeNumbers": "Używaj liczb całkowitych, przy co najmniej 1 przeprowadzonych zajęciach.",
-    "attendedTooMany": "Uczestnictwo w zajęciach nie może być większe niż liczba przeprowadzonych zajęć.",
+    "recoverDetail": "Możesz opuścić {m} z nich i nadal ukończyć na {target}% lub wyżej.",
+    "recoverSafe": "Ukończysz na poziomie {target}% lub wyższym, nawet jeśli opuścisz wszystkie pozostałe zajęcia {rem}.",
+    "recoverImpossible": "Nawet uczestnicząc we wszystkich zajęciach {rem}, które pozostały, ukończyłbyś je na {pct}%.",
+    "recoverImpossibleDetail": "{target}% jest poza zasięgiem w tym semestrze. Porozmawiaj ze swoim nauczycielem lub wydziałem o urlopie zdrowotnym lub zajęciach wyrównawczych.",
+    "wholeNumbers": "Użyj liczb całkowitych, przy czym należy odbyć przynajmniej 1 zajęcia.",
+    "attendedTooMany": "Liczba uczęszczanych zajęć nie może być większa niż liczba odbytych zajęć.",
     "targetRange": "Wprowadź cel między 1 a 100.",
-    "subjectsOverall": "Łączna frekwencja: {pct}% ({attended} z {held}).",
-    "subjectsWarning": "Łączna frekwencja jest zgodna z celem, ale {names} mają mniej niż {target}%.",
-    "subjectsWarnings": "Łączna frekwencja jest zgodna z celem, ale {names} mają mniej niż {target}%.",
-    "subjectsBelow": "Łączna frekwencja jest poniżej {target}%.",
-    "subjectCanMiss": "{name}: {pct}% — możesz opuścić jeszcze {n}.",
-    "subjectMustAttend": "{name}: {pct}% — musisz uczestniczyć w {n} zajęciach z rzędu.",
-    "subjectAtEdge": "{name}: {pct}% — nie opuszczaj następnych zajęć.",
+    "subjectsOverall": "Ogólna frekwencja: {pct}% ({attended} z {held}).",
+    "subjectsWarning": "Ogólnie jest na celu, ale {names} jest poniżej {target}%.",
+    "subjectsWarnings": "Ogólnie rzecz biorąc jest na celu, ale {names} jest poniżej {target}%.",
+    "subjectsBelow": "Ogólna frekwencja jest poniżej {target}%.",
+    "subjectCanMiss": "{name}: {pct}% — może przegapić {n} więcej.",
+    "subjectMustAttend": "{name}: {pct}% — musi uczestniczyć w {n} z rzędu.",
+    "subjectAtEdge": "{name}: {pct}% — nie przegap następnej lekcji.",
     "subjectUnreachable": "{name}: {pct}% — cel jest nieosiągalny.",
-    "subjectFallback": "Przedmiot {n}",
-    "semesterMiss": "Możesz opuścić do {miss} z {total} zajęć i uczestniczyć co najmniej w {attend}.",
-    "semesterSummary": "{weeks} tygodni × {perWeek} zajęć − {cancelled} odwołanych = {total} zajęć.",
-    "semesterWeeks": "To około {weeks} tygodni nauki przy {perWeek} zajęciach w tygodniu.",
-    "semesterCancelled": "Święta lub odwołania muszą być mniej niż zaplanowane zajęcia.",
-    "hoursRemaining": "Możesz opuścić jeszcze {remaining} zajęć lub godzin, co odpowiada {meetings} pełnym spotkaniom klasowym.",
-    "hoursDetail": "Dopuszczalna liczba to {allowed} z {total}; opuściłeś {missed}, przy {perClass} na spotkanie.",
-    "hoursOver": "Masz {over} zajęć lub godzin powyżej dopuszczalnego limitu {allowed}.",
-    "hoursOverDetail": "Opuściłeś {missed}; cel {target}% nie jest już osiągany.",
-    "hoursMissedTooMany": "Czas już stracony nie może przekroczyć całkowitego czasu trwania kursu.",
-    "creditsPositive": "Wprowadź dodatnie punkty kredytowe i godziny oraz pełną liczbę tygodni.",
-    "creditsUs": "Zaplanować około {weekly} godzin łącznie tygodniowo, w tym około {outside} godzin poza zajęciami.",
-    "creditsUsDetail": "{credits} amerykańskich kredytów semestralnych odpowiada około {total} godzin łącznie rozłożonych na {weeks} tygodni zgodnie z federalnym benchmarkiem.",
-    "creditsEcts": "Zaplanować około {low}–{high} godzin łącznie tygodniowo.",
-    "creditsEctsDetail": "{credits} ECTS odpowiadają około {low}–{high} godzin łącznego nakładu pracy rozłożonego na {weeks} tygodni.",
-    "creditsCustom": "Zaplanować około {weekly} godzin łącznie tygodniowo.",
-    "creditsCustomDetail": "{credits} punktów kredytowych × {perCredit} godzin = {total} godzin łącznie w ciągu {weeks} tygodni."
+    "subjectFallback": "Temat {n}",
+    "semesterMiss": "Możesz opuścić do {miss} z {total} zajęć i uczestniczyć w co najmniej {attend}.",
+    "semesterSummary": "{weeks} tygodni × {perWeek} zajęć − {cancelled} odwołane = {total} zajęć.",
+    "semesterWeeks": "To jest około {weeks} tygodni nauczania przy {perWeek} zajęciach tygodniowo.",
+    "semesterCancelled": "Święta lub odwołania muszą być liczniejsze niż zaplanowane zajęcia.",
+    "hoursRemaining": "Możesz opuścić {remaining} więcej okresów lub godzin, co odpowiada {meetings} pełnym spotkaniom klasowym.",
+    "hoursDetail": "Zasiłek wynosi {allowed} z {total}; przegapiłeś {missed}, z {perClass} za każde spotkanie.",
+    "hoursOver": "Jesteś {over} okresów lub godzin powyżej limitu {allowed}.",
+    "hoursOverDetail": "Przegapiłeś {missed}; cel {target}% nie został już osiągnięty.",
+    "hoursMissedTooMany": "Czas już nieobecny nie może przekroczyć całkowitej liczby godzin kursu.",
+    "creditsPositive": "Wprowadź dodatnie kredyty i godziny oraz całkowitą liczbę tygodni.",
+    "creditsUs": "Plan dotyczący {weekly} całkowite godziny w tygodniu, w tym około {outside} godzin poza zajęciami.",
+    "creditsUsDetail": "{credits} amerykańskich punktów semestralnych odpowiada około {total} całkowitym godzinom rozłożonym na {weeks} tygodni zgodnie z federalnym standardem.",
+    "creditsEcts": "Plan około {low}–{high} godzin łącznie tygodniowo.",
+    "creditsEctsDetail": "{credits} ECTS reprezentują około {low}–{high} godzin łącznego obciążenia rozłożonych na {weeks} tygodni.",
+    "creditsCustom": "Plan około {weekly} godzin łącznie tygodniowo.",
+    "creditsCustomDetail": "{credits} kredyty × {perCredit} godzin = {total} godzin łącznie w ciągu {weeks} tygodni."
   },
   "og_locale": "pl_PL",
   "article": {

@@ -1,0 +1,66 @@
+{
+  "id": "recovery",
+  "order": 4,
+  "slug": "it/calcolatore-di-recupero-presenze/",
+  "title": "Calcolatore di recupero presenze al 75% · Classly",
+  "description": "Sotto il 75%? Vedi quante lezioni devi frequentare di seguito per recuperare, e se puoi ancora raggiungere il 75% con le lezioni rimanenti questo semestre.",
+  "og_title": "Quante lezioni devo frequentare per arrivare al 75%?",
+  "h1": "Calcolatore di recupero presenze",
+  "card_title": "Calcolatore di recupero presenze",
+  "card_text": "Sotto l'obiettivo? Quante lezioni frequentare e se è ancora possibile.",
+  "intro": "<p><b>Per tornare al 75%, frequenta (0,75 × svolte − frequentate) ÷ 0,25 lezioni di seguito, arrotondato per eccesso.</b> Se il semestre termina prima, ciò che conta è quante delle lezioni rimanenti frequenti. I calcolatori qui sotto rispondono a entrambi.</p>",
+  "widgets": [
+    {
+      "kind": "recover",
+      "defaults": {
+        "held": 30,
+        "attended": 20,
+        "remaining": 30,
+        "target": 75
+      }
+    },
+    {
+      "kind": "standing",
+      "title": "Quante lezioni di seguito per recuperare ora?",
+      "defaults": {
+        "held": 30,
+        "attended": 20,
+        "target": 75
+      }
+    }
+  ],
+  "related": [
+    "subject-wise",
+    "attendance-calculator",
+    "bunk-calculator",
+    "minimum-table"
+  ],
+  "faq": [
+    {
+      "q": "Quante lezioni devo frequentare per arrivare al 75% di presenze?",
+      "a": "Frequenta (0,75 × svolte − frequentate) ÷ 0,25 lezioni di seguito, arrotondato per eccesso. Con 20 su 30 frequentate, sono 10 lezioni, che ti portano a 30 su 40."
+    },
+    {
+      "q": "Posso ancora raggiungere il 75% entro la fine del semestre?",
+      "a": "Solo se (frequentate + lezioni rimanenti) ÷ (svolte + lezioni rimanenti) è almeno 75%. Se anche frequentando tutte le lezioni rimanenti non basta, chiedi di congedo medico, condono o lezioni di recupero."
+    },
+    {
+      "q": "Perché ci vogliono così tante lezioni per recuperare?",
+      "a": "Ogni lezione che frequenti si aggiunge anche alle lezioni svolte. Vicino al 75%, ogni lezione frequentata alza solo un po' la percentuale, quindi recuperare è molto più lento che scendere."
+    }
+  ]
+}
+---
+<h2>Due modi per guardare al recupero</h2>
+<h3>Torna in target il prima possibile</h3>
+<p class="formula">partecipare di fila = ⌈ (obiettivo × tenuto − partecipato) ÷ (1 − obiettivo) ⌉</p>
+<p>Con 20 su 30 partecipati (66,66%) e un obiettivo del 75%: (0,75 × 30 − 20) ÷ 0,25 = <b>10 lezioni</b>, portandoti a 30 su 40 = 75%.</p>
+
+<h3>In linea con l'obiettivo entro la fine del semestre</h3>
+<p>Spesso è necessario essere sopra la soglia solo quando si verifica la frequenza, di solito a fine trimestre. Poi conta le lezioni rimanenti:</p>
+<p class="formula">partecipare almeno = ⌈ obiettivo × (tenute + rimaste) − partecipate ⌉</p>
+<p>Con 20 su 30 partecipati e 30 lezioni rimaste: 0,75 × 60 − 20 = <b>25 delle 30</b>, quindi puoi ancora mancare 5.</p>
+
+<h3>Quando è troppo tardi</h3>
+<p>Con 20 su 40 partecipati e 20 lezioni rimaste, anche una frequenza perfetta finisce a 40 su 60 = 66,66%. In tal caso parla al più presto con il tuo insegnante o dipartimento: certificati medici, condoni o lezioni di recupero sono possibili solo prima della scadenza.</p>
+<p>Per evitare di arrivare a questo punto, tieni un conteggio aggiornato con il <a href="/classly/it/calcolatore-di-assenze/">calcolatore di assenze</a>o lascia che l'app Classly ti avvisi prima che una materia scenda sotto l'obiettivo.</p>

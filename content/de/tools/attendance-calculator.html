@@ -1,0 +1,68 @@
+{
+  "id": "attendance-calculator",
+  "order": 1,
+  "slug": "de/anwesenheitsrechner/",
+  "title": "Attendance Calculator: Wie viele Kurse kann ich… · Classly",
+  "description": "Geben Sie gehaltene und besuchte Kurse ein, um Ihre Anwesenheit zu sehen, wie viele Kurse Sie verpassen können oder wie viele Sie besuchen müssen, um 75% oder…",
+  "og_title": "Attendance Calculator: Wie viele Kurse kann ich verpassen?",
+  "h1": "Anwesenheitsrechner",
+  "card_title": "Anwesenheitsrechner",
+  "card_text": "Ihr Prozentsatz und wie viele Kurse Sie verpassen können oder besuchen müssen.",
+  "intro": "<p><b>Ihr Anwesenheitsprozentsatz ist besuchte Kurse ÷ abgehaltene Kurse × 100.</b> Geben Sie Ihre Zahlen unten ein, um zu sehen, wie viele Kurse Sie noch verpassen können oder wie viele Sie nacheinander besuchen müssen, um wieder Ihr Ziel zu erreichen.</p>",
+  "widgets": [
+    {
+      "kind": "standing",
+      "defaults": {
+        "held": 40,
+        "attended": 32,
+        "target": 75
+      }
+    },
+    {
+      "kind": "plan",
+      "defaults": {
+        "total": 45,
+        "target": 75
+      }
+    }
+  ],
+  "related": [
+    "subject-wise",
+    "bunk-calculator",
+    "minimum-table",
+    "recovery"
+  ],
+  "faq": [
+    {
+      "q": "Welchen Anwesenheitsprozentsatz benötige ich?",
+      "a": "Es hängt von Ihrer Schule ab. 75% ist ein häufiges Minimum an vielen Hochschulen, und einige verlangen 80% oder mehr. Prüfen Sie die Anwesenheitsregeln Ihrer Institution oder fragen Sie Ihre Abteilung und geben Sie dann diese Zahl als Ziel ein."
+    },
+    {
+      "q": "Zählen abgesagte Kurse?",
+      "a": "Meistens nicht. Ein Kurs, der nie stattfand, wurde nicht abgehalten, also lasse ihn in beiden Nummern weg. Classly erlaubt es, einen Kurs als abgebrochen zu markieren, sodass er automatisch weggelassen wird."
+    },
+    {
+      "q": "Sollte ich es pro Fach oder insgesamt aufteilen?",
+      "a": "Die meisten Schulen wenden die Regel auf jedes Fach einzeln an, sodass ein hoher Gesamtprozentsatz dennoch ein Fach unterhalb des Limits verbergen kann. Berechnen Sie jedes Fach einzeln."
+    },
+    {
+      "q": "Warum sagt der Rechner, dass ich 0 Stunden verpassen darf?",
+      "a": "Du bist auf oder knapp über deinem Ziel, und wenn du noch einen weiteren Kurs verpasst, fällst du darunter. Nimm an der nächsten Stunde teil, um einen Vorsprung aufzubauen."
+    }
+  ]
+}
+---
+<h2>Wie der Taschenrechner funktioniert</h2>
+<h3>Zuschauerquote</h3>
+<p class="formula">Zuschauerquote = besuchte ÷ abgehaltene × 100</p>
+<p>Die Teilnahme an 32 von 40 Kursen beträgt 32 ÷ 40 × 100 = <b>80%</b>.</p>
+
+<h3>Wie viele Kurse kann ich verpassen?</h3>
+<p>Jede Klasse, die du verpasst, zählt weiterhin als gehalten, daher sinkt dein Prozentsatz. Das meiste, was du verpassen kannst, während du bei deinem Ziel bleibst, ist:</p>
+<p class="formula">Can Miss = ⌊ besucht × 100 ÷ Ziel − gehalten ⌋</p>
+<p>Mit 32 von 40 und einem Ziel von 75 %: 32 × 100 ÷ 75 − 40 = 2,67, abgerundet zu <b>2 Klassen</b>. Nachdem du beide verpasst hast, bist du bei 32 ÷ 42 = 76,19 %; ein Drittel würde dich auf 74,41 % bringen.</p>
+
+<h3>Wie viele Kurse muss ich besuchen, um 75 % zu erreichen?</h3>
+<p>Wenn du unter dem Ziel bist, erhöht jeder Kurs, den du ab jetzt besuchst, deinen Prozentsatz. Die Zahl, die du in Folge brauchst, ist:</p>
+<p class="formula">Bedarf = ⌈ (Ziel × gehalten − beaufsichtigt) ÷ (1 − Ziel) ⌉</p>
+<p>Hier wird das Ziel als Bruchteil geschrieben (75 % = 0,75). Mit 28 von 40 (70 %): (0,75 × 40 − 28) ÷ 0,25 = <b>8 Klassen</b>, was Sie auf 36 von 48 = 75 % bringt. Wenn das Semester vorher endet, verwenden Sie die <a href="/classly/de/anwesenheitswiederherstellungsrechner/">Anwesenheitswiederherstellungsrechner</a>.</p>

@@ -1,0 +1,64 @@
+{
+  "id": "subject-wise",
+  "order": 5,
+  "slug": "it/calcolatore-di-frequenza-per-materia/",
+  "title": "Calcolatore di Frequenza per Materia e Totale · Classly",
+  "description": "Calcola la frequenza per più materie, vedi la frequenza complessiva e scopri quante lezioni puoi saltare o devi frequentare in ciascuna materia.",
+  "og_title": "Calcolatore di Presenze per Materia",
+  "h1": "Calcolatore di frequenza per materia",
+  "card_title": "Calcolatore di frequenza per materia",
+  "card_text": "Confronta ogni materia con la tua frequenza complessiva in un'unica tabella.",
+  "intro": "<p><b>Il controllo della frequenza per materia controlla ogni materia separatamente, mentre la frequenza complessiva combina tutte le lezioni.</b> Aggiungi i tuoi soggetti qui sotto per trovare carenze nascoste che una percentuale complessiva elevata può mascherare.</p>",
+  "widgets": [
+    {
+      "kind": "subjects",
+      "defaults": {
+        "target": 75,
+        "subjects": [
+          {
+            "name": "Mathematics",
+            "held": 30,
+            "attended": 26
+          },
+          {
+            "name": "Physics",
+            "held": 30,
+            "attended": 21
+          },
+          {
+            "name": "Chemistry",
+            "held": 24,
+            "attended": 22
+          }
+        ]
+      }
+    }
+  ],
+  "related": [
+    "attendance-calculator",
+    "bunk-calculator",
+    "recovery"
+  ],
+  "faq": [
+    {
+      "q": "Che cos'è la frequenza per materia?",
+      "a": "È la percentuale di presenza calcolata separatamente per ogni materia utilizzando le lezioni frequentate e quelle tenute di quella materia."
+    },
+    {
+      "q": "Perché la mia frequenza complessiva è sicura mentre in una materia è bassa?",
+      "a": "La frequenza complessiva combina tutte le lezioni. Una frequenza elevata in altre materie può compensare una carenza, ma non aumenta la percentuale della materia con bassa frequenza."
+    },
+    {
+      "q": "I laboratori dovrebbero essere materie separate?",
+      "a": "Tracciali separatamente se la tua istituzione prevede per loro un requisito di frequenza indipendente o un registro separato."
+    }
+  ]
+}
+---
+<h2>Presenza per materia rispetto alla presenza complessiva</h2>
+<p>Per ogni riga, la frequenza si calcola con frequentato ÷ tenuto × 100. La frequenza generale somma tutte le lezioni frequentate, somma tutte le lezioni tenute, quindi divide i due totali. Non fare semplicemente la media delle percentuali quando le materie hanno numeri diversi di lezioni.</p>
+<p>Nell'esempio, Matematica è 26 su 30 = <b>86.66%</b> e può mancare altre 4 lezioni. Fisica è 21 su 30 = <b>70%</b> e ha bisogno di 6 lezioni consecutive per raggiungere 27 su 36 = 75%. Chimica è 22 su 24 = <b>91.66%</b> e può mancare altre 5 lezioni.</p>
+<p>Il risultato complessivo è 69 su 84 = <b>82.14%</b>. Raggiunge l'obiettivo del 75%, ma Fisica rimane sotto obiettivo, quindi il calcolatore mostra un avviso.</p>
+<h2>Come usare la tabella</h2>
+<ol><li>Aggiungi una riga per ogni materia o componente valutato indipendentemente.</li><li>Inserisci tutte le lezioni tenute, comprese quelle cui non hai partecipato.</li><li>Inserisci solo le lezioni che hai frequentato.</li><li>Usa l'obiettivo secondo le regole attuali della tua istituzione.</li><li>Aggiorna le righe dopo cancellazioni, lezioni extra o correzioni.</li></ol>
+<p>Puoi usare periodi o ore invece di incontri di lezione quando la tua istituzione calcola la frequenza in quel modo, purché ogni riga utilizzi unità coerenti.</p>

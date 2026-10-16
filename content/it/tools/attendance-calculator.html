@@ -1,0 +1,68 @@
+{
+  "id": "attendance-calculator",
+  "order": 1,
+  "slug": "it/calcolatore-di-frequenza/",
+  "title": "Calcolatore di frequenza: Quante lezioni posso perdere? · Classly",
+  "description": "Inserisci le lezioni tenute e frequentate per vedere la tua frequenza, quante lezioni puoi perdere o quante devi frequentare per raggiungere il 75% o qualsiasi…",
+  "og_title": "Calcolatore di frequenza: Quante lezioni posso perdere?",
+  "h1": "Calcolatore di frequenza",
+  "card_title": "Calcolatore di frequenza",
+  "card_text": "La tua percentuale, e quante lezioni puoi perdere o devi frequentare.",
+  "intro": "<p><b>La tua percentuale di frequenza è lezioni frequentate ÷ lezioni tenute × 100.</b> Inserisci i tuoi numeri qui sotto per vedere quante lezioni puoi ancora perdere, o quante devi frequentare consecutivamente per tornare al tuo obiettivo.</p>",
+  "widgets": [
+    {
+      "kind": "standing",
+      "defaults": {
+        "held": 40,
+        "attended": 32,
+        "target": 75
+      }
+    },
+    {
+      "kind": "plan",
+      "defaults": {
+        "total": 45,
+        "target": 75
+      }
+    }
+  ],
+  "related": [
+    "subject-wise",
+    "bunk-calculator",
+    "minimum-table",
+    "recovery"
+  ],
+  "faq": [
+    {
+      "q": "Quale percentuale di frequenza mi serve?",
+      "a": "Dipende dalla tua scuola. Il 75% è un minimo comune in molti college, e alcune chiedono l'80% o più. Controlla le regole di frequenza della tua istituzione o chiedi al tuo dipartimento, quindi inserisci quel numero come tuo obiettivo."
+    },
+    {
+      "q": "Le lezioni cancellate contano?",
+      "a": "Di solito no. Una lezione che non si è mai svolta non è stata tenuta, quindi escludila da entrambi i numeri. Classly ti permette di contrassegnare una lezione come cancellata in modo che venga automaticamente esclusa."
+    },
+    {
+      "q": "Devo calcolarlo per materia o complessivamente?",
+      "a": "La maggior parte delle scuole applica la regola a ciascuna materia separatamente, quindi una percentuale complessiva alta può comunque nascondere una materia sotto il limite. Calcola ogni materia singolarmente."
+    },
+    {
+      "q": "Perché il calcolatore dice che posso saltare 0 lezioni?",
+      "a": "Sei al tuo obiettivo o appena sopra, e saltare anche una sola lezione ti farebbe scendere sotto di esso. Partecipa alla prossima lezione per creare un margine."
+    }
+  ]
+}
+---
+<h2>Come funziona il calcolatore</h2>
+<h3>Percentuale di frequenza</h3>
+<p class="formula">% frequenza = partecipate ÷ tenute × 100</p>
+<p>Partecipare a 32 su 40 lezioni è 32 ÷ 40 × 100 = <b>80%</b>.</p>
+
+<h3>Quante lezioni posso saltare?</h3>
+<p>Ogni lezione che salti conta ancora come tenuta, quindi la tua percentuale scende. Il massimo che puoi saltare mantenendo il tuo obiettivo è:</p>
+<p class="formula">posso saltare = ⌊ partecipate × 100 ÷ obiettivo − tenute ⌋</p>
+<p>Con 32 su 40 e un obiettivo del 75%: 32 × 100 ÷ 75 − 40 = 2,67, arrotondato per difetto a <b>2 lezioni</b>. Dopo aver saltato entrambe saresti a 32 ÷ 42 = 76,19%; una terza ti porterebbe al 74,41%.</p>
+
+<h3>Quante lezioni devo frequentare per raggiungere il 75%?</h3>
+<p>Se sei sotto l'obiettivo, ogni lezione a cui partecipi da ora in poi aumenta la tua percentuale. Il numero che ti serve consecutivamente è:</p>
+<p class="formula">bisogna = ⌈ (obiettivo × tenute − partecipate) ÷ (1 − obiettivo) ⌉</p>
+<p>Qui l'obiettivo è scritto come frazione (75% = 0,75). Con 28 su 40 (70%): (0,75 × 40 − 28) ÷ 0,25 = <b>8 lezioni</b>, che ti porta a 36 su 48 = 75%. Se il semestre termina prima, usa il <a href="/classly/it/calcolatore-di-recupero-presenze/">calcolatore di recupero presenze</a>.</p>

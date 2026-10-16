@@ -1,0 +1,68 @@
+{
+  "id": "attendance-calculator",
+  "order": 1,
+  "slug": "pl/kalkulator-obecności/",
+  "title": "Kalkulator obecności: Ile zajęć mogę opuścić? · Classly",
+  "description": "Wprowadź liczbę odbytych i uczestniczonych zajęć, aby zobaczyć swoją obecność, ile zajęć możesz opuścić lub ile musisz uczestniczyć, aby osiągnąć 75% lub…",
+  "og_title": "Kalkulator obecności: Ile zajęć mogę opuścić?",
+  "h1": "Kalkulator obecności",
+  "card_title": "Kalkulator obecności",
+  "card_text": "Twój procent i ile zajęć możesz opuścić lub musisz uczestniczyć.",
+  "intro": "<p><b>Twój procent obecności to zajęcia uczestniczone ÷ zajęcia odbyte × 100.</b> Wprowadź poniżej swoje liczby, aby zobaczyć, ile zajęć możesz jeszcze opuścić lub ile musisz wziąć z rzędu, aby wrócić do swojego celu.</p>",
+  "widgets": [
+    {
+      "kind": "standing",
+      "defaults": {
+        "held": 40,
+        "attended": 32,
+        "target": 75
+      }
+    },
+    {
+      "kind": "plan",
+      "defaults": {
+        "total": 45,
+        "target": 75
+      }
+    }
+  ],
+  "related": [
+    "subject-wise",
+    "bunk-calculator",
+    "minimum-table",
+    "recovery"
+  ],
+  "faq": [
+    {
+      "q": "Jakiego procentu obecności potrzebuję?",
+      "a": "To zależy od twojej szkoły. 75% to powszechny minimalny próg w wielu college'ach, a niektóre wymagają 80% lub więcej. Sprawdź zasady obecności swojej instytucji lub zapytaj swój wydział, a następnie wprowadź tę liczbę jako swój cel."
+    },
+    {
+      "q": "Czy odwołane zajęcia się liczą?",
+      "a": "Zazwyczaj nie. Klasa, która nigdy się nie odbyła, nie została przeprowadzona, więc pomiń ją w obu liczbach. Classly pozwala zaznaczyć klasę jako odwołaną, więc zostanie ona automatycznie pominięta."
+    },
+    {
+      "q": "Czy powinienem to rozliczać według przedmiotu czy ogólnie?",
+      "a": "Większość szkół stosuje tę zasadę do każdego przedmiotu osobno, więc wysoki ogólny procent może nadal ukrywać jeden przedmiot poniżej limitu. Oblicz każdy przedmiot osobno."
+    },
+    {
+      "q": "Dlaczego kalkulator mówi, że mogę opuścić 0 zajęć?",
+      "a": "Jesteś na swoim celu lub tuż powyżej niego, a opuszczenie nawet jednej kolejnej lekcji spowodowałoby spadek poniżej tego poziomu. Uczestnicz w następnej lekcji, aby zbudować margines."
+    }
+  ]
+}
+---
+<h2>Jak działa kalkulator</h2>
+<h3>Procent frekwencji</h3>
+<p class="formula">procent frekwencji = obecni ÷ przeprowadzone × 100</p>
+<p>Uczestnictwo w 32 z 40 zajęć to 32 ÷ 40 × 100 = <b>80%</b>.</p>
+
+<h3>Ile zajęć mogę opuścić?</h3>
+<p>Każda nieobecność na zajęciach nadal jest liczona jako odbyte, więc Twój procent spada. Najwięcej, ile możesz opuścić, pozostając na swoim celu, to:</p>
+<p class="formula">można opuścić = ⌊ obecny × 100 ÷ cel − odbyło się ⌋</p>
+<p>Przy 32 na 40 i celu 75%: 32 × 100 ÷ 75 − 40 = 2,67, zaokrąglone w dół do <b>2 zajęcia</b>. Po nie trafieniu obu byłbyś na poziomie 32 ÷ 42 = 76,19%; trzeci obniżyłby go do 74,41%.</p>
+
+<h3>Ile zajęć muszę uczęszczać, aby osiągnąć 75%?</h3>
+<p>Jeśli jesteś poniżej celu, każda lekcja, w której będziesz uczestniczyć od teraz, zwiększa Twój procent. Liczba, której potrzebujesz z rzędu, to:</p>
+<p class="formula">potrzeba = ⌈ (cel × posiadane − uczestniczone) ÷ (1 − cel) ⌉</p>
+<p>Tutaj cel jest zapisany jako ułamek (75% = 0,75). Z 28 na 40 (70%): (0,75 × 40 − 28) ÷ 0,25 = <b>8 zajęć</b>, co daje Ci 36 z 48 = 75%. Jeśli semestr kończy się wcześniej, użyj <a href="/classly/pl/kalkulator-odzyskiwania-frekwencji/">kalkulatora odzyskiwania frekwencji</a>.</p>
