@@ -116,11 +116,21 @@ def parse_page(path: pathlib.Path, errors: list[str]) -> PageParser | None:
 
 def main() -> int:
     errors: list[str] = []
+    sitemap_path = ROOT / "sitemap.xml"
     try:
-        tree = ET.parse(ROOT / "sitemap.xml")
+        sitemap_source = sitemap_path.read_text(encoding="utf-8")
+        tree = ET.parse(sitemap_path)
     except (OSError, ET.ParseError) as exc:
         print(f"ERROR sitemap.xml: {exc}")
         return 1
+
+    stylesheet_href = '/classly/sitemap.xsl'
+    if f'<?xml-stylesheet type="text/xsl" href="{stylesheet_href}"?>' not in sitemap_source:
+        errors.append(f"sitemap.xml: missing stylesheet {stylesheet_href}")
+    try:
+        ET.parse(ROOT / "sitemap.xsl")
+    except (OSError, ET.ParseError) as exc:
+        errors.append(f"sitemap.xsl: {exc}")
 
     sitemap_urls = {
         loc.text or "" for loc in tree.findall("sm:url/sm:loc", NS)

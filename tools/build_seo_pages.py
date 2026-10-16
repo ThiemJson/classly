@@ -426,6 +426,7 @@ def build_sitemap(groups):
             entries.append(f'  <url>\n    <loc>{BASE}{page["slug"]}</loc>{lastmod}{links if len(group) > 1 else ""}\n  </url>')
     (ROOT / 'sitemap.xml').write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<?xml-stylesheet type="text/xsl" href="/classly/sitemap.xsl"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
         + '\n'.join(entries) + '\n</urlset>\n', encoding='utf-8')
 

@@ -18,7 +18,9 @@ GitHub Pages from the root of the default branch.
 - `SEO-PLAN.md` and `SEO-CHANGELOG.md` — what is planned, and every change
   with its before/after Search Console numbers.
 - `sitemap.xml` — every indexable page (generated); submitted in Search
-  Console. The `open/` pages are `noindex` and stay out of it.
+  Console. `sitemap.xsl` only provides a readable browser view and does not
+  change the XML consumed by search engines. The `open/` pages are `noindex`
+  and stay out of it.
 - `screenshots/` — rendered from the app with demo data
   (`tool/screenshots/capture_screens.dart` in the app repository).
 
