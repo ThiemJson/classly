@@ -22,6 +22,7 @@ const importQueueArg = process.argv.slice(2).find((arg) => arg.startsWith("--bro
 const importResultsArg = process.argv.slice(2).find((arg) => arg.startsWith("--import-browser-results="));
 const allowPartialBrowserResults = process.argv.includes("--allow-partial-browser-results");
 const normalizeOnly = process.argv.includes("--normalize-only");
+const normalizeLinksOnly = process.argv.includes("--normalize-links-only");
 const requested = localeArg
   ? localeArg.slice("--locales=".length).split(",").filter(Boolean)
   : Object.keys(LOCALES);
@@ -87,6 +88,7 @@ function injectMenu(document, page, current) {
 function ensureHead(document, page, current) {
   const slug = pageSlug(page, current);
   let result = document
+    .replace(/\s*<base href="[^"]*">/gu, "")
     .replace(/<html lang="[^"]+">/u, `<html lang="${current}">`)
     .replace(/<link rel="canonical" href="[^"]+">/u, `<link rel="canonical" href="${BASE}${slug}">`)
     .replace(/<meta property="og:url" content="[^"]+">/u, `<meta property="og:url" content="${BASE}${slug}">`)
@@ -94,9 +96,6 @@ function ensureHead(document, page, current) {
     .replace(/(\s*<link rel="canonical")/u, `\n${alternates(page)}$1`);
   if (!result.includes("language-preference.js")) {
     result = result.replace(/<\/head>/u, '  <script src="/classly/assets/language-preference.js" defer></script>\n</head>');
-  }
-  if (current !== "en" && !result.includes("<base ")) {
-    result = result.replace(/(<meta name="viewport"[^>]*>)/u, '$1\n  <base href="/classly/">');
   }
   return result;
 }
@@ -186,25 +185,33 @@ function localizeFaqRuntime(document, emptyMessage) {
 
 function localizeLinks(document, locale, page) {
   const site = JSON.parse(fs.readFileSync(path.join(CONTENT, locale, "site.json"), "utf8"));
+  const localizedHome = `/classly/${locale}/`;
+  const internalRoutes = [
+    { sources: ["../tools/", "tools/", site.hub.slug], target: `/classly/${site.hub.slug}` },
+    { sources: ["../blog/", "blog/", `${locale}/blog/`], target: `${localizedHome}blog/` },
+    { sources: ["../faq.html", "faq.html"], target: `${localizedHome}faq/` },
+    { sources: ["../privacy.html", "privacy.html"], target: `${localizedHome}privacy/` },
+    { sources: ["../terms.html", "terms.html"], target: `${localizedHome}terms/` },
+    { sources: ["../support/", "support/"], target: `${localizedHome}support/` },
+    { sources: ["../whats-new/", "whats-new/"], target: `${localizedHome}whats-new/` },
+    { sources: ["../", "index.html"], target: localizedHome },
+  ];
   let result = document
-    .replaceAll('href="tools/"', `href="${site.hub.slug}"`)
-    .replaceAll('href="../tools/"', `href="${site.hub.slug}"`)
-    .replaceAll('href="blog/"', `href="${locale}/blog/"`)
-    .replaceAll('href="../blog/"', `href="${locale}/blog/"`);
-
-  if (page.id === "home") {
-    const localizedHome = `/classly/${locale}/`;
-    result = result
-      .replaceAll('href="#top"', `href="${localizedHome}#top"`)
-      .replaceAll('href="#features"', `href="${localizedHome}#features"`)
-      .replaceAll('href="#how-it-works"', `href="${localizedHome}#how-it-works"`)
-      .replaceAll('href="#download"', `href="${localizedHome}#download"`)
-      .replaceAll('href="privacy.html"', `href="${localizedHome}privacy/"`)
-      .replaceAll('href="terms.html"', `href="${localizedHome}terms/"`)
-      .replaceAll('href="faq.html"', `href="${localizedHome}faq/"`)
-      .replaceAll('href="support/"', `href="${localizedHome}support/"`)
-      .replaceAll('href="whats-new/"', `href="${localizedHome}whats-new/"`);
-  }
+    .replace(/((?:href|src|srcset)=")\.\.\/assets\//gu, '$1/classly/assets/')
+    .replace(/((?:href|src|srcset)=")assets\//gu, '$1/classly/assets/')
+    .replace(/href="([^"]+)"/gu, (whole, href) => {
+      for (const route of internalRoutes) {
+        for (const source of route.sources) {
+          if (href === source || href.startsWith(`${source}#`)) {
+            return `href="${route.target}${href.slice(source.length)}"`;
+          }
+        }
+      }
+      if (["#top", "#features", "#how-it-works", "#download"].includes(href)) {
+        return `href="${localizedHome}${href}"`;
+      }
+      return whole;
+    });
 
   for (const kind of ["articles", "tools"]) {
     const englishDirectory = path.join(CONTENT, "en", kind);
@@ -220,7 +227,30 @@ function localizeLinks(document, locale, page) {
       if (target) result = result.replaceAll(`href="${source.slug}"`, `href="${target}"`);
     }
   }
-  return result;
+  const localePrefixes = [locale, ...Object.keys(LOCALES)]
+    .filter((value, index, values) => values.indexOf(value) === index)
+    .join("|");
+  return result
+    .replace(/((?:src|srcset)=")screenshots\//gu, '$1/classly/screenshots/')
+    .replace(new RegExp(`href="((?:${localePrefixes})/[^"#]*(?:#[^"]*)?)"`, "gu"), 'href="/classly/$1"');
+}
+
+function normalizeTranslatedSpacing(document, locale) {
+  if (["ja", "ko"].includes(locale)) return document;
+  const tokens = document.split(/(<[^>]+>)/gu);
+  const protectedTags = [];
+  return tokens.map((token) => {
+    if (token.startsWith("<")) {
+      const closing = token.match(/^<\/([a-z][\w-]*)\b/iu)?.[1]?.toLowerCase();
+      if (closing && protectedTags.at(-1) === closing) protectedTags.pop();
+      const opening = token.match(/^<([a-z][\w-]*)\b/iu)?.[1]?.toLowerCase();
+      if (opening && ["code", "pre", "script", "style"].includes(opening) && !/\/>$/u.test(token)) {
+        protectedTags.push(opening);
+      }
+      return token;
+    }
+    return protectedTags.length ? token : token.replace(/([.!?])(?=\p{Lu})/gu, "$1 ");
+  }).join("");
 }
 
 function readSource(file) {
@@ -367,6 +397,23 @@ if (normalizeOnly) {
   process.exit(0);
 }
 
+if (normalizeLinksOnly) {
+  for (const page of PAGES) {
+    for (const locale of requested) {
+      const destination = outputPath(page, locale);
+      if (!fs.existsSync(destination)) continue;
+      let localized = fs.readFileSync(destination, "utf8");
+      localized = ensureHead(localized, page, locale);
+      localized = injectMenu(localized, page, locale);
+      localized = localizeLinks(localized, locale, page);
+      localized = normalizeTranslatedSpacing(localized, locale);
+      fs.writeFileSync(destination, localized);
+    }
+  }
+  console.log("Existing localized page links normalized.");
+  process.exit(0);
+}
+
 for (const page of PAGES) {
   const sourcePath = path.join(ROOT, page.source);
   let english = fs.readFileSync(sourcePath, "utf8");
@@ -384,6 +431,7 @@ for (const page of PAGES) {
     localized = translateMetadata(localized, translations);
     localized = normalizeMetadata(ensureHead(localized, page, locale));
     localized = localizeLinks(localized, locale, page);
+    localized = normalizeTranslatedSpacing(localized, locale);
     if (page.id === "faq") {
       localized = localizeFaqRuntime(localized, translations.get(FAQ_EMPTY_TEXT) || FAQ_EMPTY_TEXT);
     }

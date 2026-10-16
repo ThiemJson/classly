@@ -25,6 +25,8 @@ class PageParser(HTMLParser):
         self.description: str | None = None
         self.h1_count = 0
         self.hrefs: list[str] = []
+        self.sources: list[str] = []
+        self.base_href: str | None = None
         self.alternates: dict[str, str] = {}
         self.json_ld: list[str] = []
         self._in_title = False
@@ -46,6 +48,14 @@ class PageParser(HTMLParser):
         href = attrs.get("href")
         if href:
             self.hrefs.append(href)
+        if tag == "base":
+            self.base_href = href
+        source = attrs.get("src")
+        if source:
+            self.sources.append(source)
+        srcset = attrs.get("srcset")
+        if srcset:
+            self.sources.extend(item.strip().split()[0] for item in srcset.split(",") if item.strip())
         rel = attrs.get("rel", "").lower().split()
         if tag == "link" and "alternate" in rel and attrs.get("hreflang") and href:
             self.alternates[attrs["hreflang"]] = href
@@ -182,6 +192,8 @@ def main() -> int:
             errors.append(f"{label}: missing meta description")
         elif len(parser.description) > 160:
             errors.append(f"{label}: description is {len(parser.description)} characters (max 160)")
+        if parser.base_href:
+            errors.append(f"{label}: unexpected <base> can break localized relative links")
 
         for index, raw in enumerate(parser.json_ld, 1):
             try:
@@ -189,10 +201,11 @@ def main() -> int:
             except json.JSONDecodeError as exc:
                 errors.append(f"{label}: invalid JSON-LD #{index}: {exc}")
 
-        for href in parser.hrefs:
-            target = local_path(href)
+        for reference in parser.hrefs + parser.sources:
+            resolved = urllib.parse.urljoin(url, reference)
+            target = local_path(resolved)
             if target is not None and not target.exists():
-                errors.append(f"{label}: broken internal link {href}")
+                errors.append(f"{label}: broken internal link {reference} -> {resolved}")
 
         for lang, target_url in parser.alternates.items():
             if lang == "x-default":
