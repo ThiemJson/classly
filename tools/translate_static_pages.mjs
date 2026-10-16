@@ -33,6 +33,7 @@ const ALL_PAGES = [
   { id: "terms", source: "terms.html", englishSlug: "terms.html", localizedSlug: (lang) => `${lang}/terms/` },
   { id: "support", source: "support/index.html", englishSlug: "support/", localizedSlug: (lang) => `${lang}/support/` },
   { id: "whats-new", source: "whats-new/index.html", englishSlug: "whats-new/", localizedSlug: (lang) => `${lang}/whats-new/` },
+  { id: "compare", source: "compare/index.html", englishSlug: "compare/", localizedSlug: (lang) => `${lang}/compare/` },
 ];
 const requestedPages = pageArg
   ? new Set(pageArg.slice("--pages=".length).split(",").filter(Boolean))
@@ -196,6 +197,7 @@ function localizeLinks(document, locale, page) {
     { sources: ["../terms.html", "terms.html"], target: `${localizedHome}terms/` },
     { sources: ["../support/", "support/"], target: `${localizedHome}support/` },
     { sources: ["../whats-new/", "whats-new/"], target: `${localizedHome}whats-new/` },
+    { sources: ["../compare/", "compare/"], target: `${localizedHome}compare/` },
     { sources: ["../", "index.html"], target: localizedHome },
   ];
   let result = document
@@ -214,6 +216,13 @@ function localizeLinks(document, locale, page) {
       }
       return whole;
     });
+
+  const englishStructuredUrl = `${BASE}${page.englishSlug}`;
+  const localizedStructuredUrl = `${BASE}${pageSlug(page, locale)}`;
+  result = result.replace(
+    /(<script type="application\/ld\+json">)([\s\S]*?)(<\/script>)/gu,
+    (whole, start, json, end) => `${start}${json.replaceAll(englishStructuredUrl, localizedStructuredUrl)}${end}`,
+  );
 
   for (const kind of ["articles", "tools"]) {
     const englishDirectory = path.join(CONTENT, "en", kind);

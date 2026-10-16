@@ -15,7 +15,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
 BASE = "https://thiemjason-work.site/classly/"
 LANGUAGE_SCRIPT_URL = "/classly/assets/language-preference.js?v=20261016-2"
-STATIC_PAGES = {"", "faq.html", "privacy.html", "terms.html", "support/", "whats-new/"}
+STATIC_PAGES = {"", "faq.html", "privacy.html", "terms.html", "support/", "whats-new/", "compare/"}
 NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 
 
