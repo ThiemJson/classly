@@ -229,7 +229,7 @@ def shell(site, lang, *, title, description, slug, head_extra, body, language_na
   <link rel="icon" type="image/png" href="/classly/assets/favicon.png">
   <link rel="apple-touch-icon" href="/classly/assets/apple-touch-icon.png">
   <link rel="stylesheet" href="/classly/assets/site.css">
-  <script src="/classly/assets/language-preference.js" defer></script>
+  <script src="/classly/assets/language-preference.js?v=20261016-2" defer></script>
 </head>
 <body>
 {GENERATED}

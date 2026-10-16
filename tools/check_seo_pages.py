@@ -14,6 +14,7 @@ from html.parser import HTMLParser
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
 BASE = "https://thiemjason-work.site/classly/"
+LANGUAGE_SCRIPT_URL = "/classly/assets/language-preference.js?v=20261016-2"
 STATIC_PAGES = {"", "faq.html", "privacy.html", "terms.html", "support/", "whats-new/"}
 NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 
@@ -194,6 +195,8 @@ def main() -> int:
             errors.append(f"{label}: description is {len(parser.description)} characters (max 160)")
         if parser.base_href:
             errors.append(f"{label}: unexpected <base> can break localized relative links")
+        if LANGUAGE_SCRIPT_URL not in parser.sources:
+            errors.append(f"{label}: missing current language preference script {LANGUAGE_SCRIPT_URL}")
 
         for index, raw in enumerate(parser.json_ld, 1):
             try:

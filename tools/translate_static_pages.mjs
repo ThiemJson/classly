@@ -41,6 +41,7 @@ const unknownPages = [...requestedPages].filter((id) => !ALL_PAGES.some((page) =
 if (unknownPages.length) throw new Error(`Unsupported page(s): ${unknownPages.join(", ")}`);
 const PAGES = ALL_PAGES.filter((page) => requestedPages.has(page.id));
 const BASE = "https://thiemjason-work.site/classly/";
+const LANGUAGE_SCRIPT = '<script src="/classly/assets/language-preference.js?v=20261016-2" defer></script>';
 const MENU_PATTERN = /<details class="language-menu">[\s\S]*?<\/details>/u;
 const FAQ_SCHEMA_PATTERN = /<!-- faq-schema:start --><script type="application\/ld\+json">[\s\S]*?<\/script><!-- faq-schema:end -->/u;
 const FAQ_CONTENT_PATTERN = /<!-- faq:start -->([\s\S]*?)<!-- faq:end -->/u;
@@ -92,10 +93,11 @@ function ensureHead(document, page, current) {
     .replace(/<html lang="[^"]+">/u, `<html lang="${current}">`)
     .replace(/<link rel="canonical" href="[^"]+">/u, `<link rel="canonical" href="${BASE}${slug}">`)
     .replace(/<meta property="og:url" content="[^"]+">/u, `<meta property="og:url" content="${BASE}${slug}">`)
+    .replace(/<script src="\/classly\/assets\/language-preference\.js(?:\?v=[^"]*)?" defer><\/script>/u, LANGUAGE_SCRIPT)
     .replace(/\s*<link rel="alternate" hreflang="[^"]+" href="[^"]+">/gu, "")
     .replace(/(\s*<link rel="canonical")/u, `\n${alternates(page)}$1`);
   if (!result.includes("language-preference.js")) {
-    result = result.replace(/<\/head>/u, '  <script src="/classly/assets/language-preference.js" defer></script>\n</head>');
+    result = result.replace(/<\/head>/u, `  ${LANGUAGE_SCRIPT}\n</head>`);
   }
   return result;
 }
@@ -236,7 +238,7 @@ function localizeLinks(document, locale, page) {
 }
 
 function normalizeTranslatedSpacing(document, locale) {
-  if (["ja", "ko"].includes(locale)) return document;
+  if (locale === "ja") return document;
   const tokens = document.split(/(<[^>]+>)/gu);
   const protectedTags = [];
   return tokens.map((token) => {
@@ -249,7 +251,13 @@ function normalizeTranslatedSpacing(document, locale) {
       }
       return token;
     }
-    return protectedTags.length ? token : token.replace(/([.!?])(?=\p{Lu})/gu, "$1 ");
+    return protectedTags.length
+      ? token
+      : token
+        .replace(/([.!?])(?=\p{Lu})/gu, "$1 ")
+        .replace(/([.!?])(?=[\uAC00-\uD7AF])/gu, "$1 ")
+        .replace(/([.!?])(?=[\u0900-\u097F])/gu, "$1 ")
+        .replace(/।(?=\S)/gu, "। ");
   }).join("");
 }
 

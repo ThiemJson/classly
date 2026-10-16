@@ -18,8 +18,15 @@
     });
   });
 
-  // A stored value only comes from an explicit click. Redirect only when the
-  // exact translated counterpart is present in this page's language menu.
+  // An explicit localized URL wins over a previously saved preference. This
+  // keeps shared/search URLs stable and also makes that locale the new choice.
+  if (current !== "en" && saved !== current) {
+    writePreference(current);
+    saved = current;
+  }
+
+  // English is the x-default entry point. Reopen it in the visitor's explicit
+  // saved language when this page has an exact translated counterpart.
   if (saved && saved !== current && byLanguage.has(saved)) {
     var savedTarget = byLanguage.get(saved);
     var target = new URL(savedTarget.href, window.location.href);
