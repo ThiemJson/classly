@@ -277,18 +277,29 @@ function localizeHtml(body, locale) {
   const textIndexes = [];
   const attributeIndexes = [];
   const values = [];
-  let protectedDepth = 0;
+  const protectedTags = [];
   tokens.forEach((token, index) => {
     if (token.startsWith("<")) {
-      for (const match of token.matchAll(/\b(alt|title|aria-label|placeholder)="([^"]*\p{L}[^"]*)"/giu)) {
-        attributeIndexes.push({ index, name: match[1], original: match[2] });
-        values.push(match[2]);
+      const closing = token.match(/^<\/([a-z][\w-]*)\b/iu)?.[1]?.toLowerCase();
+      if (closing && protectedTags.at(-1) === closing) {
+        protectedTags.pop();
+        return;
       }
-      if (/^<\/(?:code|pre|script|style)\b/iu.test(token)) protectedDepth = Math.max(0, protectedDepth - 1);
-      else if (/^<(?:code|pre|script|style)\b/iu.test(token) && !/\/>$/u.test(token)) protectedDepth += 1;
+      const opening = token.match(/^<([a-z][\w-]*)\b/iu)?.[1]?.toLowerCase();
+      const startsProtected = opening && (
+        ["code", "pre", "script", "style"].includes(opening)
+        || /\btranslate="no"/iu.test(token)
+      );
+      if (!protectedTags.length && !startsProtected) {
+        for (const match of token.matchAll(/\b(alt|title|aria-label|placeholder)="([^"]*\p{L}[^"]*)"/giu)) {
+          attributeIndexes.push({ index, name: match[1], original: match[2] });
+          values.push(match[2]);
+        }
+      }
+      if (startsProtected && !/\/>$/u.test(token)) protectedTags.push(opening);
       return;
     }
-    if (protectedDepth || !/\p{L}/u.test(token)) return;
+    if (protectedTags.length || !/\p{L}/u.test(token)) return;
     const leading = token.match(/^\s*/u)?.[0] || "";
     const trailing = token.match(/\s*$/u)?.[0] || "";
     const core = token.slice(leading.length, token.length - trailing.length || undefined);
@@ -310,17 +321,28 @@ function localizeHtml(body, locale) {
 function htmlStrings(body) {
   const tokens = body.split(/(<[^>]+>)/gu);
   const values = [];
-  let protectedDepth = 0;
+  const protectedTags = [];
   for (const token of tokens) {
     if (token.startsWith("<")) {
-      for (const match of token.matchAll(/\b(?:alt|title|aria-label|placeholder)="([^"]*\p{L}[^"]*)"/giu)) {
-        values.push(match[1]);
+      const closing = token.match(/^<\/([a-z][\w-]*)\b/iu)?.[1]?.toLowerCase();
+      if (closing && protectedTags.at(-1) === closing) {
+        protectedTags.pop();
+        continue;
       }
-      if (/^<\/(?:code|pre|script|style)\b/iu.test(token)) protectedDepth = Math.max(0, protectedDepth - 1);
-      else if (/^<(?:code|pre|script|style)\b/iu.test(token) && !/\/>$/u.test(token)) protectedDepth += 1;
+      const opening = token.match(/^<([a-z][\w-]*)\b/iu)?.[1]?.toLowerCase();
+      const startsProtected = opening && (
+        ["code", "pre", "script", "style"].includes(opening)
+        || /\btranslate="no"/iu.test(token)
+      );
+      if (!protectedTags.length && !startsProtected) {
+        for (const match of token.matchAll(/\b(?:alt|title|aria-label|placeholder)="([^"]*\p{L}[^"]*)"/giu)) {
+          values.push(match[1]);
+        }
+      }
+      if (startsProtected && !/\/>$/u.test(token)) protectedTags.push(opening);
       continue;
     }
-    if (protectedDepth || !/\p{L}/u.test(token)) continue;
+    if (protectedTags.length || !/\p{L}/u.test(token)) continue;
     const core = token.trim();
     if (core) values.push(core);
   }

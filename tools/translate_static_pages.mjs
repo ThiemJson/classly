@@ -184,13 +184,27 @@ function localizeFaqRuntime(document, emptyMessage) {
     .replace(FAQ_FETCH_PATTERN, `\n${staticRuntime}`);
 }
 
-function localizeLinks(document, locale) {
+function localizeLinks(document, locale, page) {
   const site = JSON.parse(fs.readFileSync(path.join(CONTENT, locale, "site.json"), "utf8"));
   let result = document
     .replaceAll('href="tools/"', `href="${site.hub.slug}"`)
     .replaceAll('href="../tools/"', `href="${site.hub.slug}"`)
     .replaceAll('href="blog/"', `href="${locale}/blog/"`)
     .replaceAll('href="../blog/"', `href="${locale}/blog/"`);
+
+  if (page.id === "home") {
+    const localizedHome = `/classly/${locale}/`;
+    result = result
+      .replaceAll('href="#top"', `href="${localizedHome}#top"`)
+      .replaceAll('href="#features"', `href="${localizedHome}#features"`)
+      .replaceAll('href="#how-it-works"', `href="${localizedHome}#how-it-works"`)
+      .replaceAll('href="#download"', `href="${localizedHome}#download"`)
+      .replaceAll('href="privacy.html"', `href="${localizedHome}privacy/"`)
+      .replaceAll('href="terms.html"', `href="${localizedHome}terms/"`)
+      .replaceAll('href="faq.html"', `href="${localizedHome}faq/"`)
+      .replaceAll('href="support/"', `href="${localizedHome}support/"`)
+      .replaceAll('href="whats-new/"', `href="${localizedHome}whats-new/"`);
+  }
 
   for (const kind of ["articles", "tools"]) {
     const englishDirectory = path.join(CONTENT, "en", kind);
@@ -369,7 +383,7 @@ for (const page of PAGES) {
       .replace('<div data-classly-language-menu="placeholder"></div>', languageMenu(page, locale));
     localized = translateMetadata(localized, translations);
     localized = normalizeMetadata(ensureHead(localized, page, locale));
-    localized = localizeLinks(localized, locale);
+    localized = localizeLinks(localized, locale, page);
     if (page.id === "faq") {
       localized = localizeFaqRuntime(localized, translations.get(FAQ_EMPTY_TEXT) || FAQ_EMPTY_TEXT);
     }

@@ -141,6 +141,25 @@ def main() -> int:
     for url in sorted(sitemap_urls - expected_urls):
         errors.append(f"sitemap.xml: unexpected {url}")
 
+    for locale_dir in sorted(path for path in ROOT.iterdir() if path.is_dir() and len(path.name) == 2):
+        homepage = locale_dir / "index.html"
+        if not homepage.is_file():
+            continue
+        source = homepage.read_text(encoding="utf-8")
+        localized_home = f'/classly/{locale_dir.name}/'
+        required_fragments = (
+            f'href="{localized_home}#features"',
+            f'href="{localized_home}#download"',
+            f'href="{localized_home}privacy/"',
+            f'href="{localized_home}terms/"',
+            'class="reviews"',
+            'id="how-it-works"',
+            'assets/engagement.js',
+        )
+        for fragment in required_fragments:
+            if fragment not in source:
+                errors.append(f"{locale_dir.name}/index.html: missing {fragment}")
+
     pages: dict[str, tuple[pathlib.Path, PageParser]] = {}
     for url in sorted(sitemap_urls):
         path = local_path(url)
