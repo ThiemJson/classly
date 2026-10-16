@@ -27,7 +27,9 @@ const CONTENT = path.join(ROOT, "content");
 const CACHE_PATH = process.env.CLASSLY_TRANSLATION_CACHE
   || path.join(os.tmpdir(), "classly-blog-translation-cache.json");
 const TRANSLATOR_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0";
+const TRANSLATION_DELAY_MS = Number(process.env.CLASSLY_TRANSLATION_DELAY_MS || 1500);
 let bingConfig;
+let lastTranslationAt = 0;
 
 const LOCALES = {
   de: { name: "Deutsch", og: "de_DE", hub: "de/werkzeuge/" },
@@ -134,8 +136,13 @@ function refreshBingConfig() {
 }
 
 function requestTranslation(text, locale) {
+  const remainingDelay = TRANSLATION_DELAY_MS - (Date.now() - lastTranslationAt);
+  if (remainingDelay > 0) {
+    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, remainingDelay);
+  }
+  lastTranslationAt = Date.now();
   let lastError = "unknown response";
-  for (let attempt = 0; attempt < 6; attempt += 1) {
+  for (let attempt = 0; attempt < 3; attempt += 1) {
     if (attempt) {
       const delay = Math.min(5000 * (2 ** (attempt - 1)), 40000);
       Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, delay);
@@ -188,7 +195,34 @@ function requestTranslation(text, locale) {
       bingConfig = undefined;
     }
   }
-  throw new Error(`Translation request failed after retries (${locale}): ${lastError}`);
+
+  const fallback = spawnSync(
+    "curl",
+    [
+      "-sS", "-L", "--fail-with-body", "--retry", "3", "--retry-all-errors",
+      "--connect-timeout", "10", "--max-time", "90",
+      "https://translate.googleapis.com/translate_a/single",
+      "--data-urlencode", "client=gtx",
+      "--data-urlencode", "sl=en",
+      "--data-urlencode", `tl=${locale}`,
+      "--data-urlencode", "dt=t",
+      "--data-urlencode", `q=${text}`,
+    ],
+    { encoding: "utf8", maxBuffer: 20 * 1024 * 1024 },
+  );
+  if (fallback.status === 0) {
+    try {
+      const payload = JSON.parse(fallback.stdout);
+      const translated = payload?.[0]?.map((part) => part?.[0] || "").join("");
+      if (translated) return translated;
+    } catch {
+      // Report the original provider error together with the fallback response below.
+    }
+  }
+  const fallbackError = fallback.stderr.trim() || fallback.stdout.slice(0, 200);
+  throw new Error(
+    `Translation request failed (${locale}). Bing: ${lastError}. Google: ${fallbackError}`,
+  );
 }
 
 function translateChunk(entries, locale) {
@@ -212,7 +246,10 @@ function translateChunk(entries, locale) {
 
 function translateStrings(values, locale) {
   const unique = [...new Set(values.filter((value) => typeof value === "string" && /\p{L}/u.test(value)))];
-  const missing = unique.filter((value) => cache[`${locale}\u0000${value}`] === undefined);
+  const missing = unique.filter((value) => {
+    const cached = cache[`${locale}\u0000${value}`];
+    return cached === undefined || /classly\.invalid\/ph\/\d{4}|CLASSLYPH\d{4}TOKEN/u.test(cached);
+  });
   let batch = [];
   let size = 0;
   const flush = () => {
@@ -243,7 +280,7 @@ function localizeHtml(body, locale) {
   let protectedDepth = 0;
   tokens.forEach((token, index) => {
     if (token.startsWith("<")) {
-      for (const match of token.matchAll(/\b(alt|title|aria-label)="([^"]*\p{L}[^"]*)"/giu)) {
+      for (const match of token.matchAll(/\b(alt|title|aria-label|placeholder)="([^"]*\p{L}[^"]*)"/giu)) {
         attributeIndexes.push({ index, name: match[1], original: match[2] });
         values.push(match[2]);
       }
@@ -276,7 +313,7 @@ function htmlStrings(body) {
   let protectedDepth = 0;
   for (const token of tokens) {
     if (token.startsWith("<")) {
-      for (const match of token.matchAll(/\b(?:alt|title|aria-label)="([^"]*\p{L}[^"]*)"/giu)) {
+      for (const match of token.matchAll(/\b(?:alt|title|aria-label|placeholder)="([^"]*\p{L}[^"]*)"/giu)) {
         values.push(match[1]);
       }
       if (/^<\/(?:code|pre|script|style)\b/iu.test(token)) protectedDepth = Math.max(0, protectedDepth - 1);
@@ -533,7 +570,17 @@ function runBlogTranslation() {
   console.log("Blog translations complete.");
 }
 
-export { LOCALES, htmlStrings, localizeHtml, readArticle, slugify, translateStrings, translatedClone };
+export {
+  LOCALES,
+  htmlStrings,
+  localizeHtml,
+  protectedText,
+  readArticle,
+  restoreProtected,
+  slugify,
+  translateStrings,
+  translatedClone,
+};
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   runBlogTranslation();
