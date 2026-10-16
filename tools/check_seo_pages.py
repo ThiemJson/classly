@@ -165,6 +165,9 @@ def main() -> int:
             f'href="{localized_home}terms/"',
             'class="reviews"',
             'id="how-it-works"',
+            'class="hero-qr-code"',
+            'class="hero-qr-logo"',
+            'width="208" height="208"',
             'assets/engagement.js',
         )
         for fragment in required_fragments:
